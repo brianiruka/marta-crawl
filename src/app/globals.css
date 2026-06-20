@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
 :root {
   --background: #ffffff;
@@ -10,6 +11,26 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-gray: var(--brand-gray);
+  --color-brand-black: var(--brand-black);
+
+  --color-line-red: var(--line-red);
+  --color-line-gold: var(--line-gold);
+  --color-line-blue: var(--line-blue);
+  --color-line-green: var(--line-green);
+
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-7: var(--space-7);
+  --spacing-8: var(--space-8);
 }
 
 @media (prefers-color-scheme: dark) {

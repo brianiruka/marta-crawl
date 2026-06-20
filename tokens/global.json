@@ -1,0 +1,25 @@
+{
+  "brand": {
+    "blue": { "$type": "color", "$value": "#008CCC" },
+    "orange": { "$type": "color", "$value": "#FF7500" },
+    "yellow": { "$type": "color", "$value": "#FFB300" },
+    "gray": { "$type": "color", "$value": "#CCCCCC" },
+    "black": { "$type": "color", "$value": "#000000" }
+  },
+  "line": {
+    "red": { "$type": "color", "$value": "#EC2527" },
+    "gold": { "$type": "color", "$value": "#FFA500" },
+    "blue": { "$type": "color", "$value": "#0093D0" },
+    "green": { "$type": "color", "$value": "#69BD47" }
+  },
+  "space": {
+    "1": { "$type": "spacing", "$value": "4px" },
+    "2": { "$type": "spacing", "$value": "8px" },
+    "3": { "$type": "spacing", "$value": "12px" },
+    "4": { "$type": "spacing", "$value": "16px" },
+    "5": { "$type": "spacing", "$value": "24px" },
+    "6": { "$type": "spacing", "$value": "32px" },
+    "7": { "$type": "spacing", "$value": "48px" },
+    "8": { "$type": "spacing", "$value": "64px" }
+  }
+}
