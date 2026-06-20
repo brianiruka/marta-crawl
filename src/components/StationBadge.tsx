@@ -1,4 +1,4 @@
-type LineColor = "red" | "gold" | "blue" | "green";
+type LineColor = "red" | "gold" | "blue" | "green" | "streetcar";
 
 type StationBadgeProps = {
   line: LineColor;
@@ -13,6 +13,7 @@ const lineColorClass: Record<LineColor, { ring: string; fill: string }> = {
   gold: { ring: "ring-line-gold", fill: "bg-line-gold" },
   blue: { ring: "ring-line-blue", fill: "bg-line-blue" },
   green: { ring: "ring-line-green", fill: "bg-line-green" },
+  streetcar: { ring: "ring-line-streetcar", fill: "bg-line-streetcar" },
 };
 
 export function StationBadge({
