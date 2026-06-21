@@ -41,3 +41,15 @@ silently produce no CSS.
 - `src/data/` — station and POI data (`stations.ts`, `pois.ts`)
 - `tokens/global.json` — design token source, synced from Figma
 - `style-dictionary.config.mjs` — token build config
+
+## MartaMap visual fidelity reference
+
+`docs/reference/marta-rail-map-reference.jpg` is the target look for the
+rendered map — compare `MartaMap`/`StationMarker` output against it before
+calling a visual change done. Notable details it shows that are easy to miss:
+station markers are hollow rings (colored outline, dark fill matching the
+background) rendered as distinct shapes separate from the line, not solid
+bulges baked into the line's own fill; line strokes have a thin dark outline
+separating adjacent parallel lines; terminal stations (North Springs,
+Doraville, Airport, etc.) get the same rounded ring treatment as interchange
+stations.

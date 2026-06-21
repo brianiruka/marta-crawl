@@ -23,9 +23,9 @@ function handleKeyDown(onSelect: () => void) {
   };
 }
 
-// The line art itself already shows each station as a bulge in its line's
-// outline, so this renders only the live <text> label plus a hit target
-// sized around it -- no separate marker shape is drawn on top.
+// The line art renders each station as a bulge (hollow-centered ones are
+// cut directly into the line path's own geometry, not drawn here) -- this
+// component only adds the live <text> label and a hit target around it.
 export function StationMarker({ station, selected, onSelect }: StationMarkerProps) {
   const labelWidth = station.name.length * FONT_SIZE * CHAR_WIDTH;
 

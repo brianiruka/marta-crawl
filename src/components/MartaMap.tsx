@@ -28,7 +28,7 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
         {renderedLines.map((line) => (
           <g key={line} className={lineFillClass[line]}>
             {(linePaths[line] as string[]).map((d, i) => (
-              <path key={i} d={d} />
+              <path key={i} d={d} fillRule="evenodd" />
             ))}
           </g>
         ))}
