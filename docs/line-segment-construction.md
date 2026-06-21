@@ -89,6 +89,77 @@ render edge-to-edge and look like one continuous line. Pull the cut point
 back on at least one side so there's empty space between the two shapes when
 rendered together.
 
+## Tooling — use this instead of hand-deriving geometry
+
+Building the first few segments (Sandy Springs–Dunwoody, Dunwoody–Medical
+Center) by hand meant re-mining git history for the original native path
+every time, and hand-computing scallop waypoints with a calculator. That's
+now automated in `scripts/`:
+
+1. **`docs/reference/native-line-paths.json`** — the pre-split native outline
+   for each line (red's is the actual pre-rebuild geometry pulled from git
+   history; gold/blue/green are still untouched natively, captured here
+   before any further splitting destroys the original). This is the
+   permanent source of truth for "what did the original art do here" —
+   no more `git show` archaeology.
+
+2. **`scripts/find_anchors.py LINE STATION_A STATION_B`** — parses the native
+   path and prints every point near each station's center (within a
+   distance threshold), with its command index. A normal through-station
+   has 4 hits (down-pass entry/exit, up-pass entry/exit); interchange or
+   terminus stations may have more — eyeball the printed coordinates against
+   `docs/reference/marta-rail-map-reference.jpg` to pick the right ones, then
+   use `extract_edge(cmds, i, j)` from `native_path_lib.py` to pull out the
+   connecting curve between two indices.
+
+3. **`scripts/build_segment.py`** — given each station's center plus its
+   down/up native attach points and the two edge-curve strings between them,
+   auto-places the scallop loop at each end (orbiting the long way around,
+   away from the straight line between the attach points, with a
+   closer/farther wave — same shape this doc asks for) and appends both
+   `INNER_R` hole subpaths. Call `build_segment_from_spec(spec)` from Python
+   or pipe a JSON spec into it from the CLI. This replaces hand-deriving
+   waypoint coordinates with a calculator.
+
+4. **`scripts/preview_segment.py --line LINE --viewbox X Y W H [--draft FILE]`**
+   — renders an isolated, zoomed SVG of the current committed line plus an
+   optional draft segment overlay, via headless Chrome (the only SVG
+   rasterizer available in this environment — there's no `rsvg-convert` /
+   `cairosvg` / Inkscape). Use this instead of screenshotting and cropping
+   the full live app.
+
+Typical flow for a new station pair: run `find_anchors.py` to locate native
+attach points → build a small JSON spec → run `build_segment.py` to get a
+draft `d` string → `preview_segment.py --draft` to check it renders with
+clean holes → append the result to `martaLinePaths.json` → re-run
+`preview_segment.py` without `--draft` (or screenshot the live app) to
+confirm the committed version matches.
+
+`make_scallop()`'s "go the long way around" angle math is easy to get wrong
+in a way that *looks* like a hole bug but isn't: if the sweep is computed by
+just adding 360° onto a short CCW difference instead of reversing direction
+to go CW, the loop overshoots a full revolution and self-intersects,
+producing a crescent-shaped partial hole instead of a clean circle (caught
+once while automating the Medical Center scallop — verify monotonic angles
+for each waypoint, not just "does it render", if a hole ever comes out
+partial).
+
+A second, nastier variant of the same family hit Buckhead: when a station's
+two native attach points are close to antipodal (~180° apart — common for a
+station that's a temporary line-end, since both the "down" and "up" passes
+approach from roughly the same general direction), "long way" and "short
+way" are nearly the same length, and one of them can cross the actual
+incoming/outgoing edge curves rather than just the straight chord between
+the attach points. That produces an *odd* total crossing count at the
+station's center instead of even — which renders as a fully solid disc, not
+even a crescent, and is genuinely easy to miss in a screenshot if you're not
+zoomed in tightly. `build_segment_from_spec()` now calls
+`native_path_lib.check_hole_parity()` (flattens the path, including its `A`
+hole subpaths, and ray-casts) for both stations after assembly, and retries
+with the sweep direction flipped on whichever station fails before giving
+up — this is what caught and auto-fixed Buckhead. Don't trust a render
+alone for hole correctness; `check_hole_parity()` is the actual check.
+
 ## Quick checklist for each new segment
 
 1. Identify the cut point(s) in the original `d` string (or construct new
