@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { MartaMap } from "@/components/MartaMap";
+import { MapLegend } from "@/components/MapLegend";
 import { stations } from "@/data/stations";
 import { poisByStation } from "@/data/pois";
 
@@ -12,11 +13,14 @@ export default function Home() {
   const pois = selectedStationId ? poisByStation[selectedStationId] ?? [] : [];
 
   return (
-    <div className="flex min-h-screen items-start justify-center gap-12 bg-zinc-900 p-16">
-      <MartaMap
-        selectedStationId={selectedStationId}
-        onSelectStation={setSelectedStationId}
-      />
+    <div className="flex min-h-screen flex-col items-center gap-8 bg-zinc-900 p-4 md:flex-row md:items-start md:justify-center md:gap-12 md:p-16">
+      <div className="flex flex-col gap-4">
+        <MapLegend />
+        <MartaMap
+          selectedStationId={selectedStationId}
+          onSelectStation={setSelectedStationId}
+        />
+      </div>
 
       <div className="w-80">
         <h2 className="mb-4 text-xl font-semibold text-white">
