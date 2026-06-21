@@ -1,7 +1,9 @@
 "use client";
 
 import { StationMarker } from "@/components/StationMarker";
+import { StationHole } from "@/components/StationHole";
 import { stations, lineLabels, type LineId } from "@/data/stations";
+import { stationBulges } from "@/data/stationBulges";
 import linePaths from "@/data/martaLinePaths.json";
 
 type MartaMapProps = {
@@ -32,6 +34,12 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
             ))}
           </g>
         ))}
+
+        <g>
+          {stationBulges.map((b) => (
+            <StationHole key={`${b.stationId}-${b.line}`} line={b.line} cx={b.cx} cy={b.cy} />
+          ))}
+        </g>
 
         {lineLabels.map((label) => (
           <text

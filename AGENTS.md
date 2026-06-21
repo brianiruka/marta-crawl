@@ -53,3 +53,18 @@ bulges baked into the line's own fill; line strokes have a thin dark outline
 separating adjacent parallel lines; terminal stations (North Springs,
 Doraville, Airport, etc.) get the same rounded ring treatment as interchange
 stations.
+
+## Rebuilding line paths as segments
+
+`martaLinePaths.json` is being rebuilt station-by-station from one giant
+path per line into separate per-station segments. Read
+`docs/line-segment-construction.md` before touching a line's path data —
+it covers the rules learned so far: each segment end that meets a station
+should fan into a small scallop of points orbiting that station's center
+(inside `StationHole`'s `OUTER_R`, never passing through the center) rather
+than landing on one precise point or arc; that scallop only shapes the
+*outer* edge, so every one of those station ends must also get a separate
+`INNER_R`-radius circle subpath (evenodd) at the station's exact position
+or the marker's hole renders solid instead of transparent; real termini
+close with a rounded cap rather than a point; and disconnected pieces need
+an actual rendered gap, not just separate array entries.
