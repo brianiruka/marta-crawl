@@ -26,7 +26,7 @@ export const stations: Station[] = [
   { id: "chamblee", name: "Chamblee", lines: ["gold"], x: 1432, y: 529, angle: 0 },
   { id: "brookhaven-oglethorpe", name: "Brookhaven/Oglethorpe", lines: ["gold"], x: 1456, y: 578, angle: 0 },
   { id: "lenox", name: "Lenox", lines: ["gold"], x: 1297, y: 649, angle: 0 },
-  { id: "lindbergh-center", name: "Lindbergh Center", lines: ["red", "gold"], interchange: true, x: 1268, y: 770, angle: 0 },
+  { id: "lindbergh-center", name: "Lindbergh Center", lines: ["red", "gold"], interchange: true, x: 1244, y: 769, angle: 0 },
   { id: "arts-center", name: "Arts Center", lines: ["red", "gold"], interchange: true, x: 894, y: 932, angle: 0 },
   { id: "midtown", name: "Midtown", lines: ["red", "gold"], interchange: true, x: 910, y: 993, angle: 0 },
   { id: "north-avenue", name: "North Avenue", lines: ["red", "gold"], interchange: true, x: 879, y: 1054, angle: 0 },
