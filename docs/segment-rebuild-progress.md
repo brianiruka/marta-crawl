@@ -10,6 +10,16 @@ Status values: **Done** (segment built and verified live), **Planned**
 (construction worked out and checked analytically, not yet written to the
 file), **Not started**.
 
+Gold, Blue, and Green's native monolithic paths have been removed from
+`martaLinePaths.json` (their array is now `[]`) so all three render as
+floating station markers only, matching how Red's not-yet-rebuilt stations
+already looked. The original geometry isn't lost — it's preserved in
+`docs/reference/native-line-paths.json` for when each line's segment
+rebuild starts. Work is paused on connecting lines for now to focus on the
+station markers themselves; resume per-line segment work (using the
+`scripts/find_anchors.py` → `build_segment.py` → `preview_segment.py`
+pipeline) when that's done.
+
 ## Red line
 
 | Station | Status | Notes |
