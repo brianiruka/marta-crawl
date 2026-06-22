@@ -25,7 +25,7 @@ const lineFillClass: Record<LineId, string> = {
 
 export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) {
   return (
-    <div className="aspect-[1959/2048] max-h-[85vh] w-full max-w-4xl">
+    <div className="mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full">
       <svg viewBox="0 0 1959 2048" preserveAspectRatio="xMidYMid meet" className="h-full w-full">
         {renderedLines.map((line) => (
           <g key={line} className={lineFillClass[line]}>

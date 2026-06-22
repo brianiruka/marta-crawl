@@ -57,7 +57,7 @@ export const stationBulges: StationBulge[] = [
   { stationId: "decatur", line: "blue", cx: 1590, cy: 1323 },
   { stationId: "avondale", line: "blue", cx: 1670, cy: 1323 },
   { stationId: "kensington", line: "blue", cx: 1758, cy: 1323 },
-  { stationId: "indian-creek", line: "blue", cx: 1771, cy: 1323 },
+  { stationId: "indian-creek", line: "blue", cx: 1850, cy: 1323 },
   { stationId: "five-points", line: "blue", cx: 969, cy: 1323 },
   { stationId: "hamilton-e-holmes", line: "blue", cx: 465.6, cy: 1323 },
   { stationId: "west-lake", line: "blue", cx: 715, cy: 1323 },
