@@ -168,6 +168,25 @@ def _assemble(spec, a_sweep, b_sweep):
     return d
 
 
+def _hole_probe_points(label, center, n=8, r=None):
+    """Sample points spread across the nominal hole disc, not just its exact
+    center. A self-intersecting scallop can leave the literal center
+    correctly unfilled (even ray-crossings) while a crescent of the
+    surrounding disc is still incorrectly solid -- checking only the center,
+    as the first version of this tool did, missed exactly that defect at
+    Doraville (it passed the center-only check, then rendered as a solid
+    disc with only a thin sliver of real hole). Probing at the center plus a
+    ring near the hole's edge catches that.
+    """
+    if r is None:
+        r = INNER_R * 0.85
+    pts = [(f"{label}@center", center)]
+    for i in range(n):
+        ang = 2 * math.pi * i / n
+        pts.append((f"{label}@{i}", (center[0] + r * math.cos(ang), center[1] + r * math.sin(ang))))
+    return pts
+
+
 def build_segment_from_spec(spec, verbose=False):
     """spec: {
         "station_a": {"center": [x,y], "down_exit": [x,y], "up_entry": [x,y], "n_waypoints": 4, "radii": [...]},
@@ -177,33 +196,45 @@ def build_segment_from_spec(spec, verbose=False):
     }
 
     Defaults both scallops to sweeping the long way around, then verifies
-    with check_hole_parity() that each station's center actually renders as
-    a hole (even ray crossings). If either fails — which happens when a
-    station's two native attach points are close to antipodal, where "long"
-    and "short" both pass near the chord and one of them ends up
-    self-intersecting with the rest of the ribbon — it flips that station's
-    sweep direction and rechecks before giving up. This is what caught (and
-    now auto-avoids) the Buckhead bug: a "long way" scallop that rendered as
-    a solid filled disc instead of a hole.
+    with check_hole_parity() — probed at each station's center AND a ring of
+    points spread across the nominal hole disc, not just the exact center —
+    that the hole actually renders clean. If any probe point fails, it tries
+    flipping each station's sweep direction, and as a last resort doubles
+    the waypoint count (a self-intersecting overshoot from too few Catmull-Rom
+    control points is the likeliest remaining cause once sweep direction
+    isn't the issue) before giving up.
     """
     a, b = spec["station_a"], spec["station_b"]
-    centers = [("station_a", tuple(a["center"])), ("station_b", tuple(b["center"]))]
+    probes = (
+        _hole_probe_points("station_a", tuple(a["center"]))
+        + _hole_probe_points("station_b", tuple(b["center"]))
+    )
 
-    for a_sweep, b_sweep in (("long", "long"), ("short", "long"), ("long", "short"), ("short", "short")):
-        d = _assemble(spec, a_sweep, b_sweep)
-        results = check_hole_parity(d, centers)
+    attempts = [
+        ("long", "long", 4, 4), ("short", "long", 4, 4),
+        ("long", "short", 4, 4), ("short", "short", 4, 4),
+        ("long", "long", 6, 6), ("short", "long", 6, 6),
+        ("long", "short", 6, 6), ("short", "short", 6, 6),
+    ]
+    for a_sweep, b_sweep, a_n, b_n in attempts:
+        spec_n = {
+            **spec,
+            "station_a": {**a, "n_waypoints": a.get("n_waypoints", a_n)},
+            "station_b": {**b, "n_waypoints": b.get("n_waypoints", b_n)},
+        }
+        d = _assemble(spec_n, a_sweep, b_sweep)
+        results = check_hole_parity(d, probes)
         bad = [r for r in results if not r[3]]
         if verbose:
-            print(f"  sweep a={a_sweep} b={b_sweep}: " +
-                  ", ".join(f"{label} crossings={n} {'OK' if ok else 'FAIL'}" for label, _, n, ok in results),
-                  file=sys.stderr)
+            status = "OK" if not bad else f"FAIL ({len(bad)}/{len(probes)} probes: {[r[0] for r in bad]})"
+            print(f"  sweep a={a_sweep} b={b_sweep} n=({a_n},{b_n}): {status}", file=sys.stderr)
         if not bad:
             return d
 
     raise RuntimeError(
-        "could not find a sweep combination where both stations' holes render correctly "
-        f"(last attempt: {results}). The scallop geometry likely needs a manual radii/"
-        "n_waypoints override — see make_scallop()'s docstring."
+        "could not find a sweep/waypoint combination where both stations' holes render "
+        f"cleanly across all probe points (last attempt had {len(bad)} failing probes). "
+        "The scallop geometry likely needs a manual radii override — see make_scallop()'s docstring."
     )
 
 

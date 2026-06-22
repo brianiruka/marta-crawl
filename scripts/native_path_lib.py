@@ -188,13 +188,23 @@ def parse_path_full(d):
     return cmds
 
 
-def flatten_to_polyline(cmds):
-    poly = []
+def flatten_to_subpaths(cmds):
+    """Like flatten_to_polyline, but returns a list of separate polylines,
+    one per M-delimited subpath, instead of one flat point list. A `d`
+    string with multiple subpaths (e.g. the ribbon plus each station's
+    INNER_R circle) has no edge connecting the end of one subpath to the
+    start of the next — concatenating them into a single polyline invents a
+    phantom edge there, which can flip the evenodd parity at a probe point
+    that happens to sit near it (this is what made the Doraville hole
+    miscount as filled)."""
+    subpaths = []
+    poly = None
     start = None
     for c in cmds:
         if c["cmd"] == "M":
+            poly = [c["end"]]
             start = c["end"]
-            poly.append(c["end"])
+            subpaths.append(poly)
         elif c["cmd"] == "L":
             poly.append(c["end"])
         elif c["cmd"] == "C":
@@ -203,13 +213,37 @@ def flatten_to_polyline(cmds):
             poly.extend(_arc_flatten(c["start"], c["rx"], c["large"], c["sweep"], c["end"]))
         elif c["cmd"] == "Z":
             poly.append(start)
+    return subpaths
+
+
+def flatten_to_polyline(cmds):
+    """Flat concatenation of all subpaths. Kept for callers that genuinely
+    want one continuous boundary (a single M...Z path); do not use this for
+    multi-subpath evenodd parity checks — see flatten_to_subpaths."""
+    poly = []
+    for sp in flatten_to_subpaths(cmds):
+        poly.extend(sp)
     return poly
 
 
+_RAY_EPSILON = 0.0637191  # arbitrary irrational-ish offset, see note below
+
 def crossing_count(polyline, point):
-    """Count crossings of a +x ray from `point` through the polyline — the
-    raw input to the evenodd rule (odd = filled, even = not filled)."""
-    x0, y0 = point
+    """Count crossings of a +x ray from `point` through a single closed
+    polyline — the raw input to the evenodd rule (odd = filled, even = not
+    filled) for that one subpath.
+
+    The ray's y is nudged by a small fixed epsilon before casting. Our own
+    circle()/scallop generators produce vertices at round coordinates and,
+    for circles specifically, always starting/ending exactly on the
+    horizontal through their own center — so a probe placed exactly at a
+    station's (cx, cy) sends the ray precisely through those construction
+    vertices, a classic ray-through-vertex degeneracy that miscounts
+    crossings regardless of how the y1>y0 comparisons are written. Nudging
+    off-axis avoids ever lining up with those round coordinates instead of
+    trying to special-case the degeneracy.
+    """
+    x0, y0 = point[0], point[1] + _RAY_EPSILON
     count = 0
     for i in range(len(polyline) - 1):
         x1, y1 = polyline[i]
@@ -224,11 +258,13 @@ def crossing_count(polyline, point):
 def check_hole_parity(d, points):
     """For a segment's full `d` string (ribbon + INNER_R circle subpaths),
     report whether each given (label, (x, y)) point renders as a hole
-    (even crossings -> transparent) or solid (odd -> filled). Returns a list
-    of (label, point, crossings, is_hole)."""
-    poly = flatten_to_polyline(parse_path_full(d))
+    (even crossings -> transparent) or solid (odd -> filled). Each subpath's
+    crossings are counted independently (no phantom edges between
+    subpaths) and summed per evenodd semantics. Returns a list of
+    (label, point, crossings, is_hole)."""
+    subpaths = flatten_to_subpaths(parse_path_full(d))
     results = []
     for label, point in points:
-        n = crossing_count(poly, point)
+        n = sum(crossing_count(sp, point) for sp in subpaths)
         results.append((label, point, n, n % 2 == 0))
     return results
