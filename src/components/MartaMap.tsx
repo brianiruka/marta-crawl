@@ -1,17 +1,14 @@
 "use client";
 
 import { StationMarker } from "@/components/StationMarker";
-import { StationHole } from "@/components/StationHole";
-import { stations, lineLabels, type LineId } from "@/data/stations";
-import { stationBulges } from "@/data/stationBulges";
+import { stations, type LineId } from "@/data/stations";
+import { stationBulges, type StationBulge } from "@/data/stationBulges";
 import linePaths from "@/data/martaLinePaths.json";
 
 type MartaMapProps = {
   selectedStationId: string | null;
   onSelectStation: (id: string) => void;
 };
-
-const LINE_LABEL_FONT_SIZE = 24;
 
 const renderedLines = ["red", "gold", "blue", "green"] as const satisfies LineId[];
 
@@ -22,6 +19,15 @@ const lineFillClass: Record<LineId, string> = {
   green: "fill-line-green",
   streetcar: "fill-line-streetcar",
 };
+
+// A station's marker is one ring per line it serves -- for interchanges
+// that's several rings spread around the crossing, each rendered (and
+// independently hoverable) by StationMarker itself, so it needs its own
+// station's full bulge list rather than a single point.
+const bulgesByStation: Record<string, StationBulge[]> = {};
+for (const b of stationBulges) {
+  (bulgesByStation[b.stationId] ??= []).push(b);
+}
 
 export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) {
   return (
@@ -35,30 +41,11 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
           </g>
         ))}
 
-        <g>
-          {stationBulges.map((b) => (
-            <StationHole key={`${b.stationId}-${b.line}`} line={b.line} cx={b.cx} cy={b.cy} />
-          ))}
-        </g>
-
-        {lineLabels.map((label) => (
-          <text
-            key={label.line}
-            x={label.x}
-            y={label.y}
-            fontSize={LINE_LABEL_FONT_SIZE}
-            fontWeight={700}
-            className="fill-white"
-            transform={label.angle ? `rotate(${label.angle} ${label.x} ${label.y})` : undefined}
-          >
-            {label.text}
-          </text>
-        ))}
-
         {stations.map((station) => (
           <StationMarker
             key={station.id}
             station={station}
+            bulges={bulgesByStation[station.id]}
             selected={station.id === selectedStationId}
             onSelect={() => onSelectStation(station.id)}
           />

@@ -46,3 +46,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Every station label grows and moves to its hover destination -- by
+   default farther out along the same ray from the marker, but some
+   stations (see HOVER_DIRECTION_OVERRIDES in StationMarker.tsx) swing to
+   a genuinely different spot instead. translate() here happens in the
+   label's own pre-rotation local frame -- the marker's <g> rotation (0 or
+   -45) carries that back out to the correct on-screen direction,
+   vertical component included.
+   The leader line's "d" morphs to match: its marker-side point is always
+   the ring point facing the label, so it sweeps around the ring with the
+   label rather than just stretching in place. */
+.station-leader-label {
+  /* rotate() has to live in this same CSS transform, not the SVG
+     `transform` attribute -- an element can't have both; the CSS
+     property wins outright and silently drops the attribute's rotation. */
+  transform: rotate(var(--leader-rotation, 0deg)) translate(0, 0) scale(1);
+  transition: transform 0.4s ease-out;
+}
+
+/* Mouse: only the marker point (station-leader-hit) triggers the hover
+   state, not the label itself -- hence the sibling selector instead of
+   the more obvious `.station-leader-hover:hover`, which would also fire
+   when hovering the label's own text. Keyboard: focus still lands on the
+   whole group (it's the only tabbable element here), so that one stays
+   group-scoped. */
+.station-leader-hit:hover ~ .station-leader-label,
+.station-leader-hover:focus-visible .station-leader-label {
+  transform: rotate(var(--leader-rotation, 0deg)) translate(var(--leader-hover-translate, 0px, 0px)) scale(1.18);
+}
+
+.station-leader-line {
+  d: var(--leader-rest-d);
+  transition: d 0.4s ease-out;
+}
+
+.station-leader-hit:hover ~ .station-leader-line,
+.station-leader-hover:focus-visible .station-leader-line {
+  d: var(--leader-hover-d);
+}
+
+/* Overlaid on top of a hovered station's own ring(s) (see StationHole).
+   Opacity is driven directly by React state (StationMarker's `glowing`),
+   not CSS :hover -- a click needs to turn this off immediately even
+   though the mouse hasn't left, and :hover alone can't express that.
+   Fades at the same rate as the label's grow-and-move (0.4s ease-out) so
+   both read as one motion. */
+.station-ring-glow {
+  transition: opacity 0.4s ease-out;
+}
