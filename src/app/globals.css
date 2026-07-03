@@ -95,3 +95,17 @@ body {
 .station-ring-glow {
   transition: opacity 0.4s ease-out;
 }
+
+/* Slow bold/normal breathing while a station is hovered -- on top of
+   (not instead of) the one-shot grow-and-move above. font-weight is a
+   numeric CSS property, so the browser tweens it smoothly between
+   keyframes rather than snapping. */
+@keyframes station-label-pulse {
+  0%, 100% { font-weight: 400; }
+  50% { font-weight: 800; }
+}
+
+.station-leader-hit:hover ~ .station-leader-label .station-label-text,
+.station-leader-hover:focus-visible .station-leader-label .station-label-text {
+  animation: station-label-pulse 1.8s ease-in-out infinite;
+}

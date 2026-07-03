@@ -49,6 +49,9 @@ const HOVER_HIT_R = 26;
 // the point just tracking the label's vertical center.
 const DRAG_FACTOR = 0.4;
 
+const CONNECTOR_WIDTH = 6; // interchange ring-to-ring connector, at rest
+const CONNECTOR_HOVER_WIDTH = 10; // ...and on hover
+
 // Per-station hover-swing angle, in degrees, ADDED to each station's own
 // rest direction (not an absolute angle) -- every label keeps swinging
 // out from wherever it already sits relative to its marker, just tilted
@@ -239,6 +242,50 @@ function nearestBulge(bulges: StationBulge[], target: { x: number; y: number }) 
   });
 }
 
+/**
+ * The set of edges connecting every ring of a multi-line station to every
+ * other one, with no redundant connections -- a minimum spanning tree, so
+ * a 2-ring interchange gets a single bar between them and a 4-ring one
+ * (Five Points) gets the 3 shortest edges that still reach every ring,
+ * instead of all 6 possible pairs criss-crossing each other.
+ */
+function spanningEdges(bulges: StationBulge[]): [StationBulge, StationBulge][] {
+  // Four rings in a 2×2 rectangle (Five Points) → draw all four perimeter
+  // edges to form a complete square. The MST would only give 3 edges and
+  // always misses one side.
+  if (bulges.length === 4) {
+    const xs = [...new Set(bulges.map((b) => b.cx))].sort((a, b) => a - b);
+    const ys = [...new Set(bulges.map((b) => b.cy))].sort((a, b) => a - b);
+    if (xs.length === 2 && ys.length === 2) {
+      const at = (x: number, y: number) => bulges.find((b) => b.cx === x && b.cy === y)!;
+      const [x0, x1] = xs;
+      const [y0, y1] = ys;
+      return [
+        [at(x0, y0), at(x1, y0)],
+        [at(x0, y0), at(x0, y1)],
+        [at(x1, y0), at(x1, y1)],
+        [at(x0, y1), at(x1, y1)],
+      ];
+    }
+  }
+  const remaining = bulges.slice(1);
+  const connected = [bulges[0]];
+  const edges: [StationBulge, StationBulge][] = [];
+  while (remaining.length > 0) {
+    let best = { from: connected[0], toIndex: 0, dist: Infinity };
+    for (const from of connected) {
+      remaining.forEach((to, i) => {
+        const d = Math.hypot(from.cx - to.cx, from.cy - to.cy);
+        if (d < best.dist) best = { from, toIndex: i, dist: d };
+      });
+    }
+    const [to] = remaining.splice(best.toIndex, 1);
+    edges.push([best.from, to]);
+    connected.push(to);
+  }
+  return edges;
+}
+
 export function StationMarker({ station, bulges, selected, onSelect }: StationMarkerProps) {
   const anchorRing = nearestBulge(bulges, { x: station.x, y: station.y });
   const labelWidth = station.name.length * FONT_SIZE * CHAR_WIDTH;
@@ -286,6 +333,27 @@ export function StationMarker({ station, bulges, selected, onSelect }: StationMa
       {bulges.map((b) => (
         <StationHole key={`hole-${b.line}`} line={b.line} cx={b.cx} cy={b.cy} glowing={glowing} />
       ))}
+      {/* Connects an interchange's rings into one combined marker --
+          rendered after the rings so it paints in front of them, on top
+          of their edges. pointer-events: none for the same reason as the
+          rings themselves (see StationHole): without it, hovering the
+          connector would hit it instead of the invisible hit-circle
+          beneath, splitting hover into yet another inconsistent zone. */}
+      {bulges.length > 1 &&
+        spanningEdges(bulges).map(([a, b], i) => (
+          <line
+            key={`connector-${i}`}
+            x1={a.cx}
+            y1={a.cy}
+            x2={b.cx}
+            y2={b.cy}
+            stroke="currentColor"
+            strokeWidth={glowing ? CONNECTOR_HOVER_WIDTH : CONNECTOR_WIDTH}
+            strokeLinecap="round"
+            className={glowing ? "text-white" : "text-gray-600"}
+            style={{ pointerEvents: "none", transition: "stroke-width 0.4s ease-out, color 0.4s ease-out" }}
+          />
+        ))}
       <path
         className="station-leader-line stroke-white"
         fill="none"
@@ -313,7 +381,7 @@ export function StationMarker({ station, bulges, selected, onSelect }: StationMa
           textAnchor="middle"
           fontSize={FONT_SIZE}
           fontWeight={selected ? 700 : 400}
-          className="fill-white"
+          className="fill-white station-label-text"
         >
           {station.name}
         </text>
