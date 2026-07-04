@@ -6,6 +6,17 @@ import type { Poi } from "./pois";
 export const generatedPoisByStation: Record<string, Poi[]> = {
   "north-avenue": [
     {
+      "name": "El Viñedo Local",
+      "category": "coffee",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ8-AgkXwF9YgRerw_Yj02Fsw",
+      "rating": 4.9,
+      "reviewCount": 7476,
+      "mapsUrl": "https://maps.google.com/?cid=14706001270494182522&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
       "name": "Apotheos Coffee Midtown",
       "category": "coffee",
       "description": "Midtown Atlanta — about a 4-minute walk from the station.",
@@ -28,6 +39,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 10
     },
     {
+      "name": "Tim Hortons",
+      "category": "coffee",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJc2ZlcQAF9YgRd7Pmp1OGTOI",
+      "rating": 4.2,
+      "reviewCount": 280,
+      "mapsUrl": "https://maps.google.com/?cid=16306556044659045239&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
       "name": "Kaldi's Coffee",
       "category": "coffee",
       "description": "Georgia Tech — about a 11-minute walk from the station.",
@@ -39,6 +61,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 11
     },
     {
+      "name": "Land of a Thousand Hills Coffee",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJZ5k4OW8E9YgROS1uk1fIHfE",
+      "rating": 4.3,
+      "reviewCount": 309,
+      "mapsUrl": "https://maps.google.com/?cid=17374263215926422841&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
       "name": "Station 11 coffee",
       "category": "food",
       "description": "Midtown Atlanta — about a 1-minute walk from the station.",
@@ -48,6 +81,83 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=12932411085924983167&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.04,
       "walkMinutes": 1
+    },
+    {
+      "name": "ech Green",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJG0Yc7IkE9YgRsymOdccxfi0",
+      "rating": 4.8,
+      "reviewCount": 288,
+      "mapsUrl": "https://maps.google.com/?cid=3278112311512803763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.62,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Fox Theatre",
+      "category": "sight",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ28DQdm8E9YgRnsZ4YZ94nRo",
+      "rating": 4.7,
+      "reviewCount": 11194,
+      "mapsUrl": "https://maps.google.com/?cid=1917821642260137630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Central Park",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJSdZro3IE9YgRk4PQv80ujHU",
+      "rating": 4.4,
+      "reviewCount": 882,
+      "mapsUrl": "https://maps.google.com/?cid=8470196460398347155&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.67,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Five Iron Golf",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJw6Cg9aIF9YgRpAvuOokth5o",
+      "rating": 4.9,
+      "reviewCount": 474,
+      "mapsUrl": "https://maps.google.com/?cid=11134918671119289252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "El Valle Kitchen & Bar",
+      "category": "drinks",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJA8WxaA8F9YgRYjlJmZJTJf8",
+      "rating": 4.6,
+      "reviewCount": 1308,
+      "mapsUrl": "https://maps.google.com/?cid=18385192942911961442&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.34,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Publik Draft House",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJw23jdm8E9YgRn1HODnsUFxE",
+      "rating": 4.3,
+      "reviewCount": 1672,
+      "mapsUrl": "https://maps.google.com/?cid=1231475541871055263&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Bon Ton",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJIa9sJ2wE9YgRG9lUqCTz5_Y",
+      "rating": 4.3,
+      "reviewCount": 1641,
+      "mapsUrl": "https://maps.google.com/?cid=17791456191718938907&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
     }
   ],
   "midtown": [
@@ -74,6 +184,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 7
     },
     {
+      "name": "Agora Midtown",
+      "category": "coffee",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ72cCokIE9YgR5DgEJCHlGq4",
+      "rating": 4.8,
+      "reviewCount": 2151,
+      "mapsUrl": "https://maps.google.com/?cid=12545591642494875876&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.11,
+      "walkMinutes": 2
+    },
+    {
       "name": "Larakin Wine & Coffee",
       "category": "coffee",
       "description": "Midtown Atlanta — about a 8-minute walk from the station.",
@@ -96,6 +217,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 1
     },
     {
+      "name": "Cypress Street Pint & Plate",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJweczQWYE9YgRvtwgBTj9cUU",
+      "rating": 4.5,
+      "reviewCount": 3681,
+      "mapsUrl": "https://maps.google.com/?cid=5004059078031367358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
       "name": "For Five Coffee Atlanta",
       "category": "coffee",
       "description": "Midtown Atlanta — about a 5-minute walk from the station.",
@@ -107,37 +239,15 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 5
     },
     {
-      "name": "Daydreamer Coffee 859",
+      "name": "Caribou Coffee",
       "category": "coffee",
-      "description": "Midtown Atlanta — about a 5-minute walk from the station.",
-      "placeId": "ChIJT9zIslIF9YgRDkyUb3OQd_Q",
-      "rating": 4.3,
-      "reviewCount": 154,
-      "mapsUrl": "https://maps.google.com/?cid=17615707292950613006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.24,
-      "walkMinutes": 5
-    },
-    {
-      "name": "Spiller Park Coffee 999",
-      "category": "coffee",
-      "description": "Midtown Atlanta — about a 3-minute walk from the station.",
-      "placeId": "ChIJYUb6404F9YgRFzKI2rs9B4U",
-      "rating": 4.2,
-      "reviewCount": 52,
-      "mapsUrl": "https://maps.google.com/?cid=9585698208915927575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.15,
-      "walkMinutes": 3
-    },
-    {
-      "name": "Cafe Lucia 205",
-      "category": "coffee",
-      "description": "Midtown Atlanta — about a 8-minute walk from the station.",
-      "placeId": "ChIJtUV1VXwF9YgRpRcsib7qZnY",
-      "rating": 4,
-      "reviewCount": 452,
-      "mapsUrl": "https://maps.google.com/?cid=8531764648166037413&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.39,
-      "walkMinutes": 8
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJZTDSIEIE9YgRcR8hlIcKy80",
+      "rating": 4.4,
+      "reviewCount": 888,
+      "mapsUrl": "https://maps.google.com/?cid=14828957775469551473&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.33,
+      "walkMinutes": 7
     },
     {
       "name": "Haraz Coffee House",
@@ -151,6 +261,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 3
     },
     {
+      "name": "Tutti Gelati",
+      "category": "treats",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJWd2jUnsF9YgR7U-Arh-jwxo",
+      "rating": 4.6,
+      "reviewCount": 127,
+      "mapsUrl": "https://maps.google.com/?cid=1928564421911662573&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
+    },
+    {
       "name": "Café Intermezzo (Midtown)",
       "category": "treats",
       "description": "Midtown Atlanta — about a 4-minute walk from the station.",
@@ -159,6 +280,127 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "reviewCount": 5943,
       "mapsUrl": "https://maps.google.com/?cid=2132681066176294857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Sweet Hut Bakery & Cafe",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJeXx8Q_R34RQRFF7iKuRsEmA",
+      "rating": 4.5,
+      "reviewCount": 3158,
+      "mapsUrl": "https://maps.google.com/?cid=6922715304449695252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.15,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Tea Leaf and Creamery - Tech Square",
+      "category": "treats",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJ4Z1Wr2EF9YgResS0FiF353s",
+      "rating": 4.4,
+      "reviewCount": 33,
+      "mapsUrl": "https://maps.google.com/?cid=8928235770283869306&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.33,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Dockside",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ2xEu70AE9YgRMLtT6sXyiio",
+      "rating": 4.8,
+      "reviewCount": 67,
+      "mapsUrl": "https://maps.google.com/?cid=3065529428232878896&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.57,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Oak Hill",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJYzymfkAE9YgRJ9G0QjPnhJo",
+      "rating": 4.5,
+      "reviewCount": 51,
+      "mapsUrl": "https://maps.google.com/?cid=11134278386115203367&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Margaret Mitchell House",
+      "category": "sight",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJC26jokIE9YgR4p_yLHsSSBE",
+      "rating": 4.4,
+      "reviewCount": 828,
+      "mapsUrl": "https://maps.google.com/?cid=1245265617212317666&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.11,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Noguchi Playscape",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJM48h3EAE9YgRscsm9V_hM5I",
+      "rating": 4.4,
+      "reviewCount": 115,
+      "mapsUrl": "https://maps.google.com/?cid=10535011755600825265&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.56,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Pop the Cork Wine Tours",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJzT0Vc0ME9YgRdTpSgsPH0E4",
+      "rating": 4.9,
+      "reviewCount": 419,
+      "mapsUrl": "https://maps.google.com/?cid=5679258772633172597&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "MidCity",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJZeNtVGYE9YgReRzu5mFwh0Y",
+      "rating": 4.7,
+      "reviewCount": 358,
+      "mapsUrl": "https://maps.google.com/?cid=5082154270299397241&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "STK Steakhouse",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ07TVp0ME9YgRmzH4SKordbc",
+      "rating": 4.6,
+      "reviewCount": 24461,
+      "mapsUrl": "https://maps.google.com/?cid=13219520291584618907&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Wicked Wolf Atlanta",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ64EOU48F9YgRm7LZKECRw0c",
+      "rating": 4.6,
+      "reviewCount": 1885,
+      "mapsUrl": "https://maps.google.com/?cid=5171136501900751515&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
+    },
+    {
+      "name": "The Steamhouse Lounge",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJWZvjAl0E9YgRX0ojFsIWS9A",
+      "rating": 4.6,
+      "reviewCount": 3762,
+      "mapsUrl": "https://maps.google.com/?cid=15009115205993187935&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.18,
       "walkMinutes": 4
     }
   ],
@@ -172,6 +414,72 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "reviewCount": 39,
       "mapsUrl": "https://maps.google.com/?cid=10004699561596018153&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.18,
+      "walkMinutes": 4
+    },
+    {
+      "name": "National Center for Civil and Human Rights",
+      "category": "sight",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJPRzoQ4AE9YgRqgunUXVptj4",
+      "rating": 4.8,
+      "reviewCount": 3991,
+      "mapsUrl": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Basilica of the Sacred Heart of Jesus",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ2QMhqHAE9YgRwy9ThwZJEwY",
+      "rating": 4.8,
+      "reviewCount": 582,
+      "mapsUrl": "https://maps.google.com/?cid=437773881174077379&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Georgia Aquarium",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
+      "rating": 4.7,
+      "reviewCount": 90015,
+      "mapsUrl": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Pemberton Place",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ44tbZH4E9YgRS8805iQvAoE",
+      "rating": 4.6,
+      "reviewCount": 16999,
+      "mapsUrl": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Hardy Ivy Park",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJh_yak3kE9YgRMGNnqoCT7uo",
+      "rating": 4.3,
+      "reviewCount": 78,
+      "mapsUrl": "https://maps.google.com/?cid=16928630230156272432&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Max Lager's Wood-Fired Grill & Brewery",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ6V-08HkE9YgRvZopWFm3U4w",
+      "rating": 4.3,
+      "reviewCount": 2205,
+      "mapsUrl": "https://maps.google.com/?cid=10111627182735989437&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
       "walkMinutes": 4
     }
   ],
@@ -197,6 +505,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=8762581880231877314&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.34,
       "walkMinutes": 7
+    },
+    {
+      "name": "MetroFresh Uptown",
+      "category": "coffee",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJh6KTG-4F9YgRIFU4fTN0ubw",
+      "rating": 4.7,
+      "reviewCount": 64,
+      "mapsUrl": "https://maps.google.com/?cid=13599028314314921248&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
     },
     {
       "name": "Refuge Coffee Co. 1280",
@@ -232,6 +551,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 1
     },
     {
+      "name": "Toastique",
+      "category": "coffee",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJS-G9xzIF9YgRwRFjVeSBLSU",
+      "rating": 4.3,
+      "reviewCount": 197,
+      "mapsUrl": "https://maps.google.com/?cid=2678940171040395713&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
+    },
+    {
       "name": "Pom Court",
       "category": "coffee",
       "description": "Midtown Atlanta — about a 2-minute walk from the station.",
@@ -241,17 +571,6 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=9440276727366788769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.09,
       "walkMinutes": 2
-    },
-    {
-      "name": "illy Atlantic Station",
-      "category": "coffee",
-      "description": "Atlantic Station — about a 12-minute walk from the station.",
-      "placeId": "ChIJoSaYhVsF9YgRyp2NMaphkLQ",
-      "rating": 4.1,
-      "reviewCount": 278,
-      "mapsUrl": "https://maps.google.com/?cid=13011006707077062090&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.61,
-      "walkMinutes": 12
     },
     {
       "name": "White Windmill Bakery and Cafe 1331",
@@ -265,15 +584,48 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 3
     },
     {
-      "name": "The Lazy Llama Coffeehouse - Atlantic Station",
+      "name": "Yonutz Donuts and Ice Cream - Atlantic Station, Atlanta",
       "category": "treats",
-      "description": "Atlantic Station — about a 13-minute walk from the station.",
-      "placeId": "ChIJJREkShEF9YgRLqXRjk5QsV8",
-      "rating": 4.1,
-      "reviewCount": 234,
-      "mapsUrl": "https://maps.google.com/?cid=6895380802814715182&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.65,
-      "walkMinutes": 13
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ3Z9MQsQF9YgRkBYKDh42iYg",
+      "rating": 4.7,
+      "reviewCount": 338,
+      "mapsUrl": "https://maps.google.com/?cid=9838454363680020112&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.56,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Cupcakin’ Bake Shop",
+      "category": "treats",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJfTJRDgAF9YgR1nJL9pZoq_A",
+      "rating": 4.7,
+      "reviewCount": 119,
+      "mapsUrl": "https://maps.google.com/?cid=17342069787706749654&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Fit for a Cookie",
+      "category": "treats",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJf4pDSTMF9YgRyNqeaTO1bCI",
+      "rating": 4.5,
+      "reviewCount": 160,
+      "mapsUrl": "https://maps.google.com/?cid=2480556727194278600&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Whole Foods Market",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ8xL51kwF9YgRrTycvSHW0AQ",
+      "rating": 4.4,
+      "reviewCount": 1733,
+      "mapsUrl": "https://maps.google.com/?cid=347012611710925997&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
     },
     {
       "name": "E+ROSE Wellness Cafe (Midtown)",
@@ -309,6 +661,83 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 4
     },
     {
+      "name": "Center For Puppetry Arts",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ4fRXllAE9YgR6nR6SZWzinI",
+      "rating": 4.8,
+      "reviewCount": 3072,
+      "mapsUrl": "https://maps.google.com/?cid=8253606720874116330&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Woodruff Arts Center",
+      "category": "sight",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJf8bUMEUE9YgRI5s3hH594AY",
+      "rating": 4.8,
+      "reviewCount": 6293,
+      "mapsUrl": "https://maps.google.com/?cid=495533941348342563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.15,
+      "walkMinutes": 3
+    },
+    {
+      "name": "High Museum of Art",
+      "category": "sight",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJf8bUMEUE9YgR8nttKmmxaPc",
+      "rating": 4.7,
+      "reviewCount": 5981,
+      "mapsUrl": "https://maps.google.com/?cid=17827694190187609074&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "SCAD FASH Museum of Fashion + Film",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJIVjqs1YE9YgRfgvJt5hT5vI",
+      "rating": 4.7,
+      "reviewCount": 565,
+      "mapsUrl": "https://maps.google.com/?cid=17502768917205551998&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.56,
+      "walkMinutes": 11
+    },
+    {
+      "name": "The Breman Museum & Cultural Center",
+      "category": "sight",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJrWtL6lAE9YgRQ2CYdWX6Mko",
+      "rating": 4.7,
+      "reviewCount": 220,
+      "mapsUrl": "https://maps.google.com/?cid=5346611021313761347&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.37,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Boqueria Colony Sqaure",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJRVJQrCQF9YgRk5HPTo_VOok",
+      "rating": 4.8,
+      "reviewCount": 3034,
+      "mapsUrl": "https://maps.google.com/?cid=9888450743324610963&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.25,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Divan Restaurant & Bar",
+      "category": "drinks",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJkf88G_QF9YgR-HGS9W9T_Uc",
+      "rating": 4.7,
+      "reviewCount": 5160,
+      "mapsUrl": "https://maps.google.com/?cid=5187394086127170040&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.17,
+      "walkMinutes": 3
+    },
+    {
       "name": "Saints + Council",
       "category": "drinks",
       "description": "Midtown Atlanta — about a 5-minute walk from the station.",
@@ -317,6 +746,28 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "reviewCount": 1729,
       "mapsUrl": "https://maps.google.com/?cid=17170573419377744429&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Holeman and Finch",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ3ah6xKUF9YgR3Vw6bx3elhM",
+      "rating": 4.4,
+      "reviewCount": 1091,
+      "mapsUrl": "https://maps.google.com/?cid=1411559751228742877&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "McCray's Tavern",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJNwFLfVsE9YgRrkOBaigMzhI",
+      "rating": 4.3,
+      "reviewCount": 1968,
+      "mapsUrl": "https://maps.google.com/?cid=1355033905610179502&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.23,
       "walkMinutes": 5
     }
   ],
@@ -331,6 +782,39 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=18066513184239762737&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.05,
       "walkMinutes": 1
+    },
+    {
+      "name": "ChéRené Macarons",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJO-pD51EVQSoRivzqqYWaGHU",
+      "rating": 5,
+      "reviewCount": 65,
+      "mapsUrl": "https://maps.google.com/?cid=8437663800750701706&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Flaky Not Flaky - Bake Shoppe and Chocolatarium",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ6adt8slWNa4R111cnkKFr0c",
+      "rating": 4.9,
+      "reviewCount": 157,
+      "mapsUrl": "https://maps.google.com/?cid=5165493818788437463&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Scoops@Peachtree",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ9U7gfLIF9YgR-TAqmARZr6A",
+      "rating": 4.6,
+      "reviewCount": 119,
+      "mapsUrl": "https://maps.google.com/?cid=11578571043260477689&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
     },
     {
       "name": "Hansel & Gretel Bakery Cafe",
@@ -364,6 +848,116 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=178160367801274318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.01,
       "walkMinutes": 1
+    },
+    {
+      "name": "Time to Escape - Atlanta Escape Room (Downtown)",
+      "category": "sight",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJjz9mrs8F9YgRWI7RwDGPyuM",
+      "rating": 4.9,
+      "reviewCount": 1347,
+      "mapsUrl": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Olympic Rings",
+      "category": "sight",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJZzw65N4F9YgRr2rDa-nYA4o",
+      "rating": 4.7,
+      "reviewCount": 250,
+      "mapsUrl": "https://maps.google.com/?cid=9945030899211135663&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Apex Museum",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJp3TRAYkD9YgROwWFdqNufKg",
+      "rating": 4.7,
+      "reviewCount": 631,
+      "mapsUrl": "https://maps.google.com/?cid=12140700343831168315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Centennial Olympic Park",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJIRYhpn8E9YgRWy0NPvzLU1M",
+      "rating": 4.6,
+      "reviewCount": 15740,
+      "mapsUrl": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.32,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Fountain of Rings",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJCfa3b38E9YgRXnmklq2U9OI",
+      "rating": 4.6,
+      "reviewCount": 497,
+      "mapsUrl": "https://maps.google.com/?cid=16353859620166728030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Tin Lizzy's Cantina",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJEQGwSHgE9YgRMW1WQIpsLZQ",
+      "rating": 4.8,
+      "reviewCount": 9787,
+      "mapsUrl": "https://maps.google.com/?cid=10677309632606006577&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Atalian Kitchen & Bar",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJD8nPll4F9YgRljdGdCq69Io",
+      "rating": 4.7,
+      "reviewCount": 1202,
+      "mapsUrl": "https://maps.google.com/?cid=10012832563053606806&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.1,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Ray's In the City",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJww40UHgE9YgR66AJn9YJKuE",
+      "rating": 4.6,
+      "reviewCount": 6741,
+      "mapsUrl": "https://maps.google.com/?cid=16224791424951492843&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.06,
+      "walkMinutes": 1
+    },
+    {
+      "name": "By George restaurant and bar",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ_____4YD9YgRBC9cOztOyPI",
+      "rating": 4.6,
+      "reviewCount": 1240,
+      "mapsUrl": "https://maps.google.com/?cid=17494318768826625796&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Red Phone Booth",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJxXZfE3gE9YgR1RyIwQQbJsc",
+      "rating": 4.6,
+      "reviewCount": 2781,
+      "mapsUrl": "https://maps.google.com/?cid=14350186969903406293&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
     }
   ],
   "five-points": [
@@ -377,6 +971,28 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=6629035335806558327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.12,
       "walkMinutes": 2
+    },
+    {
+      "name": "Stir House Atlanta",
+      "category": "coffee",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJzQX3rp0D9YgRyY3IHZOXU9Q",
+      "rating": 4.8,
+      "reviewCount": 473,
+      "mapsUrl": "https://maps.google.com/?cid=15299739017223376329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Spiller Park Coffee \"SP4\"",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJq3USBWUD9YgRC_I9kFs9HyA",
+      "rating": 4.7,
+      "reviewCount": 104,
+      "mapsUrl": "https://maps.google.com/?cid=2314636196963021323&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.23,
+      "walkMinutes": 5
     },
     {
       "name": "Common Ground Coffee Shop",
@@ -399,9 +1015,119 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=15417246610476836533&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.16,
       "walkMinutes": 3
+    },
+    {
+      "name": "Anatolia Cafe & Hookah Lounge",
+      "category": "coffee",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJnyuq_IYD9YgRWipcravXCis",
+      "rating": 4.3,
+      "reviewCount": 1569,
+      "mapsUrl": "https://maps.google.com/?cid=3101528425745885786&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.16,
+      "walkMinutes": 3
+    },
+    {
+      "name": "eighty7sweets Vegan Ice Cream Company",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJ31HaOxQD9YgRnrkUCPpaPlA",
+      "rating": 5,
+      "reviewCount": 1634,
+      "mapsUrl": "https://maps.google.com/?cid=5782159001514195358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.17,
+      "walkMinutes": 3
+    },
+    {
+      "name": "The Junction",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJw-0B04MD9YgRJ_ou1r8XK9Y",
+      "rating": 4.9,
+      "reviewCount": 186,
+      "mapsUrl": "https://maps.google.com/?cid=15432454660814731815&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Mocha Pops",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJPbtrybID9YgRBm-ezg07I2A",
+      "rating": 4.8,
+      "reviewCount": 57,
+      "mapsUrl": "https://maps.google.com/?cid=6927445582313058054&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Sweet Red Peach",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJD8f9QmsD9YgRvrWPUlFjZms",
+      "rating": 4.5,
+      "reviewCount": 96,
+      "mapsUrl": "https://maps.google.com/?cid=7738982210611426750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.17,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Spin Art Splatter Paint, Rage Room & Game Show (Atlanta)",
+      "category": "sight",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJL0x7RGkD9YgRzO7lINfMItc",
+      "rating": 4.9,
+      "reviewCount": 996,
+      "mapsUrl": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.16,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Fairlie-Poplar District",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJg76e0oAD9YgR5jnuWHpNH8Y",
+      "rating": 4.3,
+      "reviewCount": 3025,
+      "mapsUrl": "https://maps.google.com/?cid=14276214531661117926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Bottle Rocket Fine Food and Beverage",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJJQEcinkD9YgRw46X2vrQ7rA",
+      "rating": 4.5,
+      "reviewCount": 423,
+      "mapsUrl": "https://maps.google.com/?cid=12749357370960219843&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "SkyLounge",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ5ZJt8oAD9YgRw48stKhDRy8",
+      "rating": 4.3,
+      "reviewCount": 914,
+      "mapsUrl": "https://maps.google.com/?cid=3406766034985455555&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.23,
+      "walkMinutes": 5
     }
   ],
   "king-memorial": [
+    {
+      "name": "Havana Cigars",
+      "category": "coffee",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJr8cp04oD9YgRgL2zpAphUqA",
+      "rating": 4.9,
+      "reviewCount": 305,
+      "mapsUrl": "https://maps.google.com/?cid=11552402692499553664&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.41,
+      "walkMinutes": 8
+    },
     {
       "name": "Coffee Was Black (CWB)",
       "category": "coffee",
@@ -412,6 +1138,28 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=5788160079961660650&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.4,
       "walkMinutes": 8
+    },
+    {
+      "name": "Lottafrutta",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJOx5LRvYD9YgRWscxApUCkJw",
+      "rating": 4.8,
+      "reviewCount": 727,
+      "mapsUrl": "https://maps.google.com/?cid=11281519905573291866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "O4W Market",
+      "category": "coffee",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJL6KLamoD9YgRXq-mTnb6x_s",
+      "rating": 4.8,
+      "reviewCount": 154,
+      "mapsUrl": "https://maps.google.com/?cid=18142745009917964126&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
     },
     {
       "name": "Chrome Yellow Trading Co.",
@@ -434,9 +1182,207 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "Condesa Coffee",
       "distanceMiles": 0.72,
       "walkMinutes": 14
+    },
+    {
+      "name": "Carroll Street Cafe",
+      "category": "coffee",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJNQI7pvED9YgRElt2Lg7xRa4",
+      "rating": 4.5,
+      "reviewCount": 1376,
+      "mapsUrl": "https://maps.google.com/?cid=12557708179203840786&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.46,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Grant Park Market",
+      "category": "coffee",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJUw_q8O0D9YgRq5yFELdvDjw",
+      "rating": 4.5,
+      "reviewCount": 499,
+      "mapsUrl": "https://maps.google.com/?cid=4327519123996515499&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.37,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Consume and Confess",
+      "category": "treats",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJS4gW_QJZ9IgR2pDn2zwAfuk",
+      "rating": 5,
+      "reviewCount": 176,
+      "mapsUrl": "https://maps.google.com/?cid=16824885519290175706&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "IVY'S HEAVENLY COBBLER",
+      "category": "treats",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJX2NK9xoD9YgRdhu4OZqCS_c",
+      "rating": 4.8,
+      "reviewCount": 56,
+      "mapsUrl": "https://maps.google.com/?cid=17819479949526440822&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.54,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Sweet Auburn Bread Company",
+      "category": "treats",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJb_NtgYkD9YgRJ9P75L1pwSk",
+      "rating": 4.7,
+      "reviewCount": 49,
+      "mapsUrl": "https://maps.google.com/?cid=3008802290371646247&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.47,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Staplehouse",
+      "category": "treats",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ60IsnfYD9YgRtc0ykonQYd0",
+      "rating": 4.7,
+      "reviewCount": 709,
+      "mapsUrl": "https://maps.google.com/?cid=15952260644404907445&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.45,
+      "walkMinutes": 9
+    },
+    {
+      "name": "The Little Tart Bakeshop",
+      "category": "treats",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJST77ee0D9YgRW_bpabTN9V8",
+      "rating": 4.6,
+      "reviewCount": 741,
+      "mapsUrl": "https://maps.google.com/?cid=6914658977652012635&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Forward, Warrior!! Mural Project",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJOf-zqvAD9YgRv1Bu1i60Ijg",
+      "rating": 5,
+      "reviewCount": 45,
+      "mapsUrl": "https://maps.google.com/?cid=4044993528591175871&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.65,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Martin Luther King, Jr. National Historical Park",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJV1BRyvUD9YgREE_OCsyMEBw",
+      "rating": 4.8,
+      "reviewCount": 11661,
+      "mapsUrl": "https://maps.google.com/?cid=2022271040671862544&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Ebenezer Baptist Church",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJYRxwmgoE9YgRX5K-_PX-N30",
+      "rating": 4.8,
+      "reviewCount": 1299,
+      "mapsUrl": "https://maps.google.com/?cid=9022960710920868447&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "The King Center",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJV1BRyvUD9YgRm1iUp6tkWVA",
+      "rating": 4.8,
+      "reviewCount": 2481,
+      "mapsUrl": "https://maps.google.com/?cid=5789769484375185563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Our Lady of Lourdes Catholic Church",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ37za2-kD9YgRKaMkK-krHjI",
+      "rating": 4.8,
+      "reviewCount": 248,
+      "mapsUrl": "https://maps.google.com/?cid=3611372231648912169&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Miss Conduck",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJV_Z8bT8D9YgR4ZsWJaDwgs8",
+      "rating": 4.9,
+      "reviewCount": 1993,
+      "mapsUrl": "https://maps.google.com/?cid=14952778283431140321&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Eclipse di Luna - Beltline",
+      "category": "drinks",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJcWEfaikD9YgR79HonWhc9Iw",
+      "rating": 4.9,
+      "reviewCount": 2040,
+      "mapsUrl": "https://maps.google.com/?cid=10156844664022946287&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.73,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Our Bar ATL",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJNxuVRfED9YgRmzlCKsPpZsw",
+      "rating": 4.8,
+      "reviewCount": 665,
+      "mapsUrl": "https://maps.google.com/?cid=14728716655798663579&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Lore",
+      "category": "drinks",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJE1iy5HID9YgRVrZvtvqRVxI",
+      "rating": 4.8,
+      "reviewCount": 169,
+      "mapsUrl": "https://maps.google.com/?cid=1321685521645155926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.37,
+      "walkMinutes": 7
+    },
+    {
+      "name": "42 Bar and Grill",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJUc_4epQD9YgRxgLj2hzs_gY",
+      "rating": 4.6,
+      "reviewCount": 629,
+      "mapsUrl": "https://maps.google.com/?cid=504099816987624134&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.23,
+      "walkMinutes": 5
     }
   ],
   "east-point": [
+    {
+      "name": "D'essence Cafe",
+      "category": "coffee",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJDV1VJ1b99IgRJMUTL4Za-qs",
+      "rating": 4.5,
+      "reviewCount": 487,
+      "mapsUrl": "https://maps.google.com/?cid=12392316857025283364&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    },
     {
       "name": "Mocha Delites (East Point)",
       "category": "coffee",
@@ -458,9 +1404,97 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=1706409605361935811&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.12,
       "walkMinutes": 2
+    },
+    {
+      "name": "Baked Wright Bakery",
+      "category": "treats",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJh4T_m4Hj9IgRuYTPmpuZtTU",
+      "rating": 4.6,
+      "reviewCount": 57,
+      "mapsUrl": "https://maps.google.com/?cid=3870168348391081145&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Lord Yatta Arte- Tattoo Artist",
+      "category": "sight",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJQbLLoVMd9YgRft85-ThDxY8",
+      "rating": 5,
+      "reviewCount": 47,
+      "mapsUrl": "https://maps.google.com/?cid=10359760429814243198&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.09,
+      "walkMinutes": 2
+    },
+    {
+      "name": "John D. Milner Athletic Complex",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJpYBMGKoC9YgRi_pcQnjRjfA",
+      "rating": 4.4,
+      "reviewCount": 144,
+      "mapsUrl": "https://maps.google.com/?cid=17333740855258577547&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Arches Brewing",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ61IfWmT99IgRwH3hzwm8cug",
+      "rating": 4.8,
+      "reviewCount": 308,
+      "mapsUrl": "https://maps.google.com/?cid=16749656714472684992&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Atlanta Utility Works",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJzXJOTKsC9YgRqshUEoHChQ8",
+      "rating": 4.5,
+      "reviewCount": 67,
+      "mapsUrl": "https://maps.google.com/?cid=1118513942085552298&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Chairs Upstairs Bar and Restaurant",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJQ_C0BlMd9YgRi65y2-CEoNk",
+      "rating": 4.3,
+      "reviewCount": 1429,
+      "mapsUrl": "https://maps.google.com/?cid=15681680003793333899&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Eat My Biscuits",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ0x8qH7Ad9YgRoYENRDYyKC4",
+      "rating": 4.3,
+      "reviewCount": 653,
+      "mapsUrl": "https://maps.google.com/?cid=3325963533464469921&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
     }
   ],
   "chamblee": [
+    {
+      "name": "Maomi Bookstore",
+      "category": "coffee",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJPU1BWLIJ9YgR9Iuh0C1sJHw",
+      "rating": 5,
+      "reviewCount": 101,
+      "mapsUrl": "https://maps.google.com/?cid=8945393703894223860&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
     {
       "name": "Kin Coffee Co.",
       "category": "coffee",
@@ -495,6 +1529,28 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 13
     },
     {
+      "name": "Digibites FoodHub",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJuzt0J1oJ9YgRozkZBvyy7WE",
+      "rating": 4.7,
+      "reviewCount": 209,
+      "mapsUrl": "https://maps.google.com/?cid=7056492986663254435&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "ZenTea",
+      "category": "coffee",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJGe8bhK0J9YgRwu6ypI0azKY",
+      "rating": 4.7,
+      "reviewCount": 372,
+      "mapsUrl": "https://maps.google.com/?cid=12019010701200912066&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.32,
+      "walkMinutes": 6
+    },
+    {
       "name": "Choice Coffee Co",
       "category": "coffee",
       "description": "About a 11-minute walk from the station.",
@@ -515,17 +1571,6 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "Google Maps",
       "distanceMiles": 0.73,
       "walkMinutes": 15
-    },
-    {
-      "name": "Block & Drum",
-      "category": "coffee",
-      "description": "About a 8-minute walk from the station.",
-      "placeId": "ChIJgRWLPi8J9YgR7R72Jmnlvk0",
-      "rating": 4.4,
-      "reviewCount": 132,
-      "mapsUrl": "https://maps.google.com/?cid=5602167226283466477&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.39,
-      "walkMinutes": 8
     },
     {
       "name": "Family Baking / Rolls Village",
@@ -550,6 +1595,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 10
     },
     {
+      "name": "Frosty Caboose",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ0b36JbIJ9YgRKLE3tSfzhEU",
+      "rating": 4.7,
+      "reviewCount": 1091,
+      "mapsUrl": "https://maps.google.com/?cid=5009396037412434216&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
       "name": "Laylo Cafe",
       "category": "treats",
       "description": "About a 8-minute walk from the station.",
@@ -561,15 +1617,15 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 8
     },
     {
-      "name": "The Bronx Bagel Buggy",
+      "name": "Whole Foods Market",
       "category": "treats",
-      "description": "About a 13-minute walk from the station.",
-      "placeId": "ChIJOZKp87EJ9YgR0KConhmt-xs",
-      "rating": 4.3,
-      "reviewCount": 478,
-      "mapsUrl": "https://maps.google.com/?cid=2016395583726067920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.65,
-      "walkMinutes": 13
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJhRzyDf8I9YgRV0fVltpqTug",
+      "rating": 4.4,
+      "reviewCount": 1852,
+      "mapsUrl": "https://maps.google.com/?cid=16739434352048686935&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.54,
+      "walkMinutes": 11
     },
     {
       "name": "LiveWire Coffee Pop-Up",
@@ -581,6 +1637,105 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=15406653965001529114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.7,
       "walkMinutes": 14
+    },
+    {
+      "name": "Simple Finds Consignment Designer Outlet Mall",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJybXI_K4J9YgRw0h--wz61eg",
+      "rating": 4.6,
+      "reviewCount": 372,
+      "mapsUrl": "https://maps.google.com/?cid=16777590920504559811&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.58,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Keswick Baseball & Softball Field",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJQ4y8NQAJ9YgR5RJ_5uS71w4",
+      "rating": 4.5,
+      "reviewCount": 43,
+      "mapsUrl": "https://maps.google.com/?cid=1069530028317807333&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Village Park",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJZXj5x7MJ9YgRxbgZ8UMZKZc",
+      "rating": 4.4,
+      "reviewCount": 28,
+      "mapsUrl": "https://maps.google.com/?cid=10892264953370753221&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Clairmont Park",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJ70yYVFYI9YgR7ytYpq6YVLA",
+      "rating": 4.4,
+      "reviewCount": 34,
+      "mapsUrl": "https://maps.google.com/?cid=12705948324601539567&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Brews & Hops Taproom",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJGTaB54UJ9YgRNzqqbASPauw",
+      "rating": 5,
+      "reviewCount": 100,
+      "mapsUrl": "https://maps.google.com/?cid=17035585789648058935&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.32,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Contrast Artisan Ales - Chamblee",
+      "category": "drinks",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJNfxTooQJ9YgRgEFgFv9ftC0",
+      "rating": 4.9,
+      "reviewCount": 216,
+      "mapsUrl": "https://maps.google.com/?cid=3293362776711381376&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.68,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Blinq Lashes and Brows",
+      "category": "drinks",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJey2qYYkJ9YgRJgkVbz1H-U0",
+      "rating": 4.9,
+      "reviewCount": 109,
+      "mapsUrl": "https://maps.google.com/?cid=5618600339303631142&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.16,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Atlanta Golf & Social | Chamblee",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJyfDosAQJ9YgRud4FNZcrTEA",
+      "rating": 4.8,
+      "reviewCount": 100,
+      "mapsUrl": "https://maps.google.com/?cid=4633126045087030969&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Hopstix",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ1yfzC60J9YgROD3uaEIhcTM",
+      "rating": 4.7,
+      "reviewCount": 1137,
+      "mapsUrl": "https://maps.google.com/?cid=3706780537414630712&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
     }
   ],
   "college-park": [
@@ -594,6 +1749,50 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=3217754667669080309&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.14,
       "walkMinutes": 3
+    },
+    {
+      "name": "Bakes by Drae",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJP7UhUADj9IgR_HALON3k_aA",
+      "rating": 4.9,
+      "reviewCount": 94,
+      "mapsUrl": "https://maps.google.com/?cid=11600679853955444988&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Richard D. Zupp Park",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJV6W-n7Pi9IgRsBilL0b5dAo",
+      "rating": 4.5,
+      "reviewCount": 328,
+      "mapsUrl": "https://maps.google.com/?cid=753501117520091312&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.55,
+      "walkMinutes": 11
+    },
+    {
+      "name": "The Manchester Arms",
+      "category": "drinks",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJc_1o6rHi9IgRud_weQj5Ybs",
+      "rating": 4.5,
+      "reviewCount": 1242,
+      "mapsUrl": "https://maps.google.com/?cid=13502346972634341305&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Nouveau Bar & Grill",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJWwR2L-Pj9IgRJRi4JLMU6Ig",
+      "rating": 4.3,
+      "reviewCount": 3905,
+      "mapsUrl": "https://maps.google.com/?cid=9865157743402817573&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
     }
   ],
   "dunwoody": [
@@ -620,6 +1819,61 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 8
     },
     {
+      "name": "Barnes & Noble",
+      "category": "coffee",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJRV2ZvFsJ9YgRKqdf3k4E_L4",
+      "rating": 4.6,
+      "reviewCount": 1589,
+      "mapsUrl": "https://maps.google.com/?cid=13761879298122164010&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.35,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Snooze, an A.M. Eatery",
+      "category": "coffee",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJMeYeHq0J9YgR_LoK7IEXOP4",
+      "rating": 4.6,
+      "reviewCount": 878,
+      "mapsUrl": "https://maps.google.com/?cid=18318417331107838716&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.64,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Ben & Jerry’s",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJR4DVfdQJ9YgR1IHaNn6U3hE",
+      "rating": 4.9,
+      "reviewCount": 943,
+      "mapsUrl": "https://maps.google.com/?cid=1287629813281620436&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Sugar Shane’s",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJCQAfPvUJ9YgRyJFCsHprAOo",
+      "rating": 4.8,
+      "reviewCount": 509,
+      "mapsUrl": "https://maps.google.com/?cid=16861595179562471880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Publix Super Market at Perimeter",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJG54DsEwJ9YgRXklGEPYO8NA",
+      "rating": 4.4,
+      "reviewCount": 2899,
+      "mapsUrl": "https://maps.google.com/?cid=15055550004297353566&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
       "name": "Café Intermezzo (Sandy Springs)",
       "category": "treats",
       "description": "Perimeter Center — about a 11-minute walk from the station.",
@@ -640,6 +1894,72 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=7328761383109369158&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.21,
       "walkMinutes": 4
+    },
+    {
+      "name": "Ravinia Gardens",
+      "category": "sight",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJhxZICEMJ9YgRR2BDSPs1nSY",
+      "rating": 4.6,
+      "reviewCount": 59,
+      "mapsUrl": "https://maps.google.com/?cid=2782439498150273095&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Kruathai Thai Kitchen & Craft Bar",
+      "category": "drinks",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJO7WUKvYJ9YgR0tyZpCG2zoQ",
+      "rating": 5,
+      "reviewCount": 197,
+      "mapsUrl": "https://maps.google.com/?cid=9569786513820605650&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.15,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Puttshack - Atlanta - Dunwoody",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJqxTAGQAJ9YgRdB00qdgRhRk",
+      "rating": 4.8,
+      "reviewCount": 1097,
+      "mapsUrl": "https://maps.google.com/?cid=1838895645100088692&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Agave Bandido",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJowbsOicJ9YgRgk9ofjG1otg",
+      "rating": 4.7,
+      "reviewCount": 2259,
+      "mapsUrl": "https://maps.google.com/?cid=15610238482598350722&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Fleming’s Prime Steakhouse & Wine Bar",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ89DnD1oJ9YgR6c_b0BAU4t0",
+      "rating": 4.7,
+      "reviewCount": 2066,
+      "mapsUrl": "https://maps.google.com/?cid=15988363689574780905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Maya Speak-Tiki",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJQX3rylEJ9YgR_kcgqb9vu6c",
+      "rating": 4.7,
+      "reviewCount": 133,
+      "mapsUrl": "https://maps.google.com/?cid=12086376893945759742&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
     }
   ],
   "doraville": [
@@ -664,6 +1984,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=14449522809505132608&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.62,
       "walkMinutes": 12
+    },
+    {
+      "name": "Kung Fu Tea",
+      "category": "coffee",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJcVdbFX-V9YgRWxfd_hAguQQ",
+      "rating": 4.4,
+      "reviewCount": 964,
+      "mapsUrl": "https://maps.google.com/?cid=340338504210650971&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
     },
     {
       "name": "Common Coffee & Cocktails",
@@ -699,15 +2030,136 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 12
     },
     {
-      "name": "Mozart Bakery & Cafe (Doraville)",
+      "name": "ICENY Ice Cream",
       "category": "treats",
-      "description": "About a 9-minute walk from the station.",
-      "placeId": "ChIJ1w1o388J9YgRJQo8_sYxWyk",
-      "rating": 4.2,
-      "reviewCount": 388,
-      "mapsUrl": "https://maps.google.com/?cid=2980030309174348325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.43,
-      "walkMinutes": 9
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJKTBujs4J9YgR97Jl2IH03xk",
+      "rating": 4.8,
+      "reviewCount": 626,
+      "mapsUrl": "https://maps.google.com/?cid=1864477609273176823&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.67,
+      "walkMinutes": 13
+    },
+    {
+      "name": "P N Rice Cake House 풍년떡,밑반찬 전문점",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJZxOSwc8J9YgRORMOoQHdV5Q",
+      "rating": 4.8,
+      "reviewCount": 110,
+      "mapsUrl": "https://maps.google.com/?cid=10689255239653921593&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Yaki Yaki Waffles & Beverages",
+      "category": "treats",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJo1L4YZoJ9YgRrJ1fKJSfpGo",
+      "rating": 4.8,
+      "reviewCount": 64,
+      "mapsUrl": "https://maps.google.com/?cid=7684442322882239916&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.54,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Atlanta Glassblowing",
+      "category": "sight",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJw7bK28sJ9YgRCacxfsDhZHQ",
+      "rating": 5,
+      "reviewCount": 83,
+      "mapsUrl": "https://maps.google.com/?cid=8387076622937859849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.35,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Exhibition Hub Art Center Atlanta",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJ0zG7YhcJ9YgR6XDZKl2rSyE",
+      "rating": 4.8,
+      "reviewCount": 1359,
+      "mapsUrl": "https://maps.google.com/?cid=2399199643144122601&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Tutankhamun: His tomb and his treasures",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJNVHGOm4J9YgR0YDvXbHYhbg",
+      "rating": 4.8,
+      "reviewCount": 406,
+      "mapsUrl": "https://maps.google.com/?cid=13296271731178045649&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Claw Studio Arcade",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJgTu8NXYJ9YgRFQDvBJInN6s",
+      "rating": 4.6,
+      "reviewCount": 64,
+      "mapsUrl": "https://maps.google.com/?cid=12337373212306243605&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.51,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Dinoverse - Atlanta",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJAc6evGMJ9YgRJhk8ICGCP54",
+      "rating": 4.5,
+      "reviewCount": 27,
+      "mapsUrl": "https://maps.google.com/?cid=11402975860311726374&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "4o4 Esports",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ4z_K-bEJ9YgRIc1YgERsf9E",
+      "rating": 4.9,
+      "reviewCount": 258,
+      "mapsUrl": "https://maps.google.com/?cid=15095903517436071201&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.56,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Pelicana Chicken",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJwRL2wuQJ9YgRvYd4pvGZi3M",
+      "rating": 4.8,
+      "reviewCount": 673,
+      "mapsUrl": "https://maps.google.com/?cid=8325917599283578813&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
+    {
+      "name": "MICS Karaoke",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJAWFhoJMJ9YgRKDPn7dURPQY",
+      "rating": 4.5,
+      "reviewCount": 1358,
+      "mapsUrl": "https://maps.google.com/?cid=449535148323975976&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Sapphire Karaoke & Restaurant",
+      "category": "drinks",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJZSQje6IJ9YgRB-Z7An8_Log",
+      "rating": 4.5,
+      "reviewCount": 107,
+      "mapsUrl": "https://maps.google.com/?cid=9812850452821960199&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
     }
   ],
   "sandy-springs": [
@@ -723,6 +2175,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 4
     },
     {
+      "name": "The Juice Lady Atl",
+      "category": "coffee",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJUewQFNlK7G0RS4-k1IupzFI",
+      "rating": 4.9,
+      "reviewCount": 280,
+      "mapsUrl": "https://maps.google.com/?cid=5966330024392167243&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    },
+    {
       "name": "Foxtail Coffee (Ashford Lane)",
       "category": "coffee",
       "description": "Perimeter Center — about a 10-minute walk from the station.",
@@ -734,18 +2197,150 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 10
     },
     {
-      "name": "Bagel Boys Cafe (Sandy Springs)",
+      "name": "Chicken Salad Chick",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJYTljpX4J9YgRxf1SCXF9nrE",
+      "rating": 4.2,
+      "reviewCount": 228,
+      "mapsUrl": "https://maps.google.com/?cid=12798805115474738629&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Makeda's Cookies - Sandy Springs",
       "category": "treats",
-      "description": "Perimeter Center — about a 4-minute walk from the station.",
-      "placeId": "ChIJ3-qNe1MJ9YgRcgVaBvoNc8A",
-      "rating": 4.3,
-      "reviewCount": 580,
-      "mapsUrl": "https://maps.google.com/?cid=13867443045103437170&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.2,
-      "walkMinutes": 4
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJKcIa5YwP9YgR450X58tPHVo",
+      "rating": 4.8,
+      "reviewCount": 39,
+      "mapsUrl": "https://maps.google.com/?cid=6493433974912163299&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.58,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Yaba's Bagels",
+      "category": "treats",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJoXhYKcYL9YgRJytmkbWJRQ8",
+      "rating": 4.7,
+      "reviewCount": 255,
+      "mapsUrl": "https://maps.google.com/?cid=1100437096883432231&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.73,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Paris Baguette",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJzTFaJ34J9YgRotIldyvgwcw",
+      "rating": 4.6,
+      "reviewCount": 733,
+      "mapsUrl": "https://maps.google.com/?cid=14754320331529638562&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Tiff's Treats Cookie Delivery",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJN7l5VVEJ9YgRvqsgJXQH-Xc",
+      "rating": 4.6,
+      "reviewCount": 242,
+      "mapsUrl": "https://maps.google.com/?cid=8644949155134876606&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Sweet Spot Cookies (Atlanta/Perimeter)",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJPf14ZgAJ9YgRknL2k712rdo",
+      "rating": 4.6,
+      "reviewCount": 107,
+      "mapsUrl": "https://maps.google.com/?cid=15757381227842531986&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Game Show Battle Rooms - Atlanta (Dunwoody)",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJxUSiIIsJ9YgRSfGWV6GmWGg",
+      "rating": 5,
+      "reviewCount": 15873,
+      "mapsUrl": "https://maps.google.com/?cid=7518942789784498505&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Politan Row at Ashford Lane",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJF47Vn-YJ9YgR9tzyqN5zIX8",
+      "rating": 4.6,
+      "reviewCount": 447,
+      "mapsUrl": "https://maps.google.com/?cid=9160730517202722038&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Okay Anny's Cocktail Bar",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJiVilEa8J9YgRqi5mSPNVD5k",
+      "rating": 4.6,
+      "reviewCount": 69,
+      "mapsUrl": "https://maps.google.com/?cid=11029128515833704106&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Culinary Dropout",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJVVWVUlcJ9YgR5idT7v6KG1s",
+      "rating": 4.5,
+      "reviewCount": 1184,
+      "mapsUrl": "https://maps.google.com/?cid=6564993709347383270&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    },
+    {
+      "name": "HOBNOB Neighborhood Tavern (Dunwoody)",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJt75GfRwJ9YgRGglP6HNKHVw",
+      "rating": 4.5,
+      "reviewCount": 1917,
+      "mapsUrl": "https://maps.google.com/?cid=6637543287493167386&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
     }
   ],
   "vine-city": [
+    {
+      "name": "Rosie's Cafe",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJr0UeNw8D9YgRasQaJRb5IYM",
+      "rating": 4.5,
+      "reviewCount": 2513,
+      "mapsUrl": "https://maps.google.com/?cid=9449107366707119210&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.23,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Flowers Bakery (Nature's Own)",
+      "category": "treats",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJwyEo5HoD9YgRolpb7uDB0rA",
+      "rating": 4.3,
+      "reviewCount": 111,
+      "mapsUrl": "https://maps.google.com/?cid=12741459467600353954&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
     {
       "name": "Friendship Market & Cafe (inside Signia Hilton)",
       "category": "food",
@@ -756,9 +2351,86 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=11547345688619997200&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.24,
       "walkMinutes": 5
+    },
+    {
+      "name": "Historic Herndon Home Museum",
+      "category": "sight",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJy1MzLWMD9YgRWUv-GEZYiTw",
+      "rating": 4.8,
+      "reviewCount": 65,
+      "mapsUrl": "https://maps.google.com/?cid=4362114772175309657&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.17,
+      "walkMinutes": 3
+    },
+    {
+      "name": "The Home Depot Backyard",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ_7OEglID9YgRbiGPgY2AjWI",
+      "rating": 4.6,
+      "reviewCount": 902,
+      "mapsUrl": "https://maps.google.com/?cid=7101473532685525358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Rodney Cook Sr. Park in Historic Vine City",
+      "category": "sight",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ6bogIZ0E9YgRpTv3aS5oFT8",
+      "rating": 4.6,
+      "reviewCount": 880,
+      "mapsUrl": "https://maps.google.com/?cid=4545653947455978405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "June Elois Mundy Park (Vine City Park)",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJRSu5smID9YgRmNtLvxvMnSk",
+      "rating": 4.3,
+      "reviewCount": 190,
+      "mapsUrl": "https://maps.google.com/?cid=2998777346444221336&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Restaurant 10 Bar & Grill",
+      "category": "drinks",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJxUnQaXwD9YgRZWbuS8NMK6g",
+      "rating": 4.5,
+      "reviewCount": 4146,
+      "mapsUrl": "https://maps.google.com/?cid=12117863624046700133&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
     }
   ],
   "inman-park-reynoldstown": [
+    {
+      "name": "Con Leche Coffee",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJRSuLHfoB9YgR2uNY95Pr2jA",
+      "rating": 4.8,
+      "reviewCount": 296,
+      "mapsUrl": "https://maps.google.com/?cid=3520385079485981658&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Just Add Honey Tea Company",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJWSOJdYkD9YgR5L4Duah0nZw",
+      "rating": 4.8,
+      "reviewCount": 568,
+      "mapsUrl": "https://maps.google.com/?cid=11285304509267689188&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.68,
+      "walkMinutes": 14
+    },
     {
       "name": "Harbor Coffee",
       "category": "coffee",
@@ -769,6 +2441,17 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "https://maps.google.com/?cid=12227078355275397045&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "distanceMiles": 0.53,
       "walkMinutes": 11
+    },
+    {
+      "name": "Village Coffee House",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJCRxTz6gG9YgR0sW8j1y3Ug8",
+      "rating": 4.6,
+      "reviewCount": 145,
+      "mapsUrl": "https://maps.google.com/?cid=1104146466835580370&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
     },
     {
       "name": "Bread & Butterfly",
@@ -782,14 +2465,47 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 9
     },
     {
-      "name": "Inman Perk Coffee",
+      "name": "Parkgrounds Café | Specialty Coffee Atlanta",
       "category": "coffee",
-      "description": "Inman Park — about a 10-minute walk from the station.",
-      "placeId": "ChIJlxVaAAQE9YgRmwcOR-WVc2o",
-      "rating": 4,
-      "reviewCount": 576,
-      "mapsUrl": "https://maps.google.com/?cid=7670639402314237851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.51,
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJnf1C8_0D9YgRFc8jjr0hr5g",
+      "rating": 4.5,
+      "reviewCount": 814,
+      "mapsUrl": "https://maps.google.com/?cid=11002049512706658069&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Folk Art Restaurant Inman Park",
+      "category": "coffee",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJiV-HFagG9YgRYQl_S8sqKKU",
+      "rating": 4.4,
+      "reviewCount": 2857,
+      "mapsUrl": "https://maps.google.com/?cid=11900809067959880033&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
+    {
+      "name": "The Daily Cafe - Inman Park",
+      "category": "coffee",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJWTGUwM8H9YgRpg7-fUaVBVg",
+      "rating": 4.4,
+      "reviewCount": 277,
+      "mapsUrl": "https://maps.google.com/?cid=6342639780215262886&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.09,
+      "walkMinutes": 2
+    },
+    {
+      "name": "The Vegan Sweetie Bakery",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ7xTPzyYH9YgR7dnaoTmB0mc",
+      "rating": 4.9,
+      "reviewCount": 51,
+      "mapsUrl": "https://maps.google.com/?cid=7481184015544408557&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
       "walkMinutes": 10
     },
     {
@@ -802,6 +2518,2239 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "mapsUrl": "Voga Italian Gelato | Crepes | Coffee | Chocolate | Desserts",
       "distanceMiles": 0.47,
       "walkMinutes": 9
+    },
+    {
+      "name": "Revolution Doughnuts & Coffee",
+      "category": "treats",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJb-uOTPgD9YgR6vk5lZyikek",
+      "rating": 4.7,
+      "reviewCount": 1447,
+      "mapsUrl": "https://maps.google.com/?cid=16830412075862456810&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Ben & Jerry’s",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJPaMe3QME9YgR9AtC0EgKoOw",
+      "rating": 4.7,
+      "reviewCount": 1271,
+      "mapsUrl": "https://maps.google.com/?cid=17050639497072610292&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Xocolatl Chocolate",
+      "category": "treats",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJ_RkHPPgD9YgRva5onuduX_M",
+      "rating": 4.7,
+      "reviewCount": 152,
+      "mapsUrl": "https://maps.google.com/?cid=17536857415078162109&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Unlmtd Studio",
+      "category": "sight",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJq_PaVGEF9YgRJqEVfiHk9EA",
+      "rating": 4.9,
+      "reviewCount": 55,
+      "mapsUrl": "https://maps.google.com/?cid=4680616745245188390&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.7,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Springvale Park",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJHWRyzfEF9YgRJAu57BJr8D0",
+      "rating": 4.8,
+      "reviewCount": 64,
+      "mapsUrl": "https://maps.google.com/?cid=4463184959749294884&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Atlanta Worldwide Gallery",
+      "category": "sight",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJq_pWFVwF9YgReX3MsIZLn_4",
+      "rating": 4.8,
+      "reviewCount": 50,
+      "mapsUrl": "https://maps.google.com/?cid=18347466448794582393&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.72,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Whitespace Gallery",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJJzac6vgD9YgRUXaCV6ur4Iw",
+      "rating": 4.8,
+      "reviewCount": 77,
+      "mapsUrl": "https://maps.google.com/?cid=10151302312489023057&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Jimmy Carter Presidential Library and Museum",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJn0vJlwIE9YgRHxlkBZq4_v8",
+      "rating": 4.7,
+      "reviewCount": 649,
+      "mapsUrl": "https://maps.google.com/?cid=18446384095411050783&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.64,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Variety Playhouse",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJg8d2cqkG9YgR6QyKwKKl_ck",
+      "rating": 4.7,
+      "reviewCount": 2544,
+      "mapsUrl": "https://maps.google.com/?cid=14554971689164868841&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Wrecking Bar Brewpub",
+      "category": "drinks",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJiQyZ4qsG9YgRP_wcRJGZxaw",
+      "rating": 4.7,
+      "reviewCount": 1947,
+      "mapsUrl": "https://maps.google.com/?cid=12449525594127662143&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
+    },
+    {
+      "name": "The Albert",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJtctXZQEE9YgR9Y8_tUlnMVw",
+      "rating": 4.7,
+      "reviewCount": 1445,
+      "mapsUrl": "https://maps.google.com/?cid=6643204491619307509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "The Porter Beer Bar",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJTZAT2agG9YgRN9U-AyEJVt8",
+      "rating": 4.7,
+      "reviewCount": 2405,
+      "mapsUrl": "https://maps.google.com/?cid=16093060355848066359&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.55,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Kevin Rathbun Steak",
+      "category": "drinks",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJ8cCo6QcE9YgRlrqsWTsW-UM",
+      "rating": 4.6,
+      "reviewCount": 2394,
+      "mapsUrl": "https://maps.google.com/?cid=4897970513905498774&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    }
+  ],
+  "medical-center": [
+    {
+      "name": "Dil Bahar Cafe & Market",
+      "category": "coffee",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJgWkaVCyn9YgROyKi-jGaGLc",
+      "rating": 4.5,
+      "reviewCount": 271,
+      "mapsUrl": "https://maps.google.com/?cid=13193464647830872635&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Savi Provisions At Hill (Sandy Springs)",
+      "category": "coffee",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJcdHdFnsJ9YgR3mcleO4MfqI",
+      "rating": 4.2,
+      "reviewCount": 42,
+      "mapsUrl": "https://maps.google.com/?cid=11708810299567335390&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Da Vinci's Donuts",
+      "category": "treats",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJhSQ6ucgO9YgRIkAwhkrb0Uc",
+      "rating": 4.5,
+      "reviewCount": 400,
+      "mapsUrl": "https://maps.google.com/?cid=5175158559950782498&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.72,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Mastermind Escape Games Atlanta",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJncEjP7YO9YgRgiTw6GHfo7I",
+      "rating": 5,
+      "reviewCount": 16280,
+      "mapsUrl": "https://maps.google.com/?cid=12872377771567883394&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.54,
+      "walkMinutes": 11
+    }
+  ],
+  "buckhead": [
+    {
+      "name": "Roam Buckhead - Piedmont",
+      "category": "coffee",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJGeQ8gvUF9YgR3cA29obkSRY",
+      "rating": 4.8,
+      "reviewCount": 172,
+      "mapsUrl": "https://maps.google.com/?cid=1606066010441826525&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Corgi Cafe",
+      "category": "coffee",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJgVTbeLMP9YgRcKAXbvWORs0",
+      "rating": 4.8,
+      "reviewCount": 127,
+      "mapsUrl": "https://maps.google.com/?cid=14791667210910146672&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.34,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Bistro Niko",
+      "category": "coffee",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ26vT7lQE9YgRnlJajnfoing",
+      "rating": 4.6,
+      "reviewCount": 3118,
+      "mapsUrl": "https://maps.google.com/?cid=8686010431524459166&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.1,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Starbucks Coffee Company",
+      "category": "coffee",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJp4yNqDkP9YgRJxcdHTbJgI8",
+      "rating": 4.5,
+      "reviewCount": 82,
+      "mapsUrl": "https://maps.google.com/?cid=10340485978696521511&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Nordstrom Ebar Artisan Coffee",
+      "category": "coffee",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJnYDoIlEP9YgR3YYAlkbcsRs",
+      "rating": 4.5,
+      "reviewCount": 55,
+      "mapsUrl": "https://maps.google.com/?cid=1995618305624278749&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.46,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Foxtail Coffee Co.- Buckhead",
+      "category": "coffee",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJyUl-Ta8P9YgRU-j38rPZdhs",
+      "rating": 4.4,
+      "reviewCount": 332,
+      "mapsUrl": "https://maps.google.com/?cid=1979008453174618195&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Dancing Goats Buckhead",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJiZjouYwF9YgR7WdeKn0njXU",
+      "rating": 4.4,
+      "reviewCount": 442,
+      "mapsUrl": "https://maps.google.com/?cid=8470469892688996333&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.68,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Caribou Coffee",
+      "category": "coffee",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJB9Bk1fUF9YgRKkbsJ9bi75M",
+      "rating": 4.4,
+      "reviewCount": 1317,
+      "mapsUrl": "https://maps.google.com/?cid=10659988252429927978&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Corner Cafe",
+      "category": "treats",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJL6IDZfEF9YgRpuW1mWq_lwk",
+      "rating": 4.8,
+      "reviewCount": 4478,
+      "mapsUrl": "https://maps.google.com/?cid=691231532390933926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Buckhead Bread Company",
+      "category": "treats",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJIfNRZPEF9YgRlWm3MZodp1U",
+      "rating": 4.5,
+      "reviewCount": 216,
+      "mapsUrl": "https://maps.google.com/?cid=6171934362430826901&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Handel's Homemade Ice Cream",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJc0dJzUIF9YgRbZpRp4Dffgc",
+      "rating": 4.4,
+      "reviewCount": 308,
+      "mapsUrl": "https://maps.google.com/?cid=540114748986989165&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Randy’s Donuts",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJeSe_MwAP9YgRkWFkkvZJpeA",
+      "rating": 4.3,
+      "reviewCount": 157,
+      "mapsUrl": "https://maps.google.com/?cid=16187425759019950481&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
+    },
+    {
+      "name": "BRITTO",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ055QwzEP9YgR8YdITbfOaYs",
+      "rating": 5,
+      "reviewCount": 61,
+      "mapsUrl": "https://maps.google.com/?cid=10045787730497538033&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.55,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Jackson Fine Art",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJfbzMavMF9YgRSI0uztpakPE",
+      "rating": 4.8,
+      "reviewCount": 39,
+      "mapsUrl": "https://maps.google.com/?cid=17406512455595494728&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.65,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Binders Art Supplies and Frames - Buckhead",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJt3HwQvUF9YgRDZgDgBOprvM",
+      "rating": 4.7,
+      "reviewCount": 328,
+      "mapsUrl": "https://maps.google.com/?cid=17559157898381334541&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Path400",
+      "category": "sight",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJ____Jl4P9YgR12NIkgueoWw",
+      "rating": 4.6,
+      "reviewCount": 32,
+      "mapsUrl": "https://maps.google.com/?cid=7827711399882679255&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.34,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Tower Place Park",
+      "category": "sight",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJMX4PNF8P9YgRRGmwU8sELmM",
+      "rating": 4.5,
+      "reviewCount": 136,
+      "mapsUrl": "https://maps.google.com/?cid=7146654930012498244&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.16,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Red Phone Booth",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJNwyAIM4F9YgR5AaUs0gmrdg",
+      "rating": 4.9,
+      "reviewCount": 1925,
+      "mapsUrl": "https://maps.google.com/?cid=15613177576855701220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.41,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Storico Fresco Ristorante",
+      "category": "drinks",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJxaEuvIwF9YgRhr7ziyyiU4o",
+      "rating": 4.7,
+      "reviewCount": 2799,
+      "mapsUrl": "https://maps.google.com/?cid=9967488712511307398&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.73,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Bones Restaurant",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ9SBPF_QF9YgRxq9n9FgRVmA",
+      "rating": 4.6,
+      "reviewCount": 2927,
+      "mapsUrl": "https://maps.google.com/?cid=6941754949393428422&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Burtons Grill & Bar",
+      "category": "drinks",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJ0QRCZgAF9YgRgXx999of_HU",
+      "rating": 4.6,
+      "reviewCount": 442,
+      "mapsUrl": "https://maps.google.com/?cid=8501705221884181633&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.34,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Maggiano's Little Italy",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJFyduYFgP9YgRsb-T_vD8Fao",
+      "rating": 4.5,
+      "reviewCount": 5684,
+      "mapsUrl": "https://maps.google.com/?cid=12255980072952119217&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    }
+  ],
+  "lenox": [
+    {
+      "name": "Bucket Shop Cafe",
+      "category": "coffee",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJtYXlilYP9YgR2XzgD8zmewA",
+      "rating": 4.3,
+      "reviewCount": 2088,
+      "mapsUrl": "https://maps.google.com/?cid=34875186249497817&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Great American Cookies - Lenox",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ64h47j4P9YgRE2IQ4VRkBhA",
+      "rating": 4.8,
+      "reviewCount": 93,
+      "mapsUrl": "https://maps.google.com/?cid=1154720670183088659&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Amorino Gelato - Atlanta",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJzfMu1FcP9YgRhIsChgwk4Uw",
+      "rating": 4.6,
+      "reviewCount": 819,
+      "mapsUrl": "https://maps.google.com/?cid=5539748652848941956&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.25,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Publix Super Market at Lenox Marketplace",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJGbCOtFYP9YgR8rGAx4dExAM",
+      "rating": 4.3,
+      "reviewCount": 1121,
+      "mapsUrl": "https://maps.google.com/?cid=271417227507446258&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Sloomoo Institute - Atlanta",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ4zKTdycP9YgR-RMHsPjtXzA",
+      "rating": 4.4,
+      "reviewCount": 1118,
+      "mapsUrl": "https://maps.google.com/?cid=3485766288968979449&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Silom Thai & Sushi bar",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJ___P91UP9YgR4VdJLZY-EQY",
+      "rating": 4.7,
+      "reviewCount": 1906,
+      "mapsUrl": "https://maps.google.com/?cid=437199453557446625&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.07,
+      "walkMinutes": 1
+    },
+    {
+      "name": "St. Cecilia",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ19y8ylYP9YgRTZMYiNvM-N0",
+      "rating": 4.6,
+      "reviewCount": 1681,
+      "mapsUrl": "https://maps.google.com/?cid=15994759319859532621&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    }
+  ],
+  "brookhaven-oglethorpe": [
+    {
+      "name": "Summit Coffee Brookhaven",
+      "category": "coffee",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJO_5kEwAJ9YgR_WNf3_TxT3U",
+      "rating": 4.5,
+      "reviewCount": 41,
+      "mapsUrl": "https://maps.google.com/?cid=8453241059619595261&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.07,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Honeysuckle Gelato Dresden",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJrQbiRAAJ9YgRfUypzWcgOAg",
+      "rating": 4.3,
+      "reviewCount": 42,
+      "mapsUrl": "https://maps.google.com/?cid=592258981203364989&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Brookhaven Dog Park",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ1-YxGgAJ9YgRHSkigwJ9mXM",
+      "rating": 4.6,
+      "reviewCount": 42,
+      "mapsUrl": "https://maps.google.com/?cid=8329826435541903645&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Brookhaven Park",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ40guJ7kI9YgRLyv9EpZAs94",
+      "rating": 4.5,
+      "reviewCount": 679,
+      "mapsUrl": "https://maps.google.com/?cid=16047240910559062831&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Clack's Corner Park",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJtRr8lpcI9YgRWIrvomCYD7c",
+      "rating": 4.3,
+      "reviewCount": 27,
+      "mapsUrl": "https://maps.google.com/?cid=13190929374409362008&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "La Casa del Tabaco Social",
+      "category": "drinks",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJg5AQgZAJ9YgRh4eCTnWl3zI",
+      "rating": 5,
+      "reviewCount": 90,
+      "mapsUrl": "https://maps.google.com/?cid=3665830544949806983&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Time to Escape - Atlanta Escape Room (Brookhaven)",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJYZyqiJYI9YgR7_blx-Wm4Jo",
+      "rating": 4.8,
+      "reviewCount": 1624,
+      "mapsUrl": "https://maps.google.com/?cid=11160103382455547631&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
+    {
+      "name": "The Beer Growler",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJuahRZZYI9YgRhdDMQUy4IUA",
+      "rating": 4.8,
+      "reviewCount": 154,
+      "mapsUrl": "https://maps.google.com/?cid=4621177330319806597&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.47,
+      "walkMinutes": 9
+    },
+    {
+      "name": "The Escape Gamebar",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJfSqvVtIJ9YgRWChJPWPU71Q",
+      "rating": 4.8,
+      "reviewCount": 64,
+      "mapsUrl": "https://maps.google.com/?cid=6120343941314848856&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Haven Restaurant and Bar",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJM7ouiZYI9YgRFgpk0XSyTnw",
+      "rating": 4.5,
+      "reviewCount": 745,
+      "mapsUrl": "https://maps.google.com/?cid=8957292923685440022&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    }
+  ],
+  "lindbergh-center": [
+    {
+      "name": "Savi Provisions Peachtree Hills",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJpUUzkEcF9YgRphE78Bw5FfU",
+      "rating": 4.6,
+      "reviewCount": 41,
+      "mapsUrl": "https://maps.google.com/?cid=17660084310255538598&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "The Hungry Peach Café & Catering - Atlanta",
+      "category": "coffee",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJbaZPfMcF9YgRgue3M-BizVY",
+      "rating": 4.3,
+      "reviewCount": 43,
+      "mapsUrl": "https://maps.google.com/?cid=6254764172567373698&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.51,
+      "walkMinutes": 10
+    },
+    {
+      "name": "CEG Bakery",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJqfcDMOgF9YgR9Yk9hJ40osM",
+      "rating": 4.5,
+      "reviewCount": 133,
+      "mapsUrl": "https://maps.google.com/?cid=14096887639051176437&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.25,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Gurl Mobb Museum",
+      "category": "sight",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJGa1t7GQF9YgRZ_aXSgkjzOM",
+      "rating": 4.9,
+      "reviewCount": 584,
+      "mapsUrl": "https://maps.google.com/?cid=16414533264671766119&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.73,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Interiors Market",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJLamhWlwF9YgRybPnTOl8PSg",
+      "rating": 4.9,
+      "reviewCount": 59,
+      "mapsUrl": "https://maps.google.com/?cid=2899611076555944905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.57,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Johnson Lowe Gallery",
+      "category": "sight",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJpbsDY1EE9YgRLtxQH4vmDn0",
+      "rating": 4.9,
+      "reviewCount": 35,
+      "mapsUrl": "https://maps.google.com/?cid=9011393389615176750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.73,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Marcia Wood Gallery",
+      "category": "sight",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJLc9SmHAD9YgRI2GqnsxnJjo",
+      "rating": 4.9,
+      "reviewCount": 29,
+      "mapsUrl": "https://maps.google.com/?cid=4190150631847780643&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.68,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Thomas Deans Fine Art",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJAcMDAOYF9YgRqFjeM5RxsEk",
+      "rating": 4.8,
+      "reviewCount": 25,
+      "mapsUrl": "https://maps.google.com/?cid=5309868842009122984&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.55,
+      "walkMinutes": 11
+    },
+    {
+      "name": "26 Thai Kitchen & Bar (Buckhead)",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJs7HCJcIF9YgRk94oQU5xw_w",
+      "rating": 4.7,
+      "reviewCount": 2011,
+      "mapsUrl": "https://maps.google.com/?cid=18213525898931003027&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Bene Korean BBQ 베네 한식 고깃집",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJwaFrLiIF9YgRMGzVFuUsVqg",
+      "rating": 4.6,
+      "reviewCount": 257,
+      "mapsUrl": "https://maps.google.com/?cid=12129932008811228208&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
+    },
+    {
+      "name": "The Painted Pin",
+      "category": "drinks",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJMS0X0eUF9YgRW-hxdgllKvo",
+      "rating": 4.4,
+      "reviewCount": 2211,
+      "mapsUrl": "https://maps.google.com/?cid=18026331549820119131&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.64,
+      "walkMinutes": 13
+    }
+  ],
+  "garnett": [
+    {
+      "name": "ADios Cafe",
+      "category": "coffee",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJU9AJj3kD9YgRDq8FDhlqNfc",
+      "rating": 4.6,
+      "reviewCount": 1107,
+      "mapsUrl": "https://maps.google.com/?cid=17813260556975845134&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "No Mas! Cantina",
+      "category": "treats",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJTwgOhXkD9YgRxQ8TXG-TdkY",
+      "rating": 4.4,
+      "reviewCount": 9472,
+      "mapsUrl": "https://maps.google.com/?cid=5077407736402218949&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Palate Atlanta Tasting Room",
+      "category": "sight",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJb7S8HXkD9YgRHrgPwld6OyQ",
+      "rating": 4.8,
+      "reviewCount": 124,
+      "mapsUrl": "https://maps.google.com/?cid=2610814926327887902&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Atlantucky Brewing",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJU8A-j4kD9YgRU40MRjDlqW8",
+      "rating": 4.8,
+      "reviewCount": 311,
+      "mapsUrl": "https://maps.google.com/?cid=8046214204770520403&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Wild Leap Atlanta",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJTdyro3ED9YgRwVzS2__LVH4",
+      "rating": 4.6,
+      "reviewCount": 348,
+      "mapsUrl": "https://maps.google.com/?cid=9103125046587710657&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "CRU Peters Street",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ_Srg6nAD9YgRMjyuxBG5YQw",
+      "rating": 4.4,
+      "reviewCount": 564,
+      "mapsUrl": "https://maps.google.com/?cid=892197687161404466&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    }
+  ],
+  "west-end": [
+    {
+      "name": "Auxiliary Coffee",
+      "category": "coffee",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ816jR_0D9YgRkKNYKHAt2I8",
+      "rating": 5,
+      "reviewCount": 35,
+      "mapsUrl": "https://maps.google.com/?cid=10365084502129681296&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.46,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Sammy's",
+      "category": "coffee",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJXZqNu2QD9YgROqK2xgzsqH0",
+      "rating": 4.9,
+      "reviewCount": 235,
+      "mapsUrl": "https://maps.google.com/?cid=9054746590446002746&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.37,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Cultured South Fermentation Co.",
+      "category": "coffee",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJp_awjC0D9YgRmp3fwR63V9A",
+      "rating": 4.9,
+      "reviewCount": 132,
+      "mapsUrl": "https://maps.google.com/?cid=15012669225592397210&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.57,
+      "walkMinutes": 11
+    },
+    {
+      "name": "The Black Coffee Company at Morehouse College",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJt4J111wD9YgRfXOWn2m4nTs",
+      "rating": 4.9,
+      "reviewCount": 74,
+      "mapsUrl": "https://maps.google.com/?cid=4295792383369835389&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.7,
+      "walkMinutes": 14
+    },
+    {
+      "name": "SweetSpot VTox Detox Boutique and Wellness Studio",
+      "category": "coffee",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ-WyEKBMD9YgR8YL_HdfIJZo",
+      "rating": 4.9,
+      "reviewCount": 189,
+      "mapsUrl": "https://maps.google.com/?cid=11107504882226004721&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Portrait Coffee",
+      "category": "coffee",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ1bWy9eQD9YgRcOiOw0GAZZw",
+      "rating": 4.8,
+      "reviewCount": 555,
+      "mapsUrl": "https://maps.google.com/?cid=11269554662506686576&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.54,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Golden Crust Pizza Atlanta",
+      "category": "coffee",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJC3OXJvcD9YgRiz_8ITCj0bg",
+      "rating": 4.8,
+      "reviewCount": 32,
+      "mapsUrl": "https://maps.google.com/?cid=13317605000235204491&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Wadada Healthy Market & Juice Bar",
+      "category": "coffee",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJe5H8ZXcD9YgRuV89DJy53j0",
+      "rating": 4.6,
+      "reviewCount": 479,
+      "mapsUrl": "https://maps.google.com/?cid=4458204761014755257&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.2,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Sweet Red Peach",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJZzShhsUD9YgR2q9FzFG09NA",
+      "rating": 4.8,
+      "reviewCount": 237,
+      "mapsUrl": "https://maps.google.com/?cid=15056857717618880474&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Cake & Sip Atlanta",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJY43UlBMD9YgR5DSm6Sb0RSI",
+      "rating": 4.6,
+      "reviewCount": 435,
+      "mapsUrl": "https://maps.google.com/?cid=2469648418648503524&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Honeysuckle Gelato Lee+White",
+      "category": "treats",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJg1D00xYD9YgRXMvmrO3B6GA",
+      "rating": 4.6,
+      "reviewCount": 40,
+      "mapsUrl": "https://maps.google.com/?cid=6983044448790170460&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Irie Mon Cafe",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ14uFQa4D9YgRy38A-pbsXsY",
+      "rating": 4.3,
+      "reviewCount": 117,
+      "mapsUrl": "https://maps.google.com/?cid=14294122400504119243&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Vegan Dream Doughnuts",
+      "category": "treats",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ-XlSEmsD9YgRVF1tV4gIrLo",
+      "rating": 4.3,
+      "reviewCount": 286,
+      "mapsUrl": "https://maps.google.com/?cid=13451135568724188500&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Spelman College Museum of Fine Art",
+      "category": "sight",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJgUiO0W4D9YgR-fsLT9eSchs",
+      "rating": 4.8,
+      "reviewCount": 113,
+      "mapsUrl": "https://maps.google.com/?cid=1977804639810878457&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Gallery 992",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJu_D0g0AD9YgRqNWJJLWP3yY",
+      "rating": 4.8,
+      "reviewCount": 219,
+      "mapsUrl": "https://maps.google.com/?cid=2801115501412603304&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Hammonds House Museum",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ0T1LF0ED9YgRSvfLBwoTUBs",
+      "rating": 4.7,
+      "reviewCount": 234,
+      "mapsUrl": "https://maps.google.com/?cid=1968093970962315082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.54,
+      "walkMinutes": 11
+    },
+    {
+      "name": "eyedrum Art and Music Gallery",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ8Vx1NIID9YgRLrWp_Tt82u4",
+      "rating": 4.6,
+      "reviewCount": 90,
+      "mapsUrl": "https://maps.google.com/?cid=17211205523050444078&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "The Wren's Nest",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ9a_8VD8D9YgRZXk0jXsM0l0",
+      "rating": 4.6,
+      "reviewCount": 206,
+      "mapsUrl": "https://maps.google.com/?cid=6760479715426072933&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.51,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Kava Mama",
+      "category": "drinks",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJPWtSA88B9YgRlJEH2zEprvg",
+      "rating": 5,
+      "reviewCount": 218,
+      "mapsUrl": "https://maps.google.com/?cid=17919305261458624916&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.62,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Sakura Sake Bar & Bottles",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJb4La3DIF9YgRg_59LTywXH8",
+      "rating": 4.9,
+      "reviewCount": 78,
+      "mapsUrl": "https://maps.google.com/?cid=9177403913181986435&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Bee Glad Lounge",
+      "category": "drinks",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJy76sDQwD9YgRuUc1mf7KVBY",
+      "rating": 4.9,
+      "reviewCount": 68,
+      "mapsUrl": "https://maps.google.com/?cid=1609134161719019449&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "ASW Whiskey Exchange",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJcTmUbtED9YgR2P-BZ81bif8",
+      "rating": 4.8,
+      "reviewCount": 101,
+      "mapsUrl": "https://maps.google.com/?cid=18413349489243979736&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Monday Night Brewing - The Garage",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJdU9cnj0D9YgRFAE1M353riM",
+      "rating": 4.7,
+      "reviewCount": 1099,
+      "mapsUrl": "https://maps.google.com/?cid=2571123821183828244&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.55,
+      "walkMinutes": 11
+    }
+  ],
+  "lakewood-ft-mcpherson": [
+    {
+      "name": "La Bodega Atl Market & Pupuseria",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJD5SZC3AD9YgRvNgOSHupYQg",
+      "rating": 4.4,
+      "reviewCount": 125,
+      "mapsUrl": "https://maps.google.com/?cid=603950171999361212&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Buenos Dias Pupusas",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJe0IriYYD9YgRBfqI1Ud4X4U",
+      "rating": 4.4,
+      "reviewCount": 446,
+      "mapsUrl": "https://maps.google.com/?cid=9610532379752462853&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Glaciers Italian Ice",
+      "category": "treats",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJlc1HQpPUoIYRCt3INX-R08E",
+      "rating": 4.9,
+      "reviewCount": 223,
+      "mapsUrl": "https://maps.google.com/?cid=13966666844955270410&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.62,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Operation Mini Donuts",
+      "category": "treats",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJ8fj-bkap9YgROO6ZSz1HTJ4",
+      "rating": 4.8,
+      "reviewCount": 52,
+      "mapsUrl": "https://maps.google.com/?cid=11406570284809580088&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.69,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Moni's Donuts",
+      "category": "treats",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJh9uALqAylYIRMD1d0CqPX8U",
+      "rating": 4.8,
+      "reviewCount": 56,
+      "mapsUrl": "https://maps.google.com/?cid=14222243562306485552&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.69,
+      "walkMinutes": 14
+    },
+    {
+      "name": "ArtsXchange - Southeast Community Cultural Center",
+      "category": "sight",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJ_____-QD9YgR85fITmPjqEA",
+      "rating": 4.8,
+      "reviewCount": 197,
+      "mapsUrl": "https://maps.google.com/?cid=4659223830177814515&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
+    }
+  ],
+  "hamilton-e-holmes": [
+    {
+      "name": "Cafe Buffalo Wing",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJBwF8y4Uc9YgRIwGa3G3jXR0",
+      "rating": 4.3,
+      "reviewCount": 286,
+      "mapsUrl": "https://maps.google.com/?cid=2116097460926021923&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Isabel Gates Webster Park Mini-Pitch",
+      "category": "sight",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJC3zsyMMd9YgR7iE4cibM-lU",
+      "rating": 4.5,
+      "reviewCount": 78,
+      "mapsUrl": "https://maps.google.com/?cid=6195488702898643438&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.46,
+      "walkMinutes": 9
+    }
+  ],
+  "edgewood-candler-park": [
+    {
+      "name": "Aurora Coffee",
+      "category": "coffee",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJtzptragG9YgReWnn-xcVttI",
+      "rating": 4.6,
+      "reviewCount": 617,
+      "mapsUrl": "https://maps.google.com/?cid=15183346386480884089&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Sean’s Candler Park",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJf5Fk7OMH9YgRtZcDumWuNTA",
+      "rating": 4.5,
+      "reviewCount": 200,
+      "mapsUrl": "https://maps.google.com/?cid=3473874439521933237&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.25,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Starbucks Coffee Company",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJw6QAA6YG9YgRXIfXKashysY",
+      "rating": 4.2,
+      "reviewCount": 769,
+      "mapsUrl": "https://maps.google.com/?cid=14324298583830398812&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.7,
+      "walkMinutes": 14
+    },
+    {
+      "name": "San Francisco Coffee Roasting Company",
+      "category": "treats",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJewYKHLYG9YgRwdsZ6B19_a4",
+      "rating": 4.4,
+      "reviewCount": 375,
+      "mapsUrl": "https://maps.google.com/?cid=12609372099108789185&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Outkast Mural",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJK1W9bz0H9YgRvqkPD-CZGN8",
+      "rating": 4.9,
+      "reviewCount": 270,
+      "mapsUrl": "https://maps.google.com/?cid=16075768057503394238&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Lake Claire Community Land Trust",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJuXBXf8kG9YgRKY-zmYVKzDU",
+      "rating": 4.8,
+      "reviewCount": 334,
+      "mapsUrl": "https://maps.google.com/?cid=3876555316928941865&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Healium Center Foundation Inc",
+      "category": "sight",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJbzbMGbEG9YgRyP1nukBJ11U",
+      "rating": 4.8,
+      "reviewCount": 58,
+      "mapsUrl": "https://maps.google.com/?cid=6185493155570777544&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Freedom Park",
+      "category": "sight",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJ59EXmgIE9YgRcmx8JOyB6VU",
+      "rating": 4.7,
+      "reviewCount": 1898,
+      "mapsUrl": "https://maps.google.com/?cid=6190622014021856370&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.75,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Candler Park",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJiYoqRLcG9YgRvAYPjaJg1yU",
+      "rating": 4.6,
+      "reviewCount": 764,
+      "mapsUrl": "https://maps.google.com/?cid=2726754350663665340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "The Vortex Bar & Grill",
+      "category": "drinks",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJG8Wzy6gG9YgRBQVGToEnXTg",
+      "rating": 4.6,
+      "reviewCount": 8782,
+      "mapsUrl": "https://maps.google.com/?cid=4061445875275531525&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Skiptown Atlanta",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJb0P9KJQH9YgRO0O0rjBnTqk",
+      "rating": 4.6,
+      "reviewCount": 232,
+      "mapsUrl": "https://maps.google.com/?cid=12199801899380392763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "The Star Community Bar",
+      "category": "drinks",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJ04foyqgG9YgRARysu3twWzM",
+      "rating": 4.6,
+      "reviewCount": 574,
+      "mapsUrl": "https://maps.google.com/?cid=3700675195546901505&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Dead End Drinks",
+      "category": "drinks",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJE5fd9coG9YgRHosLGMlrbnQ",
+      "rating": 4.4,
+      "reviewCount": 507,
+      "mapsUrl": "https://maps.google.com/?cid=8389761667273820958&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    }
+  ],
+  "east-lake": [
+    {
+      "name": "Oakview Coffee",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJZWRPwS0H9YgR7_qfv0T4jn8",
+      "rating": 4.4,
+      "reviewCount": 453,
+      "mapsUrl": "https://maps.google.com/?cid=9191556863666158319&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.7,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Taj Ma-Hound Bakery for Dogs",
+      "category": "treats",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJZWRPwS0H9YgRWKpqIB87B1k",
+      "rating": 4.9,
+      "reviewCount": 111,
+      "mapsUrl": "https://maps.google.com/?cid=6415161199086447192&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Revolution Doughnuts & Coffee",
+      "category": "treats",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJMYhLmCgH9YgRrbujxM702W4",
+      "rating": 4.6,
+      "reviewCount": 1831,
+      "mapsUrl": "https://maps.google.com/?cid=7987684583017790381&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.28,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Deepdene Park",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJW7eVn9wG9YgRcMx1M-9oSiE",
+      "rating": 4.8,
+      "reviewCount": 249,
+      "mapsUrl": "https://maps.google.com/?cid=2398845128098040944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.65,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Oakhurst Dog Park",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJV5cwLCoH9YgR_A1e7zW1DAc",
+      "rating": 4.6,
+      "reviewCount": 578,
+      "mapsUrl": "https://maps.google.com/?cid=507980101239836156&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.41,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Oakhurst Park",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJcyyMVCkH9YgRyWKczipgo3s",
+      "rating": 4.5,
+      "reviewCount": 233,
+      "mapsUrl": "https://maps.google.com/?cid=8909070224840221385&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Harmony Park",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJ24D02S0H9YgRyEqQ2REB6pM",
+      "rating": 4.5,
+      "reviewCount": 38,
+      "mapsUrl": "https://maps.google.com/?cid=10658332644301884104&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.67,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Parkwood Park",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJZca0Md8G9YgRL0VGaOVPdKQ",
+      "rating": 4.3,
+      "reviewCount": 27,
+      "mapsUrl": "https://maps.google.com/?cid=11850184366234158383&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Ale Yeah!",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJVx_XmCgH9YgRJGF9R4oq9vk",
+      "rating": 4.8,
+      "reviewCount": 191,
+      "mapsUrl": "https://maps.google.com/?cid=18011630533108130084&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Steinbeck's",
+      "category": "drinks",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJd2V9zy0H9YgRPDz_MCkvvQc",
+      "rating": 4.6,
+      "reviewCount": 521,
+      "mapsUrl": "https://maps.google.com/?cid=557653782826007612&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.69,
+      "walkMinutes": 14
+    },
+    {
+      "name": "The Imperial",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJTQI8-SUH9YgRIjiLOqEBaRQ",
+      "rating": 4.6,
+      "reviewCount": 549,
+      "mapsUrl": "https://maps.google.com/?cid=1470708545296742434&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Sceptre Brewing Arts",
+      "category": "drinks",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJlcpYRi0H9YgRKzKt0-PrdiM",
+      "rating": 4.5,
+      "reviewCount": 293,
+      "mapsUrl": "https://maps.google.com/?cid=2555489202320781867&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Thinking Man Tavern",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ1RDYpSUH9YgRB7WnNfkBNe8",
+      "rating": 4.4,
+      "reviewCount": 745,
+      "mapsUrl": "https://maps.google.com/?cid=17236685318689109255&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    }
+  ],
+  "decatur": [
+    {
+      "name": "Guild + Journeyman",
+      "category": "coffee",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ5yFTj18H9YgRhSCxxCixq8M",
+      "rating": 5,
+      "reviewCount": 124,
+      "mapsUrl": "https://maps.google.com/?cid=14099557847070220421&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.11,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Mezze-Potamia",
+      "category": "coffee",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJrdJN9ycH9YgRFTY2LCzgKMU",
+      "rating": 5,
+      "reviewCount": 80,
+      "mapsUrl": "https://maps.google.com/?cid=14206851504865162773&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Opo Coffee",
+      "category": "coffee",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJIRwlIA8H9YgRJWGp7wFaVbs",
+      "rating": 4.7,
+      "reviewCount": 326,
+      "mapsUrl": "https://maps.google.com/?cid=13498794422475252005&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Dancing Goats Decatur",
+      "category": "coffee",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJeUxhviIH9YgR0QctVcuQP0E",
+      "rating": 4.5,
+      "reviewCount": 1219,
+      "mapsUrl": "https://maps.google.com/?cid=4701635738979862481&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.45,
+      "walkMinutes": 9
+    },
+    {
+      "name": "FolkArt",
+      "category": "coffee",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJhX3ADVkH9YgREdG23L0wMU8",
+      "rating": 4.4,
+      "reviewCount": 1191,
+      "mapsUrl": "https://maps.google.com/?cid=5706395794865049873&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.16,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Bellwood Coffee - Decatur",
+      "category": "coffee",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJVbcYzagH9YgRH_jNs5J43bA",
+      "rating": 4.4,
+      "reviewCount": 57,
+      "mapsUrl": "https://maps.google.com/?cid=12744475092005550111&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    },
+    {
+      "name": "The Reading Room",
+      "category": "coffee",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJY83ReEwH9YgRnVdUc8RykDY",
+      "rating": 4.2,
+      "reviewCount": 367,
+      "mapsUrl": "https://maps.google.com/?cid=3931768662768506781&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Diamond Dust Cupcakes",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJkZ31sVsH9YgRzNqf0kkkli4",
+      "rating": 4.9,
+      "reviewCount": 241,
+      "mapsUrl": "https://maps.google.com/?cid=3356910471736187596&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Jeni's Splendid Ice Creams",
+      "category": "treats",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJ35bk1z0H9YgRgDZbJE8gcko",
+      "rating": 4.7,
+      "reviewCount": 1367,
+      "mapsUrl": "https://maps.google.com/?cid=5364385630436144768&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.05,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Foxtail Coffee - Decatur",
+      "category": "treats",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJhcq3044H9YgRpFkBBLVfg0Y",
+      "rating": 4.6,
+      "reviewCount": 182,
+      "mapsUrl": "https://maps.google.com/?cid=5081010035664968100&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.1,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Butter & Cream",
+      "category": "treats",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJWQWoaj4H9YgRvQFHDI47fl8",
+      "rating": 4.6,
+      "reviewCount": 1267,
+      "mapsUrl": "https://maps.google.com/?cid=6881002761946071485&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Pastries A Go Go",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJXaC0bT0H9YgRmC4E9BJVtto",
+      "rating": 4.4,
+      "reviewCount": 549,
+      "mapsUrl": "https://maps.google.com/?cid=15759877485921316504&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Worthmore Jewelers",
+      "category": "sight",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJJSsRbT4H9YgR1jhJx94SMrE",
+      "rating": 5,
+      "reviewCount": 1349,
+      "mapsUrl": "https://maps.google.com/?cid=12768288641584281814&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.02,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Cat Eye Creative",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJObZ9FoID9YgRtQlppZF8tjM",
+      "rating": 5,
+      "reviewCount": 62,
+      "mapsUrl": "https://maps.google.com/?cid=3726302706682890677&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "The Great Frame Up of Decatur, GA",
+      "category": "sight",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJC0aaTD0H9YgRp86Xs__YJ9M",
+      "rating": 4.9,
+      "reviewCount": 46,
+      "mapsUrl": "https://maps.google.com/?cid=15215368458835840679&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.33,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Candlelight Concerts",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJSye4zlAH9YgR2Gx2hjsA8f0",
+      "rating": 4.9,
+      "reviewCount": 85,
+      "mapsUrl": "https://maps.google.com/?cid=18298407016642014424&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "HomeGrown Decatur",
+      "category": "sight",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJeZ-kaj4H9YgR99kso06nYfM",
+      "rating": 4.7,
+      "reviewCount": 156,
+      "mapsUrl": "https://maps.google.com/?cid=17537482380144335351&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Inner Voice Brewing",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ2ws5d_wH9YgRxrFFATFAmvg",
+      "rating": 4.9,
+      "reviewCount": 253,
+      "mapsUrl": "https://maps.google.com/?cid=17913701047038489030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Eddie's Attic",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJ_-6m1T0H9YgRpdRHV5CGmNk",
+      "rating": 4.7,
+      "reviewCount": 1485,
+      "mapsUrl": "https://maps.google.com/?cid=15679430057188119717&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.06,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Brick Store Pub",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJf_XS6z0H9YgRQsA29ddjvK4",
+      "rating": 4.7,
+      "reviewCount": 3282,
+      "mapsUrl": "https://maps.google.com/?cid=12591048437404188738&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Kimball House",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJHatDOT8H9YgRE9zxI4xpacI",
+      "rating": 4.7,
+      "reviewCount": 1529,
+      "mapsUrl": "https://maps.google.com/?cid=14008844166532029459&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.28,
+      "walkMinutes": 6
+    },
+    {
+      "name": "O'Sullivans Irish Pub",
+      "category": "drinks",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJNXMrm1wH9YgRV_-C6rDcVhQ",
+      "rating": 4.7,
+      "reviewCount": 416,
+      "mapsUrl": "https://maps.google.com/?cid=1465601381162483543&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
+    }
+  ],
+  "avondale": [
+    {
+      "name": "Waller's Coffee Shop",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJO6_2C2QH9YgRmQDLaVMQKrk",
+      "rating": 4.8,
+      "reviewCount": 629,
+      "mapsUrl": "https://maps.google.com/?cid=13342494796481757337&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "The Book Bird of Avondale Estates",
+      "category": "coffee",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJA4DWiekH9YgR8ONVR3JJkEc",
+      "rating": 4.8,
+      "reviewCount": 68,
+      "mapsUrl": "https://maps.google.com/?cid=5156702328511128560&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Banjo Coffee",
+      "category": "coffee",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJHwPHDGAH9YgR0ggS3b5rhd0",
+      "rating": 4.7,
+      "reviewCount": 712,
+      "mapsUrl": "https://maps.google.com/?cid=15962282921781496018&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Wonderful World Coffee and Tea",
+      "category": "coffee",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJw99vItoH9YgR3SGJTZrkd5s",
+      "rating": 4.5,
+      "reviewCount": 127,
+      "mapsUrl": "https://maps.google.com/?cid=11202673949484327389&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Cremalosa",
+      "category": "treats",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJR0zRb5EH9YgR-odkWqf7GFU",
+      "rating": 4.8,
+      "reviewCount": 278,
+      "mapsUrl": "https://maps.google.com/?cid=6131927588859578362&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Leftie Lee‘s",
+      "category": "treats",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJq8wbT04H9YgRDC-ULDhhaPU",
+      "rating": 4.8,
+      "reviewCount": 161,
+      "mapsUrl": "https://maps.google.com/?cid=17683490830764224268&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.47,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Publix Super Market at Sam's Crossing Village",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJm1VuPY4H9YgRS78qWAS8bBQ",
+      "rating": 4.3,
+      "reviewCount": 1893,
+      "mapsUrl": "https://maps.google.com/?cid=1471757905088397131&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Jeremiah's Italian Ice",
+      "category": "treats",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ8RNgZycH9YgRjbjXEn2IP6I",
+      "rating": 4.3,
+      "reviewCount": 124,
+      "mapsUrl": "https://maps.google.com/?cid=11691213228445513869&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Decatur Glassblowing",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJTTmSFUEH9YgRgSps4y0Y25A",
+      "rating": 4.9,
+      "reviewCount": 559,
+      "mapsUrl": "https://maps.google.com/?cid=10437963146729368193&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Decatur Legacy Park",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJkQI3LkUH9YgRBBuw_VUCoII",
+      "rating": 4.6,
+      "reviewCount": 105,
+      "mapsUrl": "https://maps.google.com/?cid=9412525789555989252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Glenn Creek Nature Preserve",
+      "category": "sight",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJQWkJAGwH9YgR0iDSEwf_0gg",
+      "rating": 4.4,
+      "reviewCount": 74,
+      "mapsUrl": "https://maps.google.com/?cid=635850903275053266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Sycamore Park",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJZ3kwlEEH9YgR_cYmRPfnabg",
+      "rating": 4.4,
+      "reviewCount": 38,
+      "mapsUrl": "https://maps.google.com/?cid=13288407224719689469&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Waffle House Museum",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJn2uzc10H9YgRC-BcXpL2fZE",
+      "rating": 4.4,
+      "reviewCount": 97,
+      "mapsUrl": "https://maps.google.com/?cid=10483806616097185803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Little Cottage Brewery",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJr45_XU8H9YgR_FEi9iC9gEY",
+      "rating": 4.8,
+      "reviewCount": 178,
+      "mapsUrl": "https://maps.google.com/?cid=5080268328939966972&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Three Taverns Craft Brewery",
+      "category": "drinks",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJd85-M0IH9YgRgnHqacJJqrE",
+      "rating": 4.7,
+      "reviewCount": 413,
+      "mapsUrl": "https://maps.google.com/?cid=12802125990103511426&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Anansi Cocktail Lounge",
+      "category": "drinks",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ1Waun5gH9YgRxIg3fYTgMnQ",
+      "rating": 4.7,
+      "reviewCount": 312,
+      "mapsUrl": "https://maps.google.com/?cid=8373001516876269764&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "O'keefe's Pub",
+      "category": "drinks",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJU2gJF14H9YgRkFL4-ao32_M",
+      "rating": 4.7,
+      "reviewCount": 67,
+      "mapsUrl": "https://maps.google.com/?cid=17571699578593890960&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.45,
+      "walkMinutes": 9
+    },
+    {
+      "name": "My Parents' Basement",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJOwYpeWAH9YgRWCFl3yPbqVs",
+      "rating": 4.6,
+      "reviewCount": 2092,
+      "mapsUrl": "https://maps.google.com/?cid=6605051275633828184&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.55,
+      "walkMinutes": 11
+    }
+  ],
+  "sec-district": [
+    {
+      "name": "The Yard Milkshake Bar Atlanta - Centennial Park",
+      "category": "treats",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJf037JNkF9YgRPe0jX-AokCw",
+      "rating": 4.3,
+      "reviewCount": 1569,
+      "mapsUrl": "https://maps.google.com/?cid=3211111478449139005&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Great American Cookies",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJU7ApNX4E9YgR5T7KeqQSpmM",
+      "rating": 4.3,
+      "reviewCount": 103,
+      "mapsUrl": "https://maps.google.com/?cid=7180447153532845797&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "The Bougie Grazer",
+      "category": "sight",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJTy9xPuj_xwkRnUCPIFdR7Ts",
+      "rating": 5,
+      "reviewCount": 555,
+      "mapsUrl": "https://maps.google.com/?cid=4318197052368437405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "ZuCot Gallery",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJNZpO4ngD9YgRMXpmXmCDImI",
+      "rating": 4.9,
+      "reviewCount": 197,
+      "mapsUrl": "https://maps.google.com/?cid=7071358814848973361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "College Football Hall of Fame",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJNRnJ3H8E9YgRUkMCrr1LVfg",
+      "rating": 4.6,
+      "reviewCount": 3843,
+      "mapsUrl": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Georgia International Plaza",
+      "category": "sight",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJiTefr38D9YgRKXsR31_HkHw",
+      "rating": 4.5,
+      "reviewCount": 237,
+      "mapsUrl": "https://maps.google.com/?cid=8975893271927683881&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.1,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Fellaship.ATL",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ9XafIfoD9YgRmNokmm2SBjE",
+      "rating": 4.5,
+      "reviewCount": 1088,
+      "mapsUrl": "https://maps.google.com/?cid=3532671957153929880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Der Biergarten",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJm8uX1X8E9YgR_dEop3pVYsM",
+      "rating": 4.4,
+      "reviewCount": 2854,
+      "mapsUrl": "https://maps.google.com/?cid=14078909370392433149&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.4,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Park Bar",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJRVrGmoAD9YgRp93QXijuJrQ",
+      "rating": 4.3,
+      "reviewCount": 2707,
+      "mapsUrl": "https://maps.google.com/?cid=12981324833098882471&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Twin Smokers BBQ",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ2Zs9h4AE9YgRfTz0ClCkG9k",
+      "rating": 4.3,
+      "reviewCount": 2172,
+      "mapsUrl": "https://maps.google.com/?cid=15644278394289667197&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    }
+  ],
+  "airport": [
+    {
+      "name": "Vino Volo",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJE8JvlBXj9IgRx_nkSuQdnkc",
+      "rating": 4.7,
+      "reviewCount": 518,
+      "mapsUrl": "https://maps.google.com/?cid=5160595089359436231&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Sam Adams Atlanta Brew House",
+      "category": "drinks",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJgV_R4jL99IgR_Mf3ohM6loE",
+      "rating": 4.5,
+      "reviewCount": 2952,
+      "mapsUrl": "https://maps.google.com/?cid=9337714733412239356&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.57,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Airport Varasano’s Pizzeria",
+      "category": "drinks",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJOQ7pH83i9IgR3uSWg5Ek6eM",
+      "rating": 4.3,
+      "reviewCount": 1489,
+      "mapsUrl": "https://maps.google.com/?cid=16422697723579786462&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.38,
+      "walkMinutes": 8
+    }
+  ],
+  "kensington": [
+    {
+      "name": "Cover Sports & Shows",
+      "category": "drinks",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ1baxuPGp9YgRx-QBTREkOkU",
+      "rating": 4.7,
+      "reviewCount": 772,
+      "mapsUrl": "https://maps.google.com/?cid=4988339193991259335&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.28,
+      "walkMinutes": 6
+    }
+  ],
+  "indian-creek": [
+    {
+      "name": "F1F4 Pizza Bar",
+      "category": "treats",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJqecdVyOp9YgRDQMyq5oAjjA",
+      "rating": 4.4,
+      "reviewCount": 293,
+      "mapsUrl": "https://maps.google.com/?cid=3498734624810599181&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.62,
+      "walkMinutes": 12
+    }
+  ],
+  "georgia-state": [
+    {
+      "name": "The Peach Cobbler Factory ATL",
+      "category": "treats",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJUYmDUZsD9YgRJgEG70oVb_U",
+      "rating": 4.5,
+      "reviewCount": 1002,
+      "mapsUrl": "https://maps.google.com/?cid=17685377673289138470&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Sweet-Stack Creamery",
+      "category": "treats",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJRdGAHUQD9YgRfddZIRjNQeo",
+      "rating": 4.3,
+      "reviewCount": 578,
+      "mapsUrl": "https://maps.google.com/?cid=16879998381883774845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Catholic Shrine of the Immaculate Conception",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJz5Xl6YMD9YgRlK1J64vHUuI",
+      "rating": 4.7,
+      "reviewCount": 321,
+      "mapsUrl": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Georgia Capitol Museum",
+      "category": "sight",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJkeXgqz4D9YgRjftJUI0GIss",
+      "rating": 4.4,
+      "reviewCount": 651,
+      "mapsUrl": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.15,
+      "walkMinutes": 3
+    }
+  ],
+  "oakland-city": [
+    {
+      "name": "The B Complex",
+      "category": "sight",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJE_rNpCYD9YgRqTqQuXqm1fs",
+      "rating": 4.7,
+      "reviewCount": 100,
+      "mapsUrl": "https://maps.google.com/?cid=18146593319588739753&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Madea's House",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJCd9ZYwkD9YgRIQrw2A18oh0",
+      "rating": 4.5,
+      "reviewCount": 112,
+      "mapsUrl": "https://maps.google.com/?cid=2135405572243065377&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Perkerson Park",
+      "category": "sight",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJldMAdOEC9YgRSZMK5rWKWbo",
+      "rating": 4.4,
+      "reviewCount": 1037,
+      "mapsUrl": "https://maps.google.com/?cid=13427916277835010889&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    },
+    {
+      "name": "The Rev. James Orange Park at Oakland City",
+      "category": "sight",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJoXxP5SgD9YgRdbj4YMF4_nE",
+      "rating": 4.3,
+      "reviewCount": 201,
+      "mapsUrl": "https://maps.google.com/?cid=8214135542321297525&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    }
+  ],
+  "bankhead": [
+    {
+      "name": "Super Frosty City-Wide Distributors",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJI8_E3rEE9YgR7nVhehcASbY",
+      "rating": 4.5,
+      "reviewCount": 67,
+      "mapsUrl": "https://maps.google.com/?cid=13135029889040217582&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.13,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Maddox Park",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ_7NHXaUE9YgRySiKwz0AN28",
+      "rating": 4.4,
+      "reviewCount": 480,
+      "mapsUrl": "https://maps.google.com/?cid=8013874327202703561&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
+    }
+  ],
+  "west-lake": [
+    {
+      "name": "Mozley Park",
+      "category": "sight",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ48ojS1MD9YgRL_eyUGW0IaE",
+      "rating": 4.4,
+      "reviewCount": 325,
+      "mapsUrl": "https://maps.google.com/?cid=11610759661576451887&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.38,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Mozley Park Dog Park",
+      "category": "sight",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJVyrzhZ0d9YgRhY7hmeKjyaQ",
+      "rating": 4.4,
+      "reviewCount": 69,
+      "mapsUrl": "https://maps.google.com/?cid=11874202086178655877&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    }
+  ],
+  "ashby": [
+    {
+      "name": "Boone Park West",
+      "category": "sight",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJI28vxyIF9YgRTe6MCzdd5lw",
+      "rating": 4.7,
+      "reviewCount": 30,
+      "mapsUrl": "https://maps.google.com/?cid=6694140387131190861&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.56,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Kathryn Johnston Memorial Park",
+      "category": "sight",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJi49bNIcF9YgRnCORK11v6Sw",
+      "rating": 4.6,
+      "reviewCount": 70,
+      "mapsUrl": "https://maps.google.com/?cid=3236240253195985820&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.58,
+      "walkMinutes": 12
     }
   ]
 };
