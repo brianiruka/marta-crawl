@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "tokens:build": "style-dictionary build --config style-dictionary.config.mjs"
+    "tokens:build": "style-dictionary build --config style-dictionary.config.mjs",
+    "seed:gtfs": "tsx scripts/seed/ingest-gtfs.ts"
   },
   "dependencies": {
     "next": "16.2.9",
@@ -19,10 +20,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "csv-parse": "^7.0.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "style-dictionary": "^5.4.4",
     "tailwindcss": "^4",
+    "tsx": "^4.23.0",
     "typescript": "^5"
   }
 }
