@@ -2,6 +2,11 @@ export type Poi = {
   name: string;
   category: "bakery" | "coffee" | "food" | "sight";
   description: string;
+  rating?: number;
+  reviewCount?: number;
+  mapsUrl?: string;
+  distanceMiles?: number;
+  walkMinutes?: number;
 };
 
 export const poisByStation: Record<string, Poi[]> = {

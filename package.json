@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "tokens:build": "style-dictionary build --config style-dictionary.config.mjs",
-    "seed:gtfs": "tsx scripts/seed/ingest-gtfs.ts"
+    "seed:gtfs": "tsx scripts/seed/ingest-gtfs.ts",
+    "seed:pois": "tsx scripts/seed/build-pois.ts"
   },
   "dependencies": {
     "next": "16.2.9",

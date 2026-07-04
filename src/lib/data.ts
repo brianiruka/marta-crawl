@@ -4,6 +4,7 @@
 // to fetches wrapped in 'use cache' + cacheTag — no page code moves.
 import { stations, type Station } from "@/data/stations";
 import { poisByStation, type Poi } from "@/data/pois";
+import { generatedPoisByStation } from "@/data/pois.generated";
 
 export async function getStations(): Promise<Station[]> {
   return stations;
@@ -14,5 +15,12 @@ export async function getStation(slug: string): Promise<Station | undefined> {
 }
 
 export async function getPoisForStation(slug: string): Promise<Poi[]> {
-  return poisByStation[slug] ?? [];
+  // Curated entries (hand-written sights) first, then the generated
+  // coffee-shop dataset, deduped by name in case a shop is in both.
+  const curated = poisByStation[slug] ?? [];
+  const curatedNames = new Set(curated.map((p) => p.name));
+  const generated = (generatedPoisByStation[slug] ?? []).filter(
+    (p) => !curatedNames.has(p.name),
+  );
+  return [...curated, ...generated];
 }
