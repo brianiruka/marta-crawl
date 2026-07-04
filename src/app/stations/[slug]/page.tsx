@@ -1,25 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { LineBadges, lineLabel } from "@/components/LineBadges";
 import { PoiList } from "@/components/PoiList";
 import { getPoisForStation, getStation, getStations } from "@/lib/data";
-import type { LineId } from "@/data/stations";
-
-const lineLabel: Record<LineId, string> = {
-  red: "Red Line",
-  gold: "Gold Line",
-  blue: "Blue Line",
-  green: "Green Line",
-  streetcar: "Streetcar",
-};
-
-const lineFill: Record<LineId, string> = {
-  red: "bg-line-red",
-  gold: "bg-line-gold",
-  blue: "bg-line-blue",
-  green: "bg-line-green",
-  streetcar: "bg-line-streetcar",
-};
 
 type StationPageProps = {
   params: Promise<{ slug: string }>;
@@ -62,16 +46,7 @@ export default async function StationPage({ params }: StationPageProps) {
       <div className="mt-6 flex items-center gap-3">
         <h1 className="text-3xl font-semibold text-white">{station.name}</h1>
       </div>
-      <div className="mt-3 flex gap-2">
-        {station.lines.map((line) => (
-          <span
-            key={line}
-            className={`rounded-full px-3 py-1 text-xs font-medium text-white ${lineFill[line]}`}
-          >
-            {lineLabel[line]}
-          </span>
-        ))}
-      </div>
+      <LineBadges lines={station.lines} />
       <h2 className="mt-10 mb-4 text-xl font-semibold text-white">
         Nearby stops
       </h2>
