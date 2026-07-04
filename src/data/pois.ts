@@ -1,7 +1,8 @@
 export type Poi = {
   name: string;
-  category: "bakery" | "coffee" | "food" | "sight";
+  category: "bakery" | "coffee" | "food" | "sight" | "treats" | "drinks";
   description: string;
+  placeId?: string;
   rating?: number;
   reviewCount?: number;
   mapsUrl?: string;

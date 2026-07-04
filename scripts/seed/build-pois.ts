@@ -1,44 +1,43 @@
 /**
- * Builds src/data/pois.generated.ts from data/coffee-ga-seed.csv.
+ * Builds src/data/pois.generated.ts — a pure, offline transform. Never makes
+ * network calls; discovery (network) lives in discover-pois.ts.
  *
- * Pipeline: parse CSV → filter to MARTA-served cities → geocode Place IDs
- * (cache-first) → assign each shop to its nearest station within
- * MAX_DISTANCE_MILES → emit a typed, generated POI module.
+ * Sources, merged and deduped by Place ID:
+ *   1. data/coffee-ga-seed.csv + data/place-locations.json — the original
+ *      hand-curated coffee sheet. Curated ⇒ BYPASSES quality floors.
+ *   2. data/discovery/<category>.json — Nearby Search sweeps. Machine-found ⇒
+ *      quality floors from scripts/seed/categories.ts apply.
+ *   3. data/curation.json — editorial overlay: { "exclude": [placeIds],
+ *      "pin": [placeIds] }. Excluded places are dropped from any source;
+ *      pinned places bypass floors and sort first.
  *
- * Usage:
- *   npm run seed:pois            # DRY RUN (default): reports planned API
- *                                # calls and exits without any network I/O
- *   npm run seed:pois -- --execute --max-calls 150
+ * Each place is assigned to its nearest station within MAX_DISTANCE_MILES,
+ * categorized from its own `types` (see categoryForTypes), capped per
+ * station per category, and sorted in crawl-day order.
  *
- * Cost guardrails (in order of defense):
- *   1. Dry run is the DEFAULT. Nothing touches the network without --execute.
- *   2. Cache-first: data/place-locations.json is committed; any Place ID in
- *      it is never re-fetched. After the first successful run, subsequent
- *      runs make 0 API calls.
- *   3. Essentials SKU only: the request sends `X-Goog-FieldMask: location`
- *      and nothing else. Location-only Place Details is in Google's
- *      Essentials tier (10,000 free calls/month). Do NOT add fields to the
- *      mask — richer fields move every call to the Pro/Enterprise SKU.
- *   4. --execute requires GOOGLE_PLACES_API_KEY to be set and honors
- *      --max-calls (default 150): the script hard-aborts at the cap.
- *
- * PRECONDITION before the first --execute run: set a budget alert in the
- * Google Cloud console for the project that owns the API key.
+ * Usage: npm run seed:pois
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { readdirSync } from "node:fs";
 import { parse } from "csv-parse/sync";
 import { stations } from "../../src/data/stations";
 import { stationLocations } from "../../src/data/stationLocations";
 import type { Poi } from "../../src/data/pois";
+import {
+  categoryForTypes,
+  categoryOrder,
+  discoveryCategories,
+} from "./categories";
+import type { CategoryCache } from "./discover-pois";
 
 const CSV_PATH = "data/coffee-ga-seed.csv";
-const CACHE_PATH = "data/place-locations.json";
+const LOCATION_CACHE_PATH = "data/place-locations.json";
+const DISCOVERY_DIR = "data/discovery";
+const CURATION_PATH = "data/curation.json";
 const OUTPUT_PATH = "src/data/pois.generated.ts";
 const MAX_DISTANCE_MILES = 0.75;
 const WALK_MPH = 3;
 
-// Cities with MARTA rail service. Anything else in the sheet (Marietta,
-// Smyrna, Blue Ridge, ...) is out of range for a rail crawl.
 const MARTA_CITIES = new Set([
   "Atlanta",
   "Decatur",
@@ -52,28 +51,19 @@ const MARTA_CITIES = new Set([
   "Avondale Estates",
 ]);
 
-type CsvRow = {
-  "Coffee Shop": string;
-  Rating: string;
-  "Review Count": string;
-  City: string;
-  Neighborhood: string;
-  "Place ID": string;
-  "Google Maps Link": string;
-  Types: string;
-  Hours: string;
-  // "Rating × Reviews Score", "Biking Distance (Home)",
-  // "Walking Distance (Work)", "Processed?" exist in the CSV but are
-  // personal-context columns — intentionally never read or emitted.
+type Candidate = {
+  placeId: string;
+  name: string;
+  category: Poi["category"];
+  rating?: number;
+  reviewCount?: number;
+  mapsUrl?: string;
+  loc: { lat: number; lng: number };
+  neighborhood?: string;
+  curated: boolean;
 };
 
-type PlaceLocation = { lat: number; lng: number; fetchedAt: string };
-type LocationCache = Record<string, PlaceLocation>;
-
-const args = process.argv.slice(2);
-const execute = args.includes("--execute");
-const maxCallsArg = args.indexOf("--max-calls");
-const maxCalls = maxCallsArg >= 0 ? Number(args[maxCallsArg + 1]) : 150;
+type Curation = { exclude: string[]; pin: string[] };
 
 function haversineMiles(
   a: { lat: number; lng: number },
@@ -89,151 +79,187 @@ function haversineMiles(
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
-function categoryFor(types: string): Poi["category"] {
-  const t = types.toLowerCase();
-  if (t.includes("bakery")) return "bakery";
-  if (t.includes("coffee_shop") || t.includes("cafe")) return "coffee";
-  return "food";
-}
-
-async function fetchLocation(
-  placeId: string,
-  apiKey: string,
-): Promise<PlaceLocation | null> {
-  const res = await fetch(
-    `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}`,
-    {
-      headers: {
-        "X-Goog-Api-Key": apiKey,
-        // Essentials SKU. Do not add fields.
-        "X-Goog-FieldMask": "location",
-      },
-    },
+function loadSheetCandidates(): Candidate[] {
+  if (!existsSync(CSV_PATH) || !existsSync(LOCATION_CACHE_PATH)) return [];
+  const locations: Record<string, { lat: number; lng: number }> = JSON.parse(
+    readFileSync(LOCATION_CACHE_PATH, "utf8"),
   );
-  if (!res.ok) {
-    console.warn(`  ${placeId}: HTTP ${res.status} — skipping`);
-    return null;
-  }
-  const body = (await res.json()) as {
-    location?: { latitude: number; longitude: number };
-  };
-  if (!body.location) {
-    console.warn(`  ${placeId}: no location in response — skipping`);
-    return null;
-  }
-  return {
-    lat: body.location.latitude,
-    lng: body.location.longitude,
-    fetchedAt: new Date().toISOString(),
-  };
-}
-
-async function main() {
-  const rows: CsvRow[] = parse(readFileSync(CSV_PATH, "utf8"), {
+  const rows: Record<string, string>[] = parse(readFileSync(CSV_PATH, "utf8"), {
     columns: true,
     skip_empty_lines: true,
   });
-  const inCities = rows.filter((r) => MARTA_CITIES.has(r.City.trim()));
-  console.log(
-    `${rows.length} rows in CSV; ${inCities.length} in MARTA-served cities (${rows.length - inCities.length} dropped)`,
-  );
-
-  const cache: LocationCache = existsSync(CACHE_PATH)
-    ? JSON.parse(readFileSync(CACHE_PATH, "utf8"))
-    : {};
-  const uncached = inCities.filter((r) => !cache[r["Place ID"].trim()]);
-  console.log(
-    `Geocode cache: ${Object.keys(cache).length} entries; ${inCities.length - uncached.length} hits, ${uncached.length} misses`,
-  );
-
-  if (!execute) {
-    console.log(
-      `\nDRY RUN (default): would call Places API ${uncached.length} times.`,
-    );
-    console.log(
-      "Rerun with --execute (requires GOOGLE_PLACES_API_KEY; optional --max-calls N, default 150).",
-    );
-    if (uncached.length === 0 && inCities.length > 0) {
-      console.log("All locations cached — emitting output without network.");
-    } else {
-      return;
-    }
+  const candidates: Candidate[] = [];
+  for (const row of rows) {
+    if (!MARTA_CITIES.has(row.City?.trim())) continue;
+    const placeId = row["Place ID"]?.trim();
+    const loc = placeId ? locations[placeId] : undefined;
+    if (!loc) continue;
+    const types = (row.Types ?? "").split(",").map((t) => t.trim());
+    candidates.push({
+      placeId,
+      name: row["Coffee Shop"].trim(),
+      category: categoryForTypes(types),
+      rating: Number(row.Rating) || undefined,
+      reviewCount: Number(row["Review Count"]) || undefined,
+      mapsUrl: row["Google Maps Link"]?.trim() || undefined,
+      loc,
+      neighborhood: row.Neighborhood?.trim() || undefined,
+      curated: true, // hand-curated sheet bypasses quality floors
+    });
   }
+  return candidates;
+}
 
-  if (execute && uncached.length > 0) {
-    const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-    if (!apiKey) {
-      console.error("--execute requires GOOGLE_PLACES_API_KEY to be set.");
-      process.exit(1);
-    }
-    if (uncached.length > maxCalls) {
-      console.error(
-        `Would make ${uncached.length} calls but --max-calls is ${maxCalls}. Aborting before any call.`,
-      );
-      process.exit(1);
-    }
-    let calls = 0;
-    for (const row of uncached) {
-      if (calls >= maxCalls) {
-        console.error(`Hit --max-calls cap (${maxCalls}); stopping.`);
-        break;
+function loadDiscoveryCandidates(): Candidate[] {
+  if (!existsSync(DISCOVERY_DIR)) return [];
+  const candidates: Candidate[] = [];
+  for (const file of readdirSync(DISCOVERY_DIR)) {
+    if (!file.endsWith(".json") || file === "call-log.json") continue;
+    const cache: CategoryCache = JSON.parse(
+      readFileSync(`${DISCOVERY_DIR}/${file}`, "utf8"),
+    );
+    for (const { places } of Object.values(cache)) {
+      for (const place of places) {
+        if (place.businessStatus && place.businessStatus !== "OPERATIONAL")
+          continue;
+        if (!place.location || !place.displayName?.text) continue;
+        candidates.push({
+          placeId: place.id,
+          name: place.displayName.text,
+          category: categoryForTypes(place.types ?? []),
+          rating: place.rating,
+          reviewCount: place.userRatingCount,
+          mapsUrl: place.googleMapsUri,
+          loc: { lat: place.location.latitude, lng: place.location.longitude },
+          curated: false,
+        });
       }
-      calls++;
-      const placeId = row["Place ID"].trim();
-      const loc = await fetchLocation(placeId, apiKey);
-      if (loc) cache[placeId] = loc;
-      // Persist after every call so an interrupted run loses nothing.
-      writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
     }
-    console.log(`Made ${calls} Places API calls (Essentials SKU).`);
+  }
+  return candidates;
+}
+
+function passesFloor(c: Candidate): boolean {
+  // Floors are defined per discovery category; map the candidate's Poi
+  // category back to the closest config (food → eats, sight → sights, etc.).
+  const configKey =
+    c.category === "food"
+      ? "eats"
+      : c.category === "sight"
+        ? "sights"
+        : c.category === "bakery"
+          ? "treats"
+          : c.category;
+  const config = discoveryCategories[configKey];
+  if (!config) return true;
+  return (
+    (c.rating ?? 0) >= config.minRating &&
+    (c.reviewCount ?? 0) >= config.minReviews
+  );
+}
+
+function main() {
+  const curation: Curation = existsSync(CURATION_PATH)
+    ? JSON.parse(readFileSync(CURATION_PATH, "utf8"))
+    : { exclude: [], pin: [] };
+  const excluded = new Set(curation.exclude);
+  const pinned = new Set(curation.pin);
+
+  const sheet = loadSheetCandidates();
+  const discovered = loadDiscoveryCandidates();
+  console.log(
+    `Candidates: ${sheet.length} from sheet (curated), ${discovered.length} from discovery caches`,
+  );
+
+  // Dedupe by Place ID. Sheet first: curated status wins over a discovery
+  // duplicate of the same place.
+  const byPlaceId = new Map<string, Candidate>();
+  for (const c of [...sheet, ...discovered]) {
+    if (excluded.has(c.placeId)) continue;
+    if (!byPlaceId.has(c.placeId)) byPlaceId.set(c.placeId, c);
   }
 
-  // Assign each geocoded shop to its nearest station.
-  const poisByStation: Record<string, Poi[]> = {};
-  let assigned = 0;
-  let tooFar = 0;
-  let noLocation = 0;
-  for (const row of inCities) {
-    const loc = cache[row["Place ID"].trim()];
-    if (!loc) {
-      noLocation++;
+  const perStation: Record<string, (Poi & { _pinned: boolean })[]> = {};
+  const dropped = { floor: 0, distance: 0 };
+  for (const c of byPlaceId.values()) {
+    const isPinned = pinned.has(c.placeId);
+    if (!c.curated && !isPinned && !passesFloor(c)) {
+      dropped.floor++;
       continue;
     }
     let nearest: { id: string; miles: number } | null = null;
     for (const station of stations) {
       const stationLoc = stationLocations[station.id];
       if (!stationLoc) continue;
-      const miles = haversineMiles(loc, stationLoc);
+      const miles = haversineMiles(c.loc, stationLoc);
       if (!nearest || miles < nearest.miles) nearest = { id: station.id, miles };
     }
     if (!nearest || nearest.miles > MAX_DISTANCE_MILES) {
-      tooFar++;
+      dropped.distance++;
       continue;
     }
     const miles = Math.round(nearest.miles * 100) / 100;
     const walkMinutes = Math.max(1, Math.round((nearest.miles / WALK_MPH) * 60));
-    const poi: Poi = {
-      name: row["Coffee Shop"].trim(),
-      category: categoryFor(row.Types),
-      description: `${row.Neighborhood.trim() || row.City.trim()} coffee stop, about a ${walkMinutes}-minute walk from the station.`,
-      rating: Number(row.Rating) || undefined,
-      reviewCount: Number(row["Review Count"]) || undefined,
-      mapsUrl: row["Google Maps Link"].trim() || undefined,
+    const where = c.neighborhood ? `${c.neighborhood} — about` : "About";
+    (perStation[nearest.id] ??= []).push({
+      name: c.name,
+      category: c.category,
+      description: `${where} a ${walkMinutes}-minute walk from the station.`,
+      placeId: c.placeId,
+      rating: c.rating,
+      reviewCount: c.reviewCount,
+      mapsUrl: c.mapsUrl,
       distanceMiles: miles,
       walkMinutes,
-    };
-    (poisByStation[nearest.id] ??= []).push(poi);
-    assigned++;
+      _pinned: isPinned,
+    });
   }
-  for (const pois of Object.values(poisByStation)) {
-    pois.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+
+  // Per station: crawl-day category order, pinned first within a category,
+  // then rating; cap per category.
+  const poisByStation: Record<string, Poi[]> = {};
+  let total = 0;
+  for (const [stationId, pois] of Object.entries(perStation)) {
+    const kept: Poi[] = [];
+    for (const category of categoryOrder) {
+      const config =
+        discoveryCategories[
+          category === "food"
+            ? "eats"
+            : category === "sight"
+              ? "sights"
+              : category === "bakery"
+                ? "treats"
+                : category
+        ];
+      const cap = config?.maxPerStation ?? 8;
+      const group = pois
+        .filter((p) => p.category === category)
+        .sort(
+          (a, b) =>
+            Number(b._pinned) - Number(a._pinned) ||
+            (b.rating ?? 0) - (a.rating ?? 0),
+        )
+        .slice(0, cap);
+      for (const entry of group) {
+        const { _pinned: _, ...poi } = entry;
+        void _;
+        kept.push(poi);
+      }
+    }
+    if (kept.length > 0) {
+      poisByStation[stationId] = kept;
+      total += kept.length;
+    }
   }
+
   console.log(
-    `Assigned ${assigned} shops to ${Object.keys(poisByStation).length} stations (${tooFar} beyond ${MAX_DISTANCE_MILES} mi, ${noLocation} without a location).`,
+    `Assigned ${total} POIs to ${Object.keys(poisByStation).length} stations ` +
+      `(${dropped.floor} below quality floor, ${dropped.distance} beyond ${MAX_DISTANCE_MILES} mi).`,
   );
 
   const output = `// GENERATED by scripts/seed/build-pois.ts — do not edit by hand.
-// Source: data/coffee-ga-seed.csv + data/place-locations.json.
+// Sources: data/coffee-ga-seed.csv, data/discovery/*.json, data/curation.json.
 // Regenerate with: npm run seed:pois
 import type { Poi } from "./pois";
 
