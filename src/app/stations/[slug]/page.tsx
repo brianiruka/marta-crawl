@@ -36,18 +36,20 @@ export default async function StationPage({ params }: StationPageProps) {
   const pois = await getPoisForStation(slug);
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-2xl bg-zinc-900 p-4 md:p-16">
+    <main className="mx-auto min-h-screen w-full max-w-2xl p-4 md:p-16">
       <Link
         href="/"
-        className="text-sm text-zinc-400 transition-colors hover:text-white"
+        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
         &larr; Back to the map
       </Link>
       <div className="mt-6 flex items-center gap-3">
-        <h1 className="text-3xl font-semibold text-white">{station.name}</h1>
+        <h1 className="font-display text-3xl font-semibold text-foreground">
+          {station.name}
+        </h1>
       </div>
       <LineBadges lines={station.lines} />
-      <h2 className="mt-10 mb-4 text-xl font-semibold text-white">
+      <h2 className="mt-10 mb-4 font-display text-xl font-semibold text-foreground">
         Nearby stops
       </h2>
       <PoiList pois={pois} />

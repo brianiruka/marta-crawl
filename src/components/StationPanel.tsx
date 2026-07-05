@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 
 type StationPanelProps = {
   children: React.ReactNode;
@@ -10,20 +11,20 @@ export function StationPanel({ children }: StationPanelProps) {
   const router = useRouter();
 
   return (
-    <aside
-      role="dialog"
-      aria-modal="false"
-      className="fixed inset-y-0 right-0 z-10 w-full max-w-md overflow-y-auto border-l border-zinc-800 bg-zinc-900/95 p-6 shadow-2xl backdrop-blur md:p-8"
-    >
-      <button
-        type="button"
-        onClick={() => router.back()}
-        aria-label="Close station panel"
-        className="mb-4 rounded-md px-2 py-1 text-sm text-zinc-400 transition-colors hover:bg-zinc-800 hover:text-white"
+    // Non-modal: no overlay and no focus trap, so the map behind stays
+    // fully interactive — clicking another station swaps the panel content.
+    <Sheet open modal={false} onOpenChange={(open) => !open && router.back()}>
+      <SheetContent
+        side="right"
+        // Clicking the map must switch stations, not dismiss the sheet —
+        // without this, Radix's interact-outside fires router.back() and
+        // races the marker's own navigation.
+        onInteractOutside={(e) => e.preventDefault()}
+        className="w-full gap-0 overflow-y-auto p-6 sm:max-w-md md:p-8"
       >
-        &larr; Back to the map
-      </button>
-      {children}
-    </aside>
+        <SheetTitle className="sr-only">Station details</SheetTitle>
+        {children}
+      </SheetContent>
+    </Sheet>
   );
 }

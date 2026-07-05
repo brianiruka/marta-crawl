@@ -1,4 +1,6 @@
 import type { LineId } from "@/data/stations";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 export const lineLabel: Record<LineId, string> = {
   red: "Red Line",
@@ -20,12 +22,15 @@ export function LineBadges({ lines }: { lines: LineId[] }) {
   return (
     <div className="mt-3 flex gap-2">
       {lines.map((line) => (
-        <span
+        <Badge
           key={line}
-          className={`rounded-full px-3 py-1 text-xs font-medium text-white ${lineFill[line]}`}
+          className={cn(
+            "font-display font-semibold tracking-wide text-white",
+            lineFill[line],
+          )}
         >
           {lineLabel[line]}
-        </span>
+        </Badge>
       ))}
     </div>
   );

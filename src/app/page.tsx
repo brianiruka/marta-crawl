@@ -12,7 +12,7 @@ export default function Home() {
     : null;
 
   return (
-    <div className="flex min-h-screen flex-col items-center gap-4 bg-zinc-900 p-4 md:p-16">
+    <div className="flex min-h-screen flex-col items-center gap-4 p-4 md:p-16">
       <MapLegend />
       <MartaMap
         selectedStationId={selectedStationId}

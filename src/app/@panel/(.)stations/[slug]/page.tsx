@@ -23,14 +23,16 @@ export default async function StationPanelPage({
 
   return (
     <StationPanel>
-      <h2 className="text-2xl font-semibold text-white">{station.name}</h2>
+      <h2 className="font-display text-2xl font-semibold text-foreground">
+        {station.name}
+      </h2>
       <LineBadges lines={station.lines} />
       <div className="mt-8">
         <PoiList pois={pois} />
       </div>
       <Link
         href={`/stations/${station.id}`}
-        className="mt-6 inline-block text-sm text-zinc-400 underline-offset-4 transition-colors hover:text-white hover:underline"
+        className="mt-6 inline-block text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
       >
         Open full station page
       </Link>
