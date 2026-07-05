@@ -28,10 +28,13 @@ const VIEW_H = 2048;
 // Camera flight: how far to zoom toward a selected station.
 const ZOOM = 1.7;
 
-// Station labels are FONT_SIZE=20 user units; at typical rendered map widths
-// that lands well under comfortable reading size (e.g. ~8px on a 1440px
-// desktop, ~4px on a phone). Scale labels up so they render at roughly
-// LABEL_TARGET_PX on any device, capped so dense clusters don't collide.
+// Station labels are drawn at BASE_FONT_SIZE=20 user units; at typical
+// rendered map widths that lands well under comfortable reading size (e.g.
+// ~8px on a 1440px desktop, ~4px on a phone). Scale labels up so they render
+// at roughly LABEL_TARGET_PX on any device, capped so dense clusters don't
+// collide. Passed down to StationMarker, which derives ALL label geometry
+// (leader-line attach points, hover math) from this same scaled size, so
+// the connector always meets the label's actual rendered edge.
 const LABEL_BASE = 20;
 const LABEL_TARGET_PX = 11;
 const LABEL_MAX_SCALE = 2.25;
@@ -80,7 +83,6 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
     <div
       ref={containerRef}
       className="mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full"
-      style={{ "--map-label-scale": labelScale } as React.CSSProperties}
     >
       <svg
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
@@ -89,7 +91,7 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
       >
         <defs>
           <filter id="station-glow-blur" x="-100%" y="-100%" width="300%" height="300%">
-            <feGaussianBlur stdDeviation="32" />
+            <feGaussianBlur stdDeviation="6" />
           </filter>
         </defs>
 
@@ -105,7 +107,7 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
             aria-hidden="true"
             cx={selected?.x ?? VIEW_W / 2}
             cy={selected?.y ?? VIEW_H / 2}
-            r={90}
+            r={22}
             filter="url(#station-glow-blur)"
             className="transition-opacity duration-500"
             style={{
@@ -142,6 +144,7 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
                 bulges={bulgesByStation[station.id]}
                 selected={station.id === selectedStationId}
                 onSelect={() => onSelectStation(station.id)}
+                labelScale={labelScale}
               />
             </g>
           ))}

@@ -81,13 +81,6 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
-/* Per-device station-label legibility: MartaMap measures its rendered
-   width and sets --map-label-scale so labels land near a fixed physical
-   size (see LABEL_TARGET_PX there). Overrides the SVG fontSize attribute. */
-.station-label-text {
-  font-size: calc(20px * var(--map-label-scale, 1));
-}
-
 /* Atmosphere: faint dot grid behind the map, fading out toward the edges
    so it reads as texture rather than pattern. */
 .atmosphere-dots {
