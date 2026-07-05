@@ -55,7 +55,7 @@ export default async function StationPage({ params }: StationPageProps) {
       <h2 className="mt-10 mb-4 font-display text-xl font-semibold text-foreground">
         Nearby stops
       </h2>
-        <PoiList pois={pois} />
+        <PoiList pois={pois} station={{ id: station.id, name: station.name }} />
       </main>
     </PageTransition>
   );

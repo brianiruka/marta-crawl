@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
+import { useCoarsePointer } from "@/lib/useCoarsePointer";
 
 type StationPanelProps = {
   children: React.ReactNode;
@@ -16,6 +17,11 @@ export function StationPanel({ children }: StationPanelProps) {
   const router = useRouter();
   const [open, setOpen] = useState(true);
   const closing = useRef(false);
+  // Touch/small screens: modal (scrim + focus trap + inert background —
+  // there's no "click the map to switch stations" gesture to preserve
+  // there, and background content should be hidden from assistive tech).
+  // Desktop stays non-modal so map clicks can swap the panel's station.
+  const isCoarse = useCoarsePointer();
 
   const close = () => {
     if (closing.current) return;
@@ -27,15 +33,16 @@ export function StationPanel({ children }: StationPanelProps) {
   };
 
   return (
-    // Non-modal: no overlay and no focus trap, so the map behind stays
-    // fully interactive — clicking another station swaps the panel content.
-    <Sheet open={open} modal={false} onOpenChange={(o) => !o && close()}>
+    <Sheet open={open} modal={isCoarse} onOpenChange={(o) => !o && close()}>
       <SheetContent
         side="right"
-        // Clicking the map must switch stations, not dismiss the sheet —
-        // without this, Radix's interact-outside fires router.back() and
-        // races the marker's own navigation.
-        onInteractOutside={(e) => e.preventDefault()}
+        // On desktop, clicking the map must switch stations, not dismiss
+        // the sheet — without this, Radix's interact-outside fires
+        // router.back() and races the marker's own navigation. On touch
+        // there's no such gesture, so the scrim can dismiss normally.
+        onInteractOutside={(e) => {
+          if (!isCoarse) e.preventDefault();
+        }}
         className="w-full gap-0 overflow-y-auto p-6 duration-300 sm:max-w-md md:p-8"
       >
         <SheetTitle className="sr-only">Station details</SheetTitle>

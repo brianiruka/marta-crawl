@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { MartaMap } from "@/components/MartaMap";
-import { MapLegend } from "@/components/MapLegend";
+import { ListLauncher } from "@/components/ListLauncher";
 import { PageTransition } from "@/components/PageTransition";
 import { StationIndex } from "@/components/StationIndex";
 import { cn } from "@/lib/utils";
@@ -26,7 +26,7 @@ export default function Home() {
           selectedStationId && "md:pr-[28rem]",
         )}
       >
-        <MapLegend />
+        <ListLauncher />
         {/* The searchable list is the accessible primary way to reach a
             station where the map's hover/precise-tap fails — touch and
             smaller screens. On desktop the map (with focusable markers +

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Barlow, Inter } from "next/font/google";
+import { ListSheet } from "@/components/ListSheet";
+import { getPoiCounts } from "@/lib/data";
 import "./globals.css";
 
 // Barlow: a grotesque drawn from highway signage — display/headings.
@@ -24,13 +27,14 @@ export const metadata: Metadata = {
     "An Atlanta city guide centered on the MARTA rail system — pick a station, find what's nearby.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   panel,
 }: Readonly<{
   children: React.ReactNode;
   panel: React.ReactNode;
 }>) {
+  const counts = await getPoiCounts();
   return (
     <html
       lang="en"
@@ -39,6 +43,11 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         {panel}
+        {/* useSearchParams inside ListSheet requires a Suspense boundary on
+            prerendered pages, or `next build` fails (missing-suspense). */}
+        <Suspense fallback={null}>
+          <ListSheet counts={counts} />
+        </Suspense>
       </body>
     </html>
   );

@@ -6,10 +6,14 @@ import type { Poi } from "@/data/pois";
 import { categoryMeta, categoryOrder } from "@/data/poiCategories";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { PoiStatusButtons } from "@/components/PoiStatusButtons";
 import { cn } from "@/lib/utils";
+
+type StationRef = { id: string; name: string };
 
 type PoiListProps = {
   pois: Poi[];
+  station: StationRef;
   emptyMessage?: string;
 };
 
@@ -27,7 +31,15 @@ const sectionVariants = {
   },
 } as const;
 
-function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
+function PoiCard({
+  poi,
+  station,
+  isTopPick,
+}: {
+  poi: Poi;
+  station: StationRef;
+  isTopPick: boolean;
+}) {
   // Website first (the card is an unfurl-style link preview of the place's
   // own site); Maps becomes the secondary link when both exist.
   const primaryHref = poi.websiteUrl ?? poi.mapsUrl;
@@ -40,61 +52,74 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
           : "border-transparent bg-card/50 hover:border-border hover:bg-card",
       )}
     >
-      <CardContent className="flex gap-3 px-4">
-        <div className="flex min-w-0 flex-col gap-1">
-          <div className="flex items-baseline justify-between gap-3">
-            {primaryHref ? (
-              <a
-                href={primaryHref}
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium text-foreground underline-offset-4 hover:underline"
-              >
-                {poi.name}
-              </a>
-            ) : (
-              <span className="font-medium text-foreground">{poi.name}</span>
-            )}
-            {isTopPick && (
-              <Badge variant="secondary" className="shrink-0">
-                Top pick
-              </Badge>
-            )}
-          </div>
-          <p className="text-sm text-muted-foreground">{poi.description}</p>
-          {(poi.rating !== undefined ||
-            poi.walkMinutes !== undefined ||
-            (poi.websiteUrl && poi.mapsUrl)) && (
-          <p className="mt-1 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground/70">
-            {poi.rating !== undefined && (
-              <span className="flex items-center gap-1">
-                <Star aria-hidden="true" className="size-3 fill-current" />
-                {poi.rating.toFixed(1)}
-                {poi.reviewCount ? ` (${poi.reviewCount})` : ""}
-              </span>
-            )}
-            {poi.walkMinutes !== undefined && (
-              <>
-                {poi.rating !== undefined && <span aria-hidden="true">·</span>}
-                <span>{poi.walkMinutes} min walk</span>
-              </>
-            )}
-            {poi.websiteUrl && poi.mapsUrl && (
-              <>
-                <span aria-hidden="true">·</span>
-                <a
-                  href={poi.mapsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline-offset-4 hover:text-foreground hover:underline"
-                >
-                  Maps
-                </a>
-              </>
-            )}
-          </p>
+      <CardContent className="flex flex-col gap-1 px-4">
+        <div className="flex items-baseline justify-between gap-3">
+          {primaryHref ? (
+            <a
+              href={primaryHref}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-foreground underline-offset-4 hover:underline"
+            >
+              {poi.name}
+            </a>
+          ) : (
+            <span className="font-medium text-foreground">{poi.name}</span>
+          )}
+          {isTopPick && (
+            <Badge variant="secondary" className="shrink-0">
+              Top pick
+            </Badge>
           )}
         </div>
+        <p className="text-sm text-muted-foreground">{poi.description}</p>
+        {(poi.rating !== undefined ||
+          poi.walkMinutes !== undefined ||
+          (poi.websiteUrl && poi.mapsUrl)) && (
+        <p className="mt-1 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground/70">
+          {poi.rating !== undefined && (
+            <span className="flex items-center gap-1">
+              <Star aria-hidden="true" className="size-3 fill-current" />
+              {poi.rating.toFixed(1)}
+              {poi.reviewCount ? ` (${poi.reviewCount})` : ""}
+            </span>
+          )}
+          {poi.walkMinutes !== undefined && (
+            <>
+              {poi.rating !== undefined && <span aria-hidden="true">·</span>}
+              <span>{poi.walkMinutes} min walk</span>
+            </>
+          )}
+          {poi.websiteUrl && poi.mapsUrl && (
+            <>
+              <span aria-hidden="true">·</span>
+              <a
+                href={poi.mapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="underline-offset-4 hover:text-foreground hover:underline"
+              >
+                Maps
+              </a>
+            </>
+          )}
+        </p>
+        )}
+        <PoiStatusButtons
+          poi={{
+            name: poi.name,
+            placeId: poi.placeId,
+            stationId: station.id,
+            stationName: station.name,
+            category: poi.category,
+            rating: poi.rating,
+            reviewCount: poi.reviewCount,
+            mapsUrl: poi.mapsUrl,
+            websiteUrl: poi.websiteUrl,
+            walkMinutes: poi.walkMinutes,
+          }}
+          className="mt-1 justify-end"
+        />
       </CardContent>
     </Card>
   );
@@ -102,6 +127,7 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
 
 export function PoiList({
   pois,
+  station,
   emptyMessage = "No POIs added for this station yet.",
 }: PoiListProps) {
   if (pois.length === 0) {
@@ -138,7 +164,7 @@ export function PoiList({
             </h3>
             <div className="flex flex-col gap-2">
               {items.map((poi, i) => (
-                <PoiCard key={poi.name} poi={poi} isTopPick={i === 0} />
+                <PoiCard key={poi.name} poi={poi} station={station} isTopPick={i === 0} />
               ))}
             </div>
           </motion.div>

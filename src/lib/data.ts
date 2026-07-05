@@ -24,3 +24,14 @@ export async function getPoisForStation(slug: string): Promise<Poi[]> {
   );
   return [...curated, ...generated];
 }
+
+/** Per-station POI totals, used as the "x of y" denominator in the "Been
+ * there" sidebar. Computed at build time from the same merge/dedupe as
+ * getPoisForStation, so it never drifts from what a station page shows. */
+export async function getPoiCounts(): Promise<Record<string, number>> {
+  const counts: Record<string, number> = {};
+  for (const station of stations) {
+    counts[station.id] = (await getPoisForStation(station.id)).length;
+  }
+  return counts;
+}

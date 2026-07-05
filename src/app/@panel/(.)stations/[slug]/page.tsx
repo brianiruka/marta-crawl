@@ -28,7 +28,7 @@ export default async function StationPanelPage({
       <LineAccent lines={station.lines} className="mt-2" />
       <LineBadges lines={station.lines} />
       <div className="mt-8">
-        <PoiList pois={pois} />
+        <PoiList pois={pois} station={{ id: station.id, name: station.name }} />
       </div>
       {/* Plain <a>, not <Link>: the panel already lives at this URL, so a
           soft navigation is a no-op. A hard navigation skips the route
