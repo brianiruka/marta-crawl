@@ -1,4 +1,10 @@
-import { useState, type CSSProperties, type KeyboardEvent } from "react";
+import {
+  useLayoutEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type KeyboardEvent,
+} from "react";
 import type { Station } from "@/data/stations";
 import type { StationBulge } from "@/data/stationBulges";
 import { StationHole } from "@/components/StationHole";
@@ -293,7 +299,23 @@ function spanningEdges(bulges: StationBulge[]): [StationBulge, StationBulge][] {
 
 export function StationMarker({ station, bulges, selected, onSelect }: StationMarkerProps) {
   const anchorRing = nearestBulge(bulges, { x: station.x, y: station.y });
-  const labelWidth = station.name.length * FONT_SIZE * CHAR_WIDTH;
+
+  // The leader line attaches to the label's edge, so the gap between them
+  // is only consistent if labelWidth is the label's REAL width. A flat
+  // per-char estimate (CHAR_WIDTH) under/overshoots depending on the word's
+  // glyphs (wide "Dunwoody"/"Chamblee" vs narrow "Doraville"), leaving the
+  // line touching some labels and far from others. So estimate for the SSR
+  // first paint, then measure the rendered text and recompute.
+  const textRef = useRef<SVGTextElement>(null);
+  const estimatedWidth = station.name.length * FONT_SIZE * CHAR_WIDTH;
+  const [measuredWidth, setMeasuredWidth] = useState<number | null>(null);
+  useLayoutEffect(() => {
+    // Re-measure on selection change too: the selected label renders bold,
+    // which is a touch wider than the regular weight.
+    if (textRef.current) setMeasuredWidth(textRef.current.getComputedTextLength());
+  }, [selected]);
+
+  const labelWidth = measuredWidth ?? estimatedWidth;
   const leader = buildLeader(station, labelWidth, { x: anchorRing.cx, y: anchorRing.cy });
 
   // The ring(s) glow white for the duration of a hover gesture, full
@@ -400,6 +422,7 @@ export function StationMarker({ station, bulges, selected, onSelect }: StationMa
           }}
         />
         <text
+          ref={textRef}
           x={station.x}
           y={station.y}
           textAnchor="middle"
