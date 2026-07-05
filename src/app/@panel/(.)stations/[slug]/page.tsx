@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { LineBadges } from "@/components/LineBadges";
+import { LineAccent, LineBadges } from "@/components/LineBadges";
 import { PoiList } from "@/components/PoiList";
 import { StationPanel } from "@/components/StationPanel";
 import { getPoisForStation, getStation, getStations } from "@/lib/data";
@@ -26,16 +25,20 @@ export default async function StationPanelPage({
       <h2 className="font-display text-2xl font-semibold text-foreground">
         {station.name}
       </h2>
+      <LineAccent lines={station.lines} className="mt-2" />
       <LineBadges lines={station.lines} />
       <div className="mt-8">
         <PoiList pois={pois} />
       </div>
-      <Link
+      {/* Plain <a>, not <Link>: the panel already lives at this URL, so a
+          soft navigation is a no-op. A hard navigation skips the route
+          interception and renders the standalone page. */}
+      <a
         href={`/stations/${station.id}`}
         className="mt-6 inline-block text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
       >
         Open full station page
-      </Link>
+      </a>
     </StationPanel>
   );
 }

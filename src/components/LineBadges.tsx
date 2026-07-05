@@ -18,6 +18,30 @@ const lineFill: Record<LineId, string> = {
   streetcar: "bg-line-streetcar",
 };
 
+/** Thin gradient hairline built from a station's line colors — the
+ * per-station accent that makes each page feel like *its* station.
+ * Colors come from the design-token CSS variables, never hex. */
+export function LineAccent({
+  lines,
+  className,
+}: {
+  lines: LineId[];
+  className?: string;
+}) {
+  const stops = lines.map((line) => `var(--line-${line})`);
+  const background =
+    stops.length === 1
+      ? stops[0]
+      : `linear-gradient(90deg, ${stops.join(", ")})`;
+  return (
+    <div
+      aria-hidden="true"
+      className={cn("h-0.5 w-16 rounded-full", className)}
+      style={{ background }}
+    />
+  );
+}
+
 export function LineBadges({ lines }: { lines: LineId[] }) {
   return (
     <div className="mt-3 flex gap-2">

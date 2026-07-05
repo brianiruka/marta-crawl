@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { LineBadges, lineLabel } from "@/components/LineBadges";
+import { LineAccent, LineBadges, lineLabel } from "@/components/LineBadges";
 import { PoiList } from "@/components/PoiList";
 import { getPoisForStation, getStation, getStations } from "@/lib/data";
 
@@ -48,6 +48,7 @@ export default async function StationPage({ params }: StationPageProps) {
           {station.name}
         </h1>
       </div>
+      <LineAccent lines={station.lines} className="mt-3 w-24" />
       <LineBadges lines={station.lines} />
       <h2 className="mt-10 mb-4 font-display text-xl font-semibold text-foreground">
         Nearby stops

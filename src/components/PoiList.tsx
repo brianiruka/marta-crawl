@@ -1,3 +1,7 @@
+"use client";
+
+import { Star } from "lucide-react";
+import { motion } from "motion/react";
 import type { Poi } from "@/data/pois";
 import { categoryMeta, categoryOrder } from "@/data/poiCategories";
 import { Badge } from "@/components/ui/badge";
@@ -9,12 +13,28 @@ type PoiListProps = {
   emptyMessage?: string;
 };
 
+const listVariants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.06, delayChildren: 0.1 } },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 260, damping: 28 },
+  },
+} as const;
+
 function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
   return (
     <Card
       className={cn(
-        "gap-1 rounded-lg py-4",
-        !isTopPick && "border-transparent bg-card/50",
+        "gap-1 rounded-lg py-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg",
+        isTopPick
+          ? "hover:border-ring"
+          : "border-transparent bg-card/50 hover:border-border hover:bg-card",
       )}
     >
       <CardContent className="flex flex-col gap-1 px-4">
@@ -39,16 +59,20 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
         </div>
         <p className="text-sm text-muted-foreground">{poi.description}</p>
         {(poi.rating !== undefined || poi.walkMinutes !== undefined) && (
-          <p className="mt-1 text-xs text-muted-foreground/70">
-            {[
-              poi.rating !== undefined &&
-                `★ ${poi.rating.toFixed(1)}${
-                  poi.reviewCount ? ` (${poi.reviewCount})` : ""
-                }`,
-              poi.walkMinutes !== undefined && `${poi.walkMinutes} min walk`,
-            ]
-              .filter(Boolean)
-              .join(" · ")}
+          <p className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground/70">
+            {poi.rating !== undefined && (
+              <span className="flex items-center gap-1">
+                <Star aria-hidden="true" className="size-3 fill-current" />
+                {poi.rating.toFixed(1)}
+                {poi.reviewCount ? ` (${poi.reviewCount})` : ""}
+              </span>
+            )}
+            {poi.rating !== undefined && poi.walkMinutes !== undefined && (
+              <span aria-hidden="true">·</span>
+            )}
+            {poi.walkMinutes !== undefined && (
+              <span>{poi.walkMinutes} min walk</span>
+            )}
           </p>
         )}
       </CardContent>
@@ -72,12 +96,17 @@ export function PoiList({
     .filter((section) => section.items.length > 0);
 
   return (
-    <div className="flex flex-col gap-8">
+    <motion.div
+      className="flex flex-col gap-8"
+      variants={listVariants}
+      initial="hidden"
+      animate="show"
+    >
       {sections.map(({ category, items }) => {
         const meta = categoryMeta[category];
         const Icon = meta.icon;
         return (
-          <div key={category}>
+          <motion.div key={category} variants={sectionVariants}>
             <h3
               className={cn(
                 "mb-3 flex items-center gap-2 font-display text-sm font-semibold tracking-widest uppercase",
@@ -92,9 +121,9 @@ export function PoiList({
                 <PoiCard key={poi.name} poi={poi} isTopPick={i === 0} />
               ))}
             </div>
-          </div>
+          </motion.div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
