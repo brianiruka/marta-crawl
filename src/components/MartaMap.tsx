@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { StationMarker } from "@/components/StationMarker";
 import { stations, type LineId } from "@/data/stations";
 import { stationBulges, type StationBulge } from "@/data/stationBulges";
@@ -27,6 +28,8 @@ const VIEW_H = 2048;
 // Camera flight: how far to zoom toward a selected station.
 const ZOOM = 1.7;
 
+export type Cursor = { x: number; y: number } | null;
+
 // A station's marker is one ring per line it serves -- for interchanges
 // that's several rings spread around the crossing, each rendered (and
 // independently hoverable) by StationMarker itself, so it needs its own
@@ -37,9 +40,51 @@ for (const b of stationBulges) {
 }
 
 export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) {
+  const svgRef = useRef<SVGSVGElement>(null);
+  // Cursor position in SVG user units, driving the fisheye magnification.
+  // Null when the pointer is away (or on touch, where mousemove never
+  // fires) so every station eases back to its natural size.
+  const [cursor, setCursor] = useState<Cursor>(null);
+  const pendingCursor = useRef<Cursor>(null);
+  const rafId = useRef<number | null>(null);
+
   const selected = selectedStationId
     ? stations.find((s) => s.id === selectedStationId)
     : undefined;
+
+  // Fisheye is a hover interaction only; suppress it while a station is
+  // selected (the camera flight owns the view then). Suppressing at render
+  // time means a stale cursor can't leak back in when deselected — the next
+  // pointer move refreshes it.
+  const fisheyeCursor = selected ? null : cursor;
+
+  function handlePointerMove(e: React.PointerEvent<SVGSVGElement>) {
+    // Coarse pointers (touch) don't get the fisheye — it needs a hovering
+    // cursor, and on touch every "move" is a drag mid-gesture.
+    if (e.pointerType !== "mouse") return;
+    const svg = svgRef.current;
+    if (!svg) return;
+    const rect = svg.getBoundingClientRect();
+    // Container is aspect-locked to the viewBox (no letterboxing), so screen
+    // position maps to SVG units by simple proportion.
+    pendingCursor.current = {
+      x: ((e.clientX - rect.left) / rect.width) * VIEW_W,
+      y: ((e.clientY - rect.top) / rect.height) * VIEW_H,
+    };
+    // Throttle to one state update per frame.
+    if (rafId.current === null) {
+      rafId.current = requestAnimationFrame(() => {
+        rafId.current = null;
+        setCursor(pendingCursor.current);
+      });
+    }
+  }
+
+  useEffect(() => {
+    return () => {
+      if (rafId.current !== null) cancelAnimationFrame(rafId.current);
+    };
+  }, []);
 
   // Camera flight: scale about the origin, then translate so the selected
   // station lands at the viewBox center — clamped so the flight never pans
@@ -54,9 +99,12 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
   return (
     <div className="mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full">
       <svg
+        ref={svgRef}
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
         preserveAspectRatio="xMidYMid meet"
         className="h-full w-full"
+        onPointerMove={handlePointerMove}
+        onPointerLeave={() => setCursor(null)}
       >
         <defs>
           <filter id="station-glow-blur" x="-100%" y="-100%" width="300%" height="300%">
@@ -98,6 +146,7 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
                 bulges={bulgesByStation[station.id]}
                 selected={station.id === selectedStationId}
                 onSelect={() => onSelectStation(station.id)}
+                cursor={fisheyeCursor}
               />
             </g>
           ))}

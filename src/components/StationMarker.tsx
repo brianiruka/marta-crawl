@@ -1,5 +1,6 @@
 import {
   useLayoutEffect,
+  useMemo,
   useRef,
   useState,
   type CSSProperties,
@@ -8,13 +9,29 @@ import {
 import type { Station } from "@/data/stations";
 import type { StationBulge } from "@/data/stationBulges";
 import { StationHole } from "@/components/StationHole";
+import type { Cursor } from "@/components/MartaMap";
 
 type StationMarkerProps = {
   station: Station;
   bulges: StationBulge[];
   selected: boolean;
   onSelect: () => void;
+  /** Pointer position in SVG units (null when the cursor is away or on
+   * touch), driving the fisheye magnification. */
+  cursor: Cursor;
 };
+
+// Fisheye: stations within FISHEYE_RADIUS of the cursor magnify, peaking at
+// +FISHEYE_BOOST right under it, easing to none at the radius. The whole
+// marker scales as one rigid unit around its anchor ring, so the leader
+// line keeps its exact gap from the label at any magnification.
+const FISHEYE_RADIUS = 300;
+const FISHEYE_BOOST = 0.6;
+
+function smoothstep(t: number) {
+  const c = Math.min(1, Math.max(0, t));
+  return c * c * (3 - 2 * c);
+}
 
 const FONT_SIZE = 20;
 // Rough average glyph width for this label font, as a fraction of font
@@ -297,8 +314,11 @@ function spanningEdges(bulges: StationBulge[]): [StationBulge, StationBulge][] {
   return edges;
 }
 
-export function StationMarker({ station, bulges, selected, onSelect }: StationMarkerProps) {
-  const anchorRing = nearestBulge(bulges, { x: station.x, y: station.y });
+export function StationMarker({ station, bulges, selected, onSelect, cursor }: StationMarkerProps) {
+  const anchorRing = useMemo(
+    () => nearestBulge(bulges, { x: station.x, y: station.y }),
+    [bulges, station.x, station.y],
+  );
 
   // The leader line attaches to the label's edge, so the gap between them
   // is only consistent if labelWidth is the label's REAL width. A flat
@@ -316,7 +336,22 @@ export function StationMarker({ station, bulges, selected, onSelect }: StationMa
   }, [selected]);
 
   const labelWidth = measuredWidth ?? estimatedWidth;
-  const leader = buildLeader(station, labelWidth, { x: anchorRing.cx, y: anchorRing.cy });
+  // Memoized so per-frame cursor updates (fisheye) don't rebuild the path;
+  // the leader is independent of the fisheye scale (the whole marker scales
+  // rigidly around the ring).
+  const leader = useMemo(
+    () => buildLeader(station, labelWidth, { x: anchorRing.cx, y: anchorRing.cy }),
+    [station, labelWidth, anchorRing.cx, anchorRing.cy],
+  );
+
+  // Fisheye magnification from cursor proximity to this station's ring.
+  let fisheye = 1;
+  if (cursor) {
+    const dist = Math.hypot(cursor.x - anchorRing.cx, cursor.y - anchorRing.cy);
+    fisheye = 1 + FISHEYE_BOOST * smoothstep(1 - dist / FISHEYE_RADIUS);
+  }
+  const cx = anchorRing.cx;
+  const cy = anchorRing.cy;
 
   // The ring(s) glow white for the duration of a hover gesture, full
   // stop -- a click turns the glow off immediately even if the mouse
@@ -341,6 +376,15 @@ export function StationMarker({ station, bulges, selected, onSelect }: StationMa
       onMouseEnter={() => setGlowing(true)}
       onMouseLeave={() => setGlowing(false)}
       className="group station-leader-hover cursor-pointer focus:outline-none"
+      style={{
+        // Rigid fisheye scale around the anchor ring (explicit
+        // translate/scale/translate so the origin is the ring in user
+        // units, independent of transform-box). Re-set every frame under
+        // the cursor; the short transition smooths it into a trailing
+        // follow rather than a snap.
+        transform: `translate(${cx}px, ${cy}px) scale(${fisheye.toFixed(3)}) translate(${-cx}px, ${-cy}px)`,
+        transition: "transform 140ms ease-out",
+      }}
     >
       {/* Hover triggers live on the marker points only, not the label --
           the CSS below uses the general sibling selector (~), which only
