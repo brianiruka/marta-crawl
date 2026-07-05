@@ -4,6 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { MartaMap } from "@/components/MartaMap";
 import { MapLegend } from "@/components/MapLegend";
 import { PageTransition } from "@/components/PageTransition";
+import { StationIndex } from "@/components/StationIndex";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -26,17 +27,22 @@ export default function Home() {
         )}
       >
         <MapLegend />
-      <MartaMap
-        selectedStationId={selectedStationId}
-        onSelectStation={(id) => {
-          const path = `/stations/${id}`;
-          // If a panel is already open, replace so the history stays one deep
-          // and "Back to the map" (router.back) always returns to "/", not to
-          // the previously clicked station.
-          if (selectedStationId) router.replace(path);
-          else router.push(path);
-        }}
-      />
+        {/* The searchable list is the accessible primary way to reach a
+            station where the map's hover/precise-tap fails — touch and
+            smaller screens. On desktop the map (with focusable markers +
+            fisheye) is the hero, so the list is hidden there. */}
+        <StationIndex className="lg:hidden" />
+        <MartaMap
+          selectedStationId={selectedStationId}
+          onSelectStation={(id) => {
+            const path = `/stations/${id}`;
+            // If a panel is already open, replace so the history stays one
+            // deep and "Back to the map" (router.back) always returns to "/",
+            // not to the previously clicked station.
+            if (selectedStationId) router.replace(path);
+            else router.push(path);
+          }}
+        />
       </div>
     </PageTransition>
   );
