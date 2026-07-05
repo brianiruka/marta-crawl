@@ -1,4 +1,5 @@
 import type { Poi } from "../../src/data/pois";
+export { categoryOrder } from "../../src/data/poiCategories";
 
 /**
  * Discovery categories, ordered as a crawl day: coffee → treats → eats →
@@ -73,13 +74,3 @@ export function categoryForTypes(types: string[]): Poi["category"] {
   }
   return "food";
 }
-
-/** Display order on station pages: the crawl-day arc. */
-export const categoryOrder: Poi["category"][] = [
-  "coffee",
-  "treats",
-  "bakery",
-  "food",
-  "sight",
-  "drinks",
-];
