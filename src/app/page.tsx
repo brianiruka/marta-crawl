@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { MartaMap } from "@/components/MartaMap";
 import { MapLegend } from "@/components/MapLegend";
+import { PageTransition } from "@/components/PageTransition";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -13,17 +14,18 @@ export default function Home() {
     : null;
 
   return (
-    <div
-      // The map "makes room" for the station sheet: padding animates in
-      // sync with the sheet's slide-in (both 300ms ease-in-out) so the two
-      // read as one choreographed motion instead of an overlay covering
-      // the map.
-      className={cn(
-        "flex min-h-screen flex-col items-center gap-4 p-4 transition-[padding] duration-300 ease-in-out md:p-16",
-        selectedStationId && "md:pr-[28rem]",
-      )}
-    >
-      <MapLegend />
+    <PageTransition>
+      <div
+        // The map "makes room" for the station sheet: padding animates in
+        // sync with the sheet's slide-in (both 300ms ease-in-out) so the two
+        // read as one choreographed motion instead of an overlay covering
+        // the map.
+        className={cn(
+          "atmosphere-dots flex min-h-screen flex-col items-center gap-4 p-4 transition-[padding] duration-300 ease-in-out md:p-16",
+          selectedStationId && "md:pr-[28rem]",
+        )}
+      >
+        <MapLegend />
       <MartaMap
         selectedStationId={selectedStationId}
         onSelectStation={(id) => {
@@ -35,6 +37,7 @@ export default function Home() {
           else router.push(path);
         }}
       />
-    </div>
+      </div>
+    </PageTransition>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LineAccent, LineBadges, lineLabel } from "@/components/LineBadges";
+import { PageTransition } from "@/components/PageTransition";
 import { PoiList } from "@/components/PoiList";
 import { getPoisForStation, getStation, getStations } from "@/lib/data";
 
@@ -36,7 +37,8 @@ export default async function StationPage({ params }: StationPageProps) {
   const pois = await getPoisForStation(slug);
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-2xl p-4 md:p-16">
+    <PageTransition>
+      <main className="mx-auto min-h-screen w-full max-w-2xl p-4 md:p-16">
       <Link
         href="/"
         className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -53,7 +55,8 @@ export default async function StationPage({ params }: StationPageProps) {
       <h2 className="mt-10 mb-4 font-display text-xl font-semibold text-foreground">
         Nearby stops
       </h2>
-      <PoiList pois={pois} />
-    </main>
+        <PoiList pois={pois} />
+      </main>
+    </PageTransition>
   );
 }

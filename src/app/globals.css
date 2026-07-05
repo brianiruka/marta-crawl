@@ -81,6 +81,21 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
+/* Per-device station-label legibility: MartaMap measures its rendered
+   width and sets --map-label-scale so labels land near a fixed physical
+   size (see LABEL_TARGET_PX there). Overrides the SVG fontSize attribute. */
+.station-label-text {
+  font-size: calc(20px * var(--map-label-scale, 1));
+}
+
+/* Atmosphere: faint dot grid behind the map, fading out toward the edges
+   so it reads as texture rather than pattern. */
+.atmosphere-dots {
+  background-image: radial-gradient(oklch(1 0 0 / 0.05) 1px, transparent 1.4px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, black 40%, transparent 100%);
+}
+
 /* Every station label grows and moves to its hover destination -- by
    default farther out along the same ray from the marker, but some
    stations (see HOVER_DIRECTION_OVERRIDES in StationMarker.tsx) swing to
