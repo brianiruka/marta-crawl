@@ -8,14 +8,9 @@ type StationMarkerProps = {
   bulges: StationBulge[];
   selected: boolean;
   onSelect: () => void;
-  /** Multiplier on BASE_FONT_SIZE — see MartaMap's per-device label-size
-   * measurement. All leader-line geometry below is derived from the same
-   * scaled value that's actually rendered, so the line always meets the
-   * label's real edge regardless of scale. */
-  labelScale: number;
 };
 
-const BASE_FONT_SIZE = 20;
+const FONT_SIZE = 20;
 // Rough average glyph width for this label font, as a fraction of font
 // size -- just enough to size the leader line's attach point, not a real
 // text measurement.
@@ -24,9 +19,13 @@ const CHAR_WIDTH = 0.56;
 // text's own y) by roughly this fraction of the font size.
 const BASELINE_TO_CENTER = 0.35;
 // Half the label's visual height, for top/bottom edge attachment on
-// vertical connectors (the horizontal-connector equivalent of halfW), as a
-// fraction of font size.
-const HALF_HEIGHT_RATIO = 0.4;
+// vertical connectors (the horizontal-connector equivalent of halfW).
+const HALF_HEIGHT = FONT_SIZE * 0.4;
+
+// Selected-station glow: a blurred capsule hugging the label like a soft
+// border (see the rect inside the label group below).
+const GLOW_PAD_X = 12;
+const GLOW_HEIGHT = FONT_SIZE * 1.5;
 
 const RING_R = 15; // matches StationHole's OUTER_R
 const RING_GAP = 4; // leader line clears the marker ring by this much
@@ -138,14 +137,13 @@ function cardinalAttach(
   halfW: number,
   halfH: number,
   drag: { x: number; y: number },
-  fontSize: number,
 ) {
   const localDir = direction - rotation;
   const horizontal = Math.abs(Math.cos(localDir)) >= Math.abs(Math.sin(localDir));
   if (horizontal) {
     // +1 if the marker is on the local +x side of the label, else -1.
     const sx: 1 | -1 = -Math.cos(localDir) >= 0 ? 1 : -1;
-    const local = { x: sx * halfW, y: -fontSize * BASELINE_TO_CENTER + drag.y };
+    const local = { x: sx * halfW, y: -FONT_SIZE * BASELINE_TO_CENTER + drag.y };
     const retreatLocal = { x: -sx * LABEL_GAP, y: 0 };
     return { point: rotateVec(local, rotation), retreat: rotateVec(retreatLocal, rotation) };
   }
@@ -184,12 +182,7 @@ function cardinalAttach(
  * residual fractional-degree error that'd otherwise come from the
  * text-baseline correction.
  */
-function buildLeader(
-  station: Station,
-  labelWidth: number,
-  anchorRing: { x: number; y: number },
-  fontSize: number,
-) {
+function buildLeader(station: Station, labelWidth: number, anchorRing: { x: number; y: number }) {
   const markerCenter = anchorRing;
   const rotation = (station.angle * Math.PI) / 180;
   const restCenter = { x: station.x, y: station.y };
@@ -222,21 +215,20 @@ function buildLeader(
     : { x: -deltaLocal.x * DRAG_FACTOR, y: 0 };
 
   const halfW = labelWidth / 2;
-  const halfHeight = fontSize * HALF_HEIGHT_RATIO;
 
   function leaderPath(dir: number, center: { x: number; y: number }, hw: number, hh: number, drag: { x: number; y: number }) {
     const ring = {
       x: markerCenter.x + (RING_R + RING_GAP) * Math.cos(dir),
       y: markerCenter.y + (RING_R + RING_GAP) * Math.sin(dir),
     };
-    const { point, retreat } = cardinalAttach(dir, rotation, hw, hh, drag, fontSize);
+    const { point, retreat } = cardinalAttach(dir, rotation, hw, hh, drag);
     const lineEnd = { x: center.x + point.x + retreat.x, y: center.y + point.y + retreat.y };
     return `M ${ring.x.toFixed(2)} ${ring.y.toFixed(2)} L ${lineEnd.x.toFixed(2)} ${lineEnd.y.toFixed(2)}`;
   }
 
   const zero = { x: 0, y: 0 };
-  const restD = leaderPath(restDir, restCenter, halfW, halfHeight, zero);
-  const hoverD = leaderPath(hoverDir, hoverCenter, halfW * HOVER_SCALE, halfHeight * HOVER_SCALE, hoverDrag);
+  const restD = leaderPath(restDir, restCenter, halfW, HALF_HEIGHT, zero);
+  const hoverD = leaderPath(hoverDir, hoverCenter, halfW * HOVER_SCALE, HALF_HEIGHT * HOVER_SCALE, hoverDrag);
 
   return { restD, hoverD, deltaLocal };
 }
@@ -299,11 +291,10 @@ function spanningEdges(bulges: StationBulge[]): [StationBulge, StationBulge][] {
   return edges;
 }
 
-export function StationMarker({ station, bulges, selected, onSelect, labelScale }: StationMarkerProps) {
+export function StationMarker({ station, bulges, selected, onSelect }: StationMarkerProps) {
   const anchorRing = nearestBulge(bulges, { x: station.x, y: station.y });
-  const fontSize = BASE_FONT_SIZE * labelScale;
-  const labelWidth = station.name.length * fontSize * CHAR_WIDTH;
-  const leader = buildLeader(station, labelWidth, { x: anchorRing.cx, y: anchorRing.cy }, fontSize);
+  const labelWidth = station.name.length * FONT_SIZE * CHAR_WIDTH;
+  const leader = buildLeader(station, labelWidth, { x: anchorRing.cx, y: anchorRing.cy });
 
   // The ring(s) glow white for the duration of a hover gesture, full
   // stop -- a click turns the glow off immediately even if the mouse
@@ -389,11 +380,30 @@ export function StationMarker({ station, bulges, selected, onSelect, labelScale 
           } as CSSProperties
         }
       >
+        {/* Selected-station glow: a blurred capsule wrapping the label like
+            a soft border, in the station's first line color. Lives inside
+            the rotated label group so it tracks the label's angle, and
+            stays mounted so its opacity can fade in/out. */}
+        <rect
+          aria-hidden="true"
+          x={station.x - labelWidth / 2 - GLOW_PAD_X}
+          y={station.y - FONT_SIZE * BASELINE_TO_CENTER - GLOW_HEIGHT / 2}
+          width={labelWidth + 2 * GLOW_PAD_X}
+          height={GLOW_HEIGHT}
+          rx={GLOW_HEIGHT / 2}
+          filter="url(#station-glow-blur)"
+          className="transition-opacity duration-500"
+          style={{
+            fill: `var(--line-${station.lines[0]})`,
+            opacity: selected ? 0.45 : 0,
+            pointerEvents: "none",
+          }}
+        />
         <text
           x={station.x}
           y={station.y}
           textAnchor="middle"
-          fontSize={fontSize}
+          fontSize={FONT_SIZE}
           fontWeight={selected ? 700 : 400}
           className="fill-white station-label-text"
         >

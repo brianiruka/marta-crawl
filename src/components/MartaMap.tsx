@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { StationMarker } from "@/components/StationMarker";
 import { stations, type LineId } from "@/data/stations";
 import { stationBulges, type StationBulge } from "@/data/stationBulges";
@@ -28,17 +27,6 @@ const VIEW_H = 2048;
 // Camera flight: how far to zoom toward a selected station.
 const ZOOM = 1.7;
 
-// Station labels are drawn at BASE_FONT_SIZE=20 user units; at typical
-// rendered map widths that lands well under comfortable reading size (e.g.
-// ~8px on a 1440px desktop, ~4px on a phone). Scale labels up so they render
-// at roughly LABEL_TARGET_PX on any device, capped so dense clusters don't
-// collide. Passed down to StationMarker, which derives ALL label geometry
-// (leader-line attach points, hover math) from this same scaled size, so
-// the connector always meets the label's actual rendered edge.
-const LABEL_BASE = 20;
-const LABEL_TARGET_PX = 11;
-const LABEL_MAX_SCALE = 2.25;
-
 // A station's marker is one ring per line it serves -- for interchanges
 // that's several rings spread around the crossing, each rendered (and
 // independently hoverable) by StationMarker itself, so it needs its own
@@ -49,22 +37,6 @@ for (const b of stationBulges) {
 }
 
 export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [labelScale, setLabelScale] = useState(1);
-
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const observer = new ResizeObserver(([entry]) => {
-      const renderedScale = entry.contentRect.width / VIEW_W;
-      if (renderedScale <= 0) return;
-      const needed = LABEL_TARGET_PX / (LABEL_BASE * renderedScale);
-      setLabelScale(Math.min(LABEL_MAX_SCALE, Math.max(1, needed)));
-    });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   const selected = selectedStationId
     ? stations.find((s) => s.id === selectedStationId)
     : undefined;
@@ -80,10 +52,7 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
   }
 
   return (
-    <div
-      ref={containerRef}
-      className="mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full"
-    >
+    <div className="mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full">
       <svg
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
         preserveAspectRatio="xMidYMid meet"
@@ -101,21 +70,6 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
             transition: "transform 600ms cubic-bezier(0.3, 0.7, 0.2, 1)",
           }}
         >
-          {/* Radial glow under the selected station, in its first line's
-              color — kept mounted so its opacity can fade in/out. */}
-          <circle
-            aria-hidden="true"
-            cx={selected?.x ?? VIEW_W / 2}
-            cy={selected?.y ?? VIEW_H / 2}
-            r={22}
-            filter="url(#station-glow-blur)"
-            className="transition-opacity duration-500"
-            style={{
-              fill: selected ? `var(--line-${selected.lines[0]})` : "transparent",
-              opacity: selected ? 0.35 : 0,
-            }}
-          />
-
           {renderedLines.map((line) => (
             <g
               key={line}
@@ -144,7 +98,6 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
                 bulges={bulgesByStation[station.id]}
                 selected={station.id === selectedStationId}
                 onSelect={() => onSelectStation(station.id)}
-                labelScale={labelScale}
               />
             </g>
           ))}
