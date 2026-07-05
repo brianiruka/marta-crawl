@@ -6,6 +6,11 @@ export type Poi = {
   rating?: number;
   reviewCount?: number;
   mapsUrl?: string;
+  websiteUrl?: string;
+  /** Self-hosted og:image thumbnail (unfurl-style link preview). */
+  imagePath?: string;
+  /** Domain the image came from, shown as "via {domain}". */
+  imageAttribution?: string;
   distanceMiles?: number;
   walkMinutes?: number;
 };

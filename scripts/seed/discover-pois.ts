@@ -41,6 +41,8 @@ const FIELD_MASK = [
   "places.userRatingCount",
   "places.googleMapsUri",
   "places.businessStatus",
+  // Same Enterprise SKU as rating/userRatingCount — no extra cost.
+  "places.websiteUri",
 ].join(",");
 
 export type RawPlace = {
@@ -52,6 +54,7 @@ export type RawPlace = {
   userRatingCount?: number;
   googleMapsUri?: string;
   businessStatus?: string;
+  websiteUri?: string;
 };
 
 export type CategoryCache = Record<

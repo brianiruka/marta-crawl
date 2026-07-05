@@ -28,6 +28,9 @@ const sectionVariants = {
 } as const;
 
 function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
+  // Website first (the card is an unfurl-style link preview of the place's
+  // own site); Maps becomes the secondary link when both exist.
+  const primaryHref = poi.websiteUrl ?? poi.mapsUrl;
   return (
     <Card
       className={cn(
@@ -37,29 +40,45 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
           : "border-transparent bg-card/50 hover:border-border hover:bg-card",
       )}
     >
-      <CardContent className="flex flex-col gap-1 px-4">
-        <div className="flex items-baseline justify-between gap-3">
-          {poi.mapsUrl ? (
-            <a
-              href={poi.mapsUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-foreground underline-offset-4 hover:underline"
-            >
-              {poi.name}
-            </a>
-          ) : (
-            <span className="font-medium text-foreground">{poi.name}</span>
-          )}
-          {isTopPick && (
-            <Badge variant="secondary" className="shrink-0">
-              Top pick
-            </Badge>
-          )}
-        </div>
-        <p className="text-sm text-muted-foreground">{poi.description}</p>
-        {(poi.rating !== undefined || poi.walkMinutes !== undefined) && (
-          <p className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground/70">
+      <CardContent className="flex gap-3 px-4">
+        {poi.imagePath && (
+          // Pre-resized static thumbnail (see scripts/seed/fetch-poi-images.ts);
+          // next/image's runtime optimizer adds nothing here.
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={poi.imagePath}
+            alt=""
+            loading="lazy"
+            width={64}
+            height={64}
+            className="size-16 shrink-0 rounded-md border border-border/50 object-cover"
+          />
+        )}
+        <div className="flex min-w-0 flex-col gap-1">
+          <div className="flex items-baseline justify-between gap-3">
+            {primaryHref ? (
+              <a
+                href={primaryHref}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-foreground underline-offset-4 hover:underline"
+              >
+                {poi.name}
+              </a>
+            ) : (
+              <span className="font-medium text-foreground">{poi.name}</span>
+            )}
+            {isTopPick && (
+              <Badge variant="secondary" className="shrink-0">
+                Top pick
+              </Badge>
+            )}
+          </div>
+          <p className="text-sm text-muted-foreground">{poi.description}</p>
+          {(poi.rating !== undefined ||
+            poi.walkMinutes !== undefined ||
+            (poi.websiteUrl && poi.mapsUrl)) && (
+          <p className="mt-1 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground/70">
             {poi.rating !== undefined && (
               <span className="flex items-center gap-1">
                 <Star aria-hidden="true" className="size-3 fill-current" />
@@ -67,14 +86,34 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
                 {poi.reviewCount ? ` (${poi.reviewCount})` : ""}
               </span>
             )}
-            {poi.rating !== undefined && poi.walkMinutes !== undefined && (
-              <span aria-hidden="true">·</span>
-            )}
             {poi.walkMinutes !== undefined && (
-              <span>{poi.walkMinutes} min walk</span>
+              <>
+                {poi.rating !== undefined && <span aria-hidden="true">·</span>}
+                <span>{poi.walkMinutes} min walk</span>
+              </>
+            )}
+            {poi.websiteUrl && poi.mapsUrl && (
+              <>
+                <span aria-hidden="true">·</span>
+                <a
+                  href={poi.mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline-offset-4 hover:text-foreground hover:underline"
+                >
+                  Maps
+                </a>
+              </>
+            )}
+            {poi.imagePath && poi.imageAttribution && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span>via {poi.imageAttribution}</span>
+              </>
             )}
           </p>
-        )}
+          )}
+        </div>
       </CardContent>
     </Card>
   );
