@@ -1,23 +1,23 @@
 {
   "north-springs": {
-    "fetchedAt": "2026-07-04T22:42:11.475Z",
+    "fetchedAt": "2026-07-05T10:34:46.837Z",
     "places": []
   },
   "sandy-springs": {
-    "fetchedAt": "2026-07-04T22:42:12.117Z",
+    "fetchedAt": "2026-07-05T10:34:46.937Z",
     "places": [
       {
         "id": "ChIJxUSiIIsJ9YgRSfGWV6GmWGg",
         "types": [
           "amusement_center",
           "tourist_attraction",
-          "bar",
           "sports_activity_location",
+          "bar",
           "event_venue",
           "service",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -26,6 +26,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=7518942789784498505&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://gameshowbattlerooms.com/atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15873,
         "displayName": {
@@ -36,14 +37,14 @@
       {
         "id": "ChIJWxrRfdMJ9YgRjGNld1jXeRI",
         "types": [
-          "toy_store",
-          "tourist_attraction",
           "indoor_playground",
           "playground",
+          "toy_store",
+          "tourist_attraction",
           "amusement_center",
+          "store",
           "museum",
           "service",
-          "store",
           "point_of_interest",
           "establishment"
         ],
@@ -53,6 +54,7 @@
         },
         "rating": 3.9,
         "googleMapsUri": "https://maps.google.com/?cid=1331331939824919436&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://camp.com/atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 150,
         "displayName": {
@@ -63,20 +65,20 @@
     ]
   },
   "dunwoody": {
-    "fetchedAt": "2026-07-04T22:42:12.260Z",
+    "fetchedAt": "2026-07-05T10:34:47.044Z",
     "places": [
       {
         "id": "ChIJxUSiIIsJ9YgRSfGWV6GmWGg",
         "types": [
           "amusement_center",
           "tourist_attraction",
-          "bar",
           "sports_activity_location",
+          "bar",
           "event_venue",
           "service",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -85,6 +87,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=7518942789784498505&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://gameshowbattlerooms.com/atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15873,
         "displayName": {
@@ -95,14 +98,14 @@
       {
         "id": "ChIJWxrRfdMJ9YgRjGNld1jXeRI",
         "types": [
-          "toy_store",
-          "tourist_attraction",
           "indoor_playground",
           "playground",
+          "toy_store",
+          "tourist_attraction",
           "amusement_center",
+          "store",
           "museum",
           "service",
-          "store",
           "point_of_interest",
           "establishment"
         ],
@@ -112,6 +115,7 @@
         },
         "rating": 3.9,
         "googleMapsUri": "https://maps.google.com/?cid=1331331939824919436&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://camp.com/atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 150,
         "displayName": {
@@ -142,10 +146,10 @@
       {
         "id": "ChIJzWr8iAqp9YgRFkWu_g84JJ8",
         "types": [
-          "finance",
           "museum",
-          "service",
           "health",
+          "finance",
+          "service",
           "point_of_interest",
           "establishment"
         ],
@@ -154,6 +158,7 @@
           "longitude": -84.34216789999999
         },
         "googleMapsUri": "https://maps.google.com/?cid=11467352192540624150&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://calendly.com/dynastyhealing",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Dynasty Healing Corporation",
@@ -163,7 +168,7 @@
     ]
   },
   "medical-center": {
-    "fetchedAt": "2026-07-04T22:42:12.408Z",
+    "fetchedAt": "2026-07-05T10:34:47.137Z",
     "places": [
       {
         "id": "ChIJncEjP7YO9YgRgiTw6GHfo7I",
@@ -180,8 +185,9 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=12872377771567883394&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://mastermindescapegames.com/locations/escape-room-sandy-springs/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 16280,
+        "userRatingCount": 16288,
         "displayName": {
           "text": "Mastermind Escape Games Atlanta",
           "languageCode": "en"
@@ -190,7 +196,7 @@
     ]
   },
   "buckhead": {
-    "fetchedAt": "2026-07-04T22:42:12.554Z",
+    "fetchedAt": "2026-07-05T10:34:47.263Z",
     "places": [
       {
         "id": "ChIJg7Rc21AP9YgRam6U63Dd5t0",
@@ -205,6 +211,7 @@
         },
         "rating": 3.7,
         "googleMapsUri": "https://maps.google.com/?cid=15989711004083973738&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.legodiscoverycenter.com/atlanta/?utm_source=local-listing&utm_medium=organic&utm_campaign=tickets",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 4576,
         "displayName": {
@@ -228,6 +235,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=3485766288968979449&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.sloomoo.com/locations/atlanta?utm_source=local&utm_medium=organic&utm_campaign=gmb_atl",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1118,
         "displayName": {
@@ -253,6 +261,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17559157898381334541&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.bindersart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 328,
         "displayName": {
@@ -273,6 +282,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=7827711399882679255&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://path400greenway.org/about-us/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 32,
         "displayName": {
@@ -315,6 +325,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=17406512455595494728&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.jacksonfineart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 39,
         "displayName": {
@@ -395,6 +406,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=7430191818862138007&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://livablebuckhead.com/programs/greenspace/old-ivy-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 5,
         "displayName": {
@@ -416,6 +428,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=8073131749559854735&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.pathmuseum.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 7,
         "displayName": {
@@ -476,6 +489,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=10045787730497538033&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.shopbritto.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 61,
         "displayName": {
@@ -517,6 +531,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=5187599344295382277&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gospelmusicmuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1,
         "displayName": {
@@ -599,7 +614,7 @@
     ]
   },
   "doraville": {
-    "fetchedAt": "2026-07-04T22:42:12.708Z",
+    "fetchedAt": "2026-07-05T10:34:47.369Z",
     "places": [
       {
         "id": "ChIJ0zG7YhcJ9YgR6XDZKl2rSyE",
@@ -614,6 +629,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=2399199643144122601&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.theartcenters.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1359,
         "displayName": {
@@ -640,6 +656,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=8387076622937859849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://atlantaglassblowing.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 83,
         "displayName": {
@@ -660,6 +677,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=13296271731178045649&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://tutankhamunexpo.com/atlanta/?utm_source=google&utm_medium=localcards&utm_campaign=118684_atl",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 406,
         "displayName": {
@@ -681,6 +699,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=11402975860311726374&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://dinosaliveexhibit.com/atlanta/vr/?utm_source=google&utm_medium=localcards&utm_campaign=429100_atl",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 27,
         "displayName": {
@@ -744,6 +763,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=6444580580074998324&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://expo-titanic.com/atlanta/?utm_source=google&utm_medium=localcards&utm_campaign=167801_atl",
         "businessStatus": "CLOSED_TEMPORARILY",
         "userRatingCount": 482,
         "displayName": {
@@ -754,15 +774,15 @@
     ]
   },
   "chamblee": {
-    "fetchedAt": "2026-07-04T22:42:12.836Z",
+    "fetchedAt": "2026-07-05T10:34:47.489Z",
     "places": [
       {
         "id": "ChIJybXI_K4J9YgRw0h--wz61eg",
         "types": [
           "gift_shop",
           "jewelry_store",
-          "art_gallery",
           "furniture_store",
+          "art_gallery",
           "home_improvement_store",
           "home_goods_store",
           "store",
@@ -775,6 +795,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16777590920504559811&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://simplefindsga.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 372,
         "displayName": {
@@ -815,6 +836,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=10892264953370753221&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.chambleega.com/parks_and_recreation/village_park.php",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 28,
         "displayName": {
@@ -855,6 +877,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=12705948324601539567&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.chambleega.com/parks_and_recreation/clairmont_park.php",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 34,
         "displayName": {
@@ -972,6 +995,7 @@
           "longitude": -84.3047101
         },
         "googleMapsUri": "https://maps.google.com/?cid=13130011387300788289&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantabiplane.com/",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Biplane Rides Over Atlanta - Airplane Tours",
@@ -991,6 +1015,7 @@
           "longitude": -84.3101853
         },
         "googleMapsUri": "https://maps.google.com/?cid=17931145367317733655&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.leprimitifgalleries.com/",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Le Primitif Galleries",
@@ -1009,6 +1034,7 @@
           "longitude": -84.2992611
         },
         "googleMapsUri": "https://maps.google.com/?cid=149689114924212214&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spruillarts.org/spruill-studios/",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Spruill Studios",
@@ -1018,7 +1044,7 @@
     ]
   },
   "brookhaven-oglethorpe": {
-    "fetchedAt": "2026-07-04T22:42:12.977Z",
+    "fetchedAt": "2026-07-05T10:34:47.598Z",
     "places": [
       {
         "id": "ChIJ40guJ7kI9YgRLyv9EpZAs94",
@@ -1034,6 +1060,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=16047240910559062831&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.brookhavenga.gov/parksrec/page/brookhaven-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 679,
         "displayName": {
@@ -1046,11 +1073,11 @@
         "types": [
           "tourist_attraction",
           "amusement_center",
-          "bar",
           "sports_activity_location",
+          "bar",
           "event_venue",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -1059,6 +1086,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=11160103382455547631&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://itstimetoescape.com/escape-room-atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1624,
         "displayName": {
@@ -1080,6 +1108,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=8329826435541903645&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaareaparks.com/parks/brookhaven-park/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 42,
         "displayName": {
@@ -1100,6 +1129,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=2408863814825064339&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.brookhavenga.gov/bc-citycouncil/page/brookhaven-votes-fund-langford-park-plans-and-improvements",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 7,
         "displayName": {
@@ -1120,6 +1150,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=3567301970858781319&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.brookhavenga.gov/parksrec/page/parkside-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 5,
         "displayName": {
@@ -1131,9 +1162,9 @@
         "id": "ChIJuydphpYI9YgRZFQZCbl_8FI",
         "types": [
           "art_gallery",
-          "point_of_interest",
           "store",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -1142,6 +1173,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=5976417138218980452&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://brookhaven.thegreatframeup.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 14,
         "displayName": {
@@ -1248,11 +1280,11 @@
         "id": "ChIJl3KLFP8J9YgR7ck8CTvjTjw",
         "types": [
           "art_gallery",
+          "store",
           "educational_institution",
           "event_venue",
-          "point_of_interest",
-          "store",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -1261,6 +1293,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=4345660533156661741&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://thesmithceramicsstudioandgallery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 7,
         "displayName": {
@@ -1271,7 +1304,7 @@
     ]
   },
   "lenox": {
-    "fetchedAt": "2026-07-04T22:42:13.107Z",
+    "fetchedAt": "2026-07-05T10:34:47.703Z",
     "places": [
       {
         "id": "ChIJg7Rc21AP9YgRam6U63Dd5t0",
@@ -1286,6 +1319,7 @@
         },
         "rating": 3.7,
         "googleMapsUri": "https://maps.google.com/?cid=15989711004083973738&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.legodiscoverycenter.com/atlanta/?utm_source=local-listing&utm_medium=organic&utm_campaign=tickets",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 4576,
         "displayName": {
@@ -1309,6 +1343,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=3485766288968979449&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.sloomoo.com/locations/atlanta?utm_source=local&utm_medium=organic&utm_campaign=gmb_atl",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1118,
         "displayName": {
@@ -1411,6 +1446,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=8073131749559854735&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.pathmuseum.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 7,
         "displayName": {
@@ -1431,6 +1467,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=10045787730497538033&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.shopbritto.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 61,
         "displayName": {
@@ -1534,7 +1571,7 @@
     ]
   },
   "lindbergh-center": {
-    "fetchedAt": "2026-07-04T22:42:13.264Z",
+    "fetchedAt": "2026-07-05T10:34:47.817Z",
     "places": [
       {
         "id": "ChIJ3-gr2bgF9YgRQl5kjQtwa4Y",
@@ -1550,6 +1587,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=9685958618509499970&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://peachtreehillspark.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 205,
         "displayName": {
@@ -1571,6 +1609,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16414533264671766119&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gurlmobbmuseum.com/book-online",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 584,
         "displayName": {
@@ -1595,6 +1634,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9812256766479160623&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://foxgloveantiques.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 50,
         "displayName": {
@@ -1619,6 +1659,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=9305709556853078111&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.miamicircleshops.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1405,
         "displayName": {
@@ -1645,6 +1686,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=2899611076555944905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.interiorsmarket.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 59,
         "displayName": {
@@ -1665,6 +1707,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=9011393389615176750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.johnsonlowe.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 35,
         "displayName": {
@@ -1687,6 +1730,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=1491879393644875105&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.spaldingnixfineart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 17,
         "displayName": {
@@ -1728,6 +1772,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=8527498595597925506&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://masonfineartandevents.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 160,
         "displayName": {
@@ -1750,6 +1795,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16447025958627076455&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://anneirwinfineart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 16,
         "displayName": {
@@ -1770,6 +1816,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=2992967980493117002&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.tewgalleries.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 41,
         "displayName": {
@@ -1792,6 +1839,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=12205706719298979305&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://fastframe.com/atlantaga/?utm_source=google&utm_medium=organic&utm_campaign=GMB",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 24,
         "displayName": {
@@ -1812,6 +1860,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=5309868842009122984&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thomasdeansfineart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 25,
         "displayName": {
@@ -1832,6 +1881,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=1611779278933253630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.alanaveryartcompany.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 38,
         "displayName": {
@@ -1852,6 +1902,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=11705798698694986244&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://pryorfineart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 12,
         "displayName": {
@@ -1893,6 +1944,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=4190150631847780643&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.marciawoodgallery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 29,
         "displayName": {
@@ -1913,6 +1965,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=5876483026757908992&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.hambidge.org/about-art-lab",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3,
         "displayName": {
@@ -1953,6 +2006,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=17503776182010844522&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.ideagalleryatl.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 13,
         "displayName": {
@@ -1963,7 +2017,7 @@
     ]
   },
   "arts-center": {
-    "fetchedAt": "2026-07-04T22:42:13.426Z",
+    "fetchedAt": "2026-07-05T10:34:47.921Z",
     "places": [
       {
         "id": "ChIJf8bUMEUE9YgR8nttKmmxaPc",
@@ -1981,8 +2035,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17827694190187609074&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.high.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 5981,
+        "userRatingCount": 5982,
         "displayName": {
           "text": "High Museum of Art",
           "languageCode": "en"
@@ -2003,6 +2058,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=14191970960332371967&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.moiatlanta.com/?utm_source=Google+GMB&utm_medium=website",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3147,
         "displayName": {
@@ -2028,6 +2084,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=8253606720874116330&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.puppet.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3072,
         "displayName": {
@@ -2048,6 +2105,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=495533941348342563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.woodruffcenter.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 6293,
         "displayName": {
@@ -2070,6 +2128,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=1245265617212317666&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantahistorycenter.com/explore/destinations/margaret-mitchell-house",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 828,
         "displayName": {
@@ -2091,6 +2150,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9197740500695051926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 357,
         "displayName": {
@@ -2112,6 +2172,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17502768917205551998&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.scadfash.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 565,
         "displayName": {
@@ -2136,6 +2197,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=746627984300481121&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.museumofdesign.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 510,
         "displayName": {
@@ -2160,6 +2222,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=11840622756558757937&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thegatemuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 285,
         "displayName": {
@@ -2183,6 +2246,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=5346611021313761347&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.thebreman.org/Visit/Purchase-Tickets",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 220,
         "displayName": {
@@ -2204,6 +2268,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=10535011755600825265&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.piedmontpark.org/things-to-do/playgrounds/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 115,
         "displayName": {
@@ -2248,6 +2313,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=1764127620136127218&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://rhodeshall.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 141,
         "displayName": {
@@ -2289,6 +2355,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=3065529428232878896&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.piedmontpark.org/venue-rentals/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 67,
         "displayName": {
@@ -2319,6 +2386,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=5679258772633172597&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.popthecorkwinetours.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 419,
         "displayName": {
@@ -2340,6 +2408,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=2983555457078422607&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://atlantabg.org/map-location/dorothy-chapman-fuqua-conservatory/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 122,
         "displayName": {
@@ -2403,6 +2472,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=3826630258821541421&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlanticstation.com",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 23,
         "displayName": {
@@ -2413,20 +2483,20 @@
     ]
   },
   "midtown": {
-    "fetchedAt": "2026-07-04T22:42:13.565Z",
+    "fetchedAt": "2026-07-05T10:34:48.044Z",
     "places": [
       {
         "id": "ChIJ28DQdm8E9YgRnsZ4YZ94nRo",
         "types": [
           "performing_arts_theater",
           "historical_landmark",
-          "tourist_attraction",
           "concert_hall",
-          "auditorium",
           "live_music_venue",
+          "auditorium",
+          "tourist_attraction",
+          "historical_place",
           "wedding_venue",
           "event_venue",
-          "historical_place",
           "service",
           "point_of_interest",
           "establishment"
@@ -2437,8 +2507,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=1917821642260137630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.foxtheatre.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 11194,
+        "userRatingCount": 11195,
         "displayName": {
           "text": "Fox Theatre",
           "languageCode": "en"
@@ -2460,8 +2531,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17827694190187609074&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.high.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 5981,
+        "userRatingCount": 5982,
         "displayName": {
           "text": "High Museum of Art",
           "languageCode": "en"
@@ -2480,6 +2552,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=495533941348342563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.woodruffcenter.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 6293,
         "displayName": {
@@ -2502,6 +2575,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=1245265617212317666&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantahistorycenter.com/explore/destinations/margaret-mitchell-house",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 828,
         "displayName": {
@@ -2513,8 +2587,8 @@
         "id": "ChIJzal6QUUE9YgRYZqYJzKOXAo",
         "types": [
           "museum",
-          "tourist_attraction",
           "gift_shop",
+          "tourist_attraction",
           "art_museum",
           "store",
           "point_of_interest",
@@ -2526,6 +2600,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=746627984300481121&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.museumofdesign.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 510,
         "displayName": {
@@ -2547,6 +2622,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9197740500695051926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 357,
         "displayName": {
@@ -2588,6 +2664,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=10535011755600825265&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.piedmontpark.org/things-to-do/playgrounds/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 115,
         "displayName": {
@@ -2609,6 +2686,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=3065529428232878896&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.piedmontpark.org/venue-rentals/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 67,
         "displayName": {
@@ -2619,18 +2697,18 @@
       {
         "id": "ChIJzT0Vc0ME9YgRdTpSgsPH0E4",
         "types": [
-          "tourist_attraction",
           "wine_bar",
           "winery",
+          "tourist_attraction",
           "chauffeur_service",
           "bar",
+          "farm",
           "transportation_service",
           "manufacturer",
-          "food",
-          "farm",
           "service",
           "association_or_organization",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "location": {
@@ -2639,6 +2717,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=5679258772633172597&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.popthecorkwinetours.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 419,
         "displayName": {
@@ -2720,6 +2799,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=12188075181511387209&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.midtownatl.com/about/news-center/post/midtown-artist-in-residence-unveils-mural-at-10th-street-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 5,
         "displayName": {
@@ -2778,6 +2858,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=1010404607516113225&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.piedmontpark.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 4,
         "displayName": {
@@ -2788,10 +2869,10 @@
       {
         "id": "ChIJvZXQzEME9YgRanhyOhoXNPQ",
         "types": [
-          "art_gallery",
           "art_studio",
           "educational_institution",
           "service",
+          "art_gallery",
           "point_of_interest",
           "establishment"
         ],
@@ -2801,6 +2882,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=17596715045460539498&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.dawnart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 6,
         "displayName": {
@@ -2851,7 +2933,7 @@
     ]
   },
   "north-avenue": {
-    "fetchedAt": "2026-07-04T22:42:13.725Z",
+    "fetchedAt": "2026-07-05T10:34:48.140Z",
     "places": [
       {
         "id": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
@@ -2867,8 +2949,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.georgiaaquarium.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 90015,
+        "userRatingCount": 90020,
         "displayName": {
           "text": "Georgia Aquarium",
           "languageCode": "en"
@@ -2888,6 +2971,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=4900394244069369801&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.worldofcoca-cola.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 36197,
         "displayName": {
@@ -2901,11 +2985,11 @@
           "performing_arts_theater",
           "historical_landmark",
           "concert_hall",
-          "live_music_venue",
           "auditorium",
           "tourist_attraction",
-          "historical_place",
           "wedding_venue",
+          "live_music_venue",
+          "historical_place",
           "event_venue",
           "service",
           "point_of_interest",
@@ -2917,8 +3001,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=1917821642260137630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.foxtheatre.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 11194,
+        "userRatingCount": 11195,
         "displayName": {
           "text": "Fox Theatre",
           "languageCode": "en"
@@ -2927,8 +3012,8 @@
       {
         "id": "ChIJ38j8xX4E9YgRqM2Zg4zInn4",
         "types": [
-          "non_profit_organization",
           "tourist_attraction",
+          "non_profit_organization",
           "museum",
           "association_or_organization",
           "point_of_interest",
@@ -2940,6 +3025,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=9123950400928075176&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://childrensmuseumatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3244,
         "displayName": {
@@ -2961,6 +3047,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.civilandhumanrights.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3991,
         "displayName": {
@@ -2984,6 +3071,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=437773881174077379&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sacredheartatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 582,
         "displayName": {
@@ -3005,6 +3093,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=8470196460398347155&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 882,
         "displayName": {
@@ -3027,6 +3116,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=1245265617212317666&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantahistorycenter.com/explore/destinations/margaret-mitchell-house",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 828,
         "displayName": {
@@ -3049,7 +3139,7 @@
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 16999,
+        "userRatingCount": 17000,
         "displayName": {
           "text": "Pemberton Place",
           "languageCode": "en"
@@ -3068,6 +3158,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=3278112311512803763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://studentcenter.gatech.edu/outdoor-spaces/rooms/tech-green",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 288,
         "displayName": {
@@ -3130,6 +3221,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=16928630230156272432&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantadowntown.com/go/hardy-ivy-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 78,
         "displayName": {
@@ -3174,6 +3266,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=1732406769536016560&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.coca-colastore.com/retail/atlanta?utm_source=google&utm_medium=organic&utm_campaign=gbp_atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 19,
         "displayName": {
@@ -3254,6 +3347,7 @@
         },
         "rating": 4.2,
         "googleMapsUri": "https://maps.google.com/?cid=11879847110778350514&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.kodakmoments.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11,
         "displayName": {
@@ -3284,7 +3378,7 @@
     ]
   },
   "civic-center": {
-    "fetchedAt": "2026-07-04T22:42:13.953Z",
+    "fetchedAt": "2026-07-05T10:34:48.400Z",
     "places": [
       {
         "id": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
@@ -3300,8 +3394,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.georgiaaquarium.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 90015,
+        "userRatingCount": 90020,
         "displayName": {
           "text": "Georgia Aquarium",
           "languageCode": "en"
@@ -3321,6 +3416,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=4900394244069369801&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.worldofcoca-cola.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 36197,
         "displayName": {
@@ -3350,8 +3446,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=1917821642260137630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.foxtheatre.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 11194,
+        "userRatingCount": 11195,
         "displayName": {
           "text": "Fox Theatre",
           "languageCode": "en"
@@ -3371,6 +3468,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/centennial-olympic-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15740,
         "displayName": {
@@ -3394,6 +3492,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=4285968454858021836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.skyviewatlanta.com/?y_source=1_MjAzNDY3MjQwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11001,
         "displayName": {
@@ -3417,6 +3516,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=9123950400928075176&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://childrensmuseumatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3244,
         "displayName": {
@@ -3441,6 +3541,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cfbhall.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3843,
         "displayName": {
@@ -3462,6 +3563,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.civilandhumanrights.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3991,
         "displayName": {
@@ -3485,6 +3587,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=437773881174077379&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sacredheartatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 582,
         "displayName": {
@@ -3506,6 +3609,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=8470196460398347155&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 882,
         "displayName": {
@@ -3570,6 +3674,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://itstimetoescape.com/escape-room-atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1347,
         "displayName": {
@@ -3592,7 +3697,7 @@
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 16999,
+        "userRatingCount": 17000,
         "displayName": {
           "text": "Pemberton Place",
           "languageCode": "en"
@@ -3614,6 +3719,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16353859620166728030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/fountain-of-rings",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 497,
         "displayName": {
@@ -3676,6 +3782,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=16928630230156272432&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantadowntown.com/go/hardy-ivy-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 78,
         "displayName": {
@@ -3720,6 +3827,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=1732406769536016560&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.coca-colastore.com/retail/atlanta?utm_source=google&utm_medium=organic&utm_campaign=gbp_atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 19,
         "displayName": {
@@ -3730,7 +3838,7 @@
     ]
   },
   "peachtree-center": {
-    "fetchedAt": "2026-07-04T22:42:14.141Z",
+    "fetchedAt": "2026-07-05T10:34:48.604Z",
     "places": [
       {
         "id": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
@@ -3746,8 +3854,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.georgiaaquarium.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 90015,
+        "userRatingCount": 90020,
         "displayName": {
           "text": "Georgia Aquarium",
           "languageCode": "en"
@@ -3767,6 +3876,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=4900394244069369801&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.worldofcoca-cola.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 36197,
         "displayName": {
@@ -3788,6 +3898,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/centennial-olympic-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15740,
         "displayName": {
@@ -3799,8 +3910,8 @@
         "id": "ChIJ3ShBWX8E9YgRzJtXBprRejs",
         "types": [
           "ferris_wheel",
-          "tourist_attraction",
           "scenic_spot",
+          "tourist_attraction",
           "observation_deck",
           "point_of_interest",
           "establishment"
@@ -3811,6 +3922,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=4285968454858021836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.skyviewatlanta.com/?y_source=1_MjAzNDY3MjQwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11001,
         "displayName": {
@@ -3833,8 +3945,9 @@
         },
         "rating": 3.4,
         "googleMapsUri": "https://maps.google.com/?cid=8852258004267454050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.undergroundatl.com/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 4739,
+        "userRatingCount": 4740,
         "displayName": {
           "text": "Underground Atlanta",
           "languageCode": "en"
@@ -3856,6 +3969,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=9123950400928075176&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://childrensmuseumatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3244,
         "displayName": {
@@ -3880,6 +3994,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cfbhall.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3843,
         "displayName": {
@@ -3901,6 +4016,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.civilandhumanrights.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3991,
         "displayName": {
@@ -3922,6 +4038,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=10797897627385162082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2287,
         "displayName": {
@@ -3942,6 +4059,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.libs.uga.edu/capitolmuseum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 651,
         "displayName": {
@@ -3965,6 +4083,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=437773881174077379&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sacredheartatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 582,
         "displayName": {
@@ -3987,6 +4106,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=12140700343831168315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.apexmuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 631,
         "displayName": {
@@ -4041,8 +4161,8 @@
           "tourist_attraction",
           "amusement_center",
           "sports_activity_location",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -4051,6 +4171,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://itstimetoescape.com/escape-room-atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1347,
         "displayName": {
@@ -4073,7 +4194,7 @@
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 16999,
+        "userRatingCount": 17000,
         "displayName": {
           "text": "Pemberton Place",
           "languageCode": "en"
@@ -4085,11 +4206,11 @@
           "tourist_attraction",
           "wedding_venue",
           "church",
-          "event_venue",
           "place_of_worship",
+          "event_venue",
+          "service",
           "association_or_organization",
           "point_of_interest",
-          "service",
           "establishment"
         ],
         "location": {
@@ -4098,8 +4219,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.catholicshrineatlanta.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 321,
+        "userRatingCount": 322,
         "displayName": {
           "text": "Catholic Shrine of the Immaculate Conception",
           "languageCode": "en"
@@ -4109,19 +4231,19 @@
         "id": "ChIJRdGAHUQD9YgRfddZIRjNQeo",
         "types": [
           "ice_cream_shop",
+          "vegan_restaurant",
+          "vegetarian_restaurant",
+          "donut_shop",
           "tourist_attraction",
           "family_restaurant",
-          "vegan_restaurant",
           "dessert_shop",
-          "donut_shop",
-          "bakery",
-          "vegetarian_restaurant",
           "confectionery",
+          "bakery",
           "food_store",
+          "store",
           "restaurant",
           "food",
           "point_of_interest",
-          "store",
           "establishment"
         ],
         "location": {
@@ -4130,6 +4252,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=16879998381883774845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sweet-stack.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 578,
         "displayName": {
@@ -4145,8 +4268,8 @@
           "amusement_center",
           "sports_activity_location",
           "event_venue",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "location": {
@@ -4155,6 +4278,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spinartnation.com/atlanta?utm_source=google&utm_medium=gbp&utm_campaign=gbp_optimization",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 996,
         "displayName": {
@@ -4166,8 +4290,8 @@
         "id": "ChIJCfa3b38E9YgRXnmklq2U9OI",
         "types": [
           "fountain",
-          "tourist_attraction",
           "historical_landmark",
+          "tourist_attraction",
           "historical_place",
           "point_of_interest",
           "establishment"
@@ -4178,6 +4302,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16353859620166728030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/fountain-of-rings",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 497,
         "displayName": {
@@ -4188,7 +4313,7 @@
     ]
   },
   "five-points": {
-    "fetchedAt": "2026-07-04T22:42:14.295Z",
+    "fetchedAt": "2026-07-05T10:34:48.714Z",
     "places": [
       {
         "id": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
@@ -4204,8 +4329,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.georgiaaquarium.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 90015,
+        "userRatingCount": 90020,
         "displayName": {
           "text": "Georgia Aquarium",
           "languageCode": "en"
@@ -4225,6 +4351,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=4900394244069369801&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.worldofcoca-cola.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 36197,
         "displayName": {
@@ -4246,6 +4373,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/centennial-olympic-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15740,
         "displayName": {
@@ -4257,9 +4385,9 @@
         "id": "ChIJ3ShBWX8E9YgRzJtXBprRejs",
         "types": [
           "ferris_wheel",
+          "observation_deck",
           "scenic_spot",
           "tourist_attraction",
-          "observation_deck",
           "point_of_interest",
           "establishment"
         ],
@@ -4269,6 +4397,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=4285968454858021836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.skyviewatlanta.com/?y_source=1_MjAzNDY3MjQwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11001,
         "displayName": {
@@ -4291,8 +4420,9 @@
         },
         "rating": 3.4,
         "googleMapsUri": "https://maps.google.com/?cid=8852258004267454050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.undergroundatl.com/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 4739,
+        "userRatingCount": 4740,
         "displayName": {
           "text": "Underground Atlanta",
           "languageCode": "en"
@@ -4301,8 +4431,8 @@
       {
         "id": "ChIJ38j8xX4E9YgRqM2Zg4zInn4",
         "types": [
-          "tourist_attraction",
           "non_profit_organization",
+          "tourist_attraction",
           "museum",
           "association_or_organization",
           "point_of_interest",
@@ -4314,6 +4444,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=9123950400928075176&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://childrensmuseumatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3244,
         "displayName": {
@@ -4326,8 +4457,8 @@
         "types": [
           "museum",
           "tourist_attraction",
-          "amusement_center",
           "sports_complex",
+          "amusement_center",
           "sports_activity_location",
           "point_of_interest",
           "establishment"
@@ -4338,6 +4469,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cfbhall.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3843,
         "displayName": {
@@ -4359,6 +4491,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=7101473532685525358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thehomedepotbackyard.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 902,
         "displayName": {
@@ -4380,6 +4513,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.civilandhumanrights.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3991,
         "displayName": {
@@ -4400,6 +4534,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.libs.uga.edu/capitolmuseum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 651,
         "displayName": {
@@ -4421,6 +4556,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=10797897627385162082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2287,
         "displayName": {
@@ -4443,6 +4579,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=12140700343831168315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.apexmuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 631,
         "displayName": {
@@ -4454,14 +4591,14 @@
         "id": "ChIJ9XafIfoD9YgRmNokmm2SBjE",
         "types": [
           "bar",
+          "sports_bar",
           "tourist_attraction",
           "lounge_bar",
-          "sports_bar",
           "night_club",
           "store",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "location": {
@@ -4470,6 +4607,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=3532671957153929880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://fellashipatl.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1088,
         "displayName": {
@@ -4534,6 +4672,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://itstimetoescape.com/escape-room-atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1347,
         "displayName": {
@@ -4546,9 +4685,9 @@
         "types": [
           "tourist_attraction",
           "wedding_venue",
+          "event_venue",
           "church",
           "place_of_worship",
-          "event_venue",
           "service",
           "association_or_organization",
           "point_of_interest",
@@ -4560,8 +4699,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.catholicshrineatlanta.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 321,
+        "userRatingCount": 322,
         "displayName": {
           "text": "Catholic Shrine of the Immaculate Conception",
           "languageCode": "en"
@@ -4582,7 +4722,7 @@
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 16999,
+        "userRatingCount": 17000,
         "displayName": {
           "text": "Pemberton Place",
           "languageCode": "en"
@@ -4592,19 +4732,19 @@
         "id": "ChIJRdGAHUQD9YgRfddZIRjNQeo",
         "types": [
           "ice_cream_shop",
-          "vegan_restaurant",
-          "vegetarian_restaurant",
-          "donut_shop",
-          "tourist_attraction",
           "family_restaurant",
+          "donut_shop",
+          "vegan_restaurant",
+          "tourist_attraction",
+          "vegetarian_restaurant",
           "dessert_shop",
-          "confectionery",
           "bakery",
+          "confectionery",
           "food_store",
           "store",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "location": {
@@ -4613,6 +4753,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=16879998381883774845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sweet-stack.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 578,
         "displayName": {
@@ -4638,6 +4779,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spinartnation.com/atlanta?utm_source=google&utm_medium=gbp&utm_campaign=gbp_optimization",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 996,
         "displayName": {
@@ -4648,7 +4790,7 @@
     ]
   },
   "garnett": {
-    "fetchedAt": "2026-07-04T22:42:14.454Z",
+    "fetchedAt": "2026-07-05T10:34:48.821Z",
     "places": [
       {
         "id": "ChIJZTVqFYQD9YgRYk547MCJ2Xo",
@@ -4665,8 +4807,9 @@
         },
         "rating": 3.4,
         "googleMapsUri": "https://maps.google.com/?cid=8852258004267454050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.undergroundatl.com/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 4739,
+        "userRatingCount": 4740,
         "displayName": {
           "text": "Underground Atlanta",
           "languageCode": "en"
@@ -4686,6 +4829,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=7101473532685525358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thehomedepotbackyard.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 902,
         "displayName": {
@@ -4706,6 +4850,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.libs.uga.edu/capitolmuseum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 651,
         "displayName": {
@@ -4727,6 +4872,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=10797897627385162082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2287,
         "displayName": {
@@ -4754,6 +4900,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=3532671957153929880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://fellashipatl.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1088,
         "displayName": {
@@ -4801,8 +4948,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.catholicshrineatlanta.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 321,
+        "userRatingCount": 322,
         "displayName": {
           "text": "Catholic Shrine of the Immaculate Conception",
           "languageCode": "en"
@@ -4826,6 +4974,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spinartnation.com/atlanta?utm_source=google&utm_medium=gbp&utm_campaign=gbp_optimization",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 996,
         "displayName": {
@@ -4889,6 +5038,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=7071358814848973361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.zucotgallery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 197,
         "displayName": {
@@ -4909,6 +5059,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18327889522794064497&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.momsaiditsfine.com/",
         "businessStatus": "CLOSED_TEMPORARILY",
         "userRatingCount": 12,
         "displayName": {
@@ -4932,6 +5083,7 @@
         },
         "rating": 4.1,
         "googleMapsUri": "https://maps.google.com/?cid=17676109134237029906&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantadowntown.com/initiatives/woodruff-park/history",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 99,
         "displayName": {
@@ -4979,6 +5131,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=2610814926327887902&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.palateatlanta.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 124,
         "displayName": {
@@ -5007,6 +5160,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=4318197052368437405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://thebougiegrazer.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 555,
         "displayName": {
@@ -5050,6 +5204,7 @@
         },
         "rating": 4.2,
         "googleMapsUri": "https://maps.google.com/?cid=13247173855031034485&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantadowntown.com/woodruff-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 54,
         "displayName": {
@@ -5073,6 +5228,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17733398083202457211&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://peachmuseum.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 23,
         "displayName": {
@@ -5103,7 +5259,7 @@
     ]
   },
   "west-end": {
-    "fetchedAt": "2026-07-04T22:42:14.947Z",
+    "fetchedAt": "2026-07-05T10:34:48.929Z",
     "places": [
       {
         "id": "ChIJ8Vx1NIID9YgRLrWp_Tt82u4",
@@ -5119,6 +5275,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=17211205523050444078&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.eyedrum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 90,
         "displayName": {
@@ -5140,6 +5297,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=1977804639810878457&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://museum.spelman.edu/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 113,
         "displayName": {
@@ -5161,6 +5319,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=17141620076595448431&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantaga.gov/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 723,
         "displayName": {
@@ -5181,6 +5340,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=9213294709681415459&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://metatl.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 657,
         "displayName": {
@@ -5194,8 +5354,8 @@
           "cocktail_bar",
           "tourist_attraction",
           "bar",
-          "event_venue",
           "manufacturer",
+          "event_venue",
           "point_of_interest",
           "establishment"
         ],
@@ -5205,6 +5365,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=18413349489243979736&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://aswdistillery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 101,
         "displayName": {
@@ -5236,8 +5397,8 @@
         "id": "ChIJ0T1LF0ED9YgRSvfLBwoTUBs",
         "types": [
           "museum",
-          "non_profit_organization",
           "tourist_attraction",
+          "non_profit_organization",
           "association_or_organization",
           "point_of_interest",
           "establishment"
@@ -5248,6 +5409,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=1968093970962315082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.hammondshousemuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 234,
         "displayName": {
@@ -5268,6 +5430,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=6760479715426072933&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.wrensnest.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 206,
         "displayName": {
@@ -5279,8 +5442,8 @@
         "id": "ChIJu_D0g0AD9YgRqNWJJLWP3yY",
         "types": [
           "performing_arts_theater",
-          "event_venue",
           "art_gallery",
+          "event_venue",
           "point_of_interest",
           "establishment"
         ],
@@ -5290,6 +5453,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=2801115501412603304&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.g992.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 219,
         "displayName": {
@@ -5310,6 +5474,7 @@
         },
         "rating": 4.1,
         "googleMapsUri": "https://maps.google.com/?cid=7601080192181165594&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://atlantaga.gov/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 76,
         "displayName": {
@@ -5330,6 +5495,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=14409157129310840661&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://daynightprojects.art/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3,
         "displayName": {
@@ -5378,13 +5544,13 @@
       {
         "id": "ChIJRYXmjqED9YgRSAFAOgA42FM",
         "types": [
-          "tire_shop",
           "business_center",
+          "tire_shop",
           "auto_parts_store",
           "car_repair",
-          "service",
           "art_gallery",
           "store",
+          "service",
           "point_of_interest",
           "establishment"
         ],
@@ -5394,6 +5560,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=6041640473745949000&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.facebook.com/marketplace/item/1026197832551565/?mibextid=dXMIcH",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2,
         "displayName": {
@@ -5454,6 +5621,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=10591670520101427121&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.facebook.com/The-Blue-Tower-231269880768417/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 8,
         "displayName": {
@@ -5512,6 +5680,7 @@
         },
         "rating": 3,
         "googleMapsUri": "https://maps.google.com/?cid=14705725215524174762&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.madexarman.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2,
         "displayName": {
@@ -5522,7 +5691,7 @@
     ]
   },
   "oakland-city": {
-    "fetchedAt": "2026-07-04T22:42:15.128Z",
+    "fetchedAt": "2026-07-05T10:34:49.023Z",
     "places": [
       {
         "id": "ChIJldMAdOEC9YgRSZMK5rWKWbo",
@@ -5540,6 +5709,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=13427916277835010889&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantaga.gov/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1037,
         "displayName": {
@@ -5583,6 +5753,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18146593319588739753&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thebcomplex.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 100,
         "displayName": {
@@ -5642,6 +5813,7 @@
           "longitude": -84.4228535
         },
         "googleMapsUri": "https://maps.google.com/?cid=16163881464735288993&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.robotslovedeathrays.com/",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Robots Love Deathrays Gallery",
@@ -5661,6 +5833,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=13301651039122244177&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.thepickleondill.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2,
         "displayName": {
@@ -5671,7 +5844,7 @@
     ]
   },
   "lakewood-ft-mcpherson": {
-    "fetchedAt": "2026-07-04T22:42:15.290Z",
+    "fetchedAt": "2026-07-05T10:34:49.153Z",
     "places": [
       {
         "id": "ChIJ_____-QD9YgR85fITmPjqEA",
@@ -5692,6 +5865,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4659223830177814515&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.artsxchange.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 197,
         "displayName": {
@@ -5733,6 +5907,7 @@
         },
         "rating": 2,
         "googleMapsUri": "https://maps.google.com/?cid=10218222908058197470&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.eastpointcity.org/parks-recreation/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1,
         "displayName": {
@@ -5753,6 +5928,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=7935345403850747878&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.instagram.com/the_end_project_space/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1,
         "displayName": {
@@ -5821,7 +5997,7 @@
     ]
   },
   "east-point": {
-    "fetchedAt": "2026-07-04T22:42:15.443Z",
+    "fetchedAt": "2026-07-05T10:34:49.254Z",
     "places": [
       {
         "id": "ChIJpYBMGKoC9YgRi_pcQnjRjfA",
@@ -5838,6 +6014,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=17333740855258577547&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://eastpointga.gov/parks-recreation/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 144,
         "displayName": {
@@ -5858,6 +6035,7 @@
         },
         "rating": 3.9,
         "googleMapsUri": "https://maps.google.com/?cid=333180412838561315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.eastpointcity.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 37,
         "displayName": {
@@ -5896,6 +6074,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=399653878279671079&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.eastpointgahs.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 16,
         "displayName": {
@@ -5916,6 +6095,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=15006141276418468669&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://findingtheflint.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2,
         "displayName": {
@@ -5938,6 +6118,7 @@
         },
         "rating": 4.2,
         "googleMapsUri": "https://maps.google.com/?cid=7870055859467548859&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.eastpointtower.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 26,
         "displayName": {
@@ -5958,6 +6139,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=10359760429814243198&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.lordyatta.com/appointments.html",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 47,
         "displayName": {
@@ -6004,7 +6186,7 @@
     ]
   },
   "college-park": {
-    "fetchedAt": "2026-07-04T22:42:15.592Z",
+    "fetchedAt": "2026-07-05T10:34:49.374Z",
     "places": [
       {
         "id": "ChIJV6W-n7Pi9IgRsBilL0b5dAo",
@@ -6021,6 +6203,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=753501117520091312&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.collegeparkrca.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 328,
         "displayName": {
@@ -6087,6 +6270,7 @@
           "longitude": -84.45235219999999
         },
         "googleMapsUri": "https://maps.google.com/?cid=12208658259603624306&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spinthedistrict.com/about-college-park-criterium/",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Spin The District - College Park Criterium Start Point",
@@ -6132,7 +6316,7 @@
     ]
   },
   "airport": {
-    "fetchedAt": "2026-07-04T22:42:15.733Z",
+    "fetchedAt": "2026-07-05T10:34:49.469Z",
     "places": [
       {
         "id": "ChIJY79Pf9v99IgRCbceNwTst8Y",
@@ -6157,7 +6341,7 @@
     ]
   },
   "bankhead": {
-    "fetchedAt": "2026-07-04T22:42:15.883Z",
+    "fetchedAt": "2026-07-05T10:34:49.571Z",
     "places": [
       {
         "id": "ChIJ_7NHXaUE9YgRySiKwz0AN28",
@@ -6260,7 +6444,7 @@
     ]
   },
   "hamilton-e-holmes": {
-    "fetchedAt": "2026-07-04T22:42:16.042Z",
+    "fetchedAt": "2026-07-05T10:34:49.672Z",
     "places": [
       {
         "id": "ChIJC3zsyMMd9YgR7iE4cibM-lU",
@@ -6345,7 +6529,7 @@
     ]
   },
   "west-lake": {
-    "fetchedAt": "2026-07-04T22:42:16.197Z",
+    "fetchedAt": "2026-07-05T10:34:49.773Z",
     "places": [
       {
         "id": "ChIJD7Ms4rsc9YgRPAMgz82bhns",
@@ -6362,6 +6546,7 @@
         },
         "rating": 4.1,
         "googleMapsUri": "https://maps.google.com/?cid=8900973021789946684&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.westviewcemetery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 83,
         "displayName": {
@@ -6423,6 +6608,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=11874202086178655877&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.friendsofmozleypark.org/park-amenities",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 69,
         "displayName": {
@@ -6512,7 +6698,7 @@
     ]
   },
   "ashby": {
-    "fetchedAt": "2026-07-04T22:42:16.384Z",
+    "fetchedAt": "2026-07-05T10:34:49.910Z",
     "places": [
       {
         "id": "ChIJ6bogIZ0E9YgRpTv3aS5oFT8",
@@ -6528,6 +6714,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=4545653947455978405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://rodney-cook-sr-park-in-historic-vine-city.loopfun.net/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 880,
         "displayName": {
@@ -6549,6 +6736,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=1977804639810878457&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://museum.spelman.edu/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 113,
         "displayName": {
@@ -6569,6 +6757,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4362114772175309657&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://en.wikipedia.org/wiki/Herndon_Home",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 65,
         "displayName": {
@@ -6610,6 +6799,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=3236240253195985820&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 70,
         "displayName": {
@@ -6630,6 +6820,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=4052409271476417171&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cau.edu/art-museum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 7,
         "displayName": {
@@ -6709,6 +6900,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=4662720074885098063&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.ellistonfineart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3,
         "displayName": {
@@ -6849,7 +7041,7 @@
     ]
   },
   "vine-city": {
-    "fetchedAt": "2026-07-04T22:42:16.539Z",
+    "fetchedAt": "2026-07-05T10:34:50.007Z",
     "places": [
       {
         "id": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
@@ -6865,8 +7057,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.georgiaaquarium.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 90015,
+        "userRatingCount": 90020,
         "displayName": {
           "text": "Georgia Aquarium",
           "languageCode": "en"
@@ -6886,6 +7079,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/centennial-olympic-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15740,
         "displayName": {
@@ -6909,6 +7103,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=4285968454858021836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.skyviewatlanta.com/?y_source=1_MjAzNDY3MjQwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11001,
         "displayName": {
@@ -6933,6 +7128,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cfbhall.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3843,
         "displayName": {
@@ -6954,6 +7150,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=7101473532685525358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thehomedepotbackyard.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 902,
         "displayName": {
@@ -6975,6 +7172,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=4545653947455978405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://rodney-cook-sr-park-in-historic-vine-city.loopfun.net/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 880,
         "displayName": {
@@ -7002,6 +7200,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=3532671957153929880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://fellashipatl.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1088,
         "displayName": {
@@ -7066,6 +7265,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16353859620166728030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/fountain-of-rings",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 497,
         "displayName": {
@@ -7086,6 +7286,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=7071358814848973361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.zucotgallery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 197,
         "displayName": {
@@ -7106,6 +7307,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4362114772175309657&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://en.wikipedia.org/wiki/Herndon_Home",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 65,
         "displayName": {
@@ -7150,6 +7352,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=1732406769536016560&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.coca-colastore.com/retail/atlanta?utm_source=google&utm_medium=organic&utm_campaign=gbp_atlanta",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 19,
         "displayName": {
@@ -7176,6 +7379,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=2610814926327887902&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.palateatlanta.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 124,
         "displayName": {
@@ -7204,6 +7408,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=4318197052368437405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://thebougiegrazer.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 555,
         "displayName": {
@@ -7224,6 +7429,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=2582341522102409745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://centennialparkdistrict.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 20,
         "displayName": {
@@ -7285,6 +7491,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=14691702183340256684&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.instagram.com/ninabaldwingallery?igsh=MWJybGNpYWI3dGN4aQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 9,
         "displayName": {
@@ -7295,7 +7502,7 @@
     ]
   },
   "sec-district": {
-    "fetchedAt": "2026-07-04T22:42:16.670Z",
+    "fetchedAt": "2026-07-05T10:34:50.093Z",
     "places": [
       {
         "id": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
@@ -7311,8 +7518,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.georgiaaquarium.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 90015,
+        "userRatingCount": 90020,
         "displayName": {
           "text": "Georgia Aquarium",
           "languageCode": "en"
@@ -7332,6 +7540,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=4900394244069369801&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.worldofcoca-cola.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 36197,
         "displayName": {
@@ -7353,6 +7562,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/centennial-olympic-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 15740,
         "displayName": {
@@ -7376,6 +7586,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=4285968454858021836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.skyviewatlanta.com/?y_source=1_MjAzNDY3MjQwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11001,
         "displayName": {
@@ -7398,8 +7609,9 @@
         },
         "rating": 3.4,
         "googleMapsUri": "https://maps.google.com/?cid=8852258004267454050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.undergroundatl.com/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 4739,
+        "userRatingCount": 4740,
         "displayName": {
           "text": "Underground Atlanta",
           "languageCode": "en"
@@ -7421,6 +7633,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=9123950400928075176&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://childrensmuseumatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3244,
         "displayName": {
@@ -7445,6 +7658,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cfbhall.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3843,
         "displayName": {
@@ -7466,6 +7680,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=7101473532685525358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thehomedepotbackyard.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 902,
         "displayName": {
@@ -7487,6 +7702,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.civilandhumanrights.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3991,
         "displayName": {
@@ -7508,6 +7724,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=10797897627385162082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2287,
         "displayName": {
@@ -7528,6 +7745,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.libs.uga.edu/capitolmuseum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 651,
         "displayName": {
@@ -7549,6 +7767,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=4545653947455978405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://rodney-cook-sr-park-in-historic-vine-city.loopfun.net/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 880,
         "displayName": {
@@ -7576,6 +7795,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=3532671957153929880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://fellashipatl.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1088,
         "displayName": {
@@ -7639,7 +7859,7 @@
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 16999,
+        "userRatingCount": 17000,
         "displayName": {
           "text": "Pemberton Place",
           "languageCode": "en"
@@ -7664,8 +7884,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.catholicshrineatlanta.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 321,
+        "userRatingCount": 322,
         "displayName": {
           "text": "Catholic Shrine of the Immaculate Conception",
           "languageCode": "en"
@@ -7687,6 +7908,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://itstimetoescape.com/escape-room-atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1347,
         "displayName": {
@@ -7712,6 +7934,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spinartnation.com/atlanta?utm_source=google&utm_medium=gbp&utm_campaign=gbp_optimization",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 996,
         "displayName": {
@@ -7735,6 +7958,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16353859620166728030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.gwcca.org/fountain-of-rings",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 497,
         "displayName": {
@@ -7745,7 +7969,7 @@
     ]
   },
   "georgia-state": {
-    "fetchedAt": "2026-07-04T22:42:16.858Z",
+    "fetchedAt": "2026-07-05T10:34:50.213Z",
     "places": [
       {
         "id": "ChIJ3ShBWX8E9YgRzJtXBprRejs",
@@ -7763,6 +7987,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=4285968454858021836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.skyviewatlanta.com/?y_source=1_MjAzNDY3MjQwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11001,
         "displayName": {
@@ -7785,8 +8010,9 @@
         },
         "rating": 3.4,
         "googleMapsUri": "https://maps.google.com/?cid=8852258004267454050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.undergroundatl.com/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 4739,
+        "userRatingCount": 4740,
         "displayName": {
           "text": "Underground Atlanta",
           "languageCode": "en"
@@ -7805,6 +8031,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.libs.uga.edu/capitolmuseum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 651,
         "displayName": {
@@ -7826,6 +8053,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=10797897627385162082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2287,
         "displayName": {
@@ -7848,6 +8076,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=12140700343831168315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.apexmuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 631,
         "displayName": {
@@ -7895,8 +8124,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.catholicshrineatlanta.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 321,
+        "userRatingCount": 322,
         "displayName": {
           "text": "Catholic Shrine of the Immaculate Conception",
           "languageCode": "en"
@@ -7918,6 +8148,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://itstimetoescape.com/escape-room-atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1347,
         "displayName": {
@@ -7950,6 +8181,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=16879998381883774845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sweet-stack.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 578,
         "displayName": {
@@ -7975,6 +8207,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://spinartnation.com/atlanta?utm_source=google&utm_medium=gbp&utm_campaign=gbp_optimization",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 996,
         "displayName": {
@@ -8017,6 +8250,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=8881949708525137157&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 162,
         "displayName": {
@@ -8040,6 +8274,7 @@
         },
         "rating": 4.1,
         "googleMapsUri": "https://maps.google.com/?cid=17676109134237029906&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.atlantadowntown.com/initiatives/woodruff-park/history",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 99,
         "displayName": {
@@ -8060,6 +8295,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18327889522794064497&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.momsaiditsfine.com/",
         "businessStatus": "CLOSED_TEMPORARILY",
         "userRatingCount": 12,
         "displayName": {
@@ -8103,6 +8339,7 @@
         },
         "rating": 4.2,
         "googleMapsUri": "https://maps.google.com/?cid=13247173855031034485&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantadowntown.com/woodruff-park",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 54,
         "displayName": {
@@ -8126,6 +8363,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17733398083202457211&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://peachmuseum.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 23,
         "displayName": {
@@ -8146,6 +8384,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=13298978128632178838&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.madamecjwalkermuseum.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 123,
         "displayName": {
@@ -8197,7 +8436,7 @@
     ]
   },
   "king-memorial": {
-    "fetchedAt": "2026-07-04T22:42:17.027Z",
+    "fetchedAt": "2026-07-05T10:34:50.322Z",
     "places": [
       {
         "id": "ChIJV1BRyvUD9YgREE_OCsyMEBw",
@@ -8205,9 +8444,9 @@
           "history_museum",
           "historical_landmark",
           "tourist_attraction",
+          "historical_place",
           "national_park",
           "park",
-          "historical_place",
           "museum",
           "point_of_interest",
           "establishment"
@@ -8218,6 +8457,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=2022271040671862544&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.nps.gov/malu/index.htm",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 11661,
         "displayName": {
@@ -8242,6 +8482,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=10270953763538784928&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.oaklandcemetery.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 410,
         "displayName": {
@@ -8263,8 +8504,9 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=359691233952299585&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://discoveratlanta.com/things-to-do/krog-street-tunnel/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 2486,
+        "userRatingCount": 2487,
         "displayName": {
           "text": "Krog Street Tunnel",
           "languageCode": "en"
@@ -8285,8 +8527,9 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=1465468448282429055&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.nps.gov/malu/planyourvisit/birth-home.htm",
         "businessStatus": "CLOSED_TEMPORARILY",
-        "userRatingCount": 3941,
+        "userRatingCount": 3942,
         "displayName": {
           "text": "Birth Home of Martin Luther King, Jr",
           "languageCode": "en"
@@ -8308,6 +8551,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=9022960710920868447&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://ebenezeratl.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1299,
         "displayName": {
@@ -8328,6 +8572,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.libs.uga.edu/capitolmuseum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 651,
         "displayName": {
@@ -8339,8 +8584,8 @@
         "id": "ChIJV1BRyvUD9YgRm1iUp6tkWVA",
         "types": [
           "historical_landmark",
-          "tourist_attraction",
           "non_profit_organization",
+          "tourist_attraction",
           "historical_place",
           "association_or_organization",
           "point_of_interest",
@@ -8352,6 +8597,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=5789769484375185563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.thekingcenter.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2481,
         "displayName": {
@@ -8374,6 +8620,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=12140700343831168315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.apexmuseum.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 631,
         "displayName": {
@@ -8395,6 +8642,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=15587980625127260349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.fetchpark.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1088,
         "displayName": {
@@ -8406,19 +8654,19 @@
         "id": "ChIJRdGAHUQD9YgRfddZIRjNQeo",
         "types": [
           "ice_cream_shop",
+          "family_restaurant",
           "donut_shop",
           "vegan_restaurant",
-          "vegetarian_restaurant",
-          "family_restaurant",
           "tourist_attraction",
-          "bakery",
+          "vegetarian_restaurant",
           "dessert_shop",
+          "bakery",
           "confectionery",
           "food_store",
-          "restaurant",
-          "food",
           "store",
+          "restaurant",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "location": {
@@ -8427,6 +8675,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=16879998381883774845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.sweet-stack.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 578,
         "displayName": {
@@ -8450,6 +8699,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=3611372231648912169&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://lourdesatlanta.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 248,
         "displayName": {
@@ -8470,6 +8720,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=6249063802220348763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://beltline.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 36,
         "displayName": {
@@ -8513,6 +8764,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=11538562939572743699&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 297,
         "displayName": {
@@ -8533,6 +8785,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=8881949708525137157&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaga.gov/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 162,
         "displayName": {
@@ -8553,6 +8806,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=13298978128632178838&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.madamecjwalkermuseum.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 123,
         "displayName": {
@@ -8564,8 +8818,8 @@
         "id": "ChIJSxMEyPAD9YgRooiO70yhJeA",
         "types": [
           "park",
-          "tourist_attraction",
           "city_park",
+          "tourist_attraction",
           "point_of_interest",
           "establishment"
         ],
@@ -8639,6 +8893,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=4044993528591175871&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://cabbagetown.com/forwardwarrior",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 45,
         "displayName": {
@@ -8649,7 +8904,7 @@
     ]
   },
   "inman-park-reynoldstown": {
-    "fetchedAt": "2026-07-04T22:42:17.201Z",
+    "fetchedAt": "2026-07-05T10:34:50.447Z",
     "places": [
       {
         "id": "ChIJn0vJlwIE9YgRHxlkBZq4_v8",
@@ -8666,8 +8921,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=18446384095411050783&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.jimmycarterlibrary.gov/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 649,
+        "userRatingCount": 650,
         "displayName": {
           "text": "Jimmy Carter Presidential Library and Museum",
           "languageCode": "en"
@@ -8687,8 +8943,9 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=359691233952299585&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://discoveratlanta.com/things-to-do/krog-street-tunnel/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 2486,
+        "userRatingCount": 2487,
         "displayName": {
           "text": "Krog Street Tunnel",
           "languageCode": "en"
@@ -8710,6 +8967,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=8829969827773985124&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.h4wpc.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 779,
         "displayName": {
@@ -8730,6 +8988,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16075768057503394238&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://wishatl.com/pages/thegallery",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 270,
         "displayName": {
@@ -8750,6 +9009,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=4463184959749294884&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.springvalepark.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 64,
         "displayName": {
@@ -8775,6 +9035,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=18347466448794582393&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://atlantaworldwide.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 50,
         "displayName": {
@@ -8795,6 +9056,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=10151302312489023057&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.whitespace814.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 77,
         "displayName": {
@@ -8818,6 +9080,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=15146516207228769182&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://socialspace.shop/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 19,
         "displayName": {
@@ -8858,6 +9121,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=12571215566651425239&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.treesatlanta.org/news/explore-the-stumpery-the-newest-garden-addition-to-the-atlanta-beltline-arboretum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 24,
         "displayName": {
@@ -8899,6 +9163,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=4648328751832942309&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.culturalaccents.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 65,
         "displayName": {
@@ -8921,6 +9186,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=4680616745245188390&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.unlmtdstudio.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 55,
         "displayName": {
@@ -8941,6 +9207,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=4618922561525281783&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://gordonpark.inmanpark.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 3,
         "displayName": {
@@ -8982,6 +9249,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=16412407041582135504&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://timbarrettdesigns.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 14,
         "displayName": {
@@ -9027,6 +9295,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=13833165276111589663&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://popbasel.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 12,
         "displayName": {
@@ -9077,7 +9346,7 @@
     ]
   },
   "edgewood-candler-park": {
-    "fetchedAt": "2026-07-04T22:42:17.383Z",
+    "fetchedAt": "2026-07-05T10:34:50.560Z",
     "places": [
       {
         "id": "ChIJb0P9KJQH9YgRO0O0rjBnTqk",
@@ -9101,6 +9370,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=12199801899380392763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://skiptown.io/ga/atlanta/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 232,
         "displayName": {
@@ -9142,8 +9412,9 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=6190622014021856370&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.freedompark.org/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 1898,
+        "userRatingCount": 1899,
         "displayName": {
           "text": "Freedom Park",
           "languageCode": "en"
@@ -9162,6 +9433,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=16075768057503394238&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://wishatl.com/pages/thegallery",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 270,
         "displayName": {
@@ -9187,6 +9459,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=2726754350663665340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://candlerpark.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 764,
         "displayName": {
@@ -9209,6 +9482,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=3876555316928941865&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://lcclt.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 334,
         "displayName": {
@@ -9230,6 +9504,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=17943775713394479866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.facebook.com/kirkwooddogparkatl/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 83,
         "displayName": {
@@ -9293,6 +9568,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=4648328751832942309&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.culturalaccents.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 65,
         "displayName": {
@@ -9316,6 +9592,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=6185493155570777544&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.healiumcenter.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 58,
         "displayName": {
@@ -9401,6 +9678,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=13833165276111589663&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://popbasel.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 12,
         "displayName": {
@@ -9449,7 +9727,7 @@
     ]
   },
   "east-lake": {
-    "fetchedAt": "2026-07-04T22:42:17.544Z",
+    "fetchedAt": "2026-07-05T10:34:50.746Z",
     "places": [
       {
         "id": "ChIJcyyMVCkH9YgRyWKczipgo3s",
@@ -9487,6 +9765,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=507980101239836156&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://oakhurstdogpark.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 578,
         "displayName": {
@@ -9508,6 +9787,7 @@
         },
         "rating": 4.8,
         "googleMapsUri": "https://maps.google.com/?cid=2398845128098040944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.atlantaolmstedpark.org/visit",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 249,
         "displayName": {
@@ -9528,6 +9808,7 @@
         },
         "rating": 4,
         "googleMapsUri": "https://maps.google.com/?cid=15754817332424172369&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.soccerstreets.org/stationsoccer-about-stationsoccer",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 9,
         "displayName": {
@@ -9593,6 +9874,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=11084131388952455426&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.wyldecenter.org/hawk-hollow-garden/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 9,
         "displayName": {
@@ -9632,6 +9914,7 @@
           "longitude": -84.32249619999999
         },
         "googleMapsUri": "https://maps.google.com/?cid=8115089137528574731&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.outerspaceproject.com/2022-murals",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "Thomas Turner Mural OuterSpace Project 2022",
@@ -9733,7 +10016,7 @@
     ]
   },
   "decatur": {
-    "fetchedAt": "2026-07-04T22:42:17.733Z",
+    "fetchedAt": "2026-07-05T10:34:50.929Z",
     "places": [
       {
         "id": "ChIJZZoD2T0H9YgR2U5zMqZwOVE",
@@ -9749,8 +10032,9 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=5852833049857969881&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturga.com/",
         "businessStatus": "OPERATIONAL",
-        "userRatingCount": 690,
+        "userRatingCount": 691,
         "displayName": {
           "text": "Decatur Square",
           "languageCode": "en"
@@ -9794,6 +10078,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=10437963146729368193&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturglassblowing.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 559,
         "displayName": {
@@ -9815,6 +10100,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=231537966240206066&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturdisciples.org/?page_id=340",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 348,
         "displayName": {
@@ -9826,10 +10112,10 @@
         "id": "ChIJJSsRbT4H9YgR1jhJx94SMrE",
         "types": [
           "jewelry_store",
-          "art_gallery",
-          "store",
           "finance",
           "service",
+          "art_gallery",
+          "store",
           "point_of_interest",
           "establishment"
         ],
@@ -9839,6 +10125,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=12768288641584281814&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.worthmorejewelers.com/?utm_campaign=gmb",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 1349,
         "displayName": {
@@ -9861,6 +10148,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17537482380144335351&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.homegrowndecatur.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 156,
         "displayName": {
@@ -9883,6 +10171,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=3180083309240708581&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.dekalbhistory.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 69,
         "displayName": {
@@ -9904,6 +10193,7 @@
         },
         "rating": 4.5,
         "googleMapsUri": "https://maps.google.com/?cid=7202736140377595584&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.dekalbhistory.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 224,
         "displayName": {
@@ -9924,6 +10214,7 @@
         },
         "rating": 4.3,
         "googleMapsUri": "https://maps.google.com/?cid=2124026373154865452&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturga.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 83,
         "displayName": {
@@ -9988,6 +10279,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=3726302706682890677&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.cateye-creative.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 62,
         "displayName": {
@@ -10030,6 +10322,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=635850903275053266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.glenncreeknaturepreserve.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 74,
         "displayName": {
@@ -10053,6 +10346,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=8627858910982407337&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.wildoatsandbillygoats.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 111,
         "displayName": {
@@ -10073,6 +10367,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=8970321772762881836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://decaturartsfestival.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 4,
         "displayName": {
@@ -10113,6 +10408,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17010157372510365109&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturartclasses.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 13,
         "displayName": {
@@ -10123,9 +10419,9 @@
       {
         "id": "ChIJC0aaTD0H9YgRp86Xs__YJ9M",
         "types": [
+          "service",
           "art_gallery",
           "store",
-          "service",
           "point_of_interest",
           "establishment"
         ],
@@ -10135,6 +10431,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=15215368458835840679&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://decatur.thegreatframeup.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 46,
         "displayName": {
@@ -10155,6 +10452,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=7382020993615657439&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://daltongallery.agnesscott.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 7,
         "displayName": {
@@ -10165,7 +10463,7 @@
     ]
   },
   "avondale": {
-    "fetchedAt": "2026-07-04T22:42:17.902Z",
+    "fetchedAt": "2026-07-05T10:34:51.029Z",
     "places": [
       {
         "id": "ChIJkQI3LkUH9YgRBBuw_VUCoII",
@@ -10180,6 +10478,7 @@
         },
         "rating": 4.6,
         "googleMapsUri": "https://maps.google.com/?cid=9412525789555989252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://decaturlegacypark.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 105,
         "displayName": {
@@ -10191,11 +10490,11 @@
         "id": "ChIJTTmSFUEH9YgRgSps4y0Y25A",
         "types": [
           "art_studio",
-          "building_materials_store",
           "art_gallery",
           "home_goods_store",
-          "store",
+          "building_materials_store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "location": {
@@ -10204,6 +10503,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=10437963146729368193&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturglassblowing.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 559,
         "displayName": {
@@ -10224,6 +10524,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=10483806616097185803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.wafflehouse.com/museum/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 97,
         "displayName": {
@@ -10244,6 +10545,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=11393238635954677849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://www.avondaleestates.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 67,
         "displayName": {
@@ -10287,6 +10589,7 @@
         },
         "rating": 4.4,
         "googleMapsUri": "https://maps.google.com/?cid=635850903275053266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.glenncreeknaturepreserve.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 74,
         "displayName": {
@@ -10307,6 +10610,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=3358756218194856256&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://avondaleartsalliance.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 21,
         "displayName": {
@@ -10347,6 +10651,7 @@
         },
         "rating": 4.7,
         "googleMapsUri": "https://maps.google.com/?cid=17010157372510365109&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturartclasses.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 13,
         "displayName": {
@@ -10359,8 +10664,8 @@
         "types": [
           "art_gallery",
           "educational_institution",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "location": {
@@ -10369,6 +10674,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=12768872212377700352&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://www.decaturartclasses.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2,
         "displayName": {
@@ -10389,6 +10695,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=14927538890034153601&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://vinsonart.com/different-trains-gallery/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 8,
         "displayName": {
@@ -10400,8 +10707,8 @@
         "id": "ChIJS0V1dvF34RQR1GaVZomwbk8",
         "types": [
           "art_gallery",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "location": {
@@ -10409,6 +10716,7 @@
           "longitude": -84.2725157
         },
         "googleMapsUri": "https://maps.google.com/?cid=5723706280612554452&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "http://nativeamericantraders.com/",
         "businessStatus": "OPERATIONAL",
         "displayName": {
           "text": "native american traders",
@@ -10428,6 +10736,7 @@
         },
         "rating": 5,
         "googleMapsUri": "https://maps.google.com/?cid=11280337614642622175&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://erinsmithart.com/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 2,
         "displayName": {
@@ -10439,11 +10748,11 @@
         "id": "ChIJSye4zlAH9YgR2Gx2hjsA8f0",
         "types": [
           "event_venue",
-          "concert_hall",
-          "auditorium",
           "tourist_attraction",
-          "amusement_center",
+          "concert_hall",
           "live_music_venue",
+          "auditorium",
+          "amusement_center",
           "point_of_interest",
           "establishment"
         ],
@@ -10453,6 +10762,7 @@
         },
         "rating": 4.9,
         "googleMapsUri": "https://maps.google.com/?cid=18298407016642014424&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://feverup.com/en/atlanta/candlelight?utm_source=google&utm_medium=localcards&utm_content=gmbpost&utm_campaign=candlelightgmb_atl",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 85,
         "displayName": {
@@ -10463,11 +10773,11 @@
     ]
   },
   "kensington": {
-    "fetchedAt": "2026-07-04T22:42:18.033Z",
+    "fetchedAt": "2026-07-05T10:34:51.092Z",
     "places": []
   },
   "indian-creek": {
-    "fetchedAt": "2026-07-04T22:42:18.188Z",
+    "fetchedAt": "2026-07-05T10:34:51.184Z",
     "places": [
       {
         "id": "ChIJcVNIYaKp9YgRxqZC8g5OErE",
@@ -10484,6 +10794,7 @@
         },
         "rating": 3.8,
         "googleMapsUri": "https://maps.google.com/?cid=12759346520394999494&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+        "websiteUri": "https://avondaledunairepark.org/",
         "businessStatus": "OPERATIONAL",
         "userRatingCount": 68,
         "displayName": {

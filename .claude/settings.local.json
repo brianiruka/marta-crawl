@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Bash(sips *)",
+      "Bash(cd /tmp/marta_svg2 && sips -Z 980 final_all.png --out final_all_small.png)",
+      "Bash(npm run *)",
+      "Bash(echo \"PID:$!\")",
+      "Read(//tmp/**)",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s http://localhost:3000 -o /tmp/marta_page.html)",
+      "Bash(npx -p playwright node /tmp/marta_screenshot.js)",
+      "WebFetch(domain:www.reddit.com)",
+      "Bash(node zoom2.js)",
+      "Bash(python3)",
+      "Bash(python3 -c ' *)",
+      "Bash(node resplit_merge.mjs)",
+      "Bash(node zoom_region.mjs)",
+      "Bash(node extract_new.mjs)"
+    ]
+  }
+}

@@ -34,7 +34,6 @@ const CSV_PATH = "data/coffee-ga-seed.csv";
 const LOCATION_CACHE_PATH = "data/place-locations.json";
 const DISCOVERY_DIR = "data/discovery";
 const CURATION_PATH = "data/curation.json";
-const IMAGE_MANIFEST_PATH = "data/poi-images.json";
 const OUTPUT_PATH = "src/data/pois.generated.ts";
 const MAX_DISTANCE_MILES = 0.75;
 const WALK_MPH = 3;
@@ -64,12 +63,6 @@ type Candidate = {
   neighborhood?: string;
   curated: boolean;
 };
-
-/** Written by scripts/seed/fetch-poi-images.ts. */
-type ImageManifest = Record<
-  string,
-  { image?: string; sourceDomain?: string; failed?: string }
->;
 
 type Curation = { exclude: string[]; pin: string[] };
 
@@ -171,9 +164,6 @@ function main() {
   const curation: Curation = existsSync(CURATION_PATH)
     ? JSON.parse(readFileSync(CURATION_PATH, "utf8"))
     : { exclude: [], pin: [] };
-  const imageManifest: ImageManifest = existsSync(IMAGE_MANIFEST_PATH)
-    ? JSON.parse(readFileSync(IMAGE_MANIFEST_PATH, "utf8"))
-    : {};
   const excluded = new Set(curation.exclude);
   const pinned = new Set(curation.pin);
 
@@ -222,7 +212,6 @@ function main() {
     const miles = Math.round(nearest.miles * 100) / 100;
     const walkMinutes = Math.max(1, Math.round((nearest.miles / WALK_MPH) * 60));
     const where = c.neighborhood ? `${c.neighborhood} — about` : "About";
-    const image = imageManifest[c.placeId];
     (perStation[nearest.id] ??= []).push({
       name: c.name,
       category: c.category,
@@ -232,8 +221,6 @@ function main() {
       reviewCount: c.reviewCount,
       mapsUrl: c.mapsUrl,
       websiteUrl: c.websiteUrl,
-      imagePath: image?.image,
-      imageAttribution: image?.sourceDomain,
       distanceMiles: miles,
       walkMinutes,
       _pinned: isPinned,

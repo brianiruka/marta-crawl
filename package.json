@@ -10,8 +10,7 @@
     "tokens:build": "style-dictionary build --config style-dictionary.config.mjs",
     "seed:gtfs": "tsx scripts/seed/ingest-gtfs.ts",
     "seed:pois": "tsx scripts/seed/build-pois.ts",
-    "discover": "tsx scripts/seed/discover-pois.ts",
-    "images:fetch": "tsx scripts/seed/fetch-poi-images.ts"
+    "discover": "tsx scripts/seed/discover-pois.ts"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -33,7 +32,6 @@
     "csv-parse": "^7.0.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
-    "sharp": "^0.35.3",
     "style-dictionary": "^5.4.4",
     "tailwindcss": "^4",
     "tsx": "^4.23.0",

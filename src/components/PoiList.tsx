@@ -41,19 +41,6 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
       )}
     >
       <CardContent className="flex gap-3 px-4">
-        {poi.imagePath && (
-          // Pre-resized static thumbnail (see scripts/seed/fetch-poi-images.ts);
-          // next/image's runtime optimizer adds nothing here.
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={poi.imagePath}
-            alt=""
-            loading="lazy"
-            width={64}
-            height={64}
-            className="size-16 shrink-0 rounded-md border border-border/50 object-cover"
-          />
-        )}
         <div className="flex min-w-0 flex-col gap-1">
           <div className="flex items-baseline justify-between gap-3">
             {primaryHref ? (
@@ -103,12 +90,6 @@ function PoiCard({ poi, isTopPick }: { poi: Poi; isTopPick: boolean }) {
                 >
                   Maps
                 </a>
-              </>
-            )}
-            {poi.imagePath && poi.imageAttribution && (
-              <>
-                <span aria-hidden="true">·</span>
-                <span>via {poi.imageAttribution}</span>
               </>
             )}
           </p>

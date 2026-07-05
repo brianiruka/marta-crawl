@@ -13,6 +13,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 7476,
       "mapsUrl": "https://maps.google.com/?cid=14706001270494182522&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.elvinedolocal.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -24,6 +25,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 127,
       "mapsUrl": "https://maps.google.com/?cid=12423116339413300945&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://apotheosroastery.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -46,6 +48,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.2,
       "reviewCount": 280,
       "mapsUrl": "https://maps.google.com/?cid=16306556044659045239&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://locations.timhortons.com/en/ga/atlanta/610-spring-st-nw/",
       "distanceMiles": 0.14,
       "walkMinutes": 3
     },
@@ -68,6 +71,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 309,
       "mapsUrl": "https://maps.google.com/?cid=17374263215926422841&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://landofathousandhills.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -83,6 +87,30 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 1
     },
     {
+      "name": "Night Owl Pizza- Midtown",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJlasbPSEF9YgR23evv74wqa0",
+      "rating": 4.5,
+      "reviewCount": 1202,
+      "mapsUrl": "https://maps.google.com/?cid=12513586635443501019&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.nightowlpizza.com/",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Mary Mac's Tea Room",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJgUolJWwE9YgRnxg5IduXOsg",
+      "rating": 4.4,
+      "reviewCount": 14850,
+      "mapsUrl": "https://maps.google.com/?cid=14428011323645827231&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.marymacs.com/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
       "name": "ech Green",
       "category": "sight",
       "description": "About a 12-minute walk from the station.",
@@ -90,6 +118,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 288,
       "mapsUrl": "https://maps.google.com/?cid=3278112311512803763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://studentcenter.gatech.edu/outdoor-spaces/rooms/tech-green",
       "distanceMiles": 0.62,
       "walkMinutes": 12
     },
@@ -99,8 +128,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 2-minute walk from the station.",
       "placeId": "ChIJ28DQdm8E9YgRnsZ4YZ94nRo",
       "rating": 4.7,
-      "reviewCount": 11194,
+      "reviewCount": 11195,
       "mapsUrl": "https://maps.google.com/?cid=1917821642260137630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.foxtheatre.org/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     },
@@ -112,6 +142,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 882,
       "mapsUrl": "https://maps.google.com/?cid=8470196460398347155&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantaga.gov/government/departments/department-parks-recreation",
       "distanceMiles": 0.67,
       "walkMinutes": 13
     },
@@ -123,6 +154,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 474,
       "mapsUrl": "https://maps.google.com/?cid=11134918671119289252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://fiveirongolf.com/locations/atlanta-midtown/?utm_source=local&utm_medium=organic&utm_campaign=ga&utm_content=atlanta",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     },
@@ -134,6 +166,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1308,
       "mapsUrl": "https://maps.google.com/?cid=18385192942911961442&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://valleatl.com/",
       "distanceMiles": 0.34,
       "walkMinutes": 7
     },
@@ -145,6 +178,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1672,
       "mapsUrl": "https://maps.google.com/?cid=1231475541871055263&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.publik654.com/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     },
@@ -156,6 +190,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1641,
       "mapsUrl": "https://maps.google.com/?cid=17791456191718938907&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://bontonatl.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     }
@@ -189,8 +224,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 2-minute walk from the station.",
       "placeId": "ChIJ72cCokIE9YgR5DgEJCHlGq4",
       "rating": 4.8,
-      "reviewCount": 2151,
+      "reviewCount": 2153,
       "mapsUrl": "https://maps.google.com/?cid=12545591642494875876&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.agoracuisine.com/",
       "distanceMiles": 0.11,
       "walkMinutes": 2
     },
@@ -202,6 +238,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 256,
       "mapsUrl": "https://maps.google.com/?cid=8260489373214058420&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.larakinwineandcoffee.com/",
       "distanceMiles": 0.41,
       "walkMinutes": 8
     },
@@ -213,6 +250,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1013,
       "mapsUrl": "https://maps.google.com/?cid=11697356785960040205&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.dancinggoats.com/pages/the-dancing-goats-coffee-bar-midtown",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -224,6 +262,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 3681,
       "mapsUrl": "https://maps.google.com/?cid=5004059078031367358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://cypressatl.com/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -235,6 +274,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 326,
       "mapsUrl": "https://maps.google.com/?cid=7547809850006978427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.forfivecoffee.com/location/for-five-coffee-atlanta/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -246,6 +286,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 888,
       "mapsUrl": "https://maps.google.com/?cid=14828957775469551473&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://locations.cariboucoffee.com/us/ga/atlanta/1000-piedmont-avenue-ne",
       "distanceMiles": 0.33,
       "walkMinutes": 7
     },
@@ -257,6 +298,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 186,
       "mapsUrl": "https://maps.google.com/?cid=413208031597593825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.harazmidtownatl.com/",
       "distanceMiles": 0.17,
       "walkMinutes": 3
     },
@@ -268,6 +310,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 127,
       "mapsUrl": "https://maps.google.com/?cid=1928564421911662573&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.tuttigelatiatl.com/",
       "distanceMiles": 0.36,
       "walkMinutes": 7
     },
@@ -279,6 +322,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 5943,
       "mapsUrl": "https://maps.google.com/?cid=2132681066176294857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.cafeintermezzo.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -290,6 +334,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 3158,
       "mapsUrl": "https://maps.google.com/?cid=6922715304449695252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.sweethutbakery.com/",
       "distanceMiles": 0.15,
       "walkMinutes": 3
     },
@@ -301,7 +346,80 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 33,
       "mapsUrl": "https://maps.google.com/?cid=8928235770283869306&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.tealeafandcreamery.com/",
       "distanceMiles": 0.33,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Crescent City Kitchen",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJG2euGEME9YgRb4ighWvYsks",
+      "rating": 4.8,
+      "reviewCount": 2576,
+      "mapsUrl": "https://maps.google.com/?cid=5454660055014082671&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.crescentcityga.com/",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Rreal Tacos - Midtown",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJyWNE-mgE9YgR1thAVNnhDpc",
+      "rating": 4.8,
+      "reviewCount": 14944,
+      "mapsUrl": "https://maps.google.com/?cid=10884885672938756310&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.rrealtacos.com/",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "26 Thai Kitchen & Bar (Midtown)",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJB_2_WWwF9YgRVZt9FCMYOE4",
+      "rating": 4.7,
+      "reviewCount": 2621,
+      "mapsUrl": "https://maps.google.com/?cid=5636281472600873813&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://26thai.com/",
+      "distanceMiles": 0.33,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Urban Hai",
+      "category": "food",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJvZaDr3YF9YgRXzVzIFDAvdk",
+      "rating": 4.5,
+      "reviewCount": 885,
+      "mapsUrl": "https://maps.google.com/?cid=15689908127203013983&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.urbanhai.com/",
+      "distanceMiles": 0.23,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Shake Shack Piedmont Park",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJQ52GVlUF9YgR5ljILBEg0WE",
+      "rating": 4.4,
+      "reviewCount": 612,
+      "mapsUrl": "https://maps.google.com/?cid=7048450149949397222&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://shakeshack.com/home#/?utm_source=google&utm_medium=listing",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "The Flying Biscuit Cafe",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJvewei0EE9YgR-vtf0KvKerE",
+      "rating": 4.4,
+      "reviewCount": 5697,
+      "mapsUrl": "https://maps.google.com/?cid=12788756931156114426&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://flyingbiscuit.com/locations-2/midtown/",
+      "distanceMiles": 0.35,
       "walkMinutes": 7
     },
     {
@@ -312,6 +430,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 67,
       "mapsUrl": "https://maps.google.com/?cid=3065529428232878896&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.piedmontpark.org/venue-rentals/",
       "distanceMiles": 0.57,
       "walkMinutes": 11
     },
@@ -334,6 +453,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 828,
       "mapsUrl": "https://maps.google.com/?cid=1245265617212317666&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.atlantahistorycenter.com/explore/destinations/margaret-mitchell-house",
       "distanceMiles": 0.11,
       "walkMinutes": 2
     },
@@ -345,6 +465,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 115,
       "mapsUrl": "https://maps.google.com/?cid=10535011755600825265&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.piedmontpark.org/things-to-do/playgrounds/",
       "distanceMiles": 0.56,
       "walkMinutes": 11
     },
@@ -356,6 +477,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 419,
       "mapsUrl": "https://maps.google.com/?cid=5679258772633172597&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.popthecorkwinetours.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -376,8 +498,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 6-minute walk from the station.",
       "placeId": "ChIJ07TVp0ME9YgRmzH4SKordbc",
       "rating": 4.6,
-      "reviewCount": 24461,
+      "reviewCount": 24477,
       "mapsUrl": "https://maps.google.com/?cid=13219520291584618907&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://stksteakhouse.com/en-us/location/atlanta/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -389,6 +512,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1885,
       "mapsUrl": "https://maps.google.com/?cid=5171136501900751515&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://wickedwolfatl.squarespace.com/",
       "distanceMiles": 0.2,
       "walkMinutes": 4
     },
@@ -398,8 +522,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 4-minute walk from the station.",
       "placeId": "ChIJWZvjAl0E9YgRX0ojFsIWS9A",
       "rating": 4.6,
-      "reviewCount": 3762,
+      "reviewCount": 3764,
       "mapsUrl": "https://maps.google.com/?cid=15009115205993187935&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.steamhouselounge.com/",
       "distanceMiles": 0.18,
       "walkMinutes": 4
     }
@@ -417,6 +542,30 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 4
     },
     {
+      "name": "Poor Calvin's",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJwWNQxHEE9YgRCjuVoqKbVhU",
+      "rating": 4.6,
+      "reviewCount": 4302,
+      "mapsUrl": "https://maps.google.com/?cid=1537587445608299274&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.poorcalvins.com/",
+      "distanceMiles": 0.34,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Atlanta Breakfast Club",
+      "category": "food",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJY4335H0E9YgRpVDEfTRik70",
+      "rating": 4.5,
+      "reviewCount": 10069,
+      "mapsUrl": "https://maps.google.com/?cid=13660370072332685477&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlbreakfastclub.com/",
+      "distanceMiles": 0.47,
+      "walkMinutes": 9
+    },
+    {
       "name": "National Center for Civil and Human Rights",
       "category": "sight",
       "description": "About a 7-minute walk from the station.",
@@ -424,6 +573,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 3991,
       "mapsUrl": "https://maps.google.com/?cid=4518915228714863530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.civilandhumanrights.org/",
       "distanceMiles": 0.36,
       "walkMinutes": 7
     },
@@ -435,6 +585,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 582,
       "mapsUrl": "https://maps.google.com/?cid=437773881174077379&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.sacredheartatlanta.org/",
       "distanceMiles": 0.2,
       "walkMinutes": 4
     },
@@ -444,8 +595,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 10-minute walk from the station.",
       "placeId": "ChIJGQT0RX4E9YgR3EqvqXZw1_4",
       "rating": 4.7,
-      "reviewCount": 90015,
+      "reviewCount": 90020,
       "mapsUrl": "https://maps.google.com/?cid=18363269660581776092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.georgiaaquarium.org/",
       "distanceMiles": 0.48,
       "walkMinutes": 10
     },
@@ -455,7 +607,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 8-minute walk from the station.",
       "placeId": "ChIJ44tbZH4E9YgRS8805iQvAoE",
       "rating": 4.6,
-      "reviewCount": 16999,
+      "reviewCount": 17000,
       "mapsUrl": "https://maps.google.com/?cid=9296044416373673803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
       "distanceMiles": 0.39,
       "walkMinutes": 8
@@ -468,6 +620,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 78,
       "mapsUrl": "https://maps.google.com/?cid=16928630230156272432&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantadowntown.com/go/hardy-ivy-park",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -477,8 +630,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 4-minute walk from the station.",
       "placeId": "ChIJ6V-08HkE9YgRvZopWFm3U4w",
       "rating": 4.3,
-      "reviewCount": 2205,
+      "reviewCount": 2210,
       "mapsUrl": "https://maps.google.com/?cid=10111627182735989437&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.maxlagers.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     }
@@ -514,6 +668,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 64,
       "mapsUrl": "https://maps.google.com/?cid=13599028314314921248&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://metrofreshatl.com/",
       "distanceMiles": 0.19,
       "walkMinutes": 4
     },
@@ -525,6 +680,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 167,
       "mapsUrl": "https://maps.google.com/?cid=4582433771814238822&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.refugecoffeeco.com/",
       "distanceMiles": 0.14,
       "walkMinutes": 3
     },
@@ -536,6 +692,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 138,
       "mapsUrl": "https://maps.google.com/?cid=15680186498561862898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://landofathousandhills.com/pages/location-spring-street",
       "distanceMiles": 0.28,
       "walkMinutes": 6
     },
@@ -547,6 +704,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 617,
       "mapsUrl": "https://maps.google.com/?cid=3540971864957639180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.foxtailcoffee.com/locations/foxtail-coffee-midtown",
       "distanceMiles": 0.07,
       "walkMinutes": 1
     },
@@ -558,6 +716,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 197,
       "mapsUrl": "https://maps.google.com/?cid=2678940171040395713&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://toastique.com/pages/atlanta-midtown",
       "distanceMiles": 0.08,
       "walkMinutes": 2
     },
@@ -591,6 +750,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 338,
       "mapsUrl": "https://maps.google.com/?cid=9838454363680020112&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.yonutz.com/",
       "distanceMiles": 0.56,
       "walkMinutes": 11
     },
@@ -602,6 +762,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 119,
       "mapsUrl": "https://maps.google.com/?cid=17342069787706749654&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://cupcakinbakeshop.com/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -613,6 +774,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 160,
       "mapsUrl": "https://maps.google.com/?cid=2480556727194278600&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://fitforacookie.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -624,8 +786,33 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 1733,
       "mapsUrl": "https://maps.google.com/?cid=347012611710925997&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.wholefoodsmarket.com/stores/midtownatlanta?utm_source=google&utm_medium=organic&utm_campaign=listings",
       "distanceMiles": 0.22,
       "walkMinutes": 4
+    },
+    {
+      "name": "Rumi's Kitchen Colony Square",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJPT9qzJEF9YgREibRRtmpkVg",
+      "rating": 4.7,
+      "reviewCount": 1784,
+      "mapsUrl": "https://maps.google.com/?cid=6382068897621812754&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.rumiskitchen.com/",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "South City Kitchen Midtown",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJvQqtX0ME9YgR-X6ukvNSt6I",
+      "rating": 4.7,
+      "reviewCount": 7161,
+      "mapsUrl": "https://maps.google.com/?cid=11724931360973815545&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.southcitykitchen.com/",
+      "distanceMiles": 0.28,
+      "walkMinutes": 6
     },
     {
       "name": "E+ROSE Wellness Cafe (Midtown)",
@@ -639,6 +826,30 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 4
     },
     {
+      "name": "5Church Midtown",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJvSuOY0QE9YgReHlGmG84Sno",
+      "rating": 4.5,
+      "reviewCount": 6073,
+      "mapsUrl": "https://maps.google.com/?cid=8811917672851077496&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://midtown.5church-atlanta.com/",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Toast on Lenox",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJJxB97nYF9YgRyf-QJ4oThEQ",
+      "rating": 4.5,
+      "reviewCount": 1611,
+      "mapsUrl": "https://maps.google.com/?cid=4937092575595134921&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.toastonlenoxatl.com/",
+      "distanceMiles": 0.68,
+      "walkMinutes": 14
+    },
+    {
       "name": "Brasserie Margot",
       "category": "food",
       "description": "Midtown Atlanta — about a 5-minute walk from the station.",
@@ -650,17 +861,6 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 5
     },
     {
-      "name": "Dtox Juice",
-      "category": "food",
-      "description": "Midtown Atlanta — about a 4-minute walk from the station.",
-      "placeId": "ChIJxVwE3NoF9YgRXQ8rVAAyxhY",
-      "rating": 3.5,
-      "reviewCount": 28,
-      "mapsUrl": "https://maps.google.com/?cid=1641054091216621405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.19,
-      "walkMinutes": 4
-    },
-    {
       "name": "Center For Puppetry Arts",
       "category": "sight",
       "description": "About a 6-minute walk from the station.",
@@ -668,6 +868,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 3072,
       "mapsUrl": "https://maps.google.com/?cid=8253606720874116330&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.puppet.org/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -679,6 +880,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 6293,
       "mapsUrl": "https://maps.google.com/?cid=495533941348342563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.woodruffcenter.org/",
       "distanceMiles": 0.15,
       "walkMinutes": 3
     },
@@ -688,8 +890,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 2-minute walk from the station.",
       "placeId": "ChIJf8bUMEUE9YgR8nttKmmxaPc",
       "rating": 4.7,
-      "reviewCount": 5981,
+      "reviewCount": 5982,
       "mapsUrl": "https://maps.google.com/?cid=17827694190187609074&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.high.org/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     },
@@ -701,6 +904,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 565,
       "mapsUrl": "https://maps.google.com/?cid=17502768917205551998&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.scadfash.org/",
       "distanceMiles": 0.56,
       "walkMinutes": 11
     },
@@ -712,6 +916,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 220,
       "mapsUrl": "https://maps.google.com/?cid=5346611021313761347&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.thebreman.org/Visit/Purchase-Tickets",
       "distanceMiles": 0.37,
       "walkMinutes": 7
     },
@@ -723,6 +928,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 3034,
       "mapsUrl": "https://maps.google.com/?cid=9888450743324610963&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://boqueriarestaurant.com/location/atl-colony-square/?utm_source=organic&utm_medium=gmb",
       "distanceMiles": 0.25,
       "walkMinutes": 5
     },
@@ -732,8 +938,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 3-minute walk from the station.",
       "placeId": "ChIJkf88G_QF9YgR-HGS9W9T_Uc",
       "rating": 4.7,
-      "reviewCount": 5160,
+      "reviewCount": 5162,
       "mapsUrl": "https://maps.google.com/?cid=5187394086127170040&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.divanatlanta.com/",
       "distanceMiles": 0.17,
       "walkMinutes": 3
     },
@@ -745,6 +952,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1729,
       "mapsUrl": "https://maps.google.com/?cid=17170573419377744429&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://saintsandcouncil.com/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -756,6 +964,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 1091,
       "mapsUrl": "https://maps.google.com/?cid=1411559751228742877&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.holeman-finch.com/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -765,8 +974,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 5-minute walk from the station.",
       "placeId": "ChIJNwFLfVsE9YgRrkOBaigMzhI",
       "rating": 4.3,
-      "reviewCount": 1968,
+      "reviewCount": 1969,
       "mapsUrl": "https://maps.google.com/?cid=1355033905610179502&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.mccraystavern.com/",
       "distanceMiles": 0.23,
       "walkMinutes": 5
     }
@@ -780,6 +990,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 30,
       "mapsUrl": "https://maps.google.com/?cid=18066513184239762737&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://landofathousandhills.com/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -791,6 +1002,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 65,
       "mapsUrl": "https://maps.google.com/?cid=8437663800750701706&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.crmacs.com/",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     },
@@ -802,6 +1014,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 157,
       "mapsUrl": "https://maps.google.com/?cid=5165493818788437463&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.flakynotflaky.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -813,6 +1026,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 119,
       "mapsUrl": "https://maps.google.com/?cid=11578571043260477689&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://scoopsatpeachtree.com/",
       "distanceMiles": 0.2,
       "walkMinutes": 4
     },
@@ -824,6 +1038,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.2,
       "reviewCount": 276,
       "mapsUrl": "https://maps.google.com/?cid=14435890356804122472&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://hanselgretelbakerycafe.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -835,8 +1050,45 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.1,
       "reviewCount": 83,
       "mapsUrl": "https://maps.google.com/?cid=15821088698398638194&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.jitteryjoes.com/",
       "distanceMiles": 0.08,
       "walkMinutes": 2
+    },
+    {
+      "name": "Alma Cocina",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJSd4kc3gE9YgRq6HkvZcW-cw",
+      "rating": 4.6,
+      "reviewCount": 4013,
+      "mapsUrl": "https://maps.google.com/?cid=14769861293920002475&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.alma-atlanta.com/",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
+    },
+    {
+      "name": "The Food Shoppe",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJe3kIWocD9YgR5Ek1JhDNWAU",
+      "rating": 4.6,
+      "reviewCount": 2013,
+      "mapsUrl": "https://maps.google.com/?cid=385283237384374756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thefoodshoppeatl.com/",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Ted's Montana Grill",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJg_jPqXgE9YgR3h4h8xO0Qfs",
+      "rating": 4.4,
+      "reviewCount": 5814,
+      "mapsUrl": "https://maps.google.com/?cid=18104949974782516958&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.tedsmontanagrill.com/tmg001.html",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
     },
     {
       "name": "Cafe Momo",
@@ -857,6 +1109,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 1347,
       "mapsUrl": "https://maps.google.com/?cid=16414089235756322392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://itstimetoescape.com/escape-room-atlanta/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -879,6 +1132,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 631,
       "mapsUrl": "https://maps.google.com/?cid=12140700343831168315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.apexmuseum.org/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -890,6 +1144,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 15740,
       "mapsUrl": "https://maps.google.com/?cid=6004367012448251227&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.gwcca.org/centennial-olympic-park",
       "distanceMiles": 0.32,
       "walkMinutes": 6
     },
@@ -901,6 +1156,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 497,
       "mapsUrl": "https://maps.google.com/?cid=16353859620166728030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.gwcca.org/fountain-of-rings",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -910,8 +1166,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 1-minute walk from the station.",
       "placeId": "ChIJEQGwSHgE9YgRMW1WQIpsLZQ",
       "rating": 4.8,
-      "reviewCount": 9787,
+      "reviewCount": 9788,
       "mapsUrl": "https://maps.google.com/?cid=10677309632606006577&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://tinlizzyscantina.com/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -923,6 +1180,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1202,
       "mapsUrl": "https://maps.google.com/?cid=10012832563053606806&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atalian-atl.com/",
       "distanceMiles": 0.1,
       "walkMinutes": 2
     },
@@ -934,6 +1192,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 6741,
       "mapsUrl": "https://maps.google.com/?cid=16224791424951492843&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://raysrestaurants.com/",
       "distanceMiles": 0.06,
       "walkMinutes": 1
     },
@@ -945,6 +1204,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1240,
       "mapsUrl": "https://maps.google.com/?cid=17494318768826625796&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.bygeorgeatl.com/",
       "distanceMiles": 0.19,
       "walkMinutes": 4
     },
@@ -954,8 +1214,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 1-minute walk from the station.",
       "placeId": "ChIJxXZfE3gE9YgR1RyIwQQbJsc",
       "rating": 4.6,
-      "reviewCount": 2781,
+      "reviewCount": 2782,
       "mapsUrl": "https://maps.google.com/?cid=14350186969903406293&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.redphonebooth.com/locations/ga/atlanta",
       "distanceMiles": 0.04,
       "walkMinutes": 1
     }
@@ -980,6 +1241,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 473,
       "mapsUrl": "https://maps.google.com/?cid=15299739017223376329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://stirhouse.appfront.app/",
       "distanceMiles": 0.18,
       "walkMinutes": 4
     },
@@ -991,6 +1253,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 104,
       "mapsUrl": "https://maps.google.com/?cid=2314636196963021323&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.spillerpark.com/",
       "distanceMiles": 0.23,
       "walkMinutes": 5
     },
@@ -1013,6 +1276,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 681,
       "mapsUrl": "https://maps.google.com/?cid=15417246610476836533&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://cafelucia.shop/",
       "distanceMiles": 0.16,
       "walkMinutes": 3
     },
@@ -1024,6 +1288,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1569,
       "mapsUrl": "https://maps.google.com/?cid=3101528425745885786&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://anatoliacafeofficial.com/",
       "distanceMiles": 0.16,
       "walkMinutes": 3
     },
@@ -1035,6 +1300,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 1634,
       "mapsUrl": "https://maps.google.com/?cid=5782159001514195358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.eighty7sweets.com/",
       "distanceMiles": 0.17,
       "walkMinutes": 3
     },
@@ -1057,6 +1323,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 57,
       "mapsUrl": "https://maps.google.com/?cid=6927445582313058054&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.mochapops.com/",
       "distanceMiles": 0.18,
       "walkMinutes": 4
     },
@@ -1068,6 +1335,67 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 96,
       "mapsUrl": "https://maps.google.com/?cid=7738982210611426750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://order.toasttab.com/online/sweet-red-peach-atl",
+      "distanceMiles": 0.17,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Utopia Restaurant at the Underground Atlanta",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJG28dFRMD9YgRRAIBCftzmNU",
+      "rating": 4.9,
+      "reviewCount": 3884,
+      "mapsUrl": "https://maps.google.com/?cid=15391179248563716676&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://utopialoungeatl.com/",
+      "distanceMiles": 0.11,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Tyde Tate Kitchen",
+      "category": "food",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJF6x2fMsD9YgR2jyM5v7FeQQ",
+      "rating": 4.7,
+      "reviewCount": 468,
+      "mapsUrl": "https://maps.google.com/?cid=322506546914016474&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.tydetatekitchen.com/",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Baraka Shawarma Atlanta",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJq6q6LIcD9YgRrRRP-7S_xwU",
+      "rating": 4.6,
+      "reviewCount": 1543,
+      "mapsUrl": "https://maps.google.com/?cid=416512274586342573&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.barakashawarmaatl.com/",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
+    },
+    {
+      "name": "StrikeOut Wingz ATL",
+      "category": "food",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJGfRcwI0D9YgRMJ6CbanKx98",
+      "rating": 4.5,
+      "reviewCount": 728,
+      "mapsUrl": "https://maps.google.com/?cid=16125079819858910768&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.strikeoutwingz.com/",
+      "distanceMiles": 0.17,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Mr Fries Man",
+      "category": "food",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJv3I9Q6MD9YgRbvl-aUx1KAI",
+      "rating": 4.4,
+      "reviewCount": 1325,
+      "mapsUrl": "https://maps.google.com/?cid=155503158192175470&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://mrfriesman.com/",
       "distanceMiles": 0.17,
       "walkMinutes": 3
     },
@@ -1079,6 +1407,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 996,
       "mapsUrl": "https://maps.google.com/?cid=15502178091704643276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://spinartnation.com/atlanta?utm_source=google&utm_medium=gbp&utm_campaign=gbp_optimization",
       "distanceMiles": 0.16,
       "walkMinutes": 3
     },
@@ -1101,6 +1430,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 423,
       "mapsUrl": "https://maps.google.com/?cid=12749357370960219843&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.bottlerocketatl.com/",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     },
@@ -1112,6 +1442,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 914,
       "mapsUrl": "https://maps.google.com/?cid=3406766034985455555&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.glennsskylounge.com/",
       "distanceMiles": 0.23,
       "walkMinutes": 5
     }
@@ -1125,6 +1456,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 305,
       "mapsUrl": "https://maps.google.com/?cid=11552402692499553664&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.havanacigarsatl.info/",
       "distanceMiles": 0.41,
       "walkMinutes": 8
     },
@@ -1136,6 +1468,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 75,
       "mapsUrl": "https://maps.google.com/?cid=5788160079961660650&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.coffeewasblack.com/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -1147,6 +1480,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 727,
       "mapsUrl": "https://maps.google.com/?cid=11281519905573291866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.lottafrutta.com/",
       "distanceMiles": 0.61,
       "walkMinutes": 12
     },
@@ -1169,6 +1503,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 915,
       "mapsUrl": "Chrome Yellow",
+      "websiteUrl": "https://chrome-yellow.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -1180,6 +1515,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 679,
       "mapsUrl": "Condesa Coffee",
+      "websiteUrl": "http://www.condesacoffee.com/",
       "distanceMiles": 0.72,
       "walkMinutes": 14
     },
@@ -1191,6 +1527,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1376,
       "mapsUrl": "https://maps.google.com/?cid=12557708179203840786&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://carrollstreetcabbagetown.com/",
       "distanceMiles": 0.46,
       "walkMinutes": 9
     },
@@ -1200,8 +1537,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 7-minute walk from the station.",
       "placeId": "ChIJUw_q8O0D9YgRq5yFELdvDjw",
       "rating": 4.5,
-      "reviewCount": 499,
+      "reviewCount": 500,
       "mapsUrl": "https://maps.google.com/?cid=4327519123996515499&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://grantparkmarket.net/",
       "distanceMiles": 0.37,
       "walkMinutes": 7
     },
@@ -1213,6 +1551,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 176,
       "mapsUrl": "https://maps.google.com/?cid=16824885519290175706&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.consumeandconfess.com/",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -1224,6 +1563,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 56,
       "mapsUrl": "https://maps.google.com/?cid=17819479949526440822&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.ivysheavenlycobblers.com/",
       "distanceMiles": 0.54,
       "walkMinutes": 11
     },
@@ -1235,6 +1575,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 49,
       "mapsUrl": "https://maps.google.com/?cid=3008802290371646247&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.sweetauburnbread.com/",
       "distanceMiles": 0.47,
       "walkMinutes": 9
     },
@@ -1246,6 +1587,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 709,
       "mapsUrl": "https://maps.google.com/?cid=15952260644404907445&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://staplehouse.com/",
       "distanceMiles": 0.45,
       "walkMinutes": 9
     },
@@ -1257,8 +1599,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 741,
       "mapsUrl": "https://maps.google.com/?cid=6914658977652012635&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.littletartatl.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
+    },
+    {
+      "name": "JenChan's",
+      "category": "food",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJz9jS4rAD9YgRFGLYsx3a_EM",
+      "rating": 4.7,
+      "reviewCount": 642,
+      "mapsUrl": "https://maps.google.com/?cid=4899030315778466324&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.jenchans.com/",
+      "distanceMiles": 0.45,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Glide Pizza",
+      "category": "food",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJy9zcpuAF9YgRxjdj1Zz5vvo",
+      "rating": 4.7,
+      "reviewCount": 803,
+      "mapsUrl": "https://maps.google.com/?cid=18068153207047272390&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.glidepizza.com/",
+      "distanceMiles": 0.74,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Hawkers Asian Street Food",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJBYIU3hAD9YgR9H4Vm6mXVNc",
+      "rating": 4.6,
+      "reviewCount": 3586,
+      "mapsUrl": "https://maps.google.com/?cid=15516193370905345780&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://eathawkers.com/locations/beltline/",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "SluttyVegan Edgewood",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJnYilTAgD9YgRh_ttyaEeFfg",
+      "rating": 4.6,
+      "reviewCount": 2533,
+      "mapsUrl": "https://maps.google.com/?cid=17876227976135048071&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://sluttyveganatl.com/edgewood",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Thumbs Up Diner",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJdaKB8fYD9YgRucANv8cv7b4",
+      "rating": 4.6,
+      "reviewCount": 3218,
+      "mapsUrl": "https://maps.google.com/?cid=13757704971637080249&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://thumbsupdiner.com/",
+      "distanceMiles": 0.51,
+      "walkMinutes": 10
+    },
+    {
+      "name": "The Municipal Market",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJPa8F3YsD9YgRpjPDbxOChoc",
+      "rating": 4.5,
+      "reviewCount": 2247,
+      "mapsUrl": "https://maps.google.com/?cid=9765635861990552486&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://municipalmarketatl.com/",
+      "distanceMiles": 0.38,
+      "walkMinutes": 8
     },
     {
       "name": "Forward, Warrior!! Mural Project",
@@ -1268,6 +1683,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 45,
       "mapsUrl": "https://maps.google.com/?cid=4044993528591175871&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://cabbagetown.com/forwardwarrior",
       "distanceMiles": 0.65,
       "walkMinutes": 13
     },
@@ -1279,6 +1695,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 11661,
       "mapsUrl": "https://maps.google.com/?cid=2022271040671862544&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.nps.gov/malu/index.htm",
       "distanceMiles": 0.49,
       "walkMinutes": 10
     },
@@ -1290,6 +1707,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 1299,
       "mapsUrl": "https://maps.google.com/?cid=9022960710920868447&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://ebenezeratl.org/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -1301,6 +1719,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 2481,
       "mapsUrl": "https://maps.google.com/?cid=5789769484375185563&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thekingcenter.org/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -1312,6 +1731,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 248,
       "mapsUrl": "https://maps.google.com/?cid=3611372231648912169&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://lourdesatlanta.org/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -1321,8 +1741,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 6-minute walk from the station.",
       "placeId": "ChIJV_Z8bT8D9YgR4ZsWJaDwgs8",
       "rating": 4.9,
-      "reviewCount": 1993,
+      "reviewCount": 1994,
       "mapsUrl": "https://maps.google.com/?cid=14952778283431140321&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://missconduck.com/?utm_source=google",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -1332,8 +1753,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 15-minute walk from the station.",
       "placeId": "ChIJcWEfaikD9YgR79HonWhc9Iw",
       "rating": 4.9,
-      "reviewCount": 2040,
+      "reviewCount": 2046,
       "mapsUrl": "https://maps.google.com/?cid=10156844664022946287&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://eclipsediluna.com/",
       "distanceMiles": 0.73,
       "walkMinutes": 15
     },
@@ -1345,6 +1767,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 665,
       "mapsUrl": "https://maps.google.com/?cid=14728716655798663579&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.ourbaratl.com/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -1356,6 +1779,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 169,
       "mapsUrl": "https://maps.google.com/?cid=1321685521645155926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://loreatl.com/",
       "distanceMiles": 0.37,
       "walkMinutes": 7
     },
@@ -1367,6 +1791,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 629,
       "mapsUrl": "https://maps.google.com/?cid=504099816987624134&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.42barandgrillatl.com/",
       "distanceMiles": 0.23,
       "walkMinutes": 5
     }
@@ -1380,6 +1805,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 487,
       "mapsUrl": "https://maps.google.com/?cid=12392316857025283364&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://dessencecafe.com/",
       "distanceMiles": 0.66,
       "walkMinutes": 13
     },
@@ -1402,6 +1828,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 850,
       "mapsUrl": "https://maps.google.com/?cid=1706409605361935811&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.kupcakerie.com/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     },
@@ -1413,8 +1840,68 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 57,
       "mapsUrl": "https://maps.google.com/?cid=3870168348391081145&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.bakedwrightbakery.com/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
+    },
+    {
+      "name": "Vegan House of Pancakes",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ57hb97wD9YgR0axqEZREBZc",
+      "rating": 4.9,
+      "reviewCount": 451,
+      "mapsUrl": "https://maps.google.com/?cid=10882179477348723921&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://vhop.food/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Arden's Garden Juice Bar & Smoothies East Point",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJY6SH86ni9IgRgrRFHJJMTqY",
+      "rating": 4.7,
+      "reviewCount": 1567,
+      "mapsUrl": "https://maps.google.com/?cid=11983599848902734978&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.ardensgarden.com/pages/east-point",
+      "distanceMiles": 0.51,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Thumbs Up Diner",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJSax0vVMd9YgRCRtbsuRj3to",
+      "rating": 4.4,
+      "reviewCount": 4191,
+      "mapsUrl": "https://maps.google.com/?cid=15771152778994064137&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.thumbsupdiner.com/",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Oz Pizza- East Point",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ2wmHDFMd9YgRfYFhn7unVzQ",
+      "rating": 4.4,
+      "reviewCount": 2744,
+      "mapsUrl": "https://maps.google.com/?cid=3771667637220770173&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.ozpizza.net/",
+      "distanceMiles": 0.09,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Tienda y Carniceria El ejido",
+      "category": "food",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJy_mj7bzj9IgR6oYZ2vPdkGc",
+      "rating": 4.4,
+      "reviewCount": 165,
+      "mapsUrl": "https://maps.google.com/?cid=7462708621958809322&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.59,
+      "walkMinutes": 12
     },
     {
       "name": "Lord Yatta Arte- Tattoo Artist",
@@ -1424,6 +1911,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 47,
       "mapsUrl": "https://maps.google.com/?cid=10359760429814243198&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.lordyatta.com/appointments.html",
       "distanceMiles": 0.09,
       "walkMinutes": 2
     },
@@ -1435,6 +1923,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 144,
       "mapsUrl": "https://maps.google.com/?cid=17333740855258577547&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://eastpointga.gov/parks-recreation/",
       "distanceMiles": 0.42,
       "walkMinutes": 8
     },
@@ -1446,6 +1935,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 308,
       "mapsUrl": "https://maps.google.com/?cid=16749656714472684992&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.archesbrewing.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -1457,6 +1947,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 67,
       "mapsUrl": "https://maps.google.com/?cid=1118513942085552298&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantautility.works/",
       "distanceMiles": 0.2,
       "walkMinutes": 4
     },
@@ -1468,6 +1959,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1429,
       "mapsUrl": "https://maps.google.com/?cid=15681680003793333899&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://chairsupstairs.com/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     },
@@ -1479,6 +1971,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 653,
       "mapsUrl": "https://maps.google.com/?cid=3325963533464469921&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://eatmybiscuits.com/?utm_source=google",
       "distanceMiles": 0.08,
       "walkMinutes": 2
     }
@@ -1503,6 +1996,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 167,
       "mapsUrl": "https://maps.google.com/?cid=2881453614883939027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.kincoffeeco.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -1514,6 +2008,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 119,
       "mapsUrl": "https://maps.google.com/?cid=9883062195127662331&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.stellow.com/",
       "distanceMiles": 0.35,
       "walkMinutes": 7
     },
@@ -1525,6 +2020,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 163,
       "mapsUrl": "https://maps.google.com/?cid=5292269450085033064&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.sidecarcoffeeshop.com/",
       "distanceMiles": 0.66,
       "walkMinutes": 13
     },
@@ -1536,6 +2032,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 209,
       "mapsUrl": "https://maps.google.com/?cid=7056492986663254435&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.digibitesfoodhub.com/",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     },
@@ -1547,6 +2044,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 372,
       "mapsUrl": "https://maps.google.com/?cid=12019010701200912066&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://zentea.com/",
       "distanceMiles": 0.32,
       "walkMinutes": 6
     },
@@ -1558,6 +2056,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 42,
       "mapsUrl": "https://maps.google.com/?cid=591723239414883939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.atlantacoffeeshops.com/choice-coffee-co",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -1569,6 +2068,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 713,
       "mapsUrl": "Google Maps",
+      "websiteUrl": "https://dcubancafe.com/dcubanchamblee?utm_source=google",
       "distanceMiles": 0.73,
       "walkMinutes": 15
     },
@@ -1602,6 +2102,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1091,
       "mapsUrl": "https://maps.google.com/?cid=5009396037412434216&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.frostycaboose.com/",
       "distanceMiles": 0.5,
       "walkMinutes": 10
     },
@@ -1613,6 +2114,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 156,
       "mapsUrl": "https://maps.google.com/?cid=10106466776569435463&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://laylocafe.com/",
       "distanceMiles": 0.38,
       "walkMinutes": 8
     },
@@ -1622,8 +2124,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 11-minute walk from the station.",
       "placeId": "ChIJhRzyDf8I9YgRV0fVltpqTug",
       "rating": 4.4,
-      "reviewCount": 1852,
+      "reviewCount": 1853,
       "mapsUrl": "https://maps.google.com/?cid=16739434352048686935&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.wholefoodsmarket.com/stores/chamblee?utm_source=google&utm_medium=organic&utm_campaign=listings",
       "distanceMiles": 0.54,
       "walkMinutes": 11
     },
@@ -1639,6 +2142,66 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 14
     },
     {
+      "name": "Lagarde American Eatery",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJVfX4eNgJ9YgRtnmaAqg1jEE",
+      "rating": 4.7,
+      "reviewCount": 1431,
+      "mapsUrl": "https://maps.google.com/?cid=4723209104919263670&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://lagardeamerica.com/",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Fudo",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJrWJG4ycJ9YgRX3V2kNIAhx4",
+      "rating": 4.6,
+      "reviewCount": 1151,
+      "mapsUrl": "https://maps.google.com/?cid=2199727847360591199&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.fudoatl.com/",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Sabaraba's",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJn92VbAAJ9YgRCRUeKw3KbY4",
+      "rating": 4.6,
+      "reviewCount": 359,
+      "mapsUrl": "https://maps.google.com/?cid=10263081283754005769&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.eatsabarabas.com/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "gusto! - healthy bowls & wraps",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJqTpgNvYJ9YgR5owTmTLmzTM",
+      "rating": 4.6,
+      "reviewCount": 563,
+      "mapsUrl": "https://maps.google.com/?cid=3732892771150957798&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://whatsyourgusto.com/locations/chamblee/",
+      "distanceMiles": 0.68,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Oaxaca ATL",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJuYCnu6sJ9YgRGozmFQRYZVA",
+      "rating": 4.5,
+      "reviewCount": 574,
+      "mapsUrl": "https://maps.google.com/?cid=5793133270252555290&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.oaxacaatl.com/",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
       "name": "Simple Finds Consignment Designer Outlet Mall",
       "category": "sight",
       "description": "About a 12-minute walk from the station.",
@@ -1646,6 +2209,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 372,
       "mapsUrl": "https://maps.google.com/?cid=16777590920504559811&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://simplefindsga.com/",
       "distanceMiles": 0.58,
       "walkMinutes": 12
     },
@@ -1668,6 +2232,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 28,
       "mapsUrl": "https://maps.google.com/?cid=10892264953370753221&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.chambleega.com/parks_and_recreation/village_park.php",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -1679,6 +2244,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 34,
       "mapsUrl": "https://maps.google.com/?cid=12705948324601539567&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.chambleega.com/parks_and_recreation/clairmont_park.php",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -1690,6 +2256,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 100,
       "mapsUrl": "https://maps.google.com/?cid=17035585789648058935&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://brewsandhops.com/",
       "distanceMiles": 0.32,
       "walkMinutes": 6
     },
@@ -1701,6 +2268,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 216,
       "mapsUrl": "https://maps.google.com/?cid=3293362776711381376&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.contrastartisanales.com/",
       "distanceMiles": 0.68,
       "walkMinutes": 14
     },
@@ -1712,6 +2280,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 109,
       "mapsUrl": "https://maps.google.com/?cid=5618600339303631142&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.blinqlashes.com/",
       "distanceMiles": 0.16,
       "walkMinutes": 3
     },
@@ -1723,6 +2292,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 100,
       "mapsUrl": "https://maps.google.com/?cid=4633126045087030969&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://atlantagolfandsocial.com/",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -1734,6 +2304,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1137,
       "mapsUrl": "https://maps.google.com/?cid=3706780537414630712&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://hopstix.com/",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     }
@@ -1747,6 +2318,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 107,
       "mapsUrl": "https://maps.google.com/?cid=3217754667669080309&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://thecestlaviecafe.com/",
       "distanceMiles": 0.14,
       "walkMinutes": 3
     },
@@ -1758,8 +2330,45 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 94,
       "mapsUrl": "https://maps.google.com/?cid=11600679853955444988&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://bakesbydrae.com/",
       "distanceMiles": 0.14,
       "walkMinutes": 3
+    },
+    {
+      "name": "Aye Tea Elle",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJL7dvcvfj9IgRLJ6I8ZzB25o",
+      "rating": 4.6,
+      "reviewCount": 482,
+      "mapsUrl": "https://maps.google.com/?cid=11158725381551857196&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.ayeteaelle.com/",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Party of 5",
+      "category": "food",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJu3ASQn_j9IgRTh0XMnuwSyU",
+      "rating": 4.4,
+      "reviewCount": 885,
+      "mapsUrl": "https://maps.google.com/?cid=2687435645824474446&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.po5atl.com/",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Bole Ethiopian Restaurant",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJZ-LVP7Li9IgR59rUdDzO964",
+      "rating": 4.4,
+      "reviewCount": 1679,
+      "mapsUrl": "https://maps.google.com/?cid=12607772440900459239&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.boleethiopianrestaurantatlanta.com/",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
     },
     {
       "name": "Richard D. Zupp Park",
@@ -1769,6 +2378,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 328,
       "mapsUrl": "https://maps.google.com/?cid=753501117520091312&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.collegeparkrca.com/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     },
@@ -1780,6 +2390,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1242,
       "mapsUrl": "https://maps.google.com/?cid=13502346972634341305&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.manchesterarmspub.com/",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -1791,6 +2402,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 3905,
       "mapsUrl": "https://maps.google.com/?cid=9865157743402817573&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://nouveaubar.com/",
       "distanceMiles": 0.08,
       "walkMinutes": 2
     }
@@ -1815,6 +2427,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 752,
       "mapsUrl": "https://maps.google.com/?cid=9085728053572401465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://justlovecoffeecafe.com/ga-sandy-springs/",
       "distanceMiles": 0.41,
       "walkMinutes": 8
     },
@@ -1826,6 +2439,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1589,
       "mapsUrl": "https://maps.google.com/?cid=13761879298122164010&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://stores.barnesandnoble.com/store/2846",
       "distanceMiles": 0.35,
       "walkMinutes": 7
     },
@@ -1835,8 +2449,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 13-minute walk from the station.",
       "placeId": "ChIJMeYeHq0J9YgR_LoK7IEXOP4",
       "rating": 4.6,
-      "reviewCount": 878,
+      "reviewCount": 880,
       "mapsUrl": "https://maps.google.com/?cid=18318417331107838716&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.snoozeeatery.com/restaurant/georgia/perimeter/?utm_source=Google&utm_medium=BusinessListing",
       "distanceMiles": 0.64,
       "walkMinutes": 13
     },
@@ -1848,6 +2463,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 943,
       "mapsUrl": "https://maps.google.com/?cid=1287629813281620436&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.benjerry.com/highstreet-atlanta",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -1859,6 +2475,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 509,
       "mapsUrl": "https://maps.google.com/?cid=16861595179562471880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://sugarshanes.com/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -1870,6 +2487,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 2899,
       "mapsUrl": "https://maps.google.com/?cid=15055550004297353566&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.publix.com/?setstorenumber=647&utm_medium=maps&utm_source=extendednetwork&utm_content=psm_website_url",
       "distanceMiles": 0.49,
       "walkMinutes": 10
     },
@@ -1881,19 +2499,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 2489,
       "mapsUrl": "https://maps.google.com/?cid=4606431484182132320&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.cafeintermezzo.com/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     },
     {
-      "name": "Cuddlefish",
+      "name": "Local Expedition Wood Fired Grill",
       "category": "food",
-      "description": "Perimeter Center — about a 4-minute walk from the station.",
-      "placeId": "ChIJtdKgDAcJ9YgRRp3VA6b9tGU",
-      "rating": 4.2,
-      "reviewCount": 215,
-      "mapsUrl": "https://maps.google.com/?cid=7328761383109369158&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "distanceMiles": 0.21,
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJkUYmg-AJ9YgRgOaN4TUCbEI",
+      "rating": 4.8,
+      "reviewCount": 1529,
+      "mapsUrl": "https://maps.google.com/?cid=4786202934428690048&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.lewfg.com/",
+      "distanceMiles": 0.41,
+      "walkMinutes": 8
+    },
+    {
+      "name": "The Hampton Social - Atlanta",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJt0dP8NUJ9YgRepD1QQyhMlg",
+      "rating": 4.7,
+      "reviewCount": 1242,
+      "mapsUrl": "https://maps.google.com/?cid=6355319098191483002&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.thehamptonsocial.com/atlanta",
+      "distanceMiles": 0.32,
+      "walkMinutes": 6
+    },
+    {
+      "name": "NoriFish Sandy Springs",
+      "category": "food",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJQyWm2F0J9YgRF_X_5cdhT6A",
+      "rating": 4.7,
+      "reviewCount": 297,
+      "mapsUrl": "https://maps.google.com/?cid=11551559080413754647&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.norifishsushi.com/",
+      "distanceMiles": 0.44,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Louisiana Bistreaux Seafood Kitchen Perimeter",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJtVvwVdoJ9YgR5XshDMmjKUc",
+      "rating": 4.6,
+      "reviewCount": 949,
+      "mapsUrl": "https://maps.google.com/?cid=5127809734625295333&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.louisianabistreaux.com/perimeter",
+      "distanceMiles": 0.2,
       "walkMinutes": 4
+    },
+    {
+      "name": "CT Cantina & Taqueria",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJK2k0MmsJ9YgR4UiCmwCYTNc",
+      "rating": 4.5,
+      "reviewCount": 561,
+      "mapsUrl": "https://maps.google.com/?cid=15513941944760944865&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.cttacos.com/",
+      "distanceMiles": 0.19,
+      "walkMinutes": 4
+    },
+    {
+      "name": "One Sushi Korean Japanese Café",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJm4mmmeEJ9YgRttbzNZKgx9M",
+      "rating": 4.5,
+      "reviewCount": 789,
+      "mapsUrl": "https://maps.google.com/?cid=15260342412199057078&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.one-sushi.com/",
+      "distanceMiles": 0.35,
+      "walkMinutes": 7
     },
     {
       "name": "Ravinia Gardens",
@@ -1914,6 +2594,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 197,
       "mapsUrl": "https://maps.google.com/?cid=9569786513820605650&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.kruathaiatlanta.com/",
       "distanceMiles": 0.15,
       "walkMinutes": 3
     },
@@ -1925,6 +2606,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 1097,
       "mapsUrl": "https://maps.google.com/?cid=1838895645100088692&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.puttshack.com/locations/dunwoody",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -1934,8 +2616,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 6-minute walk from the station.",
       "placeId": "ChIJowbsOicJ9YgRgk9ofjG1otg",
       "rating": 4.7,
-      "reviewCount": 2259,
+      "reviewCount": 2263,
       "mapsUrl": "https://maps.google.com/?cid=15610238482598350722&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.agavebandido.com/",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -1947,6 +2630,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 2066,
       "mapsUrl": "https://maps.google.com/?cid=15988363689574780905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.flemingssteakhouse.com/Locations/GA/Atlanta-Dunwoody?y_source=1_MTU1MDMxNzktNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
       "distanceMiles": 0.48,
       "walkMinutes": 10
     },
@@ -1958,6 +2642,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 133,
       "mapsUrl": "https://maps.google.com/?cid=12086376893945759742&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.mayaspeaktiki.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     }
@@ -1971,6 +2656,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 453,
       "mapsUrl": "https://maps.google.com/?cid=1762628820234225938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://javasaga.coffee/?utm_source=google",
       "distanceMiles": 0.7,
       "walkMinutes": 14
     },
@@ -1982,6 +2668,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 164,
       "mapsUrl": "https://maps.google.com/?cid=14449522809505132608&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.fluffyfluffy.com/",
       "distanceMiles": 0.62,
       "walkMinutes": 12
     },
@@ -1993,6 +2680,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 964,
       "mapsUrl": "https://maps.google.com/?cid=340338504210650971&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://kungfutea.com/",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -2004,6 +2692,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 120,
       "mapsUrl": "https://maps.google.com/?cid=3324516639012591289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.commoncoffeeandcocktails.com/",
       "distanceMiles": 0.62,
       "walkMinutes": 12
     },
@@ -2026,6 +2715,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 138,
       "mapsUrl": "https://maps.google.com/?cid=13668493256993970168&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.tomntomsdoraville.com/",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -2037,6 +2727,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 626,
       "mapsUrl": "https://maps.google.com/?cid=1864477609273176823&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.icenyicecream.com/",
       "distanceMiles": 0.67,
       "walkMinutes": 13
     },
@@ -2057,10 +2748,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 11-minute walk from the station.",
       "placeId": "ChIJo1L4YZoJ9YgRrJ1fKJSfpGo",
       "rating": 4.8,
-      "reviewCount": 64,
+      "reviewCount": 65,
       "mapsUrl": "https://maps.google.com/?cid=7684442322882239916&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
       "distanceMiles": 0.54,
       "walkMinutes": 11
+    },
+    {
+      "name": "YGF Malatang",
+      "category": "food",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJxxP55lQJ9YgRgA0IvAqCzPs",
+      "rating": 4.7,
+      "reviewCount": 781,
+      "mapsUrl": "https://maps.google.com/?cid=18144019981384813952&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.ygfatlanta.com/",
+      "distanceMiles": 0.61,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Las Delicias de La Abuela",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJx1z3ZNkJ9YgR-WeY3Z9-EFc",
+      "rating": 4.6,
+      "reviewCount": 9424,
+      "mapsUrl": "https://maps.google.com/?cid=6273653506009753593&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.lasdeliciasdelaabuelaatl.com/",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Kamayan ATL - Filipino Restaurant",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJYYb9NJEH9YgRUYeQ1aGs0sw",
+      "rating": 4.6,
+      "reviewCount": 866,
+      "mapsUrl": "https://maps.google.com/?cid=14759048739919267665&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.kamayanatl.com/",
+      "distanceMiles": 0.7,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Kang Nam",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJD9gmNmCn9YgRv5xYneyDA9U",
+      "rating": 4.6,
+      "reviewCount": 1562,
+      "mapsUrl": "https://maps.google.com/?cid=15349257007284133055&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.kangnamjapanese.com/",
+      "distanceMiles": 0.71,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Baldinos Giant Jersey Subs",
+      "category": "food",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJmdsbLWCn9YgR1Br88SCSiho",
+      "rating": 4.6,
+      "reviewCount": 2411,
+      "mapsUrl": "https://maps.google.com/?cid=1912501661968636628&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    },
+    {
+      "name": "El Rey Del Taco",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJE1BGlM8J9YgR6ND5Uwb5Y0A",
+      "rating": 4.4,
+      "reviewCount": 5322,
+      "mapsUrl": "https://maps.google.com/?cid=4639825846695743720&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://elreydeltacoatl.com/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
     },
     {
       "name": "Atlanta Glassblowing",
@@ -2070,6 +2832,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 83,
       "mapsUrl": "https://maps.google.com/?cid=8387076622937859849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://atlantaglassblowing.com/",
       "distanceMiles": 0.35,
       "walkMinutes": 7
     },
@@ -2081,6 +2844,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 1359,
       "mapsUrl": "https://maps.google.com/?cid=2399199643144122601&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.theartcenters.com/",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -2092,6 +2856,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 406,
       "mapsUrl": "https://maps.google.com/?cid=13296271731178045649&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://tutankhamunexpo.com/atlanta/?utm_source=google&utm_medium=localcards&utm_campaign=118684_atl",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -2114,6 +2879,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 27,
       "mapsUrl": "https://maps.google.com/?cid=11402975860311726374&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://dinosaliveexhibit.com/atlanta/vr/?utm_source=google&utm_medium=localcards&utm_campaign=429100_atl",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -2125,6 +2891,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 258,
       "mapsUrl": "https://maps.google.com/?cid=15095903517436071201&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.4o4esports.com/",
       "distanceMiles": 0.56,
       "walkMinutes": 11
     },
@@ -2136,6 +2903,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 673,
       "mapsUrl": "https://maps.google.com/?cid=8325917599283578813&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.pelicanausa.com/home",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -2145,8 +2913,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 10-minute walk from the station.",
       "placeId": "ChIJAWFhoJMJ9YgRKDPn7dURPQY",
       "rating": 4.5,
-      "reviewCount": 1358,
+      "reviewCount": 1361,
       "mapsUrl": "https://maps.google.com/?cid=449535148323975976&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://micskaraoke.com/",
       "distanceMiles": 0.5,
       "walkMinutes": 10
     },
@@ -2156,8 +2925,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 14-minute walk from the station.",
       "placeId": "ChIJZSQje6IJ9YgRB-Z7An8_Log",
       "rating": 4.5,
-      "reviewCount": 107,
+      "reviewCount": 108,
       "mapsUrl": "https://maps.google.com/?cid=9812850452821960199&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://sapphirektv.com/",
       "distanceMiles": 0.71,
       "walkMinutes": 14
     }
@@ -2180,8 +2950,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 9-minute walk from the station.",
       "placeId": "ChIJUewQFNlK7G0RS4-k1IupzFI",
       "rating": 4.9,
-      "reviewCount": 280,
+      "reviewCount": 281,
       "mapsUrl": "https://maps.google.com/?cid=5966330024392167243&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.thejuiceladyatl.com/",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     },
@@ -2193,6 +2964,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 113,
       "mapsUrl": "https://maps.google.com/?cid=6684392637474610354&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "https://www.foxtailcoffee.com/",
       "distanceMiles": 0.48,
       "walkMinutes": 10
     },
@@ -2204,6 +2976,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.2,
       "reviewCount": 228,
       "mapsUrl": "https://maps.google.com/?cid=12798805115474738629&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://chickensaladchick.com/atlanta-ga-perimeter",
       "distanceMiles": 0.71,
       "walkMinutes": 14
     },
@@ -2215,6 +2988,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 39,
       "mapsUrl": "https://maps.google.com/?cid=6493433974912163299&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.makedascookies.com/locations/sandy-springs-ga",
       "distanceMiles": 0.58,
       "walkMinutes": 12
     },
@@ -2226,6 +3000,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 255,
       "mapsUrl": "https://maps.google.com/?cid=1100437096883432231&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://yabasbagels.com/",
       "distanceMiles": 0.73,
       "walkMinutes": 15
     },
@@ -2237,6 +3012,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 733,
       "mapsUrl": "https://maps.google.com/?cid=14754320331529638562&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://parisbaguette.com/locations/ga/atlanta/4511-olde-perimeter-way/",
       "distanceMiles": 0.49,
       "walkMinutes": 10
     },
@@ -2248,6 +3024,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 242,
       "mapsUrl": "https://maps.google.com/?cid=8644949155134876606&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.cookiedelivery.com/",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     },
@@ -2259,8 +3036,33 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 107,
       "mapsUrl": "https://maps.google.com/?cid=15757381227842531986&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.sweetspotcookie.com/",
       "distanceMiles": 0.49,
       "walkMinutes": 10
+    },
+    {
+      "name": "Hawkers Perimeter",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJwd-gRMoJ9YgRck8zExVVAww",
+      "rating": 4.7,
+      "reviewCount": 2398,
+      "mapsUrl": "https://maps.google.com/?cid=865629102390071154&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://maps.app.goo.gl/4EM8ePPQiHXihWXH6",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "TOP KOREAN BBQ & HOT POT",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJi97WYVIJ9YgR8f4b4R8ZZiU",
+      "rating": 4.6,
+      "reviewCount": 1290,
+      "mapsUrl": "https://maps.google.com/?cid=2694869051739209457&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://topkoreanbbq.com/",
+      "distanceMiles": 0.28,
+      "walkMinutes": 6
     },
     {
       "name": "Game Show Battle Rooms - Atlanta (Dunwoody)",
@@ -2270,6 +3072,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 15873,
       "mapsUrl": "https://maps.google.com/?cid=7518942789784498505&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://gameshowbattlerooms.com/atlanta",
       "distanceMiles": 0.42,
       "walkMinutes": 8
     },
@@ -2279,8 +3082,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 9-minute walk from the station.",
       "placeId": "ChIJF47Vn-YJ9YgR9tzyqN5zIX8",
       "rating": 4.6,
-      "reviewCount": 447,
+      "reviewCount": 448,
       "mapsUrl": "https://maps.google.com/?cid=9160730517202722038&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://ashfordlane.politanrow.com/",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     },
@@ -2292,6 +3096,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 69,
       "mapsUrl": "https://maps.google.com/?cid=11029128515833704106&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://okayannys.com/",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     },
@@ -2301,8 +3106,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 9-minute walk from the station.",
       "placeId": "ChIJVVWVUlcJ9YgR5idT7v6KG1s",
       "rating": 4.5,
-      "reviewCount": 1184,
+      "reviewCount": 1186,
       "mapsUrl": "https://maps.google.com/?cid=6564993709347383270&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.culinarydropout.com/locations/culinary-dropout-atlanta-ashford/",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     },
@@ -2312,8 +3118,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 8-minute walk from the station.",
       "placeId": "ChIJt75GfRwJ9YgRGglP6HNKHVw",
       "rating": 4.5,
-      "reviewCount": 1917,
+      "reviewCount": 1918,
       "mapsUrl": "https://maps.google.com/?cid=6637543287493167386&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.hobnobatlanta.com/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     }
@@ -2327,6 +3134,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 2513,
       "mapsUrl": "https://maps.google.com/?cid=9449107366707119210&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.rosiescoffeecafe.com/",
       "distanceMiles": 0.23,
       "walkMinutes": 5
     },
@@ -2338,6 +3146,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 111,
       "mapsUrl": "https://maps.google.com/?cid=12741459467600353954&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://flowersfoods.com/brands/",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -2360,6 +3169,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 65,
       "mapsUrl": "https://maps.google.com/?cid=4362114772175309657&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://en.wikipedia.org/wiki/Herndon_Home",
       "distanceMiles": 0.17,
       "walkMinutes": 3
     },
@@ -2371,6 +3181,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 902,
       "mapsUrl": "https://maps.google.com/?cid=7101473532685525358&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thehomedepotbackyard.com/",
       "distanceMiles": 0.19,
       "walkMinutes": 4
     },
@@ -2382,6 +3193,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 880,
       "mapsUrl": "https://maps.google.com/?cid=4545653947455978405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://rodney-cook-sr-park-in-historic-vine-city.loopfun.net/",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -2402,8 +3214,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 2-minute walk from the station.",
       "placeId": "ChIJxUnQaXwD9YgRZWbuS8NMK6g",
       "rating": 4.5,
-      "reviewCount": 4146,
+      "reviewCount": 4148,
       "mapsUrl": "https://maps.google.com/?cid=12117863624046700133&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.restaurant10atl.com/",
       "distanceMiles": 0.12,
       "walkMinutes": 2
     }
@@ -2417,6 +3230,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 296,
       "mapsUrl": "https://maps.google.com/?cid=3520385079485981658&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.conleche.com/",
       "distanceMiles": 0.61,
       "walkMinutes": 12
     },
@@ -2428,6 +3242,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 568,
       "mapsUrl": "https://maps.google.com/?cid=11285304509267689188&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://justaddhoney.net/",
       "distanceMiles": 0.68,
       "walkMinutes": 14
     },
@@ -2439,6 +3254,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 198,
       "mapsUrl": "https://maps.google.com/?cid=12227078355275397045&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "websiteUrl": "http://www.harborcoffeeatl.com/",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -2461,6 +3277,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1262,
       "mapsUrl": "Bread & Butterfly",
+      "websiteUrl": "http://www.bread-and-butterfly.com/",
       "distanceMiles": 0.46,
       "walkMinutes": 9
     },
@@ -2472,6 +3289,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 814,
       "mapsUrl": "https://maps.google.com/?cid=11002049512706658069&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.parkgroundsatl.com/",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -2481,8 +3299,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 13-minute walk from the station.",
       "placeId": "ChIJiV-HFagG9YgRYQl_S8sqKKU",
       "rating": 4.4,
-      "reviewCount": 2857,
+      "reviewCount": 2858,
       "mapsUrl": "https://maps.google.com/?cid=11900809067959880033&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://folkartrestaurant.com/folkartrestaurant-inmanpark?utm_source=google",
       "distanceMiles": 0.63,
       "walkMinutes": 13
     },
@@ -2494,6 +3313,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 277,
       "mapsUrl": "https://maps.google.com/?cid=6342639780215262886&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.shopthedaily.com/atlanta-hurt-st",
       "distanceMiles": 0.09,
       "walkMinutes": 2
     },
@@ -2505,6 +3325,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 51,
       "mapsUrl": "https://maps.google.com/?cid=7481184015544408557&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://thevegansweetie.com/",
       "distanceMiles": 0.5,
       "walkMinutes": 10
     },
@@ -2516,6 +3337,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 917,
       "mapsUrl": "Voga Italian Gelato | Crepes | Coffee | Chocolate | Desserts",
+      "websiteUrl": "http://www.vogagelato.com/",
       "distanceMiles": 0.47,
       "walkMinutes": 9
     },
@@ -2527,6 +3349,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1447,
       "mapsUrl": "https://maps.google.com/?cid=16830412075862456810&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://revolutiondoughnuts.com/",
       "distanceMiles": 0.63,
       "walkMinutes": 13
     },
@@ -2536,8 +3359,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 10-minute walk from the station.",
       "placeId": "ChIJPaMe3QME9YgR9AtC0EgKoOw",
       "rating": 4.7,
-      "reviewCount": 1271,
+      "reviewCount": 1280,
       "mapsUrl": "https://maps.google.com/?cid=17050639497072610292&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.benjerry.com/atlanta-inmanpark",
       "distanceMiles": 0.5,
       "walkMinutes": 10
     },
@@ -2549,8 +3373,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 152,
       "mapsUrl": "https://maps.google.com/?cid=17536857415078162109&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://xocolatlchocolate.com/collections/all-chocolate",
       "distanceMiles": 0.66,
       "walkMinutes": 13
+    },
+    {
+      "name": "Delbar - Inman Park",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ9WJXzEEF9YgRSTQ0utn07ww",
+      "rating": 4.9,
+      "reviewCount": 12906,
+      "mapsUrl": "https://maps.google.com/?cid=932232863858046025&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.delbaratl.com/",
+      "distanceMiles": 0.52,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Yeppa & Co. - Beltline",
+      "category": "food",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJbz62AwAD9YgR-4D_85ckJks",
+      "rating": 4.9,
+      "reviewCount": 4069,
+      "mapsUrl": "https://maps.google.com/?cid=5415055837011869947&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://yhospitality.com/yeppa-beltline",
+      "distanceMiles": 0.74,
+      "walkMinutes": 15
+    },
+    {
+      "name": "Fox Bros Bar-B-Q",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJPaAgP6wG9YgRGRcSsxETyjE",
+      "rating": 4.5,
+      "reviewCount": 10096,
+      "mapsUrl": "https://maps.google.com/?cid=3587701019893700377&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.foxbrosbbq.com/",
+      "distanceMiles": 0.38,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Hattie B's Hot Chicken - Atlanta East",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJh8p89PQH9YgR_n-M514AVA8",
+      "rating": 4.5,
+      "reviewCount": 6787,
+      "mapsUrl": "https://maps.google.com/?cid=1104508216224284670&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://hattieb.com/",
+      "distanceMiles": 0.41,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Superica",
+      "category": "food",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJz8DZBfgD9YgR_02Yj4A9Jw4",
+      "rating": 4.5,
+      "reviewCount": 2889,
+      "mapsUrl": "https://maps.google.com/?cid=1019851462996938239&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.superica.com/krog-street/",
+      "distanceMiles": 0.66,
+      "walkMinutes": 13
+    },
+    {
+      "name": "bartaco",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJHWdA3gME9YgRvh7M-K6z1-E",
+      "rating": 4.5,
+      "reviewCount": 3274,
+      "mapsUrl": "https://maps.google.com/?cid=16273673342606384830&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://bartaco.com/location/atlanta-inman/",
+      "distanceMiles": 0.48,
+      "walkMinutes": 10
     },
     {
       "name": "Unlmtd Studio",
@@ -2560,6 +3457,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 55,
       "mapsUrl": "https://maps.google.com/?cid=4680616745245188390&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.unlmtdstudio.com/",
       "distanceMiles": 0.7,
       "walkMinutes": 14
     },
@@ -2571,6 +3469,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 64,
       "mapsUrl": "https://maps.google.com/?cid=4463184959749294884&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.springvalepark.org/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -2582,6 +3481,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 50,
       "mapsUrl": "https://maps.google.com/?cid=18347466448794582393&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://atlantaworldwide.com/",
       "distanceMiles": 0.72,
       "walkMinutes": 14
     },
@@ -2593,6 +3493,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 77,
       "mapsUrl": "https://maps.google.com/?cid=10151302312489023057&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.whitespace814.com/",
       "distanceMiles": 0.49,
       "walkMinutes": 10
     },
@@ -2602,8 +3503,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 13-minute walk from the station.",
       "placeId": "ChIJn0vJlwIE9YgRHxlkBZq4_v8",
       "rating": 4.7,
-      "reviewCount": 649,
+      "reviewCount": 650,
       "mapsUrl": "https://maps.google.com/?cid=18446384095411050783&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.jimmycarterlibrary.gov/",
       "distanceMiles": 0.64,
       "walkMinutes": 13
     },
@@ -2615,6 +3517,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 2544,
       "mapsUrl": "https://maps.google.com/?cid=14554971689164868841&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.variety-playhouse.com/",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -2626,6 +3529,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1947,
       "mapsUrl": "https://maps.google.com/?cid=12449525594127662143&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.wreckingbarbrewpub.com/",
       "distanceMiles": 0.36,
       "walkMinutes": 7
     },
@@ -2637,6 +3541,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1445,
       "mapsUrl": "https://maps.google.com/?cid=6643204491619307509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thealbertatlanta.com/",
       "distanceMiles": 0.42,
       "walkMinutes": 8
     },
@@ -2648,6 +3553,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 2405,
       "mapsUrl": "https://maps.google.com/?cid=16093060355848066359&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.theporterbeerbar.com/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     },
@@ -2659,6 +3565,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 2394,
       "mapsUrl": "https://maps.google.com/?cid=4897970513905498774&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.kevinrathbunsteak.com/",
       "distanceMiles": 0.66,
       "walkMinutes": 13
     }
@@ -2672,6 +3579,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 271,
       "mapsUrl": "https://maps.google.com/?cid=13193464647830872635&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.zafrankitchen.com/dil-bahar-caf%C3%A9-market",
       "distanceMiles": 0.63,
       "walkMinutes": 13
     },
@@ -2683,6 +3591,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.2,
       "reviewCount": 42,
       "mapsUrl": "https://maps.google.com/?cid=11708810299567335390&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.saviprovisions.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -2694,7 +3603,44 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 400,
       "mapsUrl": "https://maps.google.com/?cid=5175158559950782498&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.davincisdonuts.com/",
       "distanceMiles": 0.72,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Gruby's New York Deli",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJGWtA-MsO9YgRnhua6V7bS10",
+      "rating": 4.5,
+      "reviewCount": 608,
+      "mapsUrl": "https://maps.google.com/?cid=6722708069473196958&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://grubysnydeli.com/",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Taziki's Mediterranean Cafe - Sandy Springs",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJCVpcTs8O9YgRxdnuFq9C8wA",
+      "rating": 4.5,
+      "reviewCount": 1015,
+      "mapsUrl": "https://maps.google.com/?cid=68471739112151493&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.tazikis.com/location/sandy-springs",
+      "distanceMiles": 0.69,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Blue Moon Pizza of Sandy Springs",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJ-1uZVs8O9YgRlyAVf2NcR1M",
+      "rating": 4.4,
+      "reviewCount": 1251,
+      "mapsUrl": "https://maps.google.com/?cid=6000866610898083991&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.bluemoonpizza.com/",
+      "distanceMiles": 0.69,
       "walkMinutes": 14
     },
     {
@@ -2703,8 +3649,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 11-minute walk from the station.",
       "placeId": "ChIJncEjP7YO9YgRgiTw6GHfo7I",
       "rating": 5,
-      "reviewCount": 16280,
+      "reviewCount": 16288,
       "mapsUrl": "https://maps.google.com/?cid=12872377771567883394&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://mastermindescapegames.com/locations/escape-room-sandy-springs/",
       "distanceMiles": 0.54,
       "walkMinutes": 11
     }
@@ -2718,6 +3665,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 172,
       "mapsUrl": "https://maps.google.com/?cid=1606066010441826525&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://meetatroam.com/locations-overview/atlanta/buckhead-piedmont/",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -2729,6 +3677,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 127,
       "mapsUrl": "https://maps.google.com/?cid=14791667210910146672&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://thecorgi.cafe/",
       "distanceMiles": 0.34,
       "walkMinutes": 7
     },
@@ -2740,6 +3689,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 3118,
       "mapsUrl": "https://maps.google.com/?cid=8686010431524459166&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://bistroniko.com/",
       "distanceMiles": 0.1,
       "walkMinutes": 2
     },
@@ -2751,6 +3701,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 82,
       "mapsUrl": "https://maps.google.com/?cid=10340485978696521511&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.starbucks.com/store-locator/store/1022557",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -2762,6 +3713,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 55,
       "mapsUrl": "https://maps.google.com/?cid=1995618305624278749&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.nordstrom.com/store-details/nordstrom-phipps-plaza?utm_source=google&utm_medium=organic&utm_campaign=food&utm_content=26772&utm_channel=low_nd_seo_local&sp_source=google&sp_campaign=food",
       "distanceMiles": 0.46,
       "walkMinutes": 9
     },
@@ -2773,6 +3725,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 332,
       "mapsUrl": "https://maps.google.com/?cid=1979008453174618195&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.foxtailcoffee.com/locations/foxtail-coffee-buckhead",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -2784,6 +3737,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 442,
       "mapsUrl": "https://maps.google.com/?cid=8470469892688996333&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.dancinggoats.com/pages/the-dancing-goats-coffee-bar-buckhead",
       "distanceMiles": 0.68,
       "walkMinutes": 14
     },
@@ -2795,6 +3749,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 1317,
       "mapsUrl": "https://maps.google.com/?cid=10659988252429927978&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://locations.cariboucoffee.com/us/ga/atlanta/3261-peachtree-road-ne",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -2806,6 +3761,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 4478,
       "mapsUrl": "https://maps.google.com/?cid=691231532390933926&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://cornercafeatlanta.com/",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -2815,8 +3771,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 12-minute walk from the station.",
       "placeId": "ChIJIfNRZPEF9YgRlWm3MZodp1U",
       "rating": 4.5,
-      "reviewCount": 216,
+      "reviewCount": 217,
       "mapsUrl": "https://maps.google.com/?cid=6171934362430826901&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://cornercafeatlanta.com/",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -2828,6 +3785,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 308,
       "mapsUrl": "https://maps.google.com/?cid=540114748986989165&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://handelsicecream.com/store/buckhead-landing/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -2839,8 +3797,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 157,
       "mapsUrl": "https://maps.google.com/?cid=16187425759019950481&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://randysdonuts.com/locations/atlanta-ga/",
       "distanceMiles": 0.18,
       "walkMinutes": 4
+    },
+    {
+      "name": "Rreal Tacos - Buckhead",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ5YWs-cQP9YgRzV2SfKrESG0",
+      "rating": 4.9,
+      "reviewCount": 7906,
+      "mapsUrl": "https://maps.google.com/?cid=7874760184970763725&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.rrealtacos.com/",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Fogo de Chão Brazilian Steakhouse",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJ5-SkUPEF9YgRW14zDlK0eCs",
+      "rating": 4.7,
+      "reviewCount": 15620,
+      "mapsUrl": "https://maps.google.com/?cid=3132451805354745435&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://fogodechao.com/location/atlanta/",
+      "distanceMiles": 0.5,
+      "walkMinutes": 10
+    },
+    {
+      "name": "South City Kitchen Buckhead",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJ6xl-kVgP9YgR063dIyw9krE",
+      "rating": 4.7,
+      "reviewCount": 4530,
+      "mapsUrl": "https://maps.google.com/?cid=12795356751102586323&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.southcitykitchen.com/",
+      "distanceMiles": 0.03,
+      "walkMinutes": 1
+    },
+    {
+      "name": "True Food Kitchen",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJc2vdMFYP9YgRu9vA5uVua1Y",
+      "rating": 4.7,
+      "reviewCount": 5580,
+      "mapsUrl": "https://maps.google.com/?cid=6227192843467807675&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.truefoodkitchen.com/locations/atlanta/",
+      "distanceMiles": 0.22,
+      "walkMinutes": 4
+    },
+    {
+      "name": "5Church Buckhead",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJLUV41JEP9YgRVaViUvQq9Ak",
+      "rating": 4.7,
+      "reviewCount": 3558,
+      "mapsUrl": "https://maps.google.com/?cid=717245469501334869&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://buckhead.5church-atlanta.com/",
+      "distanceMiles": 0.12,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Mission + Market",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJzR5chFkP9YgRmEBrX7_1M40",
+      "rating": 4.7,
+      "reviewCount": 1630,
+      "mapsUrl": "https://maps.google.com/?cid=10174746185448505496&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://missionandmarketatl.com/",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
     },
     {
       "name": "BRITTO",
@@ -2850,6 +3881,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 61,
       "mapsUrl": "https://maps.google.com/?cid=10045787730497538033&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.shopbritto.com/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     },
@@ -2861,6 +3893,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 39,
       "mapsUrl": "https://maps.google.com/?cid=17406512455595494728&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.jacksonfineart.com/",
       "distanceMiles": 0.65,
       "walkMinutes": 13
     },
@@ -2872,6 +3905,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 328,
       "mapsUrl": "https://maps.google.com/?cid=17559157898381334541&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.bindersart.com/",
       "distanceMiles": 0.42,
       "walkMinutes": 8
     },
@@ -2883,6 +3917,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 32,
       "mapsUrl": "https://maps.google.com/?cid=7827711399882679255&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://path400greenway.org/about-us/",
       "distanceMiles": 0.34,
       "walkMinutes": 7
     },
@@ -2905,6 +3940,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 1925,
       "mapsUrl": "https://maps.google.com/?cid=15613177576855701220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.redphonebooth.com/locations/ga/buckhead?utm_source=google&utm_medium=organic&utm_campaign=gbp-buckhead&utm_content=website_link",
       "distanceMiles": 0.41,
       "walkMinutes": 8
     },
@@ -2916,6 +3952,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 2799,
       "mapsUrl": "https://maps.google.com/?cid=9967488712511307398&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://yhospitality.com/storico-fresco",
       "distanceMiles": 0.73,
       "walkMinutes": 15
     },
@@ -2927,6 +3964,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 2927,
       "mapsUrl": "https://maps.google.com/?cid=6941754949393428422&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.bonesrestaurant.com/",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -2938,6 +3976,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 442,
       "mapsUrl": "https://maps.google.com/?cid=8501705221884181633&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://burtonsgrill.com/locations/ga/atlanta/",
       "distanceMiles": 0.34,
       "walkMinutes": 7
     },
@@ -2949,6 +3988,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 5684,
       "mapsUrl": "https://maps.google.com/?cid=12255980072952119217&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.maggianos.com/locations/georgia/atlanta/3368-peachtree-rd.?utm_source=google&utm_medium=organic&utm_campaign=Maggianos",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     }
@@ -2962,6 +4002,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 2088,
       "mapsUrl": "https://maps.google.com/?cid=34875186249497817&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://bucketshopcafe.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -2973,6 +4014,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 93,
       "mapsUrl": "https://maps.google.com/?cid=1154720670183088659&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.greatamericancookies.com/",
       "distanceMiles": 0.2,
       "walkMinutes": 4
     },
@@ -2984,6 +4026,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 819,
       "mapsUrl": "https://maps.google.com/?cid=5539748652848941956&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.amorino.com/en-us?utm_source=google&utm_medium=organic&utm_campaign=mybusiness-website",
       "distanceMiles": 0.25,
       "walkMinutes": 5
     },
@@ -2993,8 +4036,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 8-minute walk from the station.",
       "placeId": "ChIJGbCOtFYP9YgR8rGAx4dExAM",
       "rating": 4.3,
-      "reviewCount": 1121,
+      "reviewCount": 1122,
       "mapsUrl": "https://maps.google.com/?cid=271417227507446258&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.publix.com/?setstorenumber=664&utm_medium=maps&utm_source=extendednetwork&utm_content=psm_website_url",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -3006,6 +4050,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 1118,
       "mapsUrl": "https://maps.google.com/?cid=3485766288968979449&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.sloomoo.com/locations/atlanta?utm_source=local&utm_medium=organic&utm_campaign=gmb_atl",
       "distanceMiles": 0.5,
       "walkMinutes": 10
     },
@@ -3017,6 +4062,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1906,
       "mapsUrl": "https://maps.google.com/?cid=437199453557446625&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.silomthaisushi.com/",
       "distanceMiles": 0.07,
       "walkMinutes": 1
     },
@@ -3028,6 +4074,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1681,
       "mapsUrl": "https://maps.google.com/?cid=15994759319859532621&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.stceciliaatl.com/",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     }
@@ -3041,6 +4088,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 41,
       "mapsUrl": "https://maps.google.com/?cid=8453241059619595261&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.summitcoffee.com/",
       "distanceMiles": 0.07,
       "walkMinutes": 1
     },
@@ -3052,8 +4100,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 42,
       "mapsUrl": "https://maps.google.com/?cid=592258981203364989&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.honeysucklegelato.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
+    },
+    {
+      "name": "Verde Taqueria",
+      "category": "food",
+      "description": "About a 10-minute walk from the station.",
+      "placeId": "ChIJv9U9iGAI9YgRxhLQbQkGUpY",
+      "rating": 4.7,
+      "reviewCount": 2227,
+      "mapsUrl": "https://maps.google.com/?cid=10831726691346289350&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.verdetacos.com/",
+      "distanceMiles": 0.49,
+      "walkMinutes": 10
+    },
+    {
+      "name": "Egg Harbor Cafe",
+      "category": "food",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJi_4Iy-wJ9YgRjQ2OB9D_IXg",
+      "rating": 4.7,
+      "reviewCount": 336,
+      "mapsUrl": "https://maps.google.com/?cid=8656481227727834509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.eggharborcafe.com/brookhaven",
+      "distanceMiles": 0.23,
+      "walkMinutes": 5
+    },
+    {
+      "name": "C&S Seafood and Oyster Bar, Brookhaven",
+      "category": "food",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ3YWj8sMJ9YgRCyqJNXJEXkg",
+      "rating": 4.6,
+      "reviewCount": 691,
+      "mapsUrl": "https://maps.google.com/?cid=5214680675856755211&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://candsoysterbar.com/",
+      "distanceMiles": 0.26,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Chopt Creative Salad Co.",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJFQeKPp8J9YgRXvVXWD2a3ng",
+      "rating": 4.6,
+      "reviewCount": 392,
+      "mapsUrl": "https://maps.google.com/?cid=8709568317646959966&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.choptsalad.com/",
+      "distanceMiles": 0.1,
+      "walkMinutes": 2
+    },
+    {
+      "name": "Arnette's Chop Shop",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJG7bYTuUJ9YgRUv19os1UNGA",
+      "rating": 4.5,
+      "reviewCount": 1034,
+      "mapsUrl": "https://maps.google.com/?cid=6932258968601230674&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://arnetteschopshop.com/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "26 Thai Sushi & Bar (Brookhaven)",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJOdwTzxMJ9YgRNX_OA0hx6Xk",
+      "rating": 4.5,
+      "reviewCount": 695,
+      "mapsUrl": "https://maps.google.com/?cid=8784677102278311733&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.26thai.com/",
+      "distanceMiles": 0.69,
+      "walkMinutes": 14
     },
     {
       "name": "Brookhaven Dog Park",
@@ -3063,6 +4184,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 42,
       "mapsUrl": "https://maps.google.com/?cid=8329826435541903645&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantaareaparks.com/parks/brookhaven-park/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -3074,6 +4196,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 679,
       "mapsUrl": "https://maps.google.com/?cid=16047240910559062831&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.brookhavenga.gov/parksrec/page/brookhaven-park",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -3096,6 +4219,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 90,
       "mapsUrl": "https://maps.google.com/?cid=3665830544949806983&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.cigaratlanta.com/",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -3107,6 +4231,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 1624,
       "mapsUrl": "https://maps.google.com/?cid=11160103382455547631&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://itstimetoescape.com/escape-room-atlanta/",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -3118,6 +4243,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 154,
       "mapsUrl": "https://maps.google.com/?cid=4621177330319806597&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.thebeergrowlerbrookhaven.com/",
       "distanceMiles": 0.47,
       "walkMinutes": 9
     },
@@ -3129,6 +4255,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 64,
       "mapsUrl": "https://maps.google.com/?cid=6120343941314848856&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://itstimetoescape.com/escape-room-atlanta/arcade-bar/",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     },
@@ -3140,6 +4267,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 745,
       "mapsUrl": "https://maps.google.com/?cid=8957292923685440022&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.havenrestaurant.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     }
@@ -3153,6 +4281,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 41,
       "mapsUrl": "https://maps.google.com/?cid=17660084310255538598&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://savi-peachtree-hills-atlanta.cloveronline.com/",
       "distanceMiles": 0.27,
       "walkMinutes": 5
     },
@@ -3164,6 +4293,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 43,
       "mapsUrl": "https://maps.google.com/?cid=6254764172567373698&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thehungrypeach.com/",
       "distanceMiles": 0.51,
       "walkMinutes": 10
     },
@@ -3175,8 +4305,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 133,
       "mapsUrl": "https://maps.google.com/?cid=14096887639051176437&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.gourmetbakeryatlantaga.com/",
       "distanceMiles": 0.25,
       "walkMinutes": 5
+    },
+    {
+      "name": "Talkin' Tacos Buckhead",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJzTpvanEF9YgRCHBoy5_K1LE",
+      "rating": 4.8,
+      "reviewCount": 4936,
+      "mapsUrl": "https://maps.google.com/?cid=12814089627437133832&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://talkintacos.net/talkinbuckhead?utm_source=google",
+      "distanceMiles": 0.33,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Madre Selva Atlanta | Latin & Peruvian Coastal Cuisine",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJoQdVG44F9YgRjPaejacGQtA",
+      "rating": 4.7,
+      "reviewCount": 1045,
+      "mapsUrl": "https://maps.google.com/?cid=15006564225057224332&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.madreselva.restaurant/",
+      "distanceMiles": 0.06,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Utopia Restaurant",
+      "category": "food",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJZzwTv80F9YgRBIJ-IeYTABQ",
+      "rating": 4.7,
+      "reviewCount": 364,
+      "mapsUrl": "https://maps.google.com/?cid=1441173759883903492&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://utopialoungeatl.com/",
+      "distanceMiles": 0.15,
+      "walkMinutes": 3
+    },
+    {
+      "name": "KR SteakBar",
+      "category": "food",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJaduAlrgF9YgR-Tfh9G32S3o",
+      "rating": 4.6,
+      "reviewCount": 711,
+      "mapsUrl": "https://maps.google.com/?cid=8812408048000776185&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.krsteakbar.com/",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
+    {
+      "name": "Grits and Eggs Breakfast Kitchen",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJ0y5PfOEF9YgR8e2nTHricRo",
+      "rating": 4.5,
+      "reviewCount": 390,
+      "mapsUrl": "https://maps.google.com/?cid=1905553132254391793&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.gritsandeggsbreakfastkitchen.com/",
+      "distanceMiles": 0.3,
+      "walkMinutes": 6
+    },
+    {
+      "name": "J'ouvert Caribbean Kitchen & Bar",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJdUyk-CkF9YgR1-BYxI-ZZs4",
+      "rating": 4.4,
+      "reviewCount": 413,
+      "mapsUrl": "https://maps.google.com/?cid=14872743662191173847&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.jouvertkitchenatl.com/",
+      "distanceMiles": 0.04,
+      "walkMinutes": 1
     },
     {
       "name": "Gurl Mobb Museum",
@@ -3186,6 +4389,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 584,
       "mapsUrl": "https://maps.google.com/?cid=16414533264671766119&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.gurlmobbmuseum.com/book-online",
       "distanceMiles": 0.73,
       "walkMinutes": 15
     },
@@ -3197,6 +4401,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 59,
       "mapsUrl": "https://maps.google.com/?cid=2899611076555944905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.interiorsmarket.com/",
       "distanceMiles": 0.57,
       "walkMinutes": 11
     },
@@ -3208,6 +4413,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 35,
       "mapsUrl": "https://maps.google.com/?cid=9011393389615176750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.johnsonlowe.com/",
       "distanceMiles": 0.73,
       "walkMinutes": 15
     },
@@ -3219,6 +4425,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 29,
       "mapsUrl": "https://maps.google.com/?cid=4190150631847780643&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.marciawoodgallery.com/",
       "distanceMiles": 0.68,
       "walkMinutes": 14
     },
@@ -3230,6 +4437,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 25,
       "mapsUrl": "https://maps.google.com/?cid=5309868842009122984&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thomasdeansfineart.com/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     },
@@ -3239,8 +4447,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 1-minute walk from the station.",
       "placeId": "ChIJs7HCJcIF9YgRk94oQU5xw_w",
       "rating": 4.7,
-      "reviewCount": 2011,
+      "reviewCount": 2012,
       "mapsUrl": "https://maps.google.com/?cid=18213525898931003027&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://26thai.com/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -3250,8 +4459,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 1-minute walk from the station.",
       "placeId": "ChIJwaFrLiIF9YgRMGzVFuUsVqg",
       "rating": 4.6,
-      "reviewCount": 257,
+      "reviewCount": 258,
       "mapsUrl": "https://maps.google.com/?cid=12129932008811228208&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.benekoreansteak.com/",
       "distanceMiles": 0.04,
       "walkMinutes": 1
     },
@@ -3263,6 +4473,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 2211,
       "mapsUrl": "https://maps.google.com/?cid=18026331549820119131&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.thepaintedpin.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
       "distanceMiles": 0.64,
       "walkMinutes": 13
     }
@@ -3276,6 +4487,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1107,
       "mapsUrl": "https://maps.google.com/?cid=17813260556975845134&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://adioscafe.com/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -3285,10 +4497,23 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 6-minute walk from the station.",
       "placeId": "ChIJTwgOhXkD9YgRxQ8TXG-TdkY",
       "rating": 4.4,
-      "reviewCount": 9472,
+      "reviewCount": 9473,
       "mapsUrl": "https://maps.google.com/?cid=5077407736402218949&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.nomascantina.com/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
+    },
+    {
+      "name": "Magic City Kitchen",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJVXVPqVkD9YgRJ9DAncjWOxo",
+      "rating": 4.4,
+      "reviewCount": 242,
+      "mapsUrl": "https://maps.google.com/?cid=1890340625740517415&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.magiccitykitchen.com/",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
     },
     {
       "name": "Palate Atlanta Tasting Room",
@@ -3298,6 +4523,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 124,
       "mapsUrl": "https://maps.google.com/?cid=2610814926327887902&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.palateatlanta.com/",
       "distanceMiles": 0.27,
       "walkMinutes": 5
     },
@@ -3309,6 +4535,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 311,
       "mapsUrl": "https://maps.google.com/?cid=8046214204770520403&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://atlantucky.com/?utm_source=google",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -3320,6 +4547,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 348,
       "mapsUrl": "https://maps.google.com/?cid=9103125046587710657&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://wildleap.com/atlanta/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -3331,6 +4559,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 564,
       "mapsUrl": "https://maps.google.com/?cid=892197687161404466&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://crulounge.com/",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     }
@@ -3355,6 +4584,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 235,
       "mapsUrl": "https://maps.google.com/?cid=9054746590446002746&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.sammysatl.com/",
       "distanceMiles": 0.37,
       "walkMinutes": 7
     },
@@ -3366,6 +4596,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 132,
       "mapsUrl": "https://maps.google.com/?cid=15012669225592397210&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.culturedsouth.com/",
       "distanceMiles": 0.57,
       "walkMinutes": 11
     },
@@ -3377,6 +4608,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 74,
       "mapsUrl": "https://maps.google.com/?cid=4295792383369835389&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.theblackcoffeecompany.com/black-coffee-atl",
       "distanceMiles": 0.7,
       "walkMinutes": 14
     },
@@ -3388,6 +4620,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 189,
       "mapsUrl": "https://maps.google.com/?cid=11107504882226004721&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.sweetspotatlanta.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     },
@@ -3399,6 +4632,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 555,
       "mapsUrl": "https://maps.google.com/?cid=11269554662506686576&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://portrait.coffee/",
       "distanceMiles": 0.54,
       "walkMinutes": 11
     },
@@ -3410,6 +4644,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 32,
       "mapsUrl": "https://maps.google.com/?cid=13317605000235204491&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.goldencrustpizzaatlanta.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -3419,8 +4654,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 4-minute walk from the station.",
       "placeId": "ChIJe5H8ZXcD9YgRuV89DJy53j0",
       "rating": 4.6,
-      "reviewCount": 479,
+      "reviewCount": 480,
       "mapsUrl": "https://maps.google.com/?cid=4458204761014755257&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.wadadaatl.com/",
       "distanceMiles": 0.2,
       "walkMinutes": 4
     },
@@ -3432,6 +4668,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 237,
       "mapsUrl": "https://maps.google.com/?cid=15056857717618880474&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.sweetredpeach.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     },
@@ -3443,6 +4680,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 435,
       "mapsUrl": "https://maps.google.com/?cid=2469648418648503524&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.cakeandsipatlanta.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -3454,6 +4692,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 40,
       "mapsUrl": "https://maps.google.com/?cid=6983044448790170460&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.honeysucklegelato.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     },
@@ -3465,6 +4704,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 117,
       "mapsUrl": "https://maps.google.com/?cid=14294122400504119243&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.iriemoncafe.com/locations/west-end-ga",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -3476,8 +4716,33 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 286,
       "mapsUrl": "https://maps.google.com/?cid=13451135568724188500&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.vegandreamdoughnuts.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
+    },
+    {
+      "name": "Slim & Husky's Pizza (Adair Park)",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJJ2f61ogD9YgRvI0y1u-Qw5Q",
+      "rating": 4.5,
+      "reviewCount": 1828,
+      "mapsUrl": "https://maps.google.com/?cid=10719570897837133244&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://slimandhuskys.com/",
+      "distanceMiles": 0.36,
+      "walkMinutes": 7
+    },
+    {
+      "name": "Tassili's Raw Reality Café",
+      "category": "food",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJ48LtUkcD9YgRci6Eidk_8r0",
+      "rating": 4.4,
+      "reviewCount": 3999,
+      "mapsUrl": "https://maps.google.com/?cid=13687072421079953010&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.tassilisrawreality.com/",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
     },
     {
       "name": "Spelman College Museum of Fine Art",
@@ -3487,6 +4752,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 113,
       "mapsUrl": "https://maps.google.com/?cid=1977804639810878457&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://museum.spelman.edu/",
       "distanceMiles": 0.71,
       "walkMinutes": 14
     },
@@ -3498,6 +4764,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 219,
       "mapsUrl": "https://maps.google.com/?cid=2801115501412603304&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.g992.org/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -3509,6 +4776,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 234,
       "mapsUrl": "https://maps.google.com/?cid=1968093970962315082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.hammondshousemuseum.org/",
       "distanceMiles": 0.54,
       "walkMinutes": 11
     },
@@ -3520,6 +4788,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 90,
       "mapsUrl": "https://maps.google.com/?cid=17211205523050444078&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.eyedrum.org/",
       "distanceMiles": 0.5,
       "walkMinutes": 10
     },
@@ -3531,6 +4800,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 206,
       "mapsUrl": "https://maps.google.com/?cid=6760479715426072933&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.wrensnest.org/",
       "distanceMiles": 0.51,
       "walkMinutes": 10
     },
@@ -3542,6 +4812,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 218,
       "mapsUrl": "https://maps.google.com/?cid=17919305261458624916&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://kavamamastore.com/",
       "distanceMiles": 0.62,
       "walkMinutes": 12
     },
@@ -3553,6 +4824,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 78,
       "mapsUrl": "https://maps.google.com/?cid=9177403913181986435&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://sakurasakebar.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     },
@@ -3575,6 +4847,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 101,
       "mapsUrl": "https://maps.google.com/?cid=18413349489243979736&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://aswdistillery.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     },
@@ -3586,6 +4859,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1099,
       "mapsUrl": "https://maps.google.com/?cid=2571123821183828244&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://mondaynightbrewing.com/visit/garage/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     }
@@ -3599,6 +4873,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 125,
       "mapsUrl": "https://maps.google.com/?cid=603950171999361212&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.labodegaatl.com/",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -3610,6 +4885,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 446,
       "mapsUrl": "https://maps.google.com/?cid=9610532379752462853&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.buenosdiascafe.com/",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -3621,6 +4897,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 223,
       "mapsUrl": "https://maps.google.com/?cid=13966666844955270410&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://glaciersice.com/",
       "distanceMiles": 0.62,
       "walkMinutes": 12
     },
@@ -3632,6 +4909,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 52,
       "mapsUrl": "https://maps.google.com/?cid=11406570284809580088&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.operationminidonuts.com/",
       "distanceMiles": 0.69,
       "walkMinutes": 14
     },
@@ -3641,8 +4919,21 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 14-minute walk from the station.",
       "placeId": "ChIJh9uALqAylYIRMD1d0CqPX8U",
       "rating": 4.8,
-      "reviewCount": 56,
+      "reviewCount": 57,
       "mapsUrl": "https://maps.google.com/?cid=14222243562306485552&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.monisdonuts.com/",
+      "distanceMiles": 0.69,
+      "walkMinutes": 14
+    },
+    {
+      "name": "Arden's Garden Juice Bar & Smoothies Sylvan Rd",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJBXcSlGMD9YgRYpbOEBYtoDI",
+      "rating": 4.8,
+      "reviewCount": 283,
+      "mapsUrl": "https://maps.google.com/?cid=3647965270964606562&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.ardensgarden.com/pages/sylvan-rd/?utm_source=google&utm_medium=updates&utm_campaign=regular+post&utm_id=gmb+content",
       "distanceMiles": 0.69,
       "walkMinutes": 14
     },
@@ -3654,6 +4945,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 197,
       "mapsUrl": "https://maps.google.com/?cid=4659223830177814515&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.artsxchange.org/",
       "distanceMiles": 0.36,
       "walkMinutes": 7
     }
@@ -3691,6 +4983,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 617,
       "mapsUrl": "https://maps.google.com/?cid=15183346386480884089&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://auroracoffee.com/",
       "distanceMiles": 0.66,
       "walkMinutes": 13
     },
@@ -3702,6 +4995,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 200,
       "mapsUrl": "https://maps.google.com/?cid=3473874439521933237&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://seanscandlerpark.com/",
       "distanceMiles": 0.25,
       "walkMinutes": 5
     },
@@ -3713,6 +5007,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.2,
       "reviewCount": 769,
       "mapsUrl": "https://maps.google.com/?cid=14324298583830398812&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.starbucks.com/store-locator/store/11081/",
       "distanceMiles": 0.7,
       "walkMinutes": 14
     },
@@ -3724,8 +5019,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 375,
       "mapsUrl": "https://maps.google.com/?cid=12609372099108789185&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://sanfranciscocoffeeroastingco.com/",
       "distanceMiles": 0.36,
       "walkMinutes": 7
+    },
+    {
+      "name": "Gigi's Italian Kitchen & Restaurant",
+      "category": "food",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJ6V1wKwsH9YgRgCz_PEnRWvM",
+      "rating": 4.7,
+      "reviewCount": 353,
+      "mapsUrl": "https://maps.google.com/?cid=17535558211606621312&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://gigisitaliankitchenatl.com/",
+      "distanceMiles": 0.43,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Fellini's Pizza",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJVTxdxbcG9YgRL-F9n6tZ9cQ",
+      "rating": 4.6,
+      "reviewCount": 1382,
+      "mapsUrl": "https://maps.google.com/?cid=14192348394378092847&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.fellinisatlanta.com/",
+      "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Moxie Burger",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJw9AGTBsH9YgRAX1rhQfJmVc",
+      "rating": 4.6,
+      "reviewCount": 297,
+      "mapsUrl": "https://maps.google.com/?cid=6312297386876828929&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.moxierestaurantgroup.com/",
+      "distanceMiles": 0.38,
+      "walkMinutes": 8
+    },
+    {
+      "name": "The Flying Biscuit Cafe",
+      "category": "food",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJBQ4s1rcG9YgREInZmqH3JKg",
+      "rating": 4.5,
+      "reviewCount": 4717,
+      "mapsUrl": "https://maps.google.com/?cid=12116081170993219856&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://flyingbiscuit.com/locations-2/candler-park/",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
+      "name": "La Fonda Latina",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJzRwR0rcG9YgRv4Cxc7z4Ocs",
+      "rating": 4.5,
+      "reviewCount": 844,
+      "mapsUrl": "https://maps.google.com/?cid=14644009151650431167&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://lafondaatlanta.com/",
+      "distanceMiles": 0.38,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Bona Fide Deluxe",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJ_4ZGBPQH9YgR8xXwg96wG2s",
+      "rating": 4.4,
+      "reviewCount": 442,
+      "mapsUrl": "https://maps.google.com/?cid=7717956856172254707&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.bonafide-atl.com/",
+      "distanceMiles": 0.07,
+      "walkMinutes": 1
     },
     {
       "name": "Outkast Mural",
@@ -3735,6 +5103,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 270,
       "mapsUrl": "https://maps.google.com/?cid=16075768057503394238&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://wishatl.com/pages/thegallery",
       "distanceMiles": 0.61,
       "walkMinutes": 12
     },
@@ -3746,6 +5115,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 334,
       "mapsUrl": "https://maps.google.com/?cid=3876555316928941865&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://lcclt.org/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     },
@@ -3757,6 +5127,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 58,
       "mapsUrl": "https://maps.google.com/?cid=6185493155570777544&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.healiumcenter.com/",
       "distanceMiles": 0.14,
       "walkMinutes": 3
     },
@@ -3766,8 +5137,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 15-minute walk from the station.",
       "placeId": "ChIJ59EXmgIE9YgRcmx8JOyB6VU",
       "rating": 4.7,
-      "reviewCount": 1898,
+      "reviewCount": 1899,
       "mapsUrl": "https://maps.google.com/?cid=6190622014021856370&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.freedompark.org/",
       "distanceMiles": 0.75,
       "walkMinutes": 15
     },
@@ -3779,6 +5151,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 764,
       "mapsUrl": "https://maps.google.com/?cid=2726754350663665340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://candlerpark.org/",
       "distanceMiles": 0.31,
       "walkMinutes": 6
     },
@@ -3788,8 +5161,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 13-minute walk from the station.",
       "placeId": "ChIJG8Wzy6gG9YgRBQVGToEnXTg",
       "rating": 4.6,
-      "reviewCount": 8782,
+      "reviewCount": 8783,
       "mapsUrl": "https://maps.google.com/?cid=4061445875275531525&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thevortexbar.com/",
       "distanceMiles": 0.63,
       "walkMinutes": 13
     },
@@ -3801,6 +5175,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 232,
       "mapsUrl": "https://maps.google.com/?cid=12199801899380392763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://skiptown.io/ga/atlanta/",
       "distanceMiles": 0.48,
       "walkMinutes": 10
     },
@@ -3812,6 +5187,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 574,
       "mapsUrl": "https://maps.google.com/?cid=3700675195546901505&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.starbaratl.bar/",
       "distanceMiles": 0.61,
       "walkMinutes": 12
     },
@@ -3823,6 +5199,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 507,
       "mapsUrl": "https://maps.google.com/?cid=8389761667273820958&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://rationanddram.com/",
       "distanceMiles": 0.52,
       "walkMinutes": 10
     }
@@ -3836,6 +5213,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 453,
       "mapsUrl": "https://maps.google.com/?cid=9191556863666158319&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.oakviewcoffee.com/",
       "distanceMiles": 0.7,
       "walkMinutes": 14
     },
@@ -3847,6 +5225,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 111,
       "mapsUrl": "https://maps.google.com/?cid=6415161199086447192&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.tajmahound.com/",
       "distanceMiles": 0.71,
       "walkMinutes": 14
     },
@@ -3858,8 +5237,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1831,
       "mapsUrl": "https://maps.google.com/?cid=7987684583017790381&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.revolutiondoughnuts.com/",
       "distanceMiles": 0.28,
       "walkMinutes": 6
+    },
+    {
+      "name": "Poco Loco Neighborhood Provisions",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJf5P9nQ0H9YgRXB2AWup2DD8",
+      "rating": 4.8,
+      "reviewCount": 262,
+      "mapsUrl": "https://maps.google.com/?cid=4543136873022758236&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://pocolocoatl.com/",
+      "distanceMiles": 0.07,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Mezcalito's Cantina",
+      "category": "food",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJlaEVzy0H9YgRCNL28jG_zJg",
+      "rating": 4.6,
+      "reviewCount": 1631,
+      "mapsUrl": "https://maps.google.com/?cid=11010385410264584712&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.mezcalitoscantina.com/",
+      "distanceMiles": 0.67,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Crusher's Pizza & Wings",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJf7o6yasH9YgRglI8aYjyH6Q",
+      "rating": 4.6,
+      "reviewCount": 307,
+      "mapsUrl": "https://maps.google.com/?cid=11826437814193246850&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.crusherspizza.com/",
+      "distanceMiles": 0.29,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Wahoo! Grill",
+      "category": "food",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJKZpQaygH9YgRqcSQCM75knk",
+      "rating": 4.5,
+      "reviewCount": 1582,
+      "mapsUrl": "https://maps.google.com/?cid=8760338888491320489&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.wahoogrilldecatur.com/",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Paolino Italian Restaurant",
+      "category": "food",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJZUU7_FQH9YgRdZK386u4TDY",
+      "rating": 4.5,
+      "reviewCount": 720,
+      "mapsUrl": "https://maps.google.com/?cid=3912705224945930869&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.paolinoitaliano.com/",
+      "distanceMiles": 0.65,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Scout",
+      "category": "food",
+      "description": "About a 14-minute walk from the station.",
+      "placeId": "ChIJ6bMJCC4H9YgRSiveGo8hKXU",
+      "rating": 4.5,
+      "reviewCount": 784,
+      "mapsUrl": "https://maps.google.com/?cid=8442315874997513034&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://scoutoakhurst.com/",
+      "distanceMiles": 0.7,
+      "walkMinutes": 14
     },
     {
       "name": "Deepdene Park",
@@ -3869,6 +5321,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 249,
       "mapsUrl": "https://maps.google.com/?cid=2398845128098040944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantaolmstedpark.org/visit",
       "distanceMiles": 0.65,
       "walkMinutes": 13
     },
@@ -3880,6 +5333,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 578,
       "mapsUrl": "https://maps.google.com/?cid=507980101239836156&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://oakhurstdogpark.com/",
       "distanceMiles": 0.41,
       "walkMinutes": 8
     },
@@ -3924,6 +5378,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 191,
       "mapsUrl": "https://maps.google.com/?cid=18011630533108130084&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.aleyeahbeer.com/",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -3935,6 +5390,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 521,
       "mapsUrl": "https://maps.google.com/?cid=557653782826007612&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.steinbecksbar.com/",
       "distanceMiles": 0.69,
       "walkMinutes": 14
     },
@@ -3946,6 +5402,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 549,
       "mapsUrl": "https://maps.google.com/?cid=1470708545296742434&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.imperialdecatur.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -3957,6 +5414,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 293,
       "mapsUrl": "https://maps.google.com/?cid=2555489202320781867&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.sceptrebrewingarts.com/",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -3968,6 +5426,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 745,
       "mapsUrl": "https://maps.google.com/?cid=17236685318689109255&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thinkingmantavern.com/",
       "distanceMiles": 0.53,
       "walkMinutes": 11
     }
@@ -3981,6 +5440,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 124,
       "mapsUrl": "https://maps.google.com/?cid=14099557847070220421&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.guildjourneyman.com/",
       "distanceMiles": 0.11,
       "walkMinutes": 2
     },
@@ -3992,6 +5452,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 80,
       "mapsUrl": "https://maps.google.com/?cid=14206851504865162773&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.mezze-potamia.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -4003,6 +5464,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 326,
       "mapsUrl": "https://maps.google.com/?cid=13498794422475252005&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://opocoffee.com/",
       "distanceMiles": 0.27,
       "walkMinutes": 5
     },
@@ -4014,6 +5476,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1219,
       "mapsUrl": "https://maps.google.com/?cid=4701635738979862481&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.dancinggoats.com/pages/dancing-goats-coffee-bar",
       "distanceMiles": 0.45,
       "walkMinutes": 9
     },
@@ -4025,6 +5488,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 1191,
       "mapsUrl": "https://maps.google.com/?cid=5706395794865049873&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://folkartrestaurant.com/folkartrestaurant-decatur?utm_source=google",
       "distanceMiles": 0.16,
       "walkMinutes": 3
     },
@@ -4036,6 +5500,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 57,
       "mapsUrl": "https://maps.google.com/?cid=12744475092005550111&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://bellwoodcoffee.com/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -4047,6 +5512,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.2,
       "reviewCount": 367,
       "mapsUrl": "https://maps.google.com/?cid=3931768662768506781&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://thereadingroomatl.com/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -4069,6 +5535,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1367,
       "mapsUrl": "https://maps.google.com/?cid=5364385630436144768&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://jenis.com/scoop-shops/jenis-decatur-square/",
       "distanceMiles": 0.05,
       "walkMinutes": 1
     },
@@ -4080,6 +5547,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 182,
       "mapsUrl": "https://maps.google.com/?cid=5081010035664968100&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://foxtailcoffee.com/",
       "distanceMiles": 0.1,
       "walkMinutes": 2
     },
@@ -4091,6 +5559,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 1267,
       "mapsUrl": "https://maps.google.com/?cid=6881002761946071485&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://butterandcream.com/",
       "distanceMiles": 0.04,
       "walkMinutes": 1
     },
@@ -4102,8 +5571,81 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 549,
       "mapsUrl": "https://maps.google.com/?cid=15759877485921316504&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://pastriesagogo.com/",
       "distanceMiles": 0.27,
       "walkMinutes": 5
+    },
+    {
+      "name": "Rreal Tacos - Decatur",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ-2_YkdUH9YgRW0OT42sPuHk",
+      "rating": 4.9,
+      "reviewCount": 7622,
+      "mapsUrl": "https://maps.google.com/?cid=8770777230358037339&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.rrealtacos.com/",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
+    },
+    {
+      "name": "The Iberian Pig",
+      "category": "food",
+      "description": "About a 1-minute walk from the station.",
+      "placeId": "ChIJV82ucD4H9YgRXQ1ecjawj7s",
+      "rating": 4.7,
+      "reviewCount": 3059,
+      "mapsUrl": "https://maps.google.com/?cid=13515214754655636829&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.iberianpig.com/decatur",
+      "distanceMiles": 0.03,
+      "walkMinutes": 1
+    },
+    {
+      "name": "Egg Harbor Cafe",
+      "category": "food",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJhWVAOqYH9YgRmiwsrPLk9Qs",
+      "rating": 4.7,
+      "reviewCount": 457,
+      "mapsUrl": "https://maps.google.com/?cid=861846634633112730&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://eggharborcafe.com/decatur",
+      "distanceMiles": 0.14,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Cap't Loui - Decatur",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJicedRj0H9YgR3PQ9q6uMVYQ",
+      "rating": 4.6,
+      "reviewCount": 1141,
+      "mapsUrl": "https://maps.google.com/?cid=9535682454967153884&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.captloui.com/",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "Smiley's Burger Club",
+      "category": "food",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJd_ZtDQAH9YgRU5jMH6ozQks",
+      "rating": 4.5,
+      "reviewCount": 461,
+      "mapsUrl": "https://maps.google.com/?cid=5422953707078457427&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.smileysburgerclub.com/",
+      "distanceMiles": 0.27,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Fellini's Pizza",
+      "category": "food",
+      "description": "About a 7-minute walk from the station.",
+      "placeId": "ChIJpzhg9UAH9YgRHA_GRONIve0",
+      "rating": 4.5,
+      "reviewCount": 3130,
+      "mapsUrl": "https://maps.google.com/?cid=17130928698535841564&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.fellinisatlanta.com/",
+      "distanceMiles": 0.33,
+      "walkMinutes": 7
     },
     {
       "name": "Worthmore Jewelers",
@@ -4113,6 +5655,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 1349,
       "mapsUrl": "https://maps.google.com/?cid=12768288641584281814&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.worthmorejewelers.com/?utm_campaign=gmb",
       "distanceMiles": 0.02,
       "walkMinutes": 1
     },
@@ -4124,6 +5667,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 62,
       "mapsUrl": "https://maps.google.com/?cid=3726302706682890677&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.cateye-creative.com/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -4135,6 +5679,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 46,
       "mapsUrl": "https://maps.google.com/?cid=15215368458835840679&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://decatur.thegreatframeup.com/",
       "distanceMiles": 0.33,
       "walkMinutes": 7
     },
@@ -4146,6 +5691,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 85,
       "mapsUrl": "https://maps.google.com/?cid=18298407016642014424&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://feverup.com/en/atlanta/candlelight?utm_source=google&utm_medium=localcards&utm_content=gmbpost&utm_campaign=candlelightgmb_atl",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -4157,6 +5703,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 156,
       "mapsUrl": "https://maps.google.com/?cid=17537482380144335351&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.homegrowndecatur.com/",
       "distanceMiles": 0.04,
       "walkMinutes": 1
     },
@@ -4168,6 +5715,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 253,
       "mapsUrl": "https://maps.google.com/?cid=17913701047038489030&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.innervoicebrewing.beer/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -4179,6 +5727,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1485,
       "mapsUrl": "https://maps.google.com/?cid=15679430057188119717&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.eddiesattic.com/",
       "distanceMiles": 0.06,
       "walkMinutes": 1
     },
@@ -4188,8 +5737,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 1-minute walk from the station.",
       "placeId": "ChIJf_XS6z0H9YgRQsA29ddjvK4",
       "rating": 4.7,
-      "reviewCount": 3282,
+      "reviewCount": 3283,
       "mapsUrl": "https://maps.google.com/?cid=12591048437404188738&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.brickstorepub.com/",
       "distanceMiles": 0.04,
       "walkMinutes": 1
     },
@@ -4201,6 +5751,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 1529,
       "mapsUrl": "https://maps.google.com/?cid=14008844166532029459&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.kimball-house.com/",
       "distanceMiles": 0.28,
       "walkMinutes": 6
     },
@@ -4212,6 +5763,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 416,
       "mapsUrl": "https://maps.google.com/?cid=1465601381162483543&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://osullivanspub.com/",
       "distanceMiles": 0.04,
       "walkMinutes": 1
     }
@@ -4225,6 +5777,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 629,
       "mapsUrl": "https://maps.google.com/?cid=13342494796481757337&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.wallerscoffeeshop.com/",
       "distanceMiles": 0.6,
       "walkMinutes": 12
     },
@@ -4236,6 +5789,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 68,
       "mapsUrl": "https://maps.google.com/?cid=5156702328511128560&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://thebook-bird.com/",
       "distanceMiles": 0.71,
       "walkMinutes": 14
     },
@@ -4247,6 +5801,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 712,
       "mapsUrl": "https://maps.google.com/?cid=15962282921781496018&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.banjocoffee.com/",
       "distanceMiles": 0.61,
       "walkMinutes": 12
     },
@@ -4258,6 +5813,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 127,
       "mapsUrl": "https://maps.google.com/?cid=11202673949484327389&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://wonderfulworldofcoffeetea.com/",
       "distanceMiles": 0.48,
       "walkMinutes": 10
     },
@@ -4269,6 +5825,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 278,
       "mapsUrl": "https://maps.google.com/?cid=6131927588859578362&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.cremalosa.com/",
       "distanceMiles": 0.71,
       "walkMinutes": 14
     },
@@ -4280,6 +5837,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 161,
       "mapsUrl": "https://maps.google.com/?cid=17683490830764224268&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://leftielees.com/",
       "distanceMiles": 0.47,
       "walkMinutes": 9
     },
@@ -4291,6 +5849,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1893,
       "mapsUrl": "https://maps.google.com/?cid=1471757905088397131&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.publix.com/?setstorenumber=1724&utm_medium=maps&utm_source=extendednetwork&utm_content=psm_website_url",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     },
@@ -4302,8 +5861,69 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 124,
       "mapsUrl": "https://maps.google.com/?cid=11691213228445513869&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://jeremiahsice.com/?utm_medium=yext&utm_source=extnet&y_source=1_NTg0NDM0OTgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
       "distanceMiles": 0.27,
       "walkMinutes": 5
+    },
+    {
+      "name": "Heaps Pies",
+      "category": "food",
+      "description": "About a 6-minute walk from the station.",
+      "placeId": "ChIJCZyJdzQH9YgRmltR8u1YBIo",
+      "rating": 5,
+      "reviewCount": 270,
+      "mapsUrl": "https://maps.google.com/?cid=9945171656136809370&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.heapspies.com/",
+      "distanceMiles": 0.31,
+      "walkMinutes": 6
+    },
+    {
+      "name": "CHE BUTTER JONEZ",
+      "category": "food",
+      "description": "About a 5-minute walk from the station.",
+      "placeId": "ChIJ_0hmF1wD9YgRPHoe2xEAtrw",
+      "rating": 4.9,
+      "reviewCount": 1082,
+      "mapsUrl": "https://maps.google.com/?cid=13598056201582443068&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.chebutterjonez.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=5976221610086386939",
+      "distanceMiles": 0.24,
+      "walkMinutes": 5
+    },
+    {
+      "name": "Kafenio Avondale",
+      "category": "food",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJUcdB5PIH9YgRVoNTFDCfsvk",
+      "rating": 4.7,
+      "reviewCount": 1061,
+      "mapsUrl": "https://maps.google.com/?cid=17992618490146816854&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.kafeniogreekdiner.com/",
+      "distanceMiles": 0.21,
+      "walkMinutes": 4
+    },
+    {
+      "name": "Skips Chicago Dogs",
+      "category": "food",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJvV3qC2AH9YgR8o2vrQ4omUM",
+      "rating": 4.5,
+      "reviewCount": 2761,
+      "mapsUrl": "https://maps.google.com/?cid=4870968515486518770&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.skipshotdogs.com/",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
+    {
+      "name": "Decatur Food Hub",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJ92plKfoH9YgRVjaG8Ww2Iec",
+      "rating": 4.5,
+      "reviewCount": 672,
+      "mapsUrl": "https://maps.google.com/?cid=16654652738529277526&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.decaturfoodhub.com/",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
     },
     {
       "name": "Decatur Glassblowing",
@@ -4313,6 +5933,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 559,
       "mapsUrl": "https://maps.google.com/?cid=10437963146729368193&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.decaturglassblowing.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     },
@@ -4324,6 +5945,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 105,
       "mapsUrl": "https://maps.google.com/?cid=9412525789555989252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://decaturlegacypark.com/",
       "distanceMiles": 0.59,
       "walkMinutes": 12
     },
@@ -4335,6 +5957,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 74,
       "mapsUrl": "https://maps.google.com/?cid=635850903275053266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.glenncreeknaturepreserve.org/",
       "distanceMiles": 0.48,
       "walkMinutes": 10
     },
@@ -4357,6 +5980,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 97,
       "mapsUrl": "https://maps.google.com/?cid=10483806616097185803&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.wafflehouse.com/museum/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -4368,6 +5992,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.8,
       "reviewCount": 178,
       "mapsUrl": "https://maps.google.com/?cid=5080268328939966972&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.littlecottagebrewery.com/",
       "distanceMiles": 0.42,
       "walkMinutes": 8
     },
@@ -4379,6 +6004,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 413,
       "mapsUrl": "https://maps.google.com/?cid=12802125990103511426&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.threetavernsbrewery.com/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -4390,6 +6016,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 312,
       "mapsUrl": "https://maps.google.com/?cid=8373001516876269764&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.anansiatl.com/",
       "distanceMiles": 0.21,
       "walkMinutes": 4
     },
@@ -4401,6 +6028,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 67,
       "mapsUrl": "https://maps.google.com/?cid=17571699578593890960&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://avondalepizzacafe.com/",
       "distanceMiles": 0.45,
       "walkMinutes": 9
     },
@@ -4412,6 +6040,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 2092,
       "mapsUrl": "https://maps.google.com/?cid=6605051275633828184&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.myparentsbasementcbcb.com/",
       "distanceMiles": 0.55,
       "walkMinutes": 11
     }
@@ -4425,6 +6054,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1569,
       "mapsUrl": "https://maps.google.com/?cid=3211111478449139005&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.theyardmilkshakebar.com/atlantamenu?utm_source=GMBC&utm_medium=theyard&utm_campaign=GMB_Centennial&utm_id=GoogleMyBusinessCentennial",
       "distanceMiles": 0.43,
       "walkMinutes": 9
     },
@@ -4436,7 +6066,32 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 103,
       "mapsUrl": "https://maps.google.com/?cid=7180447153532845797&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.greatamericancookies.com/?olonwp=JjBtp_vMLk25gkYh_bnoiQ",
       "distanceMiles": 0.39,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Park27 Korean BBQ and Bar - Centennial Park",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ_04rM0sF9YgRSzdkvF1uM6k",
+      "rating": 4.5,
+      "reviewCount": 628,
+      "mapsUrl": "https://maps.google.com/?cid=12192209965093762891&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.park27bbq.com/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Max's Coal Oven Pizzeria",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJm8uX1X8E9YgRf3fJsVUuSGY",
+      "rating": 4.4,
+      "reviewCount": 3731,
+      "mapsUrl": "https://maps.google.com/?cid=7370191735781685119&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.maxsatl.com/",
+      "distanceMiles": 0.38,
       "walkMinutes": 8
     },
     {
@@ -4447,6 +6102,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 5,
       "reviewCount": 555,
       "mapsUrl": "https://maps.google.com/?cid=4318197052368437405&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://thebougiegrazer.com/",
       "distanceMiles": 0.24,
       "walkMinutes": 5
     },
@@ -4458,6 +6114,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.9,
       "reviewCount": 197,
       "mapsUrl": "https://maps.google.com/?cid=7071358814848973361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.zucotgallery.com/",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -4469,6 +6126,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 3843,
       "mapsUrl": "https://maps.google.com/?cid=17894291972466819922&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.cfbhall.com/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -4491,6 +6149,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 1088,
       "mapsUrl": "https://maps.google.com/?cid=3532671957153929880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://fellashipatl.com/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -4500,8 +6159,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 8-minute walk from the station.",
       "placeId": "ChIJm8uX1X8E9YgR_dEop3pVYsM",
       "rating": 4.4,
-      "reviewCount": 2854,
+      "reviewCount": 2855,
       "mapsUrl": "https://maps.google.com/?cid=14078909370392433149&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.derbiergarten.com/",
       "distanceMiles": 0.4,
       "walkMinutes": 8
     },
@@ -4513,6 +6173,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 2707,
       "mapsUrl": "https://maps.google.com/?cid=12981324833098882471&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://parkbaratlanta.com/",
       "distanceMiles": 0.29,
       "walkMinutes": 6
     },
@@ -4524,11 +6185,72 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 2172,
       "mapsUrl": "https://maps.google.com/?cid=15644278394289667197&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://twinsmokersbbq.com/",
       "distanceMiles": 0.39,
       "walkMinutes": 8
     }
   ],
   "airport": [
+    {
+      "name": "Beercode Kitchen and Bar",
+      "category": "food",
+      "description": "About a 9-minute walk from the station.",
+      "placeId": "ChIJzW74vD7j9IgRwp0aa1jwXv0",
+      "rating": 4.9,
+      "reviewCount": 1083,
+      "mapsUrl": "https://maps.google.com/?cid=18257294201951264194&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atl.com/skypointe/#1586182536464-e64d1d69-2f14",
+      "distanceMiles": 0.46,
+      "walkMinutes": 9
+    },
+    {
+      "name": "Cat Cora’s",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ9_pYxszi9IgR3ZUs2mAOJA0",
+      "rating": 4.6,
+      "reviewCount": 5420,
+      "mapsUrl": "https://maps.google.com/?cid=946897630794651101&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://qrmenupro.com/wp-content/uploads/2021/09/Cat-Cora-ATL-Temp-Menu-091021.pdf",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "SweetWater Last Cast Bar & Grill",
+      "category": "food",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJeYXUoPH99IgRE-0peA6kH_Y",
+      "rating": 4.6,
+      "reviewCount": 3450,
+      "mapsUrl": "https://maps.google.com/?cid=17735074239660813587&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.cintl.com/",
+      "distanceMiles": 0.62,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Bobby's Burger Palace",
+      "category": "food",
+      "description": "About a 12-minute walk from the station.",
+      "placeId": "ChIJL2Qb8YT99IgR3mQ9y3FWRsM",
+      "rating": 4.6,
+      "reviewCount": 13758,
+      "mapsUrl": "https://maps.google.com/?cid=14071029132506784990&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://bobbysburgerpalace.com/",
+      "distanceMiles": 0.6,
+      "walkMinutes": 12
+    },
+    {
+      "name": "Paschal's",
+      "category": "food",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJeRHpIM3i9IgR7PXTG4zr2f8",
+      "rating": 4.4,
+      "reviewCount": 4263,
+      "mapsUrl": "https://maps.google.com/?cid=18436025536612660716&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.cintl.com/",
+      "distanceMiles": 0.57,
+      "walkMinutes": 11
+    },
     {
       "name": "Vino Volo",
       "category": "drinks",
@@ -4537,6 +6259,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 518,
       "mapsUrl": "https://maps.google.com/?cid=5160595089359436231&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.vinovolo.com/atlanta/",
       "distanceMiles": 0.3,
       "walkMinutes": 6
     },
@@ -4548,6 +6271,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.5,
       "reviewCount": 2952,
       "mapsUrl": "https://maps.google.com/?cid=9337714733412239356&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.cintl.com/",
       "distanceMiles": 0.57,
       "walkMinutes": 11
     },
@@ -4559,11 +6283,24 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 1489,
       "mapsUrl": "https://maps.google.com/?cid=16422697723579786462&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.varasanos.com/",
       "distanceMiles": 0.38,
       "walkMinutes": 8
     }
   ],
   "kensington": [
+    {
+      "name": "ABC Christian Books",
+      "category": "food",
+      "description": "About a 11-minute walk from the station.",
+      "placeId": "ChIJxXO3de6p9YgRxlkJOY1NeuI",
+      "rating": 4.6,
+      "reviewCount": 408,
+      "mapsUrl": "https://maps.google.com/?cid=16319441468673055174&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.adventistbookcenter.com/",
+      "distanceMiles": 0.53,
+      "walkMinutes": 11
+    },
     {
       "name": "Cover Sports & Shows",
       "category": "drinks",
@@ -4572,6 +6309,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 772,
       "mapsUrl": "https://maps.google.com/?cid=4988339193991259335&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.coveratl.com/",
       "distanceMiles": 0.28,
       "walkMinutes": 6
     }
@@ -4585,6 +6323,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 293,
       "mapsUrl": "https://maps.google.com/?cid=3498734624810599181&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.f1f4pizzabar.com/",
       "distanceMiles": 0.62,
       "walkMinutes": 12
     }
@@ -4596,8 +6335,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 9-minute walk from the station.",
       "placeId": "ChIJUYmDUZsD9YgRJgEG70oVb_U",
       "rating": 4.5,
-      "reviewCount": 1002,
+      "reviewCount": 1003,
       "mapsUrl": "https://maps.google.com/?cid=17685377673289138470&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://peachcobblerfactory.com/",
       "distanceMiles": 0.44,
       "walkMinutes": 9
     },
@@ -4609,6 +6349,19 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.3,
       "reviewCount": 578,
       "mapsUrl": "https://maps.google.com/?cid=16879998381883774845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.sweet-stack.com/",
+      "distanceMiles": 0.42,
+      "walkMinutes": 8
+    },
+    {
+      "name": "Hungry AF Downtown",
+      "category": "food",
+      "description": "About a 8-minute walk from the station.",
+      "placeId": "ChIJ0eQfrtYD9YgRBf_21hqdv9M",
+      "rating": 4.7,
+      "reviewCount": 4426,
+      "mapsUrl": "https://maps.google.com/?cid=15258086801155751685&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://thehungryaf.com/",
       "distanceMiles": 0.42,
       "walkMinutes": 8
     },
@@ -4618,8 +6371,9 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "description": "About a 4-minute walk from the station.",
       "placeId": "ChIJz5Xl6YMD9YgRlK1J64vHUuI",
       "rating": 4.7,
-      "reviewCount": 321,
+      "reviewCount": 322,
       "mapsUrl": "https://maps.google.com/?cid=16308316604423843220&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.catholicshrineatlanta.org/",
       "distanceMiles": 0.22,
       "walkMinutes": 4
     },
@@ -4631,11 +6385,24 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 651,
       "mapsUrl": "https://maps.google.com/?cid=14637268942914714509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.libs.uga.edu/capitolmuseum/",
       "distanceMiles": 0.15,
       "walkMinutes": 3
     }
   ],
   "oakland-city": [
+    {
+      "name": "Atlanta Fish House and Grill",
+      "category": "food",
+      "description": "About a 13-minute walk from the station.",
+      "placeId": "ChIJT1sdK10D9YgREHyuRGau6ws",
+      "rating": 4.4,
+      "reviewCount": 1705,
+      "mapsUrl": "https://maps.google.com/?cid=858971908206394384&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantafishhouse.com/",
+      "distanceMiles": 0.63,
+      "walkMinutes": 13
+    },
     {
       "name": "The B Complex",
       "category": "sight",
@@ -4644,6 +6411,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.7,
       "reviewCount": 100,
       "mapsUrl": "https://maps.google.com/?cid=18146593319588739753&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.thebcomplex.com/",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     },
@@ -4666,6 +6434,7 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 1037,
       "mapsUrl": "https://maps.google.com/?cid=13427916277835010889&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://www.atlantaga.gov/",
       "distanceMiles": 0.66,
       "walkMinutes": 13
     },
@@ -4681,31 +6450,19 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "walkMinutes": 6
     }
   ],
-  "bankhead": [
-    {
-      "name": "Super Frosty City-Wide Distributors",
-      "category": "treats",
-      "description": "About a 3-minute walk from the station.",
-      "placeId": "ChIJI8_E3rEE9YgR7nVhehcASbY",
-      "rating": 4.5,
-      "reviewCount": 67,
-      "mapsUrl": "https://maps.google.com/?cid=13135029889040217582&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "distanceMiles": 0.13,
-      "walkMinutes": 3
-    },
-    {
-      "name": "Maddox Park",
-      "category": "sight",
-      "description": "About a 4-minute walk from the station.",
-      "placeId": "ChIJ_7NHXaUE9YgRySiKwz0AN28",
-      "rating": 4.4,
-      "reviewCount": 480,
-      "mapsUrl": "https://maps.google.com/?cid=8013874327202703561&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "distanceMiles": 0.18,
-      "walkMinutes": 4
-    }
-  ],
   "west-lake": [
+    {
+      "name": "BBQ 56",
+      "category": "food",
+      "description": "About a 15-minute walk from the station.",
+      "placeId": "ChIJ1TFlktQD9YgR8en3zslovXU",
+      "rating": 4.8,
+      "reviewCount": 334,
+      "mapsUrl": "https://maps.google.com/?cid=8484052489005951473&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.bbq-56.com/",
+      "distanceMiles": 0.73,
+      "walkMinutes": 15
+    },
     {
       "name": "Mozley Park",
       "category": "sight",
@@ -4725,11 +6482,24 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.4,
       "reviewCount": 69,
       "mapsUrl": "https://maps.google.com/?cid=11874202086178655877&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.friendsofmozleypark.org/park-amenities",
       "distanceMiles": 0.26,
       "walkMinutes": 5
     }
   ],
   "ashby": [
+    {
+      "name": "Local Green Atlanta",
+      "category": "food",
+      "description": "About a 2-minute walk from the station.",
+      "placeId": "ChIJoZ33ZakF9YgR1g689tIjHhQ",
+      "rating": 4.5,
+      "reviewCount": 630,
+      "mapsUrl": "https://maps.google.com/?cid=1449635519049502422&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.localgreenatlanta.com/",
+      "distanceMiles": 0.08,
+      "walkMinutes": 2
+    },
     {
       "name": "Boone Park West",
       "category": "sight",
@@ -4749,8 +6519,34 @@ export const generatedPoisByStation: Record<string, Poi[]> = {
       "rating": 4.6,
       "reviewCount": 70,
       "mapsUrl": "https://maps.google.com/?cid=3236240253195985820&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "https://www.atlantaga.gov/",
       "distanceMiles": 0.58,
       "walkMinutes": 12
+    }
+  ],
+  "bankhead": [
+    {
+      "name": "Super Frosty City-Wide Distributors",
+      "category": "treats",
+      "description": "About a 3-minute walk from the station.",
+      "placeId": "ChIJI8_E3rEE9YgR7nVhehcASbY",
+      "rating": 4.5,
+      "reviewCount": 67,
+      "mapsUrl": "https://maps.google.com/?cid=13135029889040217582&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "websiteUrl": "http://superfrostyatl.square.site/",
+      "distanceMiles": 0.13,
+      "walkMinutes": 3
+    },
+    {
+      "name": "Maddox Park",
+      "category": "sight",
+      "description": "About a 4-minute walk from the station.",
+      "placeId": "ChIJ_7NHXaUE9YgRySiKwz0AN28",
+      "rating": 4.4,
+      "reviewCount": 480,
+      "mapsUrl": "https://maps.google.com/?cid=8013874327202703561&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "distanceMiles": 0.18,
+      "walkMinutes": 4
     }
   ]
 };
