@@ -16,7 +16,14 @@ export default function Home() {
       <MapLegend />
       <MartaMap
         selectedStationId={selectedStationId}
-        onSelectStation={(id) => router.push(`/stations/${id}`)}
+        onSelectStation={(id) => {
+          const path = `/stations/${id}`;
+          // If a panel is already open, replace so the history stays one deep
+          // and "Back to the map" (router.back) always returns to "/", not to
+          // the previously clicked station.
+          if (selectedStationId) router.replace(path);
+          else router.push(path);
+        }}
       />
     </div>
   );
