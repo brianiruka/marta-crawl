@@ -11,6 +11,7 @@ import type { Station } from "@/data/stations";
 import type { StationBulge } from "@/data/stationBulges";
 import { StationHole } from "@/components/StationHole";
 import type { Cursor } from "@/components/MartaMap";
+import { BADGE_R, nearestBulge, stationBadgeCenter } from "@/lib/crawlRoute";
 
 type StationMarkerProps = {
   station: Station;
@@ -21,16 +22,10 @@ type StationMarkerProps = {
    * touch), driving the fisheye magnification. */
   cursor: Cursor;
   /** This station's 1-based position in the current crawl, if any --
-   * renders a small numbered badge beside the label (see badgeCenter in
-   * buildLeader) and pops it in/out when the crawl's membership changes. */
+   * renders a small numbered badge beside the label (see stationBadgeCenter
+   * in crawlRoute) and pops it in/out when the crawl's membership changes. */
   crawlIndex?: number;
 };
-
-// Numbered crawl badge, positioned beside the label rather than at the
-// marker (see buildLeader's badgeCenter) -- own radius/gap so it clears the
-// label's edge instead of overlapping the text.
-const BADGE_R = 10;
-const BADGE_GAP = 7;
 
 // Fisheye: stations within FISHEYE_RADIUS of the cursor magnify, peaking at
 // +FISHEYE_BOOST right under it, easing to none at the radius. The whole
@@ -179,23 +174,13 @@ function cardinalAttach(
     const sx: 1 | -1 = -Math.cos(localDir) >= 0 ? 1 : -1;
     const local = { x: sx * halfW, y: -FONT_SIZE * BASELINE_TO_CENTER + drag.y };
     const retreatLocal = { x: -sx * LABEL_GAP, y: 0 };
-    return {
-      point: rotateVec(local, rotation),
-      retreat: rotateVec(retreatLocal, rotation),
-      horizontal,
-      side: sx,
-    };
+    return { point: rotateVec(local, rotation), retreat: rotateVec(retreatLocal, rotation) };
   }
   // +1 if the marker is on the local +y side (below) of the label, else -1.
   const sy: 1 | -1 = -Math.sin(localDir) >= 0 ? 1 : -1;
   const local = { x: drag.x, y: sy * halfH };
   const retreatLocal = { x: 0, y: -sy * LABEL_GAP };
-  return {
-    point: rotateVec(local, rotation),
-    retreat: rotateVec(retreatLocal, rotation),
-    horizontal,
-    side: sy,
-  };
+  return { point: rotateVec(local, rotation), retreat: rotateVec(retreatLocal, rotation) };
 }
 
 /**
@@ -274,33 +259,16 @@ function buildLeader(station: Station, labelWidth: number, anchorRing: { x: numb
   const restD = leaderPath(restDir, restCenter, halfW, HALF_HEIGHT, zero);
   const hoverD = leaderPath(hoverDir, hoverCenter, halfW * HOVER_SCALE, HALF_HEIGHT * HOVER_SCALE, hoverDrag);
 
-  // Crawl badge: sits just past the label's edge OPPOSITE the leader
-  // line's attach point (cardinalAttach's `side`, flipped) -- same
-  // vertical/horizontal centering as the attach point, so it reads as
-  // "the other end of the label" rather than landing on the text itself.
-  const restAttach = cardinalAttach(restDir, rotation, halfW, HALF_HEIGHT, zero);
-  const badgeLocal = restAttach.horizontal
-    ? { x: -restAttach.side * (halfW + BADGE_GAP + BADGE_R), y: -FONT_SIZE * BASELINE_TO_CENTER }
-    : { x: 0, y: -restAttach.side * (HALF_HEIGHT + BADGE_GAP + BADGE_R) };
-  const badgeOffset = rotateVec(badgeLocal, rotation);
-  const badgeCenter = { x: restCenter.x + badgeOffset.x, y: restCenter.y + badgeOffset.y };
-
-  return { restD, hoverD, deltaLocal, badgeCenter };
+  return { restD, hoverD, deltaLocal };
 }
 
 // Each station can serve several lines, each with its own physical ring
 // (StationHole) at a slightly different position -- there's no single
 // "the marker" for an interchange. The leader line and hover-sweep math
-// anchor to whichever ring sits closest to the label (anchorRing); every
-// ring still gets its own hit-circle so hovering ANY of them (not just
-// the one nearest the label) triggers the shared hover state.
-function nearestBulge(bulges: StationBulge[], target: { x: number; y: number }) {
-  return bulges.reduce((closest, b) => {
-    const d = Math.hypot(b.cx - target.x, b.cy - target.y);
-    const closestD = Math.hypot(closest.cx - target.x, closest.cy - target.y);
-    return d < closestD ? b : closest;
-  });
-}
+// anchor to whichever ring sits closest to the label (anchorRing, via
+// nearestBulge from crawlRoute); every ring still gets its own hit-circle
+// so hovering ANY of them (not just the one nearest the label) triggers
+// the shared hover state.
 
 /**
  * The set of edges connecting every ring of a multi-line station to every
@@ -381,6 +349,13 @@ export function StationMarker({
   const leader = useMemo(
     () => buildLeader(station, labelWidth, { x: anchorRing.cx, y: anchorRing.cy }),
     [station, labelWidth, anchorRing.cx, anchorRing.cy],
+  );
+  // Badge center from the shared module (estimated width), so it lands on
+  // the exact same point MartaMap uses as this station's route endpoint --
+  // the connecting line meets the badge, not the label center.
+  const badge = useMemo(
+    () => stationBadgeCenter(station, { x: anchorRing.cx, y: anchorRing.cy }),
+    [station, anchorRing.cx, anchorRing.cy],
   );
 
   // Fisheye magnification from cursor proximity to this station's ring.
@@ -527,17 +502,12 @@ export function StationMarker({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            style={{ transformOrigin: `${leader.badgeCenter.x}px ${leader.badgeCenter.y}px` }}
+            style={{ transformOrigin: `${badge.x}px ${badge.y}px` }}
           >
-            <circle
-              cx={leader.badgeCenter.x}
-              cy={leader.badgeCenter.y}
-              r={BADGE_R}
-              className="fill-violet-400"
-            />
+            <circle cx={badge.x} cy={badge.y} r={BADGE_R} className="fill-violet-400" />
             <text
-              x={leader.badgeCenter.x}
-              y={leader.badgeCenter.y}
+              x={badge.x}
+              y={badge.y}
               textAnchor="middle"
               dominantBaseline="central"
               fontSize={12}

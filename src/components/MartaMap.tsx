@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { StationMarker } from "@/components/StationMarker";
 import { stations, type LineId, type Station } from "@/data/stations";
 import { stationBulges, type StationBulge } from "@/data/stationBulges";
+import { computeCrawlPath, nearestBulge } from "@/lib/crawlRoute";
 import linePaths from "@/data/martaLinePaths.json";
 import { cn } from "@/lib/utils";
 
@@ -73,11 +74,19 @@ export function MartaMap({ selectedStationId, onSelectStation, crawlStations }: 
     crawlStations?.forEach((s, i) => map.set(s.id, i + 1));
     return map;
   }, [crawlStations]);
-  // Remounts (and fades in) the route path whenever the crawl's station
-  // set/order changes, rather than snapping to the new shape -- SVG `d`
-  // transitions only interpolate when the two path strings have the same
-  // segment structure, which isn't true here (point count changes).
+  // Re-runs (and replays the reveal) whenever the crawl's station set/order
+  // changes. The path connects each station's numbered badge and detours
+  // around every label's box so it never crosses label text (see
+  // computeCrawlPath).
   const crawlPathKey = crawlStations?.map((s) => s.id).join(",") ?? "";
+  const crawlPath = useMemo(() => {
+    if (!crawlStations || crawlStations.length < 2) return "";
+    const anchorOf = (s: Station): { x: number; y: number } => {
+      const nb = nearestBulge(bulgesByStation[s.id], { x: s.x, y: s.y });
+      return { x: nb.cx, y: nb.cy };
+    };
+    return computeCrawlPath(crawlStations, stations, anchorOf);
+  }, [crawlStations]);
 
   function handlePointerMove(e: React.PointerEvent<SVGSVGElement>) {
     // Coarse pointers (touch) don't get the fisheye — it needs a hovering
@@ -131,6 +140,35 @@ export function MartaMap({ selectedStationId, onSelectStation, crawlStations }: 
           <filter id="station-glow-blur" x="-100%" y="-100%" width="300%" height="300%">
             <feGaussianBlur stdDeviation="6" />
           </filter>
+          {/* Progressive "draw-on" reveal for the crawl route: a fat white
+              stroke along the same path, animated from pathLength 0→1, used
+              as a mask over the dotted violet line. As the mask draws from
+              the first stop to the last, the dots appear one after another
+              — "connecting the points" — rather than the whole line just
+              fading in. Keyed so it replays when the route changes. */}
+          {crawlPath && (
+            <mask
+              id="crawl-reveal"
+              maskUnits="userSpaceOnUse"
+              x={0}
+              y={0}
+              width={VIEW_W}
+              height={VIEW_H}
+            >
+              <motion.path
+                key={crawlPathKey}
+                d={crawlPath}
+                fill="none"
+                stroke="white"
+                strokeWidth={18}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 1.1, ease: "easeInOut" }}
+              />
+            </mask>
+          )}
         </defs>
 
         <g
@@ -173,19 +211,17 @@ export function MartaMap({ selectedStationId, onSelectStation, crawlStations }: 
             </g>
           ))}
 
-          {crawlStations && crawlStations.length > 1 && (
-            <motion.path
-              key={crawlPathKey}
-              d={crawlStations.map((s, i) => `${i === 0 ? "M" : "L"} ${s.x} ${s.y}`).join(" ")}
+          {crawlPath && (
+            <path
+              d={crawlPath}
               fill="none"
               className="stroke-violet-400 pointer-events-none"
               strokeWidth={6}
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeDasharray="2 14"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.85 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
+              opacity={0.85}
+              mask="url(#crawl-reveal)"
             />
           )}
         </g>
