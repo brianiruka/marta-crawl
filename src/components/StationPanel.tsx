@@ -43,7 +43,11 @@ export function StationPanel({ children }: StationPanelProps) {
         onInteractOutside={(e) => {
           if (!isCoarse) e.preventDefault();
         }}
-        className="w-full gap-0 overflow-y-auto p-6 duration-300 sm:max-w-md md:p-8"
+        // Same half-width sizing as ExplorePanel, so the panel doesn't
+        // visually resize when navigating between Explore and a station.
+        // Override has to match the base's exact data-[side=right]:sm:
+        // variant chain for tailwind-merge to treat it as conflicting.
+        className="w-full gap-0 overflow-y-auto p-6 duration-300 data-[side=right]:sm:w-1/2 data-[side=right]:sm:max-w-none md:p-8"
       >
         <SheetTitle className="sr-only">Station details</SheetTitle>
         {children}

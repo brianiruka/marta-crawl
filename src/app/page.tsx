@@ -2,8 +2,6 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { MartaMap } from "@/components/MartaMap";
-import { ListLauncher } from "@/components/ListLauncher";
-import { CategoryLauncher } from "@/components/CategoryLauncher";
 import { PageTransition } from "@/components/PageTransition";
 import { StationIndex } from "@/components/StationIndex";
 import { cn } from "@/lib/utils";
@@ -27,10 +25,6 @@ export default function Home() {
           selectedStationId && "md:pr-[28rem]",
         )}
       >
-        <div className="flex flex-col items-center gap-3">
-          <ListLauncher />
-          <CategoryLauncher />
-        </div>
         {/* The searchable list is the accessible primary way to reach a
             station where the map's hover/precise-tap fails — touch and
             smaller screens. On desktop the map (with focusable markers +

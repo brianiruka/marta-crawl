@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { StationMarker } from "@/components/StationMarker";
+import { PanelTrigger } from "@/components/PanelTrigger";
 import { stations, type LineId } from "@/data/stations";
 import { stationBulges, type StationBulge } from "@/data/stationBulges";
 import linePaths from "@/data/martaLinePaths.json";
@@ -97,7 +98,8 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
   }
 
   return (
-    <div className="mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full">
+    <div className="relative mx-auto aspect-[1959/2048] h-[85vh] max-h-[85vh] w-auto max-w-full">
+      <PanelTrigger />
       <svg
         ref={svgRef}
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}

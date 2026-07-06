@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Barlow, Inter } from "next/font/google";
-import { ListSheet } from "@/components/ListSheet";
+import { ExplorePanel } from "@/components/ExplorePanel";
 import { getPoiCounts, getPoisByCategory } from "@/lib/data";
 import "./globals.css";
 
@@ -46,10 +46,10 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         {panel}
-        {/* useSearchParams inside ListSheet requires a Suspense boundary on
-            prerendered pages, or `next build` fails (missing-suspense). */}
+        {/* useSearchParams inside ExplorePanel requires a Suspense boundary
+            on prerendered pages, or `next build` fails (missing-suspense). */}
         <Suspense fallback={null}>
-          <ListSheet counts={counts} poisByCategory={poisByCategory} />
+          <ExplorePanel counts={counts} poisByCategory={poisByCategory} />
         </Suspense>
       </body>
     </html>
