@@ -1,6 +1,6 @@
 "use client";
 
-import { listOrder, listMeta } from "@/data/poiListMeta";
+import { listMeta, type ListId } from "@/data/poiListMeta";
 import {
   poiKey,
   toggleFavorite,
@@ -17,7 +17,13 @@ type PoiStatusButtonsProps = {
   className?: string;
 };
 
-/** Three toggle buttons (favorite / been-there / up-next) for a POI. Meant
+// This tile's own display order -- favorite, then up-next, then been-there,
+// matching the natural favorite -> plan to go -> actually went workflow.
+// Deliberately separate from poiListMeta's `listOrder`, which still drives
+// the Home menu's "Your lists" order and shouldn't change alongside this.
+const iconOrder: ListId[] = ["favorites", "wantToGo", "visited"];
+
+/** Three toggle buttons (favorite / up-next / been-there) for a POI. Meant
  * to sit outside any surrounding <a> — these are their own click targets,
  * not nested-interactive. */
 export function PoiStatusButtons({ poi, className }: PoiStatusButtonsProps) {
@@ -26,7 +32,7 @@ export function PoiStatusButtons({ poi, className }: PoiStatusButtonsProps) {
 
   return (
     <div className={cn("flex items-center gap-0", className)}>
-      {listOrder.map((id) => {
+      {iconOrder.map((id) => {
         const meta = listMeta[id];
         const Icon = meta.icon;
         const active =
@@ -36,7 +42,11 @@ export function PoiStatusButtons({ poi, className }: PoiStatusButtonsProps) {
             key={id}
             type="button"
             variant="ghost"
-            size="icon-sm"
+            // icon-xs (24px box) rather than icon-sm (28px): the icon's own
+            // explicit size-4 class is unaffected by button size, so this
+            // just trims the surrounding hit-box padding, tightening the
+            // visual gap between the three icons without shrinking them.
+            size="icon-xs"
             aria-pressed={active}
             aria-label={meta.toggleLabel(poi.name)}
             title={meta.label}

@@ -9,6 +9,7 @@ import {
   ChevronRight,
   ChevronUp,
   Compass,
+  Route,
   Star,
   type LucideIcon,
 } from "lucide-react";
@@ -26,6 +27,8 @@ import {
   moveStation,
   resolveCrawlOrder,
   setStationOrder,
+  toggleCrawlMember,
+  useCrawlMemberKeys,
   useStationOrderOverride,
 } from "@/lib/crawlBuilder";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
@@ -44,12 +47,16 @@ const paramToList: Record<string, ListId> = Object.fromEntries(
  * is a separate level again, reached by pushing to /stations/[slug] — see
  * the module comment on the ExplorePanel component below for the full
  * navigation model. */
-type Mode = { kind: "home" } | { kind: "list"; id: ListId } | { kind: "category"; id: Poi["category"] };
+type Mode =
+  | { kind: "home" }
+  | { kind: "crawl" }
+  | { kind: "list"; id: ListId }
+  | { kind: "category"; id: Poi["category"] };
 
 function sameMode(a: Mode | null, b: Mode | null): boolean {
   if (a === b) return true;
   if (!a || !b || a.kind !== b.kind) return false;
-  if (a.kind === "home") return true;
+  if (a.kind === "home" || a.kind === "crawl") return true;
   // TS can't narrow "a.kind === b.kind" across the union by itself here.
   return (a as { id: string }).id === (b as { id: string }).id;
 }
@@ -81,6 +88,8 @@ function SavedPoiRow({ entry }: { entry: SavedPoi }) {
   const meta = categoryMeta[entry.category];
   const Icon = meta.icon;
   const href = entry.websiteUrl ?? entry.mapsUrl;
+  const memberKeys = useCrawlMemberKeys();
+  const inCrawl = entry.status === "wantToGo" && memberKeys.includes(entry.key);
   return (
     <Card className="gap-0 rounded-lg border-transparent bg-card/50 py-2.5">
       <CardContent className="flex flex-col gap-1 px-3">
@@ -122,6 +131,27 @@ function SavedPoiRow({ entry }: { entry: SavedPoi }) {
               <span className="whitespace-nowrap">{entry.walkMinutes} min walk</span>
             )}
           </p>
+        )}
+        {/* Only wantToGo entries are crawl-eligible: this is the one new
+            step distinguishing "up next" (a broad someday-wishlist) from
+            "crawl" (a deliberately chosen subset for a specific outing) —
+            scoped to this row rather than added as a 4th icon on
+            PoiStatusButtons, which appears on every POI card everywhere. */}
+        {entry.status === "wantToGo" && (
+          <button
+            type="button"
+            aria-pressed={inCrawl}
+            onClick={() => toggleCrawlMember(entry.key)}
+            className={cn(
+              "flex w-fit items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-medium transition-colors",
+              inCrawl
+                ? "border-violet-400/40 bg-violet-400/10 text-violet-400"
+                : "border-border/50 text-muted-foreground hover:border-violet-400/40 hover:text-violet-400",
+            )}
+          >
+            <Route aria-hidden="true" className="size-3" />
+            {inCrawl ? "In crawl" : "Add to crawl"}
+          </button>
         )}
         <PoiStatusButtons
           poi={{
@@ -256,11 +286,63 @@ function VisitedList({
 }
 
 function WantToGoList({ entries }: { entries: SavedPoi[] }) {
+  const wantToGo = useMemo(() => entries.filter((e) => e.status === "wantToGo"), [entries]);
+  const groups = useMemo(() => {
+    const grouped = groupByStation(wantToGo);
+    grouped.sort((a, b) => a[1][0].stationName.localeCompare(b[1][0].stationName));
+    return grouped;
+  }, [wantToGo]);
+
+  if (wantToGo.length === 0) {
+    return (
+      <p className="text-sm text-muted-foreground">
+        Bookmark places you want to visit and they&apos;ll show up here, grouped by station. Add
+        any of them to your crawl when you&apos;re ready to plan a route.
+      </p>
+    );
+  }
+
+  return (
+    <div className="flex flex-col gap-6">
+      <AnimatePresence initial={false} mode="popLayout">
+        {groups.map(([stationId, group]) => (
+          <motion.div key={stationId} {...tileMotion}>
+            <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+              <Link href={`/stations/${stationId}`} className="underline-offset-4 hover:underline">
+                {group[0].stationName}
+              </Link>
+              <Badge variant="secondary">{group.length}</Badge>
+            </h4>
+            <div className="flex flex-col gap-2">
+              <AnimatePresence initial={false} mode="popLayout">
+                {group.map((entry) => (
+                  <motion.div key={entry.key} {...tileMotion}>
+                    <SavedPoiRow entry={entry} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function CrawlView({ entries }: { entries: SavedPoi[] }) {
   const searchParams = useSearchParams();
   const sharedParam = searchParams.get("stations");
+  const memberKeys = useCrawlMemberKeys();
+  const memberSet = useMemo(() => new Set(memberKeys), [memberKeys]);
 
-  const wantToGo = useMemo(() => entries.filter((e) => e.status === "wantToGo"), [entries]);
-  const groups = useMemo(() => groupByStation(wantToGo), [wantToGo]);
+  // A crawl member is only meaningful while its entry is still up-next --
+  // un-bookmarking or marking it visited quietly drops it here, no separate
+  // cleanup needed in crawlBuilder.ts.
+  const crawlEntries = useMemo(
+    () => entries.filter((e) => e.status === "wantToGo" && memberSet.has(e.key)),
+    [entries, memberSet],
+  );
+  const groups = useMemo(() => groupByStation(crawlEntries), [crawlEntries]);
   const stationIds = useMemo(() => groups.map(([id]) => id), [groups]);
   const override = useStationOrderOverride();
   const order = useMemo(
@@ -275,16 +357,16 @@ function WantToGoList({ entries }: { entries: SavedPoi[] }) {
 
   const [copied, setCopied] = useState(false);
   function handleShare() {
-    const url = `${window.location.origin}/?panel=${listMeta.wantToGo.param}&stations=${order.join(",")}`;
+    const url = `${window.location.origin}/?panel=crawl&stations=${order.join(",")}`;
     navigator.clipboard.writeText(url);
     setCopied(true);
     setTimeout(() => setCopied(false), 1800);
   }
 
   // A shared link always shows the route that was shared, regardless of the
-  // viewer's own "up next" list — read-only, station names only (no POI
-  // resolution across the whole system exists yet, and isn't needed for a
-  // "check out this route" preview).
+  // viewer's own crawl — read-only, station names only (no POI resolution
+  // across the whole system exists yet, and isn't needed for a "check out
+  // this route" preview).
   if (sharedParam) {
     const ids = sharedParam.split(",").filter(Boolean);
     const named = ids.map((id) => ({ id, name: stations.find((s) => s.id === id)?.name ?? id }));
@@ -315,16 +397,16 @@ function WantToGoList({ entries }: { entries: SavedPoi[] }) {
     );
   }
 
-  if (wantToGo.length === 0) {
+  if (crawlEntries.length === 0) {
     return (
       <p className="text-sm text-muted-foreground">
-        Bookmark places to &quot;Up next&quot; and they&apos;ll show up here, ordered into a
-        route you can walk and ride.
+        Add places from &quot;Up next&quot; to start building a crawl you can order, view on the
+        map, and share.
       </p>
     );
   }
 
-  const walkMinutes = wantToGo.reduce((sum, e) => sum + (e.walkMinutes ?? 0), 0);
+  const walkMinutes = crawlEntries.reduce((sum, e) => sum + (e.walkMinutes ?? 0), 0);
   const rideMinutes = order.length > 1 ? (order.length - 1) * 3 : 0;
 
   return (
@@ -535,13 +617,17 @@ function HomeMenu({
 }) {
   const router = useRouter();
   const entriesMap = usePoiEntries();
+  const memberKeys = useCrawlMemberKeys();
 
   const listCounts: Record<ListId, number> = { favorites: 0, visited: 0, wantToGo: 0 };
   const visitedStationIds = new Set<string>();
+  const crawlStationIds = new Set<string>();
+  const memberSet = new Set(memberKeys);
   for (const entry of Object.values(entriesMap)) {
     if (entry.favorited) listCounts.favorites++;
     if (entry.status) listCounts[entry.status]++;
     if (entry.status === "visited") visitedStationIds.add(entry.stationId);
+    if (entry.status === "wantToGo" && memberSet.has(entry.key)) crawlStationIds.add(entry.stationId);
   }
 
   // Best-progress line among lines with at least one visited station, for
@@ -584,6 +670,13 @@ function HomeMenu({
               />
             );
           })}
+          <MenuRow
+            icon={Route}
+            accent="text-violet-400"
+            label="Build a crawl"
+            count={crawlStationIds.size}
+            onClick={() => router.push("/?panel=crawl")}
+          />
         </div>
       </div>
       <div>
@@ -643,11 +736,13 @@ export function ExplorePanel({
   const activeMode: Mode | null =
     panelParam === "home"
       ? { kind: "home" }
-      : panelParam && panelParam in paramToList
-        ? { kind: "list", id: paramToList[panelParam] }
-        : panelParam && panelParam in categoryMeta
-          ? { kind: "category", id: panelParam as Poi["category"] }
-          : null;
+      : panelParam === "crawl"
+        ? { kind: "crawl" }
+        : panelParam && panelParam in paramToList
+          ? { kind: "list", id: paramToList[panelParam] }
+          : panelParam && panelParam in categoryMeta
+            ? { kind: "category", id: panelParam as Poi["category"] }
+            : null;
   const isOpen = activeMode !== null;
 
   // Broadcast open state so the homepage shell can pad the map into the
@@ -672,26 +767,34 @@ export function ExplorePanel({
   const title =
     renderedMode.kind === "home"
       ? "Explore"
-      : renderedMode.kind === "list"
-        ? listMeta[renderedMode.id].label
-        : categoryMeta[renderedMode.id].label;
+      : renderedMode.kind === "crawl"
+        ? "Your crawl"
+        : renderedMode.kind === "list"
+          ? listMeta[renderedMode.id].label
+          : categoryMeta[renderedMode.id].label;
   const TitleIcon =
     renderedMode.kind === "home"
       ? Compass
-      : renderedMode.kind === "list"
-        ? listMeta[renderedMode.id].icon
-        : categoryMeta[renderedMode.id].icon;
+      : renderedMode.kind === "crawl"
+        ? Route
+        : renderedMode.kind === "list"
+          ? listMeta[renderedMode.id].icon
+          : categoryMeta[renderedMode.id].icon;
   // Drives the content crossfade below: distinct per mode (and per list/
   // category id within a mode), so Home->Coffee and Coffee->Sights both
   // register as a change, not just the first Home->Browse transition.
   const modeKey =
-    renderedMode.kind === "home" ? "home" : `${renderedMode.kind}:${renderedMode.id}`;
+    renderedMode.kind === "home" || renderedMode.kind === "crawl"
+      ? renderedMode.kind
+      : `${renderedMode.kind}:${renderedMode.id}`;
   const titleAccent =
     renderedMode.kind === "home"
       ? "text-foreground"
-      : renderedMode.kind === "list"
-        ? listMeta[renderedMode.id].accent
-        : categoryMeta[renderedMode.id].accent;
+      : renderedMode.kind === "crawl"
+        ? "text-violet-400"
+        : renderedMode.kind === "list"
+          ? listMeta[renderedMode.id].accent
+          : categoryMeta[renderedMode.id].accent;
 
   return (
     <Sheet open={!!activeMode} modal={isCoarse} onOpenChange={(o) => !o && router.back()}>
@@ -742,6 +845,7 @@ export function ExplorePanel({
             className="mt-5"
           >
             {renderedMode.kind === "home" && <HomeMenu poisByCategory={poisByCategory} />}
+            {renderedMode.kind === "crawl" && <CrawlView entries={entries} />}
             {renderedMode.kind === "list" && renderedMode.id === "favorites" && (
               <FavoritesList entries={entries} />
             )}

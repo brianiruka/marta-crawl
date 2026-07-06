@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { motion } from "motion/react";
 import { StationMarker } from "@/components/StationMarker";
 import { stations, type LineId, type Station } from "@/data/stations";
 import { stationBulges, type StationBulge } from "@/data/stationBulges";
@@ -63,6 +64,20 @@ export function MartaMap({ selectedStationId, onSelectStation, crawlStations }: 
   // time means a stale cursor can't leak back in when deselected — the next
   // pointer move refreshes it.
   const fisheyeCursor = selected ? null : cursor;
+
+  // 1-based position of each station in the current crawl, for the badge
+  // StationMarker renders beside its own label -- keyed by id so lookups
+  // don't care about the array reference identity.
+  const crawlIndexByStation = useMemo(() => {
+    const map = new Map<string, number>();
+    crawlStations?.forEach((s, i) => map.set(s.id, i + 1));
+    return map;
+  }, [crawlStations]);
+  // Remounts (and fades in) the route path whenever the crawl's station
+  // set/order changes, rather than snapping to the new shape -- SVG `d`
+  // transitions only interpolate when the two path strings have the same
+  // segment structure, which isn't true here (point count changes).
+  const crawlPathKey = crawlStations?.map((s) => s.id).join(",") ?? "";
 
   function handlePointerMove(e: React.PointerEvent<SVGSVGElement>) {
     // Coarse pointers (touch) don't get the fisheye — it needs a hovering
@@ -153,39 +168,25 @@ export function MartaMap({ selectedStationId, onSelectStation, crawlStations }: 
                 selected={station.id === selectedStationId}
                 onSelect={() => onSelectStation(station.id)}
                 cursor={fisheyeCursor}
+                crawlIndex={crawlIndexByStation.get(station.id)}
               />
             </g>
           ))}
 
-          {crawlStations && crawlStations.length > 0 && (
-            <g className="pointer-events-none">
-              {crawlStations.length > 1 && (
-                <path
-                  d={crawlStations.map((s, i) => `${i === 0 ? "M" : "L"} ${s.x} ${s.y}`).join(" ")}
-                  fill="none"
-                  className="stroke-violet-400"
-                  strokeWidth={6}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeDasharray="2 14"
-                  opacity={0.85}
-                />
-              )}
-              {crawlStations.map((station, i) => (
-                <g key={station.id}>
-                  <circle cx={station.x} cy={station.y} r={16} className="fill-violet-400" />
-                  <text
-                    x={station.x}
-                    y={station.y}
-                    textAnchor="middle"
-                    dominantBaseline="central"
-                    className="fill-background text-[16px] font-semibold"
-                  >
-                    {i + 1}
-                  </text>
-                </g>
-              ))}
-            </g>
+          {crawlStations && crawlStations.length > 1 && (
+            <motion.path
+              key={crawlPathKey}
+              d={crawlStations.map((s, i) => `${i === 0 ? "M" : "L"} ${s.x} ${s.y}`).join(" ")}
+              fill="none"
+              className="stroke-violet-400 pointer-events-none"
+              strokeWidth={6}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeDasharray="2 14"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.85 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            />
           )}
         </g>
       </svg>

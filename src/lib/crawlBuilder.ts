@@ -1,52 +1,70 @@
 "use client";
 
-// Ordered-station companion to poiLists.ts. A "crawl" is the existing
-// wantToGo ("Up next") entries, grouped by station and put in a sensible
-// order -- not a separate saved list. This store only persists manual
-// reorder overrides (which station comes before which), following the same
-// useSyncExternalStore + versioned-localStorage-JSON conventions as
-// poiLists.ts, kept in a sibling module because the data shape (an ordered
-// array of station ids) doesn't fit that store's per-POI status map.
+// Ordered-station companion to poiLists.ts. A "crawl" is a deliberately
+// chosen SUBSET of the "Up next" (wantToGo) entries -- not the whole list --
+// so it needs its own explicit membership, separate from bookmarking
+// something as up next. This store holds that membership plus manual
+// station-reorder overrides, following the same useSyncExternalStore +
+// versioned-localStorage-JSON conventions as poiLists.ts, kept in a sibling
+// module because the data shape (an ordered station list + a member-key
+// set) doesn't fit that store's per-POI status map.
+//
+// A member key is only meaningful while its entry is still status ===
+// "wantToGo" -- callers filter membership against current wantToGo status
+// at read time (see ExplorePanel's CrawlView), so un-bookmarking something
+// or marking it "been there" quietly drops it from the crawl with no
+// cross-module cleanup needed here.
 import { useSyncExternalStore } from "react";
 import { lineOrder } from "@/data/lineOrder";
 import type { LineId, Station } from "@/data/stations";
 
 const STORAGE_KEY = "marta-crawl:crawl-order:v1";
-const VERSION = 1;
+// v2: added memberKeys (crawl is now an explicit subset, not "all of Up
+// next") -- bumped to discard v1 data, which has no membership to migrate.
+const VERSION = 2;
 
-type StoredOrder = readonly string[];
-const EMPTY: StoredOrder = Object.freeze([]);
+type CrawlState = { stationOrder: readonly string[]; memberKeys: readonly string[] };
+const EMPTY_STATE: CrawlState = Object.freeze({
+  stationOrder: Object.freeze([]),
+  memberKeys: Object.freeze([]),
+});
 
-let order: StoredOrder | null = null;
+let state: CrawlState | null = null;
 const listeners = new Set<() => void>();
 
-function load(): StoredOrder {
+function load(): CrawlState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return EMPTY;
-    const parsed = JSON.parse(raw) as { version?: number; stationOrder?: string[] };
-    if (parsed.version !== VERSION || !Array.isArray(parsed.stationOrder)) return EMPTY;
-    return Object.freeze([...parsed.stationOrder]);
+    if (!raw) return EMPTY_STATE;
+    const parsed = JSON.parse(raw) as {
+      version?: number;
+      stationOrder?: string[];
+      memberKeys?: string[];
+    };
+    if (parsed.version !== VERSION) return EMPTY_STATE;
+    return Object.freeze({
+      stationOrder: Object.freeze([...(parsed.stationOrder ?? [])]),
+      memberKeys: Object.freeze([...(parsed.memberKeys ?? [])]),
+    });
   } catch {
-    return EMPTY;
+    return EMPTY_STATE;
   }
 }
 
-function persist(next: StoredOrder) {
+function persist(next: CrawlState) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: VERSION, stationOrder: next }));
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ version: VERSION, stationOrder: next.stationOrder, memberKeys: next.memberKeys }),
+    );
   } catch {
     // Quota/blocked: keep the in-memory state so the session still works.
   }
 }
 
-function getSnapshot(): StoredOrder {
-  if (order === null) order = load();
-  return order;
-}
-
-function getServerSnapshot(): StoredOrder {
-  return EMPTY;
+function getSnapshot(): CrawlState {
+  if (state === null) state = load();
+  return state;
 }
 
 function notify() {
@@ -61,7 +79,7 @@ function subscribe(listener: () => void) {
     storageListenerAttached = true;
     window.addEventListener("storage", (e) => {
       if (e.key !== STORAGE_KEY) return;
-      order = load();
+      state = load();
       notify();
     });
   }
@@ -71,13 +89,38 @@ function subscribe(listener: () => void) {
 /** Raw stored manual-reorder override (may reference stations no longer in
  * the crawl, or be missing ones just added) -- resolve with
  * resolveCrawlOrder() before rendering. */
-export function useStationOrderOverride(): StoredOrder {
-  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+export function useStationOrderOverride(): readonly string[] {
+  return useSyncExternalStore(
+    subscribe,
+    () => getSnapshot().stationOrder,
+    () => EMPTY_STATE.stationOrder,
+  );
+}
+
+/** POI keys explicitly added to the crawl -- the deliberate subset of
+ * wantToGo entries, not all of them. */
+export function useCrawlMemberKeys(): readonly string[] {
+  return useSyncExternalStore(
+    subscribe,
+    () => getSnapshot().memberKeys,
+    () => EMPTY_STATE.memberKeys,
+  );
 }
 
 export function setStationOrder(next: readonly string[]) {
-  order = Object.freeze([...next]);
-  persist(order);
+  const current = getSnapshot();
+  state = Object.freeze({ stationOrder: Object.freeze([...next]), memberKeys: current.memberKeys });
+  persist(state);
+  notify();
+}
+
+export function toggleCrawlMember(key: string) {
+  const current = getSnapshot();
+  const next = new Set(current.memberKeys);
+  if (next.has(key)) next.delete(key);
+  else next.add(key);
+  state = Object.freeze({ stationOrder: current.stationOrder, memberKeys: Object.freeze([...next]) });
+  persist(state);
   notify();
 }
 

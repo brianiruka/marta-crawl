@@ -6,6 +6,7 @@ import {
   type CSSProperties,
   type KeyboardEvent,
 } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import type { Station } from "@/data/stations";
 import type { StationBulge } from "@/data/stationBulges";
 import { StationHole } from "@/components/StationHole";
@@ -19,7 +20,17 @@ type StationMarkerProps = {
   /** Pointer position in SVG units (null when the cursor is away or on
    * touch), driving the fisheye magnification. */
   cursor: Cursor;
+  /** This station's 1-based position in the current crawl, if any --
+   * renders a small numbered badge beside the label (see badgeCenter in
+   * buildLeader) and pops it in/out when the crawl's membership changes. */
+  crawlIndex?: number;
 };
+
+// Numbered crawl badge, positioned beside the label rather than at the
+// marker (see buildLeader's badgeCenter) -- own radius/gap so it clears the
+// label's edge instead of overlapping the text.
+const BADGE_R = 10;
+const BADGE_GAP = 7;
 
 // Fisheye: stations within FISHEYE_RADIUS of the cursor magnify, peaking at
 // +FISHEYE_BOOST right under it, easing to none at the radius. The whole
@@ -168,13 +179,23 @@ function cardinalAttach(
     const sx: 1 | -1 = -Math.cos(localDir) >= 0 ? 1 : -1;
     const local = { x: sx * halfW, y: -FONT_SIZE * BASELINE_TO_CENTER + drag.y };
     const retreatLocal = { x: -sx * LABEL_GAP, y: 0 };
-    return { point: rotateVec(local, rotation), retreat: rotateVec(retreatLocal, rotation) };
+    return {
+      point: rotateVec(local, rotation),
+      retreat: rotateVec(retreatLocal, rotation),
+      horizontal,
+      side: sx,
+    };
   }
   // +1 if the marker is on the local +y side (below) of the label, else -1.
   const sy: 1 | -1 = -Math.sin(localDir) >= 0 ? 1 : -1;
   const local = { x: drag.x, y: sy * halfH };
   const retreatLocal = { x: 0, y: -sy * LABEL_GAP };
-  return { point: rotateVec(local, rotation), retreat: rotateVec(retreatLocal, rotation) };
+  return {
+    point: rotateVec(local, rotation),
+    retreat: rotateVec(retreatLocal, rotation),
+    horizontal,
+    side: sy,
+  };
 }
 
 /**
@@ -253,7 +274,18 @@ function buildLeader(station: Station, labelWidth: number, anchorRing: { x: numb
   const restD = leaderPath(restDir, restCenter, halfW, HALF_HEIGHT, zero);
   const hoverD = leaderPath(hoverDir, hoverCenter, halfW * HOVER_SCALE, HALF_HEIGHT * HOVER_SCALE, hoverDrag);
 
-  return { restD, hoverD, deltaLocal };
+  // Crawl badge: sits just past the label's edge OPPOSITE the leader
+  // line's attach point (cardinalAttach's `side`, flipped) -- same
+  // vertical/horizontal centering as the attach point, so it reads as
+  // "the other end of the label" rather than landing on the text itself.
+  const restAttach = cardinalAttach(restDir, rotation, halfW, HALF_HEIGHT, zero);
+  const badgeLocal = restAttach.horizontal
+    ? { x: -restAttach.side * (halfW + BADGE_GAP + BADGE_R), y: -FONT_SIZE * BASELINE_TO_CENTER }
+    : { x: 0, y: -restAttach.side * (HALF_HEIGHT + BADGE_GAP + BADGE_R) };
+  const badgeOffset = rotateVec(badgeLocal, rotation);
+  const badgeCenter = { x: restCenter.x + badgeOffset.x, y: restCenter.y + badgeOffset.y };
+
+  return { restD, hoverD, deltaLocal, badgeCenter };
 }
 
 // Each station can serve several lines, each with its own physical ring
@@ -314,7 +346,14 @@ function spanningEdges(bulges: StationBulge[]): [StationBulge, StationBulge][] {
   return edges;
 }
 
-export function StationMarker({ station, bulges, selected, onSelect, cursor }: StationMarkerProps) {
+export function StationMarker({
+  station,
+  bulges,
+  selected,
+  onSelect,
+  cursor,
+  crawlIndex,
+}: StationMarkerProps) {
   const anchorRing = useMemo(
     () => nearestBulge(bulges, { x: station.x, y: station.y }),
     [bulges, station.x, station.y],
@@ -477,6 +516,39 @@ export function StationMarker({ station, bulges, selected, onSelect, cursor }: S
           {station.name}
         </text>
       </g>
+      {/* Crawl position badge -- beside the label, opposite its leader
+          line (see badgeCenter in buildLeader), not on the marker itself.
+          Pops in/out (not just appears) so adding/removing a station from
+          the crawl reads as a live event, not a static state. */}
+      <AnimatePresence>
+        {crawlIndex !== undefined && (
+          <motion.g
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            style={{ transformOrigin: `${leader.badgeCenter.x}px ${leader.badgeCenter.y}px` }}
+          >
+            <circle
+              cx={leader.badgeCenter.x}
+              cy={leader.badgeCenter.y}
+              r={BADGE_R}
+              className="fill-violet-400"
+            />
+            <text
+              x={leader.badgeCenter.x}
+              y={leader.badgeCenter.y}
+              textAnchor="middle"
+              dominantBaseline="central"
+              fontSize={12}
+              fontWeight={600}
+              className="fill-background"
+            >
+              {crawlIndex}
+            </text>
+          </motion.g>
+        )}
+      </AnimatePresence>
     </g>
   );
 }
