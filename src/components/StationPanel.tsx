@@ -1,7 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { useCoarsePointer } from "@/lib/useCoarsePointer";
 
@@ -15,6 +16,7 @@ const EXIT_MS = 300;
 
 export function StationPanel({ children }: StationPanelProps) {
   const router = useRouter();
+  const pathname = usePathname();
   const [open, setOpen] = useState(true);
   const closing = useRef(false);
   // Touch/small screens: modal (scrim + focus trap + inert background —
@@ -60,7 +62,21 @@ export function StationPanel({ children }: StationPanelProps) {
         className="w-full gap-0 overflow-y-auto p-5 duration-300 ease-in-out data-[side=right]:sm:w-1/3 data-[side=right]:sm:max-w-none data-[side=right]:data-open:slide-in-from-right-full data-[side=right]:data-closed:slide-out-to-right-full md:p-6"
       >
         <SheetTitle className="sr-only">Station details</SheetTitle>
-        {children}
+        {/* Crossfade between two stations' content when switching markers
+            on the map while the panel's already open — same idea as
+            ExplorePanel's mode swap: wait (not popLayout) since this is
+            one content block replacing another, not a reflowing list. */}
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={pathname}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8, transition: { duration: 0.15, ease: "easeIn" } }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            {children}
+          </motion.div>
+        </AnimatePresence>
       </SheetContent>
     </Sheet>
   );

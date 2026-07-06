@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { AnimatePresence, motion } from "motion/react";
 import { ChevronLeft, ChevronRight, Compass, Star, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import type { Poi } from "@/data/pois";
@@ -45,6 +46,19 @@ function groupByStation(entries: SavedPoi[]): [string, SavedPoi[]][] {
   }
   return [...groups.entries()];
 }
+
+// Shared tile/group motion — a toggle removing something from a list (e.g.
+// "been there" clearing an up-next tile) should ease out rather than snap,
+// and remaining siblings should glide into the gap rather than jump.
+// `layout` on every item is what drives that reflow; AnimatePresence is
+// what lets `exit` run at all before the item leaves the tree.
+const tileMotion = {
+  layout: true,
+  initial: { opacity: 0, y: 6 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, scale: 0.97, transition: { duration: 0.15, ease: "easeIn" } },
+  transition: { duration: 0.2, ease: "easeOut" },
+} as const;
 
 function SavedPoiRow({ entry }: { entry: SavedPoi }) {
   const meta = categoryMeta[entry.category];
@@ -156,9 +170,13 @@ function FavoritesList({ entries }: { entries: SavedPoi[] }) {
         </p>
       ) : (
         <div className="flex flex-col gap-2">
-          {favorites.map((entry) => (
-            <SavedPoiRow key={entry.key} entry={entry} />
-          ))}
+          <AnimatePresence initial={false} mode="popLayout">
+            {favorites.map((entry) => (
+              <motion.div key={entry.key} {...tileMotion}>
+                <SavedPoiRow entry={entry} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       )}
     </div>
@@ -193,23 +211,29 @@ function VisitedList({
         {visited.length} place{visited.length === 1 ? "" : "s"} visited across{" "}
         {groups.length} station{groups.length === 1 ? "" : "s"}
       </p>
-      {groups.map(([stationId, group]) => (
-        <div key={stationId}>
-          <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-            <Link href={`/stations/${stationId}`} className="underline-offset-4 hover:underline">
-              {group[0].stationName}
-            </Link>
-            <Badge variant="secondary">
-              {group.length} of {counts[stationId] ?? group.length}
-            </Badge>
-          </h4>
-          <div className="flex flex-col gap-2">
-            {group.map((entry) => (
-              <SavedPoiRow key={entry.key} entry={entry} />
-            ))}
-          </div>
-        </div>
-      ))}
+      <AnimatePresence initial={false} mode="popLayout">
+        {groups.map(([stationId, group]) => (
+          <motion.div key={stationId} {...tileMotion}>
+            <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+              <Link href={`/stations/${stationId}`} className="underline-offset-4 hover:underline">
+                {group[0].stationName}
+              </Link>
+              <Badge variant="secondary">
+                {group.length} of {counts[stationId] ?? group.length}
+              </Badge>
+            </h4>
+            <div className="flex flex-col gap-2">
+              <AnimatePresence initial={false} mode="popLayout">
+                {group.map((entry) => (
+                  <motion.div key={entry.key} {...tileMotion}>
+                    <SavedPoiRow entry={entry} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        ))}
+      </AnimatePresence>
     </div>
   );
 }
@@ -234,39 +258,55 @@ function WantToGoList({ entries }: { entries: SavedPoi[] }) {
 
   return (
     <div className="flex flex-col gap-6">
-      {groups.length > 1 && (
-        <Card className="border-sky-400/30 bg-sky-400/10">
-          <CardContent className="px-4">
-            <p className="text-xs font-medium tracking-wide text-sky-400 uppercase">
-              Recommended next crawl
-            </p>
-            <Link
-              href={`/stations/${topStationId}`}
-              className="mt-1 block font-display text-lg font-semibold text-foreground underline-offset-4 hover:underline"
-            >
-              {topGroup[0].stationName}
-            </Link>
-            <p className="text-sm text-muted-foreground">
-              {topGroup.length} places on your list here — the most of any station.
-            </p>
-          </CardContent>
-        </Card>
-      )}
-      {groups.map(([stationId, group]) => (
-        <div key={stationId}>
-          <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-            <Link href={`/stations/${stationId}`} className="underline-offset-4 hover:underline">
-              {group[0].stationName}
-            </Link>
-            <Badge variant="secondary">{group.length}</Badge>
-          </h4>
-          <div className="flex flex-col gap-2">
-            {group.map((entry) => (
-              <SavedPoiRow key={entry.key} entry={entry} />
-            ))}
-          </div>
-        </div>
-      ))}
+      <AnimatePresence initial={false}>
+        {groups.length > 1 && (
+          <motion.div
+            key="recommended"
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6, transition: { duration: 0.15, ease: "easeIn" } }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            <Card className="border-sky-400/30 bg-sky-400/10">
+              <CardContent className="px-4">
+                <p className="text-xs font-medium tracking-wide text-sky-400 uppercase">
+                  Recommended next crawl
+                </p>
+                <Link
+                  href={`/stations/${topStationId}`}
+                  className="mt-1 block font-display text-lg font-semibold text-foreground underline-offset-4 hover:underline"
+                >
+                  {topGroup[0].stationName}
+                </Link>
+                <p className="text-sm text-muted-foreground">
+                  {topGroup.length} places on your list here — the most of any station.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence initial={false} mode="popLayout">
+        {groups.map(([stationId, group]) => (
+          <motion.div key={stationId} {...tileMotion}>
+            <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+              <Link href={`/stations/${stationId}`} className="underline-offset-4 hover:underline">
+                {group[0].stationName}
+              </Link>
+              <Badge variant="secondary">{group.length}</Badge>
+            </h4>
+            <div className="flex flex-col gap-2">
+              <AnimatePresence initial={false} mode="popLayout">
+                {group.map((entry) => (
+                  <motion.div key={entry.key} {...tileMotion}>
+                    <SavedPoiRow entry={entry} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        ))}
+      </AnimatePresence>
     </div>
   );
 }
@@ -544,6 +584,11 @@ export function ExplorePanel({
       : renderedMode.kind === "list"
         ? listMeta[renderedMode.id].icon
         : categoryMeta[renderedMode.id].icon;
+  // Drives the content crossfade below: distinct per mode (and per list/
+  // category id within a mode), so Home->Coffee and Coffee->Sights both
+  // register as a change, not just the first Home->Browse transition.
+  const modeKey =
+    renderedMode.kind === "home" ? "home" : `${renderedMode.kind}:${renderedMode.id}`;
   const titleAccent =
     renderedMode.kind === "home"
       ? "text-foreground"
@@ -584,21 +629,36 @@ export function ExplorePanel({
             {title}
           </SheetTitle>
         </div>
-        <div className="mt-5">
-          {renderedMode.kind === "home" && <HomeMenu poisByCategory={poisByCategory} />}
-          {renderedMode.kind === "list" && renderedMode.id === "favorites" && (
-            <FavoritesList entries={entries} />
-          )}
-          {renderedMode.kind === "list" && renderedMode.id === "visited" && (
-            <VisitedList entries={entries} counts={counts} />
-          )}
-          {renderedMode.kind === "list" && renderedMode.id === "wantToGo" && (
-            <WantToGoList entries={entries} />
-          )}
-          {renderedMode.kind === "category" && (
-            <CategoryList groups={poisByCategory[renderedMode.id]} />
-          )}
-        </div>
+        {/* Keyed on the mode (not just "kind"): Home->Browse and Browse->a
+            different Browse both need a fresh crossfade, not just the
+            first transition. mode="wait" (not popLayout) — this is a
+            single content block being swapped for another, not a list, so
+            there's no sibling reflow to preserve; waiting avoids the two
+            versions ever double-rendering on top of each other. */}
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={modeKey}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8, transition: { duration: 0.15, ease: "easeIn" } }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="mt-5"
+          >
+            {renderedMode.kind === "home" && <HomeMenu poisByCategory={poisByCategory} />}
+            {renderedMode.kind === "list" && renderedMode.id === "favorites" && (
+              <FavoritesList entries={entries} />
+            )}
+            {renderedMode.kind === "list" && renderedMode.id === "visited" && (
+              <VisitedList entries={entries} counts={counts} />
+            )}
+            {renderedMode.kind === "list" && renderedMode.id === "wantToGo" && (
+              <WantToGoList entries={entries} />
+            )}
+            {renderedMode.kind === "category" && (
+              <CategoryList groups={poisByCategory[renderedMode.id]} />
+            )}
+          </motion.div>
+        </AnimatePresence>
       </SheetContent>
     </Sheet>
   );
