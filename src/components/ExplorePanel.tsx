@@ -95,6 +95,7 @@ function SavedPoiRow({ entry }: { entry: SavedPoi }) {
         <PoiStatusButtons
           poi={{
             name: entry.name,
+            placeId: entry.placeId,
             stationId: entry.stationId,
             stationName: entry.stationName,
             category: entry.category,

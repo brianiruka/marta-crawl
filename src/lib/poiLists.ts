@@ -15,6 +15,13 @@
 // - Curated POIs have no placeId, so their key falls back to
 //   `${stationId}:${name}` — renaming one orphans its saved entry
 //   (harmless: it still renders from the snapshot).
+// - `placeId` is persisted on the entry itself (not just used transiently
+//   to compute the key) so any UI that reconstructs a SavedPoiInput FROM
+//   an already-stored entry — e.g. a tile inside the Favorites/Been-there/
+//   Up-next sidebars — can recompute the SAME key poiKey() originally
+//   produced. Dropping it here once caused toggles from inside those
+//   sidebars to silently operate on a different (wrong) key than the one
+//   the entry actually lives under.
 import { useSyncExternalStore } from "react";
 import type { Poi } from "@/data/pois";
 
@@ -22,6 +29,7 @@ export type PoiStatus = "visited" | "wantToGo";
 
 export type SavedPoi = {
   key: string;
+  placeId?: string;
   name: string;
   stationId: string;
   stationName: string;
@@ -45,7 +53,10 @@ export type SavedPoiInput = Omit<
 type Entries = Readonly<Record<string, SavedPoi>>;
 
 const STORAGE_KEY = "marta-crawl:poi-lists:v1";
-const VERSION = 1;
+// v2: SavedPoi now persists placeId (see the comment above) — bumped to
+// discard any v1 data, which may have accumulated wrong-keyed duplicate/
+// orphaned entries from the bug that fix closes.
+const VERSION = 2;
 const EMPTY: Entries = Object.freeze({});
 
 export function poiKey(
@@ -113,6 +124,7 @@ function mutate(key: string, update: (current: SavedPoi) => SavedPoi, input: Sav
   const current = getSnapshot();
   const base: SavedPoi = current[key] ?? {
     key,
+    placeId: input.placeId,
     name: input.name,
     stationId: input.stationId,
     stationName: input.stationName,
