@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Rumi's",
+    "stationId": "arts-center",
+    "stationLabel": "Arts Center/Midtown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "CT Cantina",
+    "stationId": "dunwoody",
+    "stationLabel": "Dunwoody/Sandy Springs",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Joey D's Oak Room",
+    "stationId": "dunwoody",
+    "stationLabel": "Dunwoody/Sandy Springs",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Yalda",
+    "stationId": "dunwoody",
+    "stationLabel": "Dunwoody/Sandy Springs",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Food Terminal",
+    "stationId": "dunwoody",
+    "stationLabel": "Dunwoody/Sandy Springs",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Aria",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Aviva by Kameel",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "St. Cecilia",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Delbar",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Lucian Books & Wine",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Yeppa & Co.",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Le Colonial",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Jalisco Mexican Restaurant",
+    "stationId": "buckhead",
+    "stationLabel": "Buckhead/Lenox",
+    "source": "roughdraft"
+  },
+  {
+    "name": "26 Thai Kitchen & Bar",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Bene Korean Steakhouse",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "J'ouvert Caribbean Kitchen & Bar",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Madre Selva",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Chow a la Carte",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "El Gordo",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "The Boiler Seafood",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "KR Steakbar",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Treehouse Restaurant and Pub",
+    "stationId": "lindbergh-center",
+    "stationLabel": "Lindbergh Center/Uptown",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Oaxaca Tayluda",
+    "stationId": "chamblee",
+    "stationLabel": "Chamblee",
+    "source": "roughdraft"
+  },
+  {
+    "name": "La Delicias",
+    "stationId": "doraville",
+    "stationLabel": "Doraville/Buford Highway",
+    "source": "roughdraft"
+  },
+  {
+    "name": "Super H Mart",
+    "stationId": "doraville",
+    "stationLabel": "Doraville/Buford Highway",
+    "source": "roughdraft"
+  },
+  {
+    "name": "CS Oyster Bar",
+    "stationId": "brookhaven-oglethorpe",
+    "stationLabel": "Brookhaven/Oglethorpe",
+    "source": "roughdraft"
+  }
+]

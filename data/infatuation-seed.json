@@ -1,0 +1,122 @@
+[
+  {
+    "name": "J'ouvert Caribbean Kitchen & Bar",
+    "stationId": "lindbergh-center",
+    "cuisine": "Caribbean",
+    "source": "infatuation"
+  },
+  {
+    "name": "Madre Selva",
+    "stationId": "lindbergh-center",
+    "cuisine": "Peruvian",
+    "source": "infatuation"
+  },
+  {
+    "name": "The Deer And The Dove",
+    "stationId": "decatur",
+    "cuisine": "American",
+    "source": "infatuation"
+  },
+  {
+    "name": "Brick Store Pub",
+    "stationId": "decatur",
+    "cuisine": "American",
+    "source": "infatuation"
+  },
+  {
+    "name": "The Consulate",
+    "stationId": "midtown",
+    "cuisine": "International",
+    "source": "infatuation"
+  },
+  {
+    "name": "Xi'an Gourmet House",
+    "stationId": "midtown",
+    "cuisine": "Chinese",
+    "source": "infatuation"
+  },
+  {
+    "name": "Bona Fide Deluxe",
+    "stationId": "edgewood-candler-park",
+    "cuisine": "Sandwiches",
+    "source": "infatuation"
+  },
+  {
+    "name": "The Flying Biscuit Cafe",
+    "stationId": "edgewood-candler-park",
+    "cuisine": "Sandwiches",
+    "source": "infatuation"
+  },
+  {
+    "name": "Stereo",
+    "stationId": "inman-park-reynoldstown",
+    "cuisine": "Bar",
+    "source": "infatuation"
+  },
+  {
+    "name": "Lloyd's Restaurant & Lounge",
+    "stationId": "inman-park-reynoldstown",
+    "cuisine": "Pizza",
+    "source": "infatuation"
+  },
+  {
+    "name": "The Daily",
+    "stationId": "inman-park-reynoldstown",
+    "cuisine": "Coffee",
+    "source": "infatuation"
+  },
+  {
+    "name": "Kitty Dare",
+    "stationId": "inman-park-reynoldstown",
+    "cuisine": "Mediterranean",
+    "source": "infatuation"
+  },
+  {
+    "name": "Reuben's Deli",
+    "stationId": "five-points",
+    "cuisine": "Sandwiches",
+    "source": "infatuation"
+  },
+  {
+    "name": "Eighty7Sweets Vegan Ice Cream Company",
+    "stationId": "five-points",
+    "cuisine": "Ice Cream",
+    "source": "infatuation"
+  },
+  {
+    "name": "Wadada Healthy Market & Juice Bar",
+    "stationId": "west-end",
+    "cuisine": "Vegan",
+    "source": "infatuation"
+  },
+  {
+    "name": "Tassili's Raw Reality Caf\u00e9",
+    "stationId": "west-end",
+    "cuisine": "Vegan",
+    "source": "infatuation"
+  },
+  {
+    "name": "Kupcakerie",
+    "stationId": "east-point",
+    "cuisine": "Dessert",
+    "source": "infatuation"
+  },
+  {
+    "name": "Chairs Upstairs Bar & Restaurant",
+    "stationId": "east-point",
+    "cuisine": "Bar Food",
+    "source": "infatuation"
+  },
+  {
+    "name": "Tom, Dick & Hank",
+    "stationId": "college-park",
+    "cuisine": "BBQ",
+    "source": "infatuation"
+  },
+  {
+    "name": "T's Brunch Bar",
+    "stationId": "college-park",
+    "cuisine": "American",
+    "source": "infatuation"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.7542188,
+    "lng": -84.3759441,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.7544508,
+    "lng": -84.3723071,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.7465471,
+    "lng": -84.3767488,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.7465069,
+    "lng": -84.3739539,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.746382,
+    "lng": -84.3747425,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.7588171,
+    "lng": -84.3881428,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.7633081,
+    "lng": -84.3870592,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Dome",
+    "lat": 33.7532197,
+    "lng": -84.3981957,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Inman Park",
+    "lat": 33.7638745,
+    "lng": -84.3489692,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Decatur",
+    "lat": 33.7753974,
+    "lng": -84.2951077,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Decatur",
+    "lat": 33.7723786,
+    "lng": -84.2946035,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "North Avenue",
+    "lat": 33.7724856,
+    "lng": -84.384436,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7773749,
+    "lng": -84.3860936,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7790582,
+    "lng": -84.3844789,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7799633,
+    "lng": -84.3875474,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7815907,
+    "lng": -84.3798816,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7818672,
+    "lng": -84.3828964,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7816309,
+    "lng": -84.3802947,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7857506,
+    "lng": -84.3844843,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7766905,
+    "lng": -84.3881831,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.783285,
+    "lng": -84.3819094,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Inman Park",
+    "lat": 33.7637273,
+    "lng": -84.3490174,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.7589464,
+    "lng": -84.3880302,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.761881,
+    "lng": -84.3880838,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Decatur",
+    "lat": 33.7732347,
+    "lng": -84.2899096,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Decatur",
+    "lat": 33.7739838,
+    "lng": -84.2962664,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.7611853,
+    "lng": -84.3832827,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.7605252,
+    "lng": -84.3862331,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Airport",
+    "lat": 33.6410264,
+    "lng": -84.4416046,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Five Points",
+    "lat": 33.7557419,
+    "lng": -84.3897039,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Garnett",
+    "lat": 33.749879,
+    "lng": -84.4010282,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7844487,
+    "lng": -84.3846264,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.7542277,
+    "lng": -84.3761856,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "King Memorial",
+    "lat": 33.7542434,
+    "lng": -84.37397,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7813789,
+    "lng": -84.3808579,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "North Avenue",
+    "lat": 33.7726127,
+    "lng": -84.3846211,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Sandy Springs",
+    "lat": 33.9295096,
+    "lng": -84.3461609,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Chamblee",
+    "lat": 33.8876244,
+    "lng": -84.3136954,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Dunwoody",
+    "lat": 33.9274443,
+    "lng": -84.3426687,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Peachtree Center",
+    "lat": 33.7599789,
+    "lng": -84.3861835,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Ashby",
+    "lat": 33.7549681,
+    "lng": -84.4170463,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "College Park",
+    "lat": 33.65299,
+    "lng": -84.4497263,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "College Park",
+    "lat": 33.6514494,
+    "lng": -84.449839,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Inman Park/Reynoldstown",
+    "lat": 33.7586432,
+    "lng": -84.3486285,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Inman Park/Reynoldstown",
+    "lat": 33.752243,
+    "lng": -84.3498087,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Inman Park/Reynoldstown",
+    "lat": 33.7624162,
+    "lng": -84.3581718,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Decatur",
+    "lat": 33.7744075,
+    "lng": -84.2951211,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "Arts Center",
+    "lat": 33.7892192,
+    "lng": -84.3879658,
+    "folder": "restaurant"
+  },
+  {
+    "stationLabel": "West End",
+    "lat": 33.7375675,
+    "lng": -84.4223732,
+    "folder": "attraction"
+  },
+  {
+    "stationLabel": "Civic Center",
+    "lat": 33.7689449,
+    "lng": -84.385128,
+    "folder": "attraction"
+  },
+  {
+    "stationLabel": "North Avenue",
+    "lat": 33.7729404,
+    "lng": -84.380064,
+    "folder": "attraction"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7813946,
+    "lng": -84.3842268,
+    "folder": "attraction"
+  },
+  {
+    "stationLabel": "Midtown",
+    "lat": 33.7817869,
+    "lng": -84.3804073,
+    "folder": "attraction"
+  },
+  {
+    "stationLabel": "Decatur",
+    "lat": 33.7739838,
+    "lng": -84.2962664,
+    "folder": "attraction"
+  }
+]

@@ -10,7 +10,8 @@
     "tokens:build": "style-dictionary build --config style-dictionary.config.mjs",
     "seed:gtfs": "tsx scripts/seed/ingest-gtfs.ts",
     "seed:pois": "tsx scripts/seed/build-pois.ts",
-    "discover": "tsx scripts/seed/discover-pois.ts"
+    "discover": "tsx scripts/seed/discover-pois.ts",
+    "match-external": "tsx scripts/seed/match-external-pois.ts"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

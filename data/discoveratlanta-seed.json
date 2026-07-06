@@ -1,0 +1,1310 @@
+[
+  {
+    "name": "Hawkers Asian Street Food",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Fogo de Ch\u00e3o Brazilian Steakhouse",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "North Italia",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Joey D's Oak Room",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "La Madeleine",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Politan Row at Ashford Lane",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Eclipse di Luna Dunwoody",
+    "stationId": "sandy-springs",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Perimeter Mall",
+    "stationId": "sandy-springs",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Regal Perimeter Pointe",
+    "stationId": "sandy-springs",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mikata",
+    "stationId": "dunwoody",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Iron Hill Brewery & Restaurant",
+    "stationId": "dunwoody",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Velvet Taco",
+    "stationId": "dunwoody",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Yao Atlanta",
+    "stationId": "dunwoody",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Del Frisco's Double Eagle Steakhouse",
+    "stationId": "dunwoody",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Perimeter Mall",
+    "stationId": "dunwoody",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Buford Highway Farmers Market",
+    "stationId": "doraville",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Van Gogh: The Immersive Experience",
+    "stationId": "doraville",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "H Mart Doraville",
+    "stationId": "doraville",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Red Fox Billiards Club",
+    "stationId": "doraville",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mics Karaoke",
+    "stationId": "doraville",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Happy Karaoke",
+    "stationId": "doraville",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Las Delicias De La Abuela",
+    "stationId": "doraville",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Yokohama Sushi",
+    "stationId": "doraville",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Arepa Grill Doraville",
+    "stationId": "doraville",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sweet Hut Bakery Cafe",
+    "stationId": "doraville",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Kamayan ATL",
+    "stationId": "doraville",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "DeKalb-Peachtree Airport",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Culture Center of Taipei",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta Chinatown",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Antique Factory",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta Discount Music",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "My Favorite Place",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Treasure Mart",
+    "stationId": "chamblee",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Hopstix",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "BLUETOP Restaurant",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Oaxaca",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Frosty Caboose",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Vintage Pizzeria",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "D'Cuban Cafe",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Southbound",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Gus's World Famous Fried Chicken",
+    "stationId": "chamblee",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Brookhaven Park",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Time to Escape Atlanta Escape Room",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "LOOK Dine-In Cinemas Brookhaven",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Oglethorpe University Museum of Art",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta Silver & Antiques",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Grindhouse Killer Burgers",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Fox Bros Bar-B-Q",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Terra Terroir",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Ashford",
+    "stationId": "brookhaven-oglethorpe",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Lenox Square",
+    "stationId": "buckhead",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Phipps Plaza",
+    "stationId": "buckhead",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "AMC Phipps Plaza 14",
+    "stationId": "buckhead",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Candytopia",
+    "stationId": "buckhead",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "LEGO Discovery Center",
+    "stationId": "buckhead",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sloomoo Institute",
+    "stationId": "buckhead",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "South City Kitchen Buckhead",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Bistro Niko",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "5Church Buckhead",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sister",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Seven Lamps",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Flying Biscuit Cafe",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "St. Cecilia",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Zakia Modern Lebanese Restaurant",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Nobu Atlanta",
+    "stationId": "buckhead",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Lenox Square",
+    "stationId": "lenox",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Phipps Plaza",
+    "stationId": "lenox",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sloomoo Institute",
+    "stationId": "lenox",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Spaceman",
+    "stationId": "lenox",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Lenox Square Food Court",
+    "stationId": "lenox",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Silom Thai & Sushi Bar",
+    "stationId": "lenox",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Vision Restaurant and Rooftop",
+    "stationId": "lindbergh-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "26 Thai Kitchen and Bar",
+    "stationId": "lindbergh-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Brix and Stones Pizzeria",
+    "stationId": "lindbergh-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "J'ouvert Caribbean Kitchen and Bar",
+    "stationId": "lindbergh-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Boiler Seafood",
+    "stationId": "lindbergh-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "High Museum of Art",
+    "stationId": "arts-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "MODA",
+    "stationId": "arts-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Woodruff Arts Center",
+    "stationId": "arts-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta Symphony Orchestra",
+    "stationId": "arts-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Alliance Theater",
+    "stationId": "arts-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Center for Puppetry Arts",
+    "stationId": "arts-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Jojo's Beloved Cocktail Lounge",
+    "stationId": "arts-center",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Colony Square/Politan Row",
+    "stationId": "arts-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "5Church Midtown",
+    "stationId": "arts-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "South City Kitchen Midtown",
+    "stationId": "arts-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Pour Taproom",
+    "stationId": "arts-center",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Margaret Mitchell House",
+    "stationId": "midtown",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Federal Reserve Bank of Atlanta",
+    "stationId": "midtown",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Wicked Wolf",
+    "stationId": "midtown",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "MidCity",
+    "stationId": "midtown",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Dancing Goats",
+    "stationId": "midtown",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Cypress Street Pint & Plate",
+    "stationId": "midtown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Marlow's Tavern",
+    "stationId": "midtown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "PONKO Chicken",
+    "stationId": "midtown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Ecco Midtown",
+    "stationId": "midtown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Consulate",
+    "stationId": "midtown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Fox Theatre",
+    "stationId": "north-avenue",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Collective Food Hall @ CODA",
+    "stationId": "north-avenue",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Five Iron golf course",
+    "stationId": "north-avenue",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Publik Draft House",
+    "stationId": "north-avenue",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Apotheos Coffee Midtown",
+    "stationId": "north-avenue",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mary Mac's Tea Room",
+    "stationId": "north-avenue",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Varsity",
+    "stationId": "north-avenue",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Lyla Lila",
+    "stationId": "north-avenue",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "El Vinedo Local",
+    "stationId": "north-avenue",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "El Valle",
+    "stationId": "north-avenue",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Bon Ton",
+    "stationId": "north-avenue",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Shakespeare Tavern Playhouse",
+    "stationId": "civic-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Renaissance Park",
+    "stationId": "civic-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta Civic Center",
+    "stationId": "civic-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Retro Grill",
+    "stationId": "civic-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Centennial Olympic Park",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia Aquarium",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "World of Coca Cola",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "SkyView Ferris wheel",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Chick-fil-A College Football Hall Of Fame",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "National Center for Civil and Human Rights",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "AmericasMart Atlanta",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia World Congress Center",
+    "stationId": "peachtree-center",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Red Phone Booth",
+    "stationId": "peachtree-center",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Park Bar",
+    "stationId": "peachtree-center",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "SkyLounge",
+    "stationId": "peachtree-center",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Pulse",
+    "stationId": "peachtree-center",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Alma Cocina Downtown",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Cuts Steakhouse",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Hard Rock Cafe",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Metro Diner",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Hub at Peachtree Center",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Tin Lizzy's",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Sun Dial Restaurant, Bar & View",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sweet Georgia's Juke Joint",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Ray's in the City",
+    "stationId": "peachtree-center",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Station Soccer",
+    "stationId": "five-points",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Underground Atlanta",
+    "stationId": "five-points",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia State University",
+    "stationId": "five-points",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta City Hall",
+    "stationId": "garnett",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia State Capitol",
+    "stationId": "garnett",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Old Lady Gang",
+    "stationId": "garnett",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "No Mas! Cantina",
+    "stationId": "garnett",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Wild Leap",
+    "stationId": "garnett",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "REVERB",
+    "stationId": "garnett",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Omni Coffee & Eggs",
+    "stationId": "garnett",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Mall West End",
+    "stationId": "west-end",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Lee + White",
+    "stationId": "west-end",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Wild Heaven Beer",
+    "stationId": "west-end",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Monday Night Garage",
+    "stationId": "west-end",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Caribbean Delight",
+    "stationId": "west-end",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Oak Street Eats",
+    "stationId": "west-end",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Bakaris Plant-Based Pizza",
+    "stationId": "west-end",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "James Orange Recreation Center",
+    "stationId": "oakland-city",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "El Rocio",
+    "stationId": "east-point",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Eat My Biscuits",
+    "stationId": "east-point",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Thumbs Up Diner",
+    "stationId": "east-point",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Oz Pizza - East Point",
+    "stationId": "east-point",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "BGR Grille",
+    "stationId": "east-point",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Real Milk and Honey",
+    "stationId": "college-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Corner Grille",
+    "stationId": "college-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Tom, Dick & Hank",
+    "stationId": "college-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Nouveau Bar and Grill",
+    "stationId": "college-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "A1 Soulfood",
+    "stationId": "hamilton-e-holmes",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Glaciers Italian Ice",
+    "stationId": "hamilton-e-holmes",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mozley Park Outdoor Swimming Pool",
+    "stationId": "west-lake",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Charles L Harper Memorial Park",
+    "stationId": "ashby",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Busy Bee Cafe",
+    "stationId": "ashby",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mr. Everything Cafe",
+    "stationId": "ashby",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Local Green Atlanta",
+    "stationId": "ashby",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mercedes-Benz Stadium",
+    "stationId": "vine-city",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "State Farm Arena",
+    "stationId": "vine-city",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Dr. Martin Luther King Jr. statue",
+    "stationId": "vine-city",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Clark Atlanta University",
+    "stationId": "vine-city",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia World Congress Center",
+    "stationId": "vine-city",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Wild Leap",
+    "stationId": "vine-city",
+    "category": "bar",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Rosie's Cafe",
+    "stationId": "vine-city",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "REVERB by Hard Rock",
+    "stationId": "vine-city",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Nest on Four",
+    "stationId": "vine-city",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Restaurant 10 Bar and Grill",
+    "stationId": "vine-city",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "No Mas! Cantina",
+    "stationId": "vine-city",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Paschal's Restaurant & Bar",
+    "stationId": "vine-city",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia World Congress Center",
+    "stationId": "sec-district",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "State Farm Arena",
+    "stationId": "sec-district",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Mercedes-Benz Stadium",
+    "stationId": "sec-district",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Top Draft Sports Lounge",
+    "stationId": "sec-district",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "REVERB",
+    "stationId": "sec-district",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia State University",
+    "stationId": "georgia-state",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Georgia State Capitol",
+    "stationId": "georgia-state",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Liberty Plaza",
+    "stationId": "georgia-state",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Atlanta City Hall",
+    "stationId": "georgia-state",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Oakland Cemetery",
+    "stationId": "king-memorial",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Martin Luther King, Jr. National Historical Park",
+    "stationId": "king-memorial",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The King Center",
+    "stationId": "king-memorial",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Slutty Vegan Edgewood",
+    "stationId": "king-memorial",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Breakfast at Barney's",
+    "stationId": "king-memorial",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "DAS BBQ Grant Park",
+    "stationId": "king-memorial",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Kitty Dare",
+    "stationId": "inman-park-reynoldstown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Wrecking Bar Brewpub",
+    "stationId": "inman-park-reynoldstown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Fox Bros. Bar-B-Q",
+    "stationId": "inman-park-reynoldstown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Breaker Breaker",
+    "stationId": "inman-park-reynoldstown",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Candler Park",
+    "stationId": "edgewood-candler-park",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "San Francisco Coffee Roasting Company",
+    "stationId": "edgewood-candler-park",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sean's Candler Park",
+    "stationId": "edgewood-candler-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Bona Fide Deluxe",
+    "stationId": "edgewood-candler-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Flying Biscuit Cafe",
+    "stationId": "edgewood-candler-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Fellini's Pizza",
+    "stationId": "edgewood-candler-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Gigi's Italian Kitchen & Restaurant",
+    "stationId": "edgewood-candler-park",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "StationSoccer",
+    "stationId": "east-lake",
+    "category": "attraction",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Poco Loco Neighborhood Provisions",
+    "stationId": "east-lake",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Wahoo! Grill",
+    "stationId": "east-lake",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Sun in My Belly",
+    "stationId": "east-lake",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Revolution Doughnuts and Coffee",
+    "stationId": "east-lake",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Imperial",
+    "stationId": "east-lake",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Thinking Man Tavern",
+    "stationId": "east-lake",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Reading Room",
+    "stationId": "decatur",
+    "category": "coffee",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "The Iberian Pig",
+    "stationId": "decatur",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Raging Burrito",
+    "stationId": "decatur",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Victory Sandwich Bar",
+    "stationId": "decatur",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Twain's Brewpub and Billards",
+    "stationId": "decatur",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  },
+  {
+    "name": "Fellini's",
+    "stationId": "decatur",
+    "category": "restaurant",
+    "source": "discoveratlanta"
+  }
+]

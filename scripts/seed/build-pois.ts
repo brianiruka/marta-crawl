@@ -7,13 +7,25 @@
  *      hand-curated coffee sheet. Curated ⇒ BYPASSES quality floors.
  *   2. data/discovery/<category>.json — Nearby Search sweeps. Machine-found ⇒
  *      quality floors from scripts/seed/categories.ts apply.
- *   3. data/curation.json — editorial overlay: { "exclude": [placeIds],
+ *   3. data/discovery/external-matches.json (built by match-external-pois.ts)
+ *      — four curated "best MARTA dining/attractions" lists (Rough Draft
+ *      Atlanta, a Google My Maps export, The Infatuation, Discover Atlanta),
+ *      matched to real Places. Curated ⇒ BYPASSES quality floors, same as
+ *      the coffee sheet. A place independently cited by >=3 of the 4 lists
+ *      is flagged topPickEligible — see loadExternalMatchCandidates.
+ *   4. data/curation.json — editorial overlay: { "exclude": [placeIds],
  *      "pin": [placeIds] }. Excluded places are dropped from any source;
- *      pinned places bypass floors and sort first.
+ *      pinned places bypass floors and sort first (but are NOT top-pick
+ *      eligible on their own — that's reserved for the external-list
+ *      consensus above, at least until a CMS handles curation more broadly).
  *
  * Each place is assigned to its nearest station within MAX_DISTANCE_MILES,
  * categorized from its own `types` (see categoryForTypes), capped per
- * station per category, and sorted in crawl-day order.
+ * station per category, and sorted in crawl-day order. Places dropped for
+ * being too far from any station are logged individually when they came
+ * from one of the external lists (not just folded into a silent counter),
+ * since a "top pick" claim getting the distance wrong would be the most
+ * visible kind of mistake this pipeline could make.
  *
  * Usage: npm run seed:pois
  */
@@ -29,14 +41,24 @@ import {
   discoveryCategories,
 } from "./categories";
 import type { CategoryCache } from "./discover-pois";
+import type { MatchResult } from "./match-external-pois";
 
 const CSV_PATH = "data/coffee-ga-seed.csv";
 const LOCATION_CACHE_PATH = "data/place-locations.json";
 const DISCOVERY_DIR = "data/discovery";
+const EXTERNAL_MATCHES_PATH = "data/discovery/external-matches.json";
 const CURATION_PATH = "data/curation.json";
 const OUTPUT_PATH = "src/data/pois.generated.ts";
 const MAX_DISTANCE_MILES = 0.75;
 const WALK_MPH = 3;
+const TOP_PICK_MIN_SOURCES = 3;
+
+const SOURCE_LABELS: Record<string, string> = {
+  roughdraft: "Rough Draft Atlanta",
+  mymap: "MARTA rider map",
+  infatuation: "The Infatuation",
+  discoveratlanta: "Discover Atlanta",
+};
 
 const MARTA_CITIES = new Set([
   "Atlanta",
@@ -62,6 +84,11 @@ type Candidate = {
   loc: { lat: number; lng: number };
   neighborhood?: string;
   curated: boolean;
+  topPickEligible?: boolean;
+  topPickSources?: string[];
+  /** For distance-flag reporting only — which external list(s) and cited
+   * station(s) this candidate came from. Undefined for sheet/discovery. */
+  externalOrigin?: { sources: string[]; stationLabel: string };
 };
 
 type Curation = { exclude: string[]; pin: string[] };
@@ -115,7 +142,12 @@ function loadDiscoveryCandidates(): Candidate[] {
   if (!existsSync(DISCOVERY_DIR)) return [];
   const candidates: Candidate[] = [];
   for (const file of readdirSync(DISCOVERY_DIR)) {
-    if (!file.endsWith(".json") || file === "call-log.json") continue;
+    if (
+      !file.endsWith(".json") ||
+      file === "call-log.json" ||
+      file === "external-matches.json"
+    )
+      continue;
     const cache: CategoryCache = JSON.parse(
       readFileSync(`${DISCOVERY_DIR}/${file}`, "utf8"),
     );
@@ -137,6 +169,55 @@ function loadDiscoveryCandidates(): Candidate[] {
         });
       }
     }
+  }
+  return candidates;
+}
+
+/** Loads matched entries from match-external-pois.ts's cache, groups them by
+ * resolved Place ID (NOT by name — two mentions of the same chain name near
+ * different stations resolve to different Place IDs and must stay separate),
+ * and counts how many DISTINCT sources reference each place. A place cited
+ * by >= TOP_PICK_MIN_SOURCES distinct sources becomes topPickEligible. */
+function loadExternalMatchCandidates(): Candidate[] {
+  if (!existsSync(EXTERNAL_MATCHES_PATH)) return [];
+  const cache: Record<string, MatchResult> = JSON.parse(
+    readFileSync(EXTERNAL_MATCHES_PATH, "utf8"),
+  );
+
+  const byPlaceId = new Map<string, MatchResult[]>();
+  for (const result of Object.values(cache)) {
+    if (result.status !== "matched" || !result.placeId) continue;
+    (byPlaceId.get(result.placeId) ?? byPlaceId.set(result.placeId, []).get(result.placeId)!).push(
+      result,
+    );
+  }
+
+  const candidates: Candidate[] = [];
+  for (const [placeId, results] of byPlaceId) {
+    const first = results[0];
+    if (!first.lat || !first.lng) continue;
+    const distinctSources = [...new Set(results.map((r) => r.source))];
+    const topPickEligible = distinctSources.length >= TOP_PICK_MIN_SOURCES;
+    const stationLabel = [...new Set(results.map((r) => r.stationId).filter(Boolean))].join(", ");
+    candidates.push({
+      placeId,
+      name: first.matchedName ?? first.query,
+      category: categoryForTypes(first.types ?? []),
+      rating: first.rating,
+      reviewCount: first.reviewCount,
+      mapsUrl: first.mapsUrl,
+      websiteUrl: first.websiteUrl,
+      loc: { lat: first.lat, lng: first.lng },
+      curated: true, // cited by a curated list ⇒ bypasses quality floors
+      topPickEligible,
+      topPickSources: topPickEligible
+        ? distinctSources.map((s) => SOURCE_LABELS[s] ?? s)
+        : undefined,
+      externalOrigin: {
+        sources: distinctSources.map((s) => SOURCE_LABELS[s] ?? s),
+        stationLabel,
+      },
+    });
   }
   return candidates;
 }
@@ -169,15 +250,17 @@ function main() {
 
   const sheet = loadSheetCandidates();
   const discovered = loadDiscoveryCandidates();
+  const external = loadExternalMatchCandidates();
   console.log(
-    `Candidates: ${sheet.length} from sheet (curated), ${discovered.length} from discovery caches`,
+    `Candidates: ${sheet.length} from sheet (curated), ${discovered.length} from discovery caches, ` +
+      `${external.length} from external-list matches (${external.filter((c) => c.topPickEligible).length} top-pick eligible)`,
   );
 
-  // Dedupe by Place ID. Sheet first: curated status wins over a discovery
-  // duplicate of the same place, but missing fields (e.g. the sheet has no
-  // website column) are filled in from the duplicate.
+  // Dedupe by Place ID. External-match candidates go FIRST: their
+  // topPickEligible/topPickSources must win as the base record, with
+  // sheet/discovery only filling in fields the external match lacks.
   const byPlaceId = new Map<string, Candidate>();
-  for (const c of [...sheet, ...discovered]) {
+  for (const c of [...external, ...sheet, ...discovered]) {
     if (excluded.has(c.placeId)) continue;
     const existing = byPlaceId.get(c.placeId);
     if (!existing) {
@@ -187,11 +270,15 @@ function main() {
       existing.rating ??= c.rating;
       existing.reviewCount ??= c.reviewCount;
       existing.mapsUrl ??= c.mapsUrl;
+      existing.topPickEligible ??= c.topPickEligible;
+      existing.topPickSources ??= c.topPickSources;
+      existing.externalOrigin ??= c.externalOrigin;
     }
   }
 
   const perStation: Record<string, (Poi & { _pinned: boolean })[]> = {};
   const dropped = { floor: 0, distance: 0 };
+  const distanceFlags: { name: string; sources: string; stationLabel: string; nearestStationId: string; miles: number }[] = [];
   for (const c of byPlaceId.values()) {
     const isPinned = pinned.has(c.placeId);
     if (!c.curated && !isPinned && !passesFloor(c)) {
@@ -207,6 +294,18 @@ function main() {
     }
     if (!nearest || nearest.miles > MAX_DISTANCE_MILES) {
       dropped.distance++;
+      // Silent counters are fine for random discovery noise, but a place
+      // some human vouched for on a curated list deserves a visible flag,
+      // not just a number — this is what the user explicitly asked for.
+      if (c.externalOrigin) {
+        distanceFlags.push({
+          name: c.name,
+          sources: c.externalOrigin.sources.join(", "),
+          stationLabel: c.externalOrigin.stationLabel,
+          nearestStationId: nearest?.id ?? "(none found)",
+          miles: nearest ? Math.round(nearest.miles * 100) / 100 : Infinity,
+        });
+      }
       continue;
     }
     const miles = Math.round(nearest.miles * 100) / 100;
@@ -223,6 +322,8 @@ function main() {
       websiteUrl: c.websiteUrl,
       distanceMiles: miles,
       walkMinutes,
+      topPickEligible: c.topPickEligible,
+      topPickSources: c.topPickSources,
       _pinned: isPinned,
     });
   }
@@ -270,8 +371,22 @@ function main() {
       `(${dropped.floor} below quality floor, ${dropped.distance} beyond ${MAX_DISTANCE_MILES} mi).`,
   );
 
+  if (distanceFlags.length > 0) {
+    console.log(
+      `\n⚠ ${distanceFlags.length} externally-listed place(s) dropped for being beyond ${MAX_DISTANCE_MILES} mi — ` +
+        `worth a human look before assuming they're correctly excluded:`,
+    );
+    for (const f of distanceFlags) {
+      console.log(
+        `  "${f.name}" — cited by ${f.sources} (near "${f.stationLabel}"); ` +
+          `nearest actual station is ${f.nearestStationId} at ${f.miles} mi`,
+      );
+    }
+  }
+
   const output = `// GENERATED by scripts/seed/build-pois.ts — do not edit by hand.
-// Sources: data/coffee-ga-seed.csv, data/discovery/*.json, data/curation.json.
+// Sources: data/coffee-ga-seed.csv, data/discovery/*.json,
+// data/discovery/external-matches.json, data/curation.json.
 // Regenerate with: npm run seed:pois
 import type { Poi } from "./pois";
 

@@ -67,11 +67,26 @@ function PoiCard({
             <span className="font-medium text-foreground">{poi.name}</span>
           )}
           {isTopPick && (
-            <Badge variant="secondary" className="shrink-0">
+            <Badge
+              variant="secondary"
+              className="shrink-0"
+              title={
+                poi.topPickSources
+                  ? `Featured in ${poi.topPickSources.join(", ")}`
+                  : undefined
+              }
+            >
               Top pick
             </Badge>
           )}
         </div>
+        {isTopPick && poi.topPickSources && (
+          // Same claim as the badge's hover title, spelled out so it's
+          // visible without hover (hover doesn't exist on touch).
+          <p className="text-xs text-muted-foreground">
+            Featured in {poi.topPickSources.join(", ")}
+          </p>
+        )}
         <p className="text-sm text-muted-foreground">{poi.description}</p>
         {(poi.rating !== undefined ||
           poi.walkMinutes !== undefined ||
@@ -164,7 +179,12 @@ export function PoiList({
             </h3>
             <div className="flex flex-col gap-2">
               {items.map((poi, i) => (
-                <PoiCard key={poi.name} poi={poi} station={station} isTopPick={i === 0} />
+                <PoiCard
+                  key={poi.name}
+                  poi={poi}
+                  station={station}
+                  isTopPick={i === 0 && poi.topPickEligible === true}
+                />
               ))}
             </div>
           </motion.div>

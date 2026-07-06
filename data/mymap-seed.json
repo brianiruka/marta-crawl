@@ -1,0 +1,1865 @@
+[
+  {
+    "name": "Edgewood Speakeasy",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar",
+    "lat": 33.7541074,
+    "lng": -84.3768721,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Joystick Gamebar",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar",
+    "lat": 33.7542255,
+    "lng": -84.3736696,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Mother",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar",
+    "lat": 33.754201,
+    "lng": -84.3729079,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Erosol (Department Store)",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar",
+    "lat": 33.7541921,
+    "lng": -84.3722641,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Cafe Circa",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7544508,
+    "lng": -84.3725216,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Edgewood Corner Tavern",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar",
+    "lat": 33.7544508,
+    "lng": -84.3724036,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Six Feet Under",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7465827,
+    "lng": -84.3728328,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Republic Social House",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7465917,
+    "lng": -84.3730152,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Carroll Street Cafe",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7489825,
+    "lng": -84.3679458,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Milltown Arms Tavern",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar",
+    "lat": 33.7496248,
+    "lng": -84.3679565,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Park Bar",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7581793,
+    "lng": -84.3927991,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Sidebar",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "Bar",
+    "lat": 33.7570152,
+    "lng": -84.3899212,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Der Biergarten",
+    "stationLabel": "Dome",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7618453,
+    "lng": -84.3967044,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Anatolia Cafe and Hookah Lounge",
+    "stationLabel": "Five Points",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.755316,
+    "lng": -84.3893284,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "BQE",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7545667,
+    "lng": -84.3791628,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Albert",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7619746,
+    "lng": -84.3575227,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Elmyr",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7635779,
+    "lng": -84.3513671,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Wrecking Bar Brewpub",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.762211,
+    "lng": -84.349688,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Brick Store Pub",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7751967,
+    "lng": -84.2957193,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Square Pub",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7745925,
+    "lng": -84.295679,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "SOS Tiki Bar",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Bar",
+    "lat": 33.7742291,
+    "lng": -84.2952257,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Victory Sandwich Bar",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7742135,
+    "lng": -84.2951694,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Pinewood",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7753595,
+    "lng": -84.2998901,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Revival",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7716651,
+    "lng": -84.2946464,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Corner Pub",
+    "stationLabel": "Avondale",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7731634,
+    "lng": -84.2858648,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Three Taverns Craft Brewery",
+    "stationLabel": "Avondale",
+    "categoryLabel": "Brewery",
+    "lat": 33.7725435,
+    "lng": -84.2849582,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "BlueTarp Brewing Co",
+    "stationLabel": "Avondale",
+    "categoryLabel": "Brewery",
+    "lat": 33.7740106,
+    "lng": -84.2836037,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Sound Table",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7541921,
+    "lng": -84.3718135,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Publik Draft House",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7723741,
+    "lng": -84.3850744,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Top Flr",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7729493,
+    "lng": -84.3803778,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Barrelhouse",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7766816,
+    "lng": -84.387888,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Escorpion",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7762067,
+    "lng": -84.3846399,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Lawrence",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7789913,
+    "lng": -84.3824995,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Takorea",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7768822,
+    "lng": -84.3831593,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Hudson Grille Midtown",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7803557,
+    "lng": -84.3844521,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Taco Mac Metropolis",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7805251,
+    "lng": -84.3838835,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Zocalo Mexican",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7815194,
+    "lng": -84.3810725,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Ri Ra Irish Pub",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7842748,
+    "lng": -84.3841463,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Deadwood Saloon",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Bar",
+    "lat": 33.7847207,
+    "lng": -84.3854982,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Tap: A Gastropub",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7869098,
+    "lng": -84.3835133,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "East Point Corner Tavern",
+    "stationLabel": "East Point",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.6792648,
+    "lng": -84.4403869,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Oz Pizza",
+    "stationLabel": "East Point",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.6788229,
+    "lng": -84.440521,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "One Flew South",
+    "stationLabel": "Airport",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.6391328,
+    "lng": -84.4419479,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Gordon Biersch Brewery",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7778498,
+    "lng": -84.384495,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Front Page News",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7848076,
+    "lng": -84.3843877,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Pub 71",
+    "stationLabel": "Brookhaven",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8613042,
+    "lng": -84.3398309,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Hudson Grille",
+    "stationLabel": "Brookhaven",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8610526,
+    "lng": -84.3400079,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "SkyLounge",
+    "stationLabel": "Dome",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7571,
+    "lng": -84.3929493,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Hudson Grille Downtown",
+    "stationLabel": "Dome",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7572338,
+    "lng": -84.3934751,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Taco Mac Philips Arena",
+    "stationLabel": "Dome",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7568681,
+    "lng": -84.3964255,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Game-X",
+    "stationLabel": "Dome",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7618408,
+    "lng": -84.3957013,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Stats Food + Drinks",
+    "stationLabel": "Dome",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7620705,
+    "lng": -84.3966857,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Imperial",
+    "stationLabel": "East Lake",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7660998,
+    "lng": -84.3063676,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Java Lords",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Bar",
+    "lat": 33.7639079,
+    "lng": -84.3509299,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Euclid Ave Yacht Club",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Bar",
+    "lat": 33.7648489,
+    "lng": -84.350144,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Porter Beer Bar",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7652257,
+    "lng": -84.3496773,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Little 5 Corner Tavern",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7655713,
+    "lng": -84.3493178,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Front Page News",
+    "stationLabel": "Inman Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7639681,
+    "lng": -84.348709,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Bada Bings",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7496515,
+    "lng": -84.3792915,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "JR Crickets",
+    "stationLabel": "Five Points",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7561233,
+    "lng": -84.3898112,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Raging Burrito",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7743383,
+    "lng": -84.2954162,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Marlay House",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7753885,
+    "lng": -84.3033662,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Taco Mac Decatur",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.775413,
+    "lng": -84.2995253,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Kimball House",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7716116,
+    "lng": -84.2922699,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Trackside Tavern",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7711344,
+    "lng": -84.291991,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Thinking Man Tavern",
+    "stationLabel": "East Lake",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7678791,
+    "lng": -84.3045974,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "KR Steakbar",
+    "stationLabel": "Lindbergh",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.817712,
+    "lng": -84.3761909,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Taco Mac",
+    "stationLabel": "Lindbergh",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8222066,
+    "lng": -84.3682757,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Seven Lamps",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8458077,
+    "lng": -84.3648612,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Twin Peaks Restaurant",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8473849,
+    "lng": -84.372822,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Taco Mac Perimeter",
+    "stationLabel": "Sandy Springs",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.9291535,
+    "lng": -84.3452597,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Bulldogs",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Bar",
+    "lat": 33.779018,
+    "lng": -84.3840176,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Prickly Pear Taqueria",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7797705,
+    "lng": -84.3875326,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Eleventh Street Pub",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7830755,
+    "lng": -84.3873972,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Steamhouse Lounge",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.783392,
+    "lng": -84.3875742,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Nook on Piedmont Park",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7860672,
+    "lng": -84.3784547,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Midtown Tavern",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7696673,
+    "lng": -84.382242,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Metro Cafe Diner",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7599276,
+    "lng": -84.3863082,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Slice Downtown",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7568703,
+    "lng": -84.3900901,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Manchester Arms",
+    "stationLabel": "College Park",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.6594512,
+    "lng": -84.4448018,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Sam Adams Brewhouse",
+    "stationLabel": "Airport",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.6404547,
+    "lng": -84.4407034,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Blu Cantina",
+    "stationLabel": "Garnett",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7476109,
+    "lng": -84.4016907,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Spinning Pie",
+    "stationLabel": "Garnett",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7475752,
+    "lng": -84.4018033,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Studio 281",
+    "stationLabel": "Garnett",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7470355,
+    "lng": -84.4026214,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Flip Flops",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Bar",
+    "lat": 33.7858665,
+    "lng": -84.3844789,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Negril Village",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7715848,
+    "lng": -84.3864557,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Ten Atlanta",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7815372,
+    "lng": -84.3807828,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Red Pepper Taqueria",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8425641,
+    "lng": -84.3704563,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Tavern at Phipps",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8519826,
+    "lng": -84.3618464,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Southbound",
+    "stationLabel": "Chamblee",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8922556,
+    "lng": -84.3010569,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Union Hill Kitchen",
+    "stationLabel": "Chamblee",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8907126,
+    "lng": -84.3023765,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Bucket Shop Cafe",
+    "stationLabel": "Lenox",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.8493095,
+    "lng": -84.3607038,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Royal Oak Pub",
+    "stationLabel": "Sandy Springs",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.9321178,
+    "lng": -84.348658,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Mardi Gras Cafe",
+    "stationLabel": "Ashby",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.7545623,
+    "lng": -84.4166493,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Wild Heaven Brewery",
+    "stationLabel": "Avondale",
+    "categoryLabel": "Brewery",
+    "lat": 33.7764809,
+    "lng": -84.275769,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Polaris",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "Restaurant/Bar",
+    "lat": 33.761551,
+    "lng": -84.3869734,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "One-Eared Stag",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": null,
+    "lat": 33.7572294,
+    "lng": -84.3541324,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Figo",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "Pasta",
+    "lat": 33.7586253,
+    "lng": -84.3489772,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Fox Bros. BBQ",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "Texas-style BBQ",
+    "lat": 33.7610604,
+    "lng": -84.3474698,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Cabbage Pie",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Pizza",
+    "lat": 33.749511,
+    "lng": -84.3679029,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Agave",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Fancy tex mex",
+    "lat": 33.7479298,
+    "lng": -84.3678439,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Grindhouse Killer Burgers",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Tasty hamburgers",
+    "lat": 33.772548,
+    "lng": -84.2963147,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Taqueria del Sol",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Tacos",
+    "lat": 33.7759637,
+    "lng": -84.3020654,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Ration and Dram",
+    "stationLabel": "Edgewood - Candler Park",
+    "categoryLabel": "Neighborhood restaurant/bar",
+    "lat": 33.758545,
+    "lng": -84.3315804,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Dish Dive",
+    "stationLabel": "East Lake",
+    "categoryLabel": null,
+    "lat": 33.7646058,
+    "lng": -84.3142211,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Wahoo! Grill",
+    "stationLabel": "East Lake",
+    "categoryLabel": null,
+    "lat": 33.76486,
+    "lng": -84.3107772,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "ParkGrounds",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "Coffee shop/bar/dog park",
+    "lat": 33.7501154,
+    "lng": -84.354583,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Grain",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7778988,
+    "lng": -84.3874937,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Senor Patron",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Mexican",
+    "lat": 33.7783581,
+    "lng": -84.3849939,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Hi-Five Diner",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7792053,
+    "lng": -84.3837547,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Empire State South",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7809933,
+    "lng": -84.3836206,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "World of Beer",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7776492,
+    "lng": -84.3842,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Fado Irish Pub",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7796512,
+    "lng": -84.3840015,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Torched Hop",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "Brewpub",
+    "lat": 33.7723696,
+    "lng": -84.3793076,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "El Rey Tex-Mex",
+    "stationLabel": "East Point",
+    "categoryLabel": null,
+    "lat": 33.6771779,
+    "lng": -84.4413149,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Smoke Ring",
+    "stationLabel": "Garnett",
+    "categoryLabel": "BBQ",
+    "lat": 33.7521894,
+    "lng": -84.3981636,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Mac McGee Irish Pub",
+    "stationLabel": "Decatur",
+    "categoryLabel": null,
+    "lat": 33.7743997,
+    "lng": -84.2961632,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Edgewood Pizzeria",
+    "stationLabel": "King Memorial",
+    "categoryLabel": null,
+    "lat": 33.7544552,
+    "lng": -84.3719262,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Georgia Beer Garden",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Bar food, large Georgia-only beer selection, TVs upstairs, patio",
+    "lat": 33.7544954,
+    "lng": -84.3738788,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Atwoods Pizza Cafe",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Pizza, sandwiches, coffee, beer",
+    "lat": 33.7773549,
+    "lng": -84.3869948,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Rreal Tacos",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Tacos",
+    "lat": 33.7774084,
+    "lng": -84.3834329,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Soul Vegetarian",
+    "stationLabel": "West End",
+    "categoryLabel": "Vegan",
+    "lat": 33.738259,
+    "lng": -84.416585,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Bhojanic",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Indian",
+    "lat": 33.8459057,
+    "lng": -84.365505,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "NaanStop",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Fast casual Indian",
+    "lat": 33.8479551,
+    "lng": -84.3739861,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Gordon Biersch",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Chain brewpub",
+    "lat": 33.8442171,
+    "lng": -84.3730795,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Seven Lamps",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "No idea",
+    "lat": 33.8471175,
+    "lng": -84.3654406,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Bistro Niko",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "Fancy?",
+    "lat": 33.8465918,
+    "lng": -84.3684661,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Bone Lick BBQ",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Barbeque, beer, cocktails, late night",
+    "lat": 33.7542679,
+    "lng": -84.3769258,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Hungry Ghose",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "Late night vietnamese/thai",
+    "lat": 33.7542634,
+    "lng": -84.3764001,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Fritti",
+    "stationLabel": "Inman Park/Reynoldstown",
+    "categoryLabel": "Pizza",
+    "lat": 33.7629201,
+    "lng": -84.3577534,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Beetlecat",
+    "stationLabel": "Inman Park/Reynoldstown",
+    "categoryLabel": null,
+    "lat": 33.7626481,
+    "lng": -84.3582952,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Hampton + Hudson",
+    "stationLabel": "Inman Park/Reynoldstown",
+    "categoryLabel": "Bar w/ TVs",
+    "lat": 33.7621174,
+    "lng": -84.3589282,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Brush Sushi",
+    "stationLabel": "Decatur",
+    "categoryLabel": "sushi",
+    "lat": 33.773509,
+    "lng": -84.2950889,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Sapori di Napoli",
+    "stationLabel": "Decatur",
+    "categoryLabel": "Pizza",
+    "lat": 33.7734376,
+    "lng": -84.2950943,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Monday Night Garage",
+    "stationLabel": "West End",
+    "categoryLabel": "Brewery",
+    "lat": 33.7291537,
+    "lng": -84.4180816,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Barcelona Wine Bar",
+    "stationLabel": "Inman Park/Reynodstown",
+    "categoryLabel": null,
+    "lat": 33.76253,
+    "lng": -84.358901,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Canteen",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7771408,
+    "lng": -84.3892318,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "The Consulate",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Tapas, cocktails",
+    "lat": 33.7817067,
+    "lng": -84.3866032,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Babalu",
+    "stationLabel": "Midtown",
+    "categoryLabel": "Tapas & Tacos",
+    "lat": 33.7805318,
+    "lng": -84.3870565,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Establishment",
+    "stationLabel": "Arts Center",
+    "categoryLabel": null,
+    "lat": 33.7868385,
+    "lng": -84.382596,
+    "folder": "restaurant",
+    "source": "mymap"
+  },
+  {
+    "name": "Martin Luther King Jr National Historic Site",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "http://www.thekingcenter.org/",
+    "lat": 33.7563329,
+    "lng": -84.3734336,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Oakland Cemetery",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "http://www.oaklandcemetery.com/",
+    "lat": 33.7481082,
+    "lng": -84.3749142,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Little Five Points",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": null,
+    "lat": 33.764399,
+    "lng": -84.350444,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Inman Park Historic District",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "http://inmanpark.org/about-inman-park/",
+    "lat": 33.7567432,
+    "lng": -84.355216,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Candler Park\u00a0",
+    "stationLabel": "Edgewood-Candler Park",
+    "categoryLabel": "http://www.candlerpark.org/",
+    "lat": 33.7661265,
+    "lng": -84.3378782,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Downtown Decatur Businesses",
+    "stationLabel": "Decatur",
+    "categoryLabel": "http://www.visitdecaturgeorgia.com/index.aspx?page=9",
+    "lat": 33.7750763,
+    "lng": -84.2952525,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Castleberry Hill Historic Creative District",
+    "stationLabel": "Garnett",
+    "categoryLabel": "http://www.castleberryhill.org/",
+    "lat": 33.7495356,
+    "lng": -84.3993115,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Georgia State University",
+    "stationLabel": "Georgia State",
+    "categoryLabel": "http://www.gsu.edu/",
+    "lat": 33.7529789,
+    "lng": -84.3852997,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "CNN Center",
+    "stationLabel": "Dome/GWCC/Philips/CNN",
+    "categoryLabel": "http://www.cnn.com/tour/",
+    "lat": 33.7581347,
+    "lng": -84.3943119,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Centennial Olympic Park",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "http://www.centennialpark.com/",
+    "lat": 33.760775,
+    "lng": -84.3931317,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Fairlie Poplar Historic District",
+    "stationLabel": "FIve Points",
+    "categoryLabel": "http://www.nps.gov/nr/travel/atlanta/fai.htm",
+    "lat": 33.7565291,
+    "lng": -84.3903422,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Skyview Atlanta",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "www.skyviewatlanta.com",
+    "lat": 33.7589643,
+    "lng": -84.3920374,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "The Tabernacle",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "www.tabernacleatl.com",
+    "lat": 33.7588483,
+    "lng": -84.3915009,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "World of Coca-Cola",
+    "stationLabel": "Peachtree Center",
+    "categoryLabel": "www.worldofcoca-cola.com",
+    "lat": 33.7627997,
+    "lng": -84.392885,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "National Center of Civil and Human Rights",
+    "stationLabel": "Civic Center",
+    "categoryLabel": "www.civilandhumanrights.com",
+    "lat": 33.7640751,
+    "lng": -84.3929815,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Georgia Aquarium",
+    "stationLabel": "Civic Center",
+    "categoryLabel": "www.georgiaaquarium.org",
+    "lat": 33.7634062,
+    "lng": -84.3950629,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Point 17",
+    "stationLabel": "",
+    "categoryLabel": null,
+    "lat": 33.7554231,
+    "lng": -84.3884647,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Atlanta-Fulton Public Library",
+    "stationLabel": "FIve Points",
+    "categoryLabel": "http://afpls.org/central-hq",
+    "lat": 33.75772,
+    "lng": -84.388513,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Sweet Auburn Curb Market",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "www.thecurbmarket.com",
+    "lat": 33.7542902,
+    "lng": -84.3799567,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Sweet Auburn Historic District",
+    "stationLabel": "King Memorial",
+    "categoryLabel": null,
+    "lat": 33.7555479,
+    "lng": -84.3804824,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Underground Atlanta",
+    "stationLabel": "Five Points",
+    "categoryLabel": "Don't go here",
+    "lat": 33.7517122,
+    "lng": -84.3900096,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Cabbagetown Historic District",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "www.cabbagetown.com",
+    "lat": 33.749143,
+    "lng": -84.3681121,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Bobby Dodd Stadium\u00a0",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "www.gatech.edu",
+    "lat": 33.7721734,
+    "lng": -84.3929172,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "The Fox Theater",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "www.foxtheater.org",
+    "lat": 33.7726372,
+    "lng": -84.3852139,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Tech Square",
+    "stationLabel": "Midtown",
+    "categoryLabel": null,
+    "lat": 33.7768287,
+    "lng": -84.3889904,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Midtown Mile",
+    "stationLabel": "Midtown",
+    "categoryLabel": "www.midtownatl.com",
+    "lat": 33.7785053,
+    "lng": -84.3843126,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Piedmont Park",
+    "stationLabel": "Midtown",
+    "categoryLabel": "www.piedmontpark.org",
+    "lat": 33.784378,
+    "lng": -84.378922,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Midtown Historic District",
+    "stationLabel": "Midtown",
+    "categoryLabel": "http://midtownatlanta.org/",
+    "lat": 33.7781664,
+    "lng": -84.3796778,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Center Stage Theater",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "www.centerstage-atlanta.com",
+    "lat": 33.79197,
+    "lng": -84.3881965,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Center for Puppetry Arts",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "www.centerforpuppetryarts.com",
+    "lat": 33.7924158,
+    "lng": -84.3898702,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Woodruff Arts Center",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "www.woodruffcenter.org",
+    "lat": 33.7893396,
+    "lng": -84.3847525,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "High Museum of Art",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "www.high.org",
+    "lat": 33.7900619,
+    "lng": -84.3855894,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Ansley Park Neighborhood",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "http://www.ansleypark.org/",
+    "lat": 33.7916668,
+    "lng": -84.3832827,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "14th Street Playhouse",
+    "stationLabel": "Arts Center",
+    "categoryLabel": null,
+    "lat": 33.7862723,
+    "lng": -84.3819308,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Lenox Square Mall",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "http://www.simon.com/mall/lenox-square",
+    "lat": 33.8477413,
+    "lng": -84.3635416,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Phipps Plaza",
+    "stationLabel": "Buckhead",
+    "categoryLabel": "http://www.simon.com/mall/phipps-plaza",
+    "lat": 33.8528558,
+    "lng": -84.3627048,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Brookhaven Village",
+    "stationLabel": "Brookhaven",
+    "categoryLabel": null,
+    "lat": 33.8608566,
+    "lng": -84.3309259,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Perimeter Mall",
+    "stationLabel": "Dunwoody",
+    "categoryLabel": "http://www.perimetermall.com/",
+    "lat": 33.9238121,
+    "lng": -84.3417835,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Philips Arena",
+    "stationLabel": "Dome/GWCC/Philips/CNN",
+    "categoryLabel": "www.philipsarena.com",
+    "lat": 33.7572427,
+    "lng": -84.396286,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Georgia Dome",
+    "stationLabel": "Dome/GWCC/Philips/CNN",
+    "categoryLabel": "www.gadome.com",
+    "lat": 33.7576887,
+    "lng": -84.4008565,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Herndon Home Museum",
+    "stationLabel": "Vine City",
+    "categoryLabel": "www.theherndonhome.com",
+    "lat": 33.7555479,
+    "lng": -84.4069076,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Busy Bee Cafe",
+    "stationLabel": "Ashby",
+    "categoryLabel": "www.thebusybeecafe.com",
+    "lat": 33.7543883,
+    "lng": -84.4139886,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Westview Cemetery",
+    "stationLabel": "West Lake",
+    "categoryLabel": "www.westviewcemetery.com",
+    "lat": 33.7504276,
+    "lng": -84.4459391,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "West End Historic District",
+    "stationLabel": "West End",
+    "categoryLabel": "www.atlantawestend.com",
+    "lat": 33.7357608,
+    "lng": -84.419117,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Adair Park Historic District",
+    "stationLabel": "West End",
+    "categoryLabel": "http://www.nps.gov/nr/travel/atlanta/ada.htm",
+    "lat": 33.7302824,
+    "lng": -84.4116926,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Greyhound Station",
+    "stationLabel": "Garnett",
+    "categoryLabel": null,
+    "lat": 33.7487416,
+    "lng": -84.3964362,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Georgia Institute of Technology",
+    "stationLabel": "North Avenue",
+    "categoryLabel": "www.gatech.edu",
+    "lat": 33.7750986,
+    "lng": -84.3920159,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Whole World Improv Theater",
+    "stationLabel": "Arts Center",
+    "categoryLabel": "www.wholeworldtheatre.com",
+    "lat": 33.787913,
+    "lng": -84.3895161,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Winn Park",
+    "stationLabel": "Arts Center",
+    "categoryLabel": null,
+    "lat": 33.7905434,
+    "lng": -84.3809867,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Ebenezer Baptist Church",
+    "stationLabel": "King Memorial",
+    "categoryLabel": null,
+    "lat": 33.7551911,
+    "lng": -84.3740559,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "MLK Birth House",
+    "stationLabel": "King Memorial",
+    "categoryLabel": null,
+    "lat": 33.7552982,
+    "lng": -84.3712449,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Village Theatre",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "www.villagecomedy.com",
+    "lat": 33.7499191,
+    "lng": -84.3771994,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Memorial Drive Restaurants",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "The Republic, Tin Lizzy's, Ria's Bluebird, Six Feet Under, Octane Coffee",
+    "lat": 33.7467879,
+    "lng": -84.373498,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Grant Park Historic District",
+    "stationLabel": "King Memorial",
+    "categoryLabel": "www.grantpark.org",
+    "lat": 33.745539,
+    "lng": -84.3734336,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Candler Park Businesses",
+    "stationLabel": "Edgewood-Candler Park",
+    "categoryLabel": "Candler Park Market, Fellini's Pizza, Dr. Bombays",
+    "lat": 33.76486,
+    "lng": -84.3339515,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Agnes Scott College",
+    "stationLabel": "Decatur",
+    "categoryLabel": "www.agnesscott.edu",
+    "lat": 33.7698189,
+    "lng": -84.2946625,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "DeKalb County Public Library",
+    "stationLabel": "Decatur",
+    "categoryLabel": "www.dekalblibrary.org",
+    "lat": 33.7738501,
+    "lng": -84.2939544,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "North Highland Businesses",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "Barcelona Wine Bar, Parish, Inman Perk Coffee, Kale Me Crazy, Pure Taqueria, Fritti Restaurant",
+    "lat": 33.7629335,
+    "lng": -84.3579626,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Variety Playhouse",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "www.variety-playhouse.com",
+    "lat": 33.7637719,
+    "lng": -84.3512678,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Lindbergh Center Businesses",
+    "stationLabel": "Lindbergh Center",
+    "categoryLabel": "Sip Coffee, Market Deli, Chili's, Five Guys, Taco Mac, LongHorn Steakhouse",
+    "lat": 33.8226188,
+    "lng": -84.3699467,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Maddox Park",
+    "stationLabel": "Bankhead",
+    "categoryLabel": "51.5-acre community park",
+    "lat": 33.7706573,
+    "lng": -84.4272709,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Buford Highway Ethnic Cuisine",
+    "stationLabel": "Doraville",
+    "categoryLabel": null,
+    "lat": 33.9000033,
+    "lng": -84.2777324,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Downtown East Point",
+    "stationLabel": "East Point",
+    "categoryLabel": "http://www.downtowneastpoint.com/",
+    "lat": 33.6774703,
+    "lng": -84.4408643,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Atlanta BeltLine West End Trail",
+    "stationLabel": "West End",
+    "categoryLabel": "http://beltline.org/trails/west-end-trail/",
+    "lat": 33.730907,
+    "lng": -84.4181299,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Atlanta University Center",
+    "stationLabel": "Vine City",
+    "categoryLabel": "http://www.aucconsortium.org/",
+    "lat": 33.7515695,
+    "lng": -84.4086027,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Howell Station Historic District",
+    "stationLabel": "Bankhead",
+    "categoryLabel": "http://howellstation.org/",
+    "lat": 33.779172,
+    "lng": -84.426793,
+    "folder": "attraction",
+    "source": "mymap"
+  },
+  {
+    "name": "Atlanta BeltLine",
+    "stationLabel": "Inman Park-Reynoldstown",
+    "categoryLabel": "Eastside trail",
+    "lat": 33.7522117,
+    "lng": -84.3570185,
+    "folder": "attraction",
+    "source": "mymap"
+  }
+]

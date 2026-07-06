@@ -9,6 +9,14 @@ export type Poi = {
   websiteUrl?: string;
   distanceMiles?: number;
   walkMinutes?: number;
+  /** True iff this place is independently cited by >=3 of the 4 curated
+   * external "best MARTA dining/attractions" lists (see
+   * scripts/seed/build-pois.ts). Drives the "Top pick" badge — no longer
+   * inferred from sort position. */
+  topPickEligible?: boolean;
+  /** Human-readable source labels, e.g. ["Rough Draft Atlanta", "The
+   * Infatuation", "Discover Atlanta"] — only set when topPickEligible. */
+  topPickSources?: string[];
 };
 
 export const poisByStation: Record<string, Poi[]> = {
