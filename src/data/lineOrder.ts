@@ -1,0 +1,81 @@
+import type { LineId } from "@/data/stations";
+
+// Per-line station sequence, start to end of the physical line. stations.ts
+// is a flat array (one entry per station, `lines: LineId[]`) with no
+// per-line ordering -- this is that ordering, hand-authored against the
+// reference map. Five Points is the system's only 4-way interchange and
+// appears once in stations.ts, so it's spliced into its real sequential
+// position on each of the four lines below rather than derived
+// automatically. Used by crawlBuilder.ts to auto-order a crawl's stations.
+export const lineOrder: Record<LineId, string[]> = {
+  red: [
+    "north-springs",
+    "sandy-springs",
+    "dunwoody",
+    "medical-center",
+    "buckhead",
+    "lindbergh-center",
+    "arts-center",
+    "midtown",
+    "north-avenue",
+    "civic-center",
+    "peachtree-center",
+    "five-points",
+    "garnett",
+    "west-end",
+    "oakland-city",
+    "lakewood-ft-mcpherson",
+    "east-point",
+    "college-park",
+    "airport",
+  ],
+  gold: [
+    "doraville",
+    "chamblee",
+    "brookhaven-oglethorpe",
+    "lenox",
+    "lindbergh-center",
+    "arts-center",
+    "midtown",
+    "north-avenue",
+    "civic-center",
+    "peachtree-center",
+    "five-points",
+    "garnett",
+    "west-end",
+    "oakland-city",
+    "lakewood-ft-mcpherson",
+    "east-point",
+    "college-park",
+    "airport",
+  ],
+  blue: [
+    "hamilton-e-holmes",
+    "west-lake",
+    "ashby",
+    "vine-city",
+    "sec-district",
+    "five-points",
+    "georgia-state",
+    "king-memorial",
+    "inman-park-reynoldstown",
+    "edgewood-candler-park",
+    "east-lake",
+    "decatur",
+    "avondale",
+    "kensington",
+    "indian-creek",
+  ],
+  green: [
+    "bankhead",
+    "ashby",
+    "vine-city",
+    "sec-district",
+    "five-points",
+    "georgia-state",
+    "king-memorial",
+    "inman-park-reynoldstown",
+    "edgewood-candler-park",
+  ],
+  streetcar: [],
+};

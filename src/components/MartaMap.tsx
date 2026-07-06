@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { StationMarker } from "@/components/StationMarker";
-import { stations, type LineId } from "@/data/stations";
+import { stations, type LineId, type Station } from "@/data/stations";
 import { stationBulges, type StationBulge } from "@/data/stationBulges";
 import linePaths from "@/data/martaLinePaths.json";
 import { cn } from "@/lib/utils";
@@ -10,6 +10,12 @@ import { cn } from "@/lib/utils";
 type MartaMapProps = {
   selectedStationId: string | null;
   onSelectStation: (id: string) => void;
+  // Ordered stations of the crawl currently being built, if the Explore
+  // panel's crawl view is open. Highlighted as a route overlay -- a
+  // "planned path" distinct from the line art, not another transit line, so
+  // it gets its own color (violet-400, unclaimed elsewhere) rather than
+  // reusing sky-400 (already "Up next"'s accent in poiListMeta.ts).
+  crawlStations?: Station[];
 };
 
 const renderedLines = ["red", "gold", "blue", "green"] as const satisfies LineId[];
@@ -39,7 +45,7 @@ for (const b of stationBulges) {
   (bulgesByStation[b.stationId] ??= []).push(b);
 }
 
-export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) {
+export function MartaMap({ selectedStationId, onSelectStation, crawlStations }: MartaMapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   // Cursor position in SVG user units, driving the fisheye magnification.
   // Null when the pointer is away (or on touch, where mousemove never
@@ -150,6 +156,37 @@ export function MartaMap({ selectedStationId, onSelectStation }: MartaMapProps) 
               />
             </g>
           ))}
+
+          {crawlStations && crawlStations.length > 0 && (
+            <g className="pointer-events-none">
+              {crawlStations.length > 1 && (
+                <path
+                  d={crawlStations.map((s, i) => `${i === 0 ? "M" : "L"} ${s.x} ${s.y}`).join(" ")}
+                  fill="none"
+                  className="stroke-violet-400"
+                  strokeWidth={6}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeDasharray="2 14"
+                  opacity={0.85}
+                />
+              )}
+              {crawlStations.map((station, i) => (
+                <g key={station.id}>
+                  <circle cx={station.x} cy={station.y} r={16} className="fill-violet-400" />
+                  <text
+                    x={station.x}
+                    y={station.y}
+                    textAnchor="middle"
+                    dominantBaseline="central"
+                    className="fill-background text-[16px] font-semibold"
+                  >
+                    {i + 1}
+                  </text>
+                </g>
+              ))}
+            </g>
+          )}
         </g>
       </svg>
     </div>
