@@ -2,8 +2,10 @@
 
 import { useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { Star } from "lucide-react";
+import { ChevronRight, Star } from "lucide-react";
 import Link from "next/link";
+import type { Poi } from "@/data/pois";
+import type { CategoryStationGroup } from "@/lib/data";
 import { listMeta, listOrder, type ListId } from "@/data/poiListMeta";
 import { categoryMeta } from "@/data/poiCategories";
 import { usePoiEntries, type SavedPoi } from "@/lib/poiLists";
@@ -18,6 +20,13 @@ import { cn } from "@/lib/utils";
 const paramToList: Record<string, ListId> = Object.fromEntries(
   listOrder.map((id) => [listMeta[id].param, id]),
 );
+
+/** The left sheet shows one of two unrelated things: a personal list, or a
+ * system-wide category browse. Only one Sheet/Dialog tree exists for the
+ * left edge (rather than two independently-mounted Sheets that'd both
+ * claim side="left") — this union picks which content it's currently
+ * showing. */
+type Mode = { kind: "list"; id: ListId } | { kind: "category"; id: Poi["category"] };
 
 function groupByStation(entries: SavedPoi[]): [string, SavedPoi[]][] {
   const groups = new Map<string, SavedPoi[]>();
@@ -259,7 +268,117 @@ function WantToGoList({
   );
 }
 
-export function ListSheet({ counts }: { counts: Record<string, number> }) {
+function CategoryPoiRow({
+  poi,
+  stationId,
+  stationName,
+}: {
+  poi: Poi;
+  stationId: string;
+  stationName: string;
+}) {
+  const href = poi.websiteUrl ?? poi.mapsUrl;
+  return (
+    // No station-name line here (unlike SavedPoiRow) — these tiles always
+    // live under a station's <details> header already, so repeating the
+    // name on every row would just be noise.
+    <Card className="gap-2 rounded-lg border-transparent bg-card/50 py-3">
+      <CardContent className="flex flex-col gap-2 px-3">
+        {href ? (
+          <a
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-foreground underline-offset-4 hover:underline"
+          >
+            {poi.name}
+          </a>
+        ) : (
+          <span className="font-medium text-foreground">{poi.name}</span>
+        )}
+        {(poi.rating !== undefined || poi.walkMinutes !== undefined) && (
+          <p className="flex items-center gap-1.5 text-xs text-muted-foreground/70">
+            {poi.rating !== undefined && (
+              <span className="flex items-center gap-1">
+                <Star aria-hidden="true" className="size-3 fill-current" />
+                {poi.rating.toFixed(1)}
+                {poi.reviewCount ? ` (${poi.reviewCount})` : ""}
+              </span>
+            )}
+            {poi.walkMinutes !== undefined && (
+              <span className="whitespace-nowrap">{poi.walkMinutes} min walk</span>
+            )}
+          </p>
+        )}
+        <PoiStatusButtons
+          poi={{
+            name: poi.name,
+            placeId: poi.placeId,
+            stationId,
+            stationName,
+            category: poi.category,
+            rating: poi.rating,
+            reviewCount: poi.reviewCount,
+            mapsUrl: poi.mapsUrl,
+            websiteUrl: poi.websiteUrl,
+            walkMinutes: poi.walkMinutes,
+          }}
+          className="justify-end"
+        />
+      </CardContent>
+    </Card>
+  );
+}
+
+function CategoryList({ groups }: { groups: CategoryStationGroup[] }) {
+  if (groups.length === 0) {
+    return <p className="text-sm text-muted-foreground">No places in this category yet.</p>;
+  }
+
+  return (
+    <div className="flex flex-col gap-3">
+      {groups.map((group) => (
+        // Native <details>/<summary>: collapsible, keyboard-operable, and
+        // expanded by default with zero extra state — `open` is just an
+        // attribute the browser toggles itself.
+        <details
+          key={group.stationId}
+          open
+          className="group/station rounded-lg border border-border/50"
+        >
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-3 py-2 marker:content-none [&::-webkit-details-marker]:hidden">
+            <span className="flex items-center gap-2 font-medium text-foreground">
+              <ChevronRight
+                aria-hidden="true"
+                className="size-4 shrink-0 transition-transform group-open/station:rotate-90"
+              />
+              {group.stationName}
+            </span>
+            <Badge variant="secondary">{group.pois.length}</Badge>
+          </summary>
+          <div className="flex flex-col gap-2 px-3 pb-3">
+            {group.pois.map((poi) => (
+              <CategoryPoiRow
+                key={poi.placeId ?? poi.name}
+                poi={poi}
+                stationId={group.stationId}
+                stationName={group.stationName}
+              />
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  );
+}
+
+export function ListSheet({
+  counts,
+  poisByCategory,
+}: {
+  counts: Record<string, number>;
+  poisByCategory: Record<Poi["category"], CategoryStationGroup[]>;
+}) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -267,26 +386,44 @@ export function ListSheet({ counts }: { counts: Record<string, number> }) {
   const entriesMap = usePoiEntries();
   const entries = useMemo(() => Object.values(entriesMap), [entriesMap]);
 
-  const param = searchParams.get("list");
-  const activeList = param ? (paramToList[param] ?? null) : null;
+  const listParam = searchParams.get("list");
+  const categoryParam = searchParams.get("category");
+  const activeList = listParam ? (paramToList[listParam] ?? null) : null;
+  const activeCategory =
+    categoryParam && categoryParam in categoryMeta ? (categoryParam as Poi["category"]) : null;
+  // Clicking either launcher does a full ?key=value replace (see
+  // ListLauncher/CategoryLauncher), so both params are never meaningfully
+  // set at once in practice; list wins if it somehow happens.
+  const activeMode: Mode | null = activeList
+    ? { kind: "list", id: activeList }
+    : activeCategory
+      ? { kind: "category", id: activeCategory }
+      : null;
 
-  // Keep the last non-null list rendered while the sheet slides closed, so
+  // Keep the last non-null mode rendered while the sheet slides closed, so
   // content doesn't blank out mid-animation. This is React's documented
   // "adjust state during render" pattern (not an effect, so there's no
   // one-frame flash) — safe because the write is conditional and settles
   // after at most one extra render.
-  const [renderedList, setRenderedList] = useState<ListId | null>(activeList);
-  if (activeList && activeList !== renderedList) setRenderedList(activeList);
+  const [renderedMode, setRenderedMode] = useState<Mode | null>(activeMode);
+  if (
+    activeMode &&
+    (renderedMode === null ||
+      renderedMode.kind !== activeMode.kind ||
+      renderedMode.id !== activeMode.id)
+  ) {
+    setRenderedMode(activeMode);
+  }
 
   function close() {
     router.replace(pathname);
   }
 
-  if (!renderedList) return null;
-  const meta = listMeta[renderedList];
+  if (!renderedMode) return null;
+  const meta = renderedMode.kind === "list" ? listMeta[renderedMode.id] : categoryMeta[renderedMode.id];
 
   return (
-    <Sheet open={!!activeList} modal={isCoarse} onOpenChange={(o) => !o && close()}>
+    <Sheet open={!!activeMode} modal={isCoarse} onOpenChange={(o) => !o && close()}>
       <SheetContent
         side="left"
         onInteractOutside={(e) => {
@@ -299,10 +436,17 @@ export function ListSheet({ counts }: { counts: Record<string, number> }) {
           {meta.label}
         </SheetTitle>
         <div className="mt-6">
-          {renderedList === "favorites" && <FavoritesList entries={entries} />}
-          {renderedList === "visited" && <VisitedList entries={entries} counts={counts} />}
-          {renderedList === "wantToGo" && (
+          {renderedMode.kind === "list" && renderedMode.id === "favorites" && (
+            <FavoritesList entries={entries} />
+          )}
+          {renderedMode.kind === "list" && renderedMode.id === "visited" && (
+            <VisitedList entries={entries} counts={counts} />
+          )}
+          {renderedMode.kind === "list" && renderedMode.id === "wantToGo" && (
             <WantToGoList entries={entries} onNavigate={close} />
+          )}
+          {renderedMode.kind === "category" && (
+            <CategoryList groups={poisByCategory[renderedMode.id]} />
           )}
         </div>
       </SheetContent>

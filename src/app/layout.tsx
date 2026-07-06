@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Barlow, Inter } from "next/font/google";
 import { ListSheet } from "@/components/ListSheet";
-import { getPoiCounts } from "@/lib/data";
+import { getPoiCounts, getPoisByCategory } from "@/lib/data";
 import "./globals.css";
 
 // Barlow: a grotesque drawn from highway signage — display/headings.
@@ -34,7 +34,10 @@ export default async function RootLayout({
   children: React.ReactNode;
   panel: React.ReactNode;
 }>) {
-  const counts = await getPoiCounts();
+  const [counts, poisByCategory] = await Promise.all([
+    getPoiCounts(),
+    getPoisByCategory(),
+  ]);
   return (
     <html
       lang="en"
@@ -46,7 +49,7 @@ export default async function RootLayout({
         {/* useSearchParams inside ListSheet requires a Suspense boundary on
             prerendered pages, or `next build` fails (missing-suspense). */}
         <Suspense fallback={null}>
-          <ListSheet counts={counts} />
+          <ListSheet counts={counts} poisByCategory={poisByCategory} />
         </Suspense>
       </body>
     </html>
