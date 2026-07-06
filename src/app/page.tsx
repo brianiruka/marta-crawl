@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { stations, type Station } from "@/data/stations";
 import { resolveCrawlOrder, useStationOrderOverride } from "@/lib/crawlBuilder";
 import { usePoiEntries } from "@/lib/poiLists";
+import { listMeta } from "@/data/poiListMeta";
 import { MartaMap } from "@/components/MartaMap";
 import { PageTransition } from "@/components/PageTransition";
 import { PanelTrigger } from "@/components/PanelTrigger";
@@ -22,7 +23,7 @@ function HomeMap() {
     ? decodeURIComponent(pathname.split("/")[2] ?? "")
     : null;
 
-  const isCrawlOpen = searchParams.get("panel") === "crawl";
+  const isCrawlOpen = searchParams.get("panel") === listMeta.wantToGo.param;
   const entriesMap = usePoiEntries();
   const override = useStationOrderOverride();
   const crawlStations = useMemo(() => {

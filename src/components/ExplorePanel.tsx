@@ -9,7 +9,6 @@ import {
   ChevronRight,
   ChevronUp,
   Compass,
-  Route,
   Star,
   type LucideIcon,
 } from "lucide-react";
@@ -45,16 +44,12 @@ const paramToList: Record<string, ListId> = Object.fromEntries(
  * is a separate level again, reached by pushing to /stations/[slug] — see
  * the module comment on the ExplorePanel component below for the full
  * navigation model. */
-type Mode =
-  | { kind: "home" }
-  | { kind: "crawl" }
-  | { kind: "list"; id: ListId }
-  | { kind: "category"; id: Poi["category"] };
+type Mode = { kind: "home" } | { kind: "list"; id: ListId } | { kind: "category"; id: Poi["category"] };
 
 function sameMode(a: Mode | null, b: Mode | null): boolean {
   if (a === b) return true;
   if (!a || !b || a.kind !== b.kind) return false;
-  if (a.kind === "home" || a.kind === "crawl") return true;
+  if (a.kind === "home") return true;
   // TS can't narrow "a.kind === b.kind" across the union by itself here.
   return (a as { id: string }).id === (b as { id: string }).id;
 }
@@ -261,81 +256,6 @@ function VisitedList({
 }
 
 function WantToGoList({ entries }: { entries: SavedPoi[] }) {
-  const router = useRouter();
-  const wantToGo = useMemo(() => entries.filter((e) => e.status === "wantToGo"), [entries]);
-  const groups = useMemo(() => {
-    const grouped = groupByStation(wantToGo);
-    grouped.sort((a, b) => b[1].length - a[1].length || a[1][0].stationName.localeCompare(b[1][0].stationName));
-    return grouped;
-  }, [wantToGo]);
-
-  if (wantToGo.length === 0) {
-    return (
-      <p className="text-sm text-muted-foreground">
-        Bookmark places you want to visit and they&apos;ll show up here, grouped by station.
-      </p>
-    );
-  }
-
-  const [, topGroup] = groups[0];
-
-  return (
-    <div className="flex flex-col gap-6">
-      <AnimatePresence initial={false}>
-        {groups.length > 1 && (
-          <motion.div
-            key="recommended"
-            initial={{ opacity: 0, y: -6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -6, transition: { duration: 0.15, ease: "easeIn" } }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-          >
-            <Card className="border-violet-400/30 bg-violet-400/10">
-              <CardContent className="px-4">
-                <p className="text-xs font-medium tracking-wide text-violet-400 uppercase">
-                  Recommended next crawl
-                </p>
-                <button
-                  type="button"
-                  onClick={() => router.replace("/?panel=crawl")}
-                  className="mt-1 block text-left font-display text-lg font-semibold text-foreground underline-offset-4 hover:underline"
-                >
-                  {wantToGo.length} places across {groups.length} stations
-                </button>
-                <p className="text-sm text-muted-foreground">
-                  Starting at {topGroup[0].stationName} — build the full route.
-                </p>
-              </CardContent>
-            </Card>
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <AnimatePresence initial={false} mode="popLayout">
-        {groups.map(([stationId, group]) => (
-          <motion.div key={stationId} {...tileMotion}>
-            <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-              <Link href={`/stations/${stationId}`} className="underline-offset-4 hover:underline">
-                {group[0].stationName}
-              </Link>
-              <Badge variant="secondary">{group.length}</Badge>
-            </h4>
-            <div className="flex flex-col gap-2">
-              <AnimatePresence initial={false} mode="popLayout">
-                {group.map((entry) => (
-                  <motion.div key={entry.key} {...tileMotion}>
-                    <SavedPoiRow entry={entry} />
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-            </div>
-          </motion.div>
-        ))}
-      </AnimatePresence>
-    </div>
-  );
-}
-
-function CrawlView({ entries }: { entries: SavedPoi[] }) {
   const searchParams = useSearchParams();
   const sharedParam = searchParams.get("stations");
 
@@ -355,7 +275,7 @@ function CrawlView({ entries }: { entries: SavedPoi[] }) {
 
   const [copied, setCopied] = useState(false);
   function handleShare() {
-    const url = `${window.location.origin}/?panel=crawl&stations=${order.join(",")}`;
+    const url = `${window.location.origin}/?panel=${listMeta.wantToGo.param}&stations=${order.join(",")}`;
     navigator.clipboard.writeText(url);
     setCopied(true);
     setTimeout(() => setCopied(false), 1800);
@@ -618,12 +538,10 @@ function HomeMenu({
 
   const listCounts: Record<ListId, number> = { favorites: 0, visited: 0, wantToGo: 0 };
   const visitedStationIds = new Set<string>();
-  const wantToGoStationIds = new Set<string>();
   for (const entry of Object.values(entriesMap)) {
     if (entry.favorited) listCounts.favorites++;
     if (entry.status) listCounts[entry.status]++;
     if (entry.status === "visited") visitedStationIds.add(entry.stationId);
-    if (entry.status === "wantToGo") wantToGoStationIds.add(entry.stationId);
   }
 
   // Best-progress line among lines with at least one visited station, for
@@ -666,13 +584,6 @@ function HomeMenu({
               />
             );
           })}
-          <MenuRow
-            icon={Route}
-            accent="text-violet-400"
-            label="Build a crawl"
-            count={wantToGoStationIds.size}
-            onClick={() => router.push("/?panel=crawl")}
-          />
         </div>
       </div>
       <div>
@@ -732,13 +643,11 @@ export function ExplorePanel({
   const activeMode: Mode | null =
     panelParam === "home"
       ? { kind: "home" }
-      : panelParam === "crawl"
-        ? { kind: "crawl" }
-        : panelParam && panelParam in paramToList
-          ? { kind: "list", id: paramToList[panelParam] }
-          : panelParam && panelParam in categoryMeta
-            ? { kind: "category", id: panelParam as Poi["category"] }
-            : null;
+      : panelParam && panelParam in paramToList
+        ? { kind: "list", id: paramToList[panelParam] }
+        : panelParam && panelParam in categoryMeta
+          ? { kind: "category", id: panelParam as Poi["category"] }
+          : null;
   const isOpen = activeMode !== null;
 
   // Broadcast open state so the homepage shell can pad the map into the
@@ -763,34 +672,26 @@ export function ExplorePanel({
   const title =
     renderedMode.kind === "home"
       ? "Explore"
-      : renderedMode.kind === "crawl"
-        ? "Your crawl"
-        : renderedMode.kind === "list"
-          ? listMeta[renderedMode.id].label
-          : categoryMeta[renderedMode.id].label;
+      : renderedMode.kind === "list"
+        ? listMeta[renderedMode.id].label
+        : categoryMeta[renderedMode.id].label;
   const TitleIcon =
     renderedMode.kind === "home"
       ? Compass
-      : renderedMode.kind === "crawl"
-        ? Route
-        : renderedMode.kind === "list"
-          ? listMeta[renderedMode.id].icon
-          : categoryMeta[renderedMode.id].icon;
+      : renderedMode.kind === "list"
+        ? listMeta[renderedMode.id].icon
+        : categoryMeta[renderedMode.id].icon;
   // Drives the content crossfade below: distinct per mode (and per list/
   // category id within a mode), so Home->Coffee and Coffee->Sights both
   // register as a change, not just the first Home->Browse transition.
   const modeKey =
-    renderedMode.kind === "home" || renderedMode.kind === "crawl"
-      ? renderedMode.kind
-      : `${renderedMode.kind}:${renderedMode.id}`;
+    renderedMode.kind === "home" ? "home" : `${renderedMode.kind}:${renderedMode.id}`;
   const titleAccent =
     renderedMode.kind === "home"
       ? "text-foreground"
-      : renderedMode.kind === "crawl"
-        ? "text-violet-400"
-        : renderedMode.kind === "list"
-          ? listMeta[renderedMode.id].accent
-          : categoryMeta[renderedMode.id].accent;
+      : renderedMode.kind === "list"
+        ? listMeta[renderedMode.id].accent
+        : categoryMeta[renderedMode.id].accent;
 
   return (
     <Sheet open={!!activeMode} modal={isCoarse} onOpenChange={(o) => !o && router.back()}>
@@ -841,7 +742,6 @@ export function ExplorePanel({
             className="mt-5"
           >
             {renderedMode.kind === "home" && <HomeMenu poisByCategory={poisByCategory} />}
-            {renderedMode.kind === "crawl" && <CrawlView entries={entries} />}
             {renderedMode.kind === "list" && renderedMode.id === "favorites" && (
               <FavoritesList entries={entries} />
             )}
