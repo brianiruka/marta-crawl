@@ -346,10 +346,16 @@ function main() {
                 : category
         ];
       const cap = config?.maxPerStation ?? 8;
+      // topPickEligible sorts above even a manual pin: 3 independent
+      // editors agreeing is a stronger signal than one person's pin, and
+      // — the important part — this is what guarantees a genuine cross-
+      // source consensus pick survives the cap slice below instead of
+      // silently losing a tie-break to an ordinary higher-rated place.
       const group = pois
         .filter((p) => p.category === category)
         .sort(
           (a, b) =>
+            Number(b.topPickEligible) - Number(a.topPickEligible) ||
             Number(b._pinned) - Number(a._pinned) ||
             (b.rating ?? 0) - (a.rating ?? 0),
         )

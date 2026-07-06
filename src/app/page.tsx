@@ -3,8 +3,8 @@
 import { usePathname, useRouter } from "next/navigation";
 import { MartaMap } from "@/components/MartaMap";
 import { PageTransition } from "@/components/PageTransition";
+import { PanelTrigger } from "@/components/PanelTrigger";
 import { StationIndex } from "@/components/StationIndex";
-import { cn } from "@/lib/utils";
 
 export default function Home() {
   const router = useRouter();
@@ -15,15 +15,17 @@ export default function Home() {
 
   return (
     <PageTransition>
+      <PanelTrigger />
       <div
-        // The map "makes room" for the station sheet: padding animates in
-        // sync with the sheet's slide-in (both 300ms ease-in-out) so the two
-        // read as one choreographed motion instead of an overlay covering
-        // the map.
-        className={cn(
-          "atmosphere-dots flex min-h-screen flex-col items-center gap-4 p-4 transition-[padding] duration-300 ease-in-out md:p-16",
-          selectedStationId && "md:pr-[28rem]",
-        )}
+        // The map "makes room" for the right-side panels so it stays
+        // centered in the REMAINING viewport. Both panels broadcast their
+        // open state as html[data-explore-open]/[data-station-open]
+        // attributes, and .map-shell's CSS rule (globals.css) pads
+        // accordingly at the same 300ms curve as the sheet slide — map and
+        // drawer move together, no overlap. (An attribute+descendant CSS
+        // rule outranks the md:p-16 shorthand here; a Tailwind pr- class
+        // at a lower breakpoint would lose that cascade fight.)
+        className="atmosphere-dots map-shell flex min-h-screen flex-col items-center gap-4 p-4 md:p-16"
       >
         {/* The searchable list is the accessible primary way to reach a
             station where the map's hover/precise-tap fails — touch and

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { useCoarsePointer } from "@/lib/useCoarsePointer";
 
@@ -23,6 +23,15 @@ export function StationPanel({ children }: StationPanelProps) {
   // Desktop stays non-modal so map clicks can swap the panel's station.
   const isCoarse = useCoarsePointer();
 
+  // Same mechanism as ExplorePanel: broadcast open state so the homepage
+  // shell pads the map into the remaining viewport (globals.css .map-shell).
+  // Keyed on `open` so the padding recedes in sync with the slide-out.
+  useEffect(() => {
+    if (open) document.documentElement.setAttribute("data-station-open", "");
+    else document.documentElement.removeAttribute("data-station-open");
+    return () => document.documentElement.removeAttribute("data-station-open");
+  }, [open]);
+
   const close = () => {
     if (closing.current) return;
     closing.current = true;
@@ -43,11 +52,12 @@ export function StationPanel({ children }: StationPanelProps) {
         onInteractOutside={(e) => {
           if (!isCoarse) e.preventDefault();
         }}
-        // Same half-width sizing as ExplorePanel, so the panel doesn't
+        // Same third-width sizing as ExplorePanel, so the panel doesn't
         // visually resize when navigating between Explore and a station.
         // Override has to match the base's exact data-[side=right]:sm:
         // variant chain for tailwind-merge to treat it as conflicting.
-        className="w-full gap-0 overflow-y-auto p-6 duration-300 data-[side=right]:sm:w-1/2 data-[side=right]:sm:max-w-none md:p-8"
+        // -full slide classes = real drawer slide, not the base 10-unit nudge.
+        className="w-full gap-0 overflow-y-auto p-5 duration-300 ease-in-out data-[side=right]:sm:w-1/3 data-[side=right]:sm:max-w-none data-[side=right]:data-open:slide-in-from-right-full data-[side=right]:data-closed:slide-out-to-right-full md:p-6"
       >
         <SheetTitle className="sr-only">Station details</SheetTitle>
         {children}

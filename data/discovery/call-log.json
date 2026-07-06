@@ -43,5 +43,10 @@
     "date": "2026-07-05",
     "category": "eats",
     "calls": 38
+  },
+  {
+    "date": "2026-07-06",
+    "category": "external-match",
+    "calls": 471
   }
 ]

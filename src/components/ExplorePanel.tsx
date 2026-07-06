@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ChevronLeft, ChevronRight, Compass, Star, type LucideIcon } from "lucide-react";
 import Link from "next/link";
@@ -51,8 +51,8 @@ function SavedPoiRow({ entry }: { entry: SavedPoi }) {
   const Icon = meta.icon;
   const href = entry.websiteUrl ?? entry.mapsUrl;
   return (
-    <Card className="gap-2 rounded-lg border-transparent bg-card/50 py-3">
-      <CardContent className="flex flex-col gap-2 px-3">
+    <Card className="gap-0 rounded-lg border-transparent bg-card/50 py-2.5">
+      <CardContent className="flex flex-col gap-1 px-3">
         <div className="flex items-start gap-2">
           <Icon aria-hidden="true" className={cn("mt-0.5 size-4 shrink-0", meta.accent)} />
           <div className="min-w-0 flex-1">
@@ -283,8 +283,8 @@ function CategoryPoiRow({
   return (
     // No station-name line here — these tiles always live under a station's
     // <details> header already, so repeating the name would just be noise.
-    <Card className="gap-2 rounded-lg border-transparent bg-card/50 py-3">
-      <CardContent className="flex flex-col gap-2 px-3">
+    <Card className="gap-0 rounded-lg border-transparent bg-card/50 py-2.5">
+      <CardContent className="flex flex-col gap-1 px-3">
         {href ? (
           <a
             href={href}
@@ -412,7 +412,7 @@ function HomeMenu({
       <button
         type="button"
         onClick={onClick}
-        className="flex items-center gap-3 rounded-lg border border-transparent bg-card/50 px-4 py-3 text-left transition-colors hover:border-border hover:bg-card"
+        className="flex items-center gap-3 rounded-lg border border-transparent bg-card/50 px-4 py-2.5 text-left transition-colors hover:border-border hover:bg-card"
       >
         <Icon aria-hidden="true" className={cn("size-5 shrink-0", accent)} />
         <span className="flex-1 font-medium text-foreground">{label}</span>
@@ -510,6 +510,17 @@ export function ExplorePanel({
         : panelParam && panelParam in categoryMeta
           ? { kind: "category", id: panelParam as Poi["category"] }
           : null;
+  const isOpen = activeMode !== null;
+
+  // Broadcast open state so the homepage shell can pad the map into the
+  // remaining viewport (html[data-explore-open] .map-shell in globals.css).
+  // CSS reacts to the attribute, so the map recenters in the same 300ms
+  // as the sheet slide — no overlap, no re-render plumbing.
+  useEffect(() => {
+    if (isOpen) document.documentElement.setAttribute("data-explore-open", "");
+    else document.documentElement.removeAttribute("data-explore-open");
+    return () => document.documentElement.removeAttribute("data-explore-open");
+  }, [isOpen]);
 
   // Keep the last non-null mode rendered while the sheet slides closed, so
   // content doesn't blank out mid-animation. React's documented "adjust
@@ -546,11 +557,13 @@ export function ExplorePanel({
         onInteractOutside={(e) => {
           if (!isCoarse) e.preventDefault();
         }}
-        // Half the screen at sm+ (the base component hardcodes
+        // A third of the screen at sm+ (the base component hardcodes
         // data-[side=right]:sm:max-w-sm — the override has to match that
         // exact variant chain, not just "sm:", or tailwind-merge won't
         // recognize the two as conflicting and the base one silently wins).
-        className="w-full gap-0 overflow-y-auto p-6 duration-300 data-[side=right]:sm:w-1/2 data-[side=right]:sm:max-w-none md:p-8"
+        // The -full slide classes replace the base's subtle 10-unit nudge
+        // with a real full-distance drawer slide.
+        className="w-full gap-0 overflow-y-auto p-5 duration-300 ease-in-out data-[side=right]:sm:w-1/3 data-[side=right]:sm:max-w-none data-[side=right]:data-open:slide-in-from-right-full data-[side=right]:data-closed:slide-out-to-right-full md:p-6"
       >
         <div className="flex items-center gap-1">
           {renderedMode.kind !== "home" && (
@@ -570,7 +583,7 @@ export function ExplorePanel({
             {title}
           </SheetTitle>
         </div>
-        <div className="mt-6">
+        <div className="mt-5">
           {renderedMode.kind === "home" && <HomeMenu poisByCategory={poisByCategory} />}
           {renderedMode.kind === "list" && renderedMode.id === "favorites" && (
             <FavoritesList entries={entries} />

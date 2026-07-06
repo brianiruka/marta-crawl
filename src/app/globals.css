@@ -89,6 +89,40 @@ body {
   mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, black 40%, transparent 100%);
 }
 
+/* The homepage shell makes room for the right-side panels so the map stays
+   centered in the REMAINING viewport instead of being overlapped. The
+   station panel's padding is applied as a Tailwind class in page.tsx
+   (derived from the pathname, so it's SSR-consistent); the Explore panel
+   has no route of its own, so ExplorePanel broadcasts its open state via
+   this attribute on <html> and the padding reacts here in CSS. Both use
+   the same 300ms curve as the sheet slide, so map and drawer move as one.
+   33.333vw matches the sheets' w-1/3; 640px matches their sm: breakpoint
+   (below that the sheets are full-width modals and padding is pointless). */
+.map-shell {
+  transition: padding-right 300ms ease-in-out;
+}
+@media (min-width: 640px) {
+  html[data-explore-open] .map-shell,
+  html[data-station-open] .map-shell {
+    padding-right: 33.333vw;
+  }
+}
+
+/* Click burst for the POI status toggles (heart/check/bookmark) — plays
+   once when a toggle turns ON (PoiStatusButtons remounts the icon), like
+   the YouTube like-button pop. */
+@keyframes status-pop {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.45);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Every station label grows and moves to its hover destination -- by
    default farther out along the same ray from the marker, but some
    stations (see HOVER_DIRECTION_OVERRIDES in StationMarker.tsx) swing to

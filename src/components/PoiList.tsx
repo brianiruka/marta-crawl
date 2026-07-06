@@ -46,13 +46,13 @@ function PoiCard({
   return (
     <Card
       className={cn(
-        "gap-1 rounded-lg py-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg",
+        "gap-0 rounded-lg py-3 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg",
         isTopPick
           ? "hover:border-ring"
           : "border-transparent bg-card/50 hover:border-border hover:bg-card",
       )}
     >
-      <CardContent className="flex flex-col gap-1 px-4">
+      <CardContent className="flex flex-col gap-0.5 px-4">
         <div className="flex items-baseline justify-between gap-3">
           {primaryHref ? (
             <a
@@ -91,7 +91,7 @@ function PoiCard({
         {(poi.rating !== undefined ||
           poi.walkMinutes !== undefined ||
           (poi.websiteUrl && poi.mapsUrl)) && (
-        <p className="mt-1 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground/70">
+        <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground/70">
           {poi.rating !== undefined && (
             <span className="flex items-center gap-1">
               <Star aria-hidden="true" className="size-3 fill-current" />
@@ -133,7 +133,7 @@ function PoiCard({
             websiteUrl: poi.websiteUrl,
             walkMinutes: poi.walkMinutes,
           }}
-          className="mt-1 justify-end"
+          className="-mb-1 justify-end"
         />
       </CardContent>
     </Card>

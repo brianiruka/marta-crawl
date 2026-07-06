@@ -25,7 +25,7 @@ export function PoiStatusButtons({ poi, className }: PoiStatusButtonsProps) {
   const entry = usePoiEntry(key);
 
   return (
-    <div className={cn("flex items-center gap-0.5", className)}>
+    <div className={cn("flex items-center gap-0", className)}>
       {listOrder.map((id) => {
         const meta = listMeta[id];
         const Icon = meta.icon;
@@ -47,10 +47,26 @@ export function PoiStatusButtons({ poi, className }: PoiStatusButtonsProps) {
               else toggleStatus(poi, id as PoiStatus);
             }}
             className={cn(
-              active ? meta.accent : "text-muted-foreground/50 hover:text-foreground",
+              // Active keeps its accent even on hover (the ghost variant's
+              // hover:text-foreground would otherwise wash it to white);
+              // inactive stays muted-then-white as before.
+              active
+                ? cn(meta.accent, meta.hoverAccent)
+                : "text-muted-foreground/50 hover:text-foreground",
             )}
           >
-            <Icon aria-hidden="true" className={cn("size-4", active && "fill-current")} />
+            {/* key={active} remounts the icon when it turns on, restarting
+                the pop keyframe (see globals.css) — the YouTube-like click
+                burst. Turning OFF animates nothing, on purpose. */}
+            <Icon
+              key={active ? "on" : "off"}
+              aria-hidden="true"
+              className={cn(
+                "size-4",
+                active && meta.activeIconClass,
+                active && "animate-[status-pop_320ms_ease-out]",
+              )}
+            />
           </Button>
         );
       })}
