@@ -2,7 +2,12 @@ import { notFound } from "next/navigation";
 import { LineAccent, LineBadges } from "@/components/LineBadges";
 import { PoiList } from "@/components/PoiList";
 import { StationPanel } from "@/components/StationPanel";
-import { getPoisForStation, getStation, getStations } from "@/lib/data";
+import {
+  getNearbyStationsWithPois,
+  getPoisForStation,
+  getStation,
+  getStations,
+} from "@/lib/data";
 
 export async function generateStaticParams() {
   const stations = await getStations();
@@ -19,6 +24,7 @@ export default async function StationPanelPage({
   if (!station) notFound();
 
   const pois = await getPoisForStation(slug);
+  const nearbyStations = pois.length === 0 ? await getNearbyStationsWithPois(slug) : [];
 
   return (
     <StationPanel>
@@ -28,7 +34,11 @@ export default async function StationPanelPage({
       <LineAccent lines={station.lines} className="mt-2" />
       <LineBadges lines={station.lines} />
       <div className="mt-8">
-        <PoiList pois={pois} station={{ id: station.id, name: station.name }} />
+        <PoiList
+          pois={pois}
+          station={{ id: station.id, name: station.name }}
+          nearbyStations={nearbyStations}
+        />
       </div>
       {/* Plain <a>, not <Link>: the panel already lives at this URL, so a
           soft navigation is a no-op. A hard navigation skips the route

@@ -81,6 +81,23 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
+/* Honor the OS "reduce motion" setting for all CSS-driven motion in one
+   pass: the two @keyframes (status-pop, station-label-pulse), the leader
+   line/label/glow transitions, the map-shell padding transition, Tailwind's
+   inline transition utilities, and the Radix Sheet slide. motion/react
+   animations are handled separately by MotionConfig reducedMotion="user".
+   Near-zero (not 0) durations so transitionend/animationend still fire. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Atmosphere: faint dot grid behind the map, fading out toward the edges
    so it reads as texture rather than pattern. */
 .atmosphere-dots {

@@ -529,14 +529,74 @@ function CategoryPoiRow({
   );
 }
 
+type CatSortKey = "rating" | "walk" | "reviews" | "alpha";
+const catSortLabels: Record<CatSortKey, string> = {
+  rating: "Rating",
+  walk: "Walk",
+  reviews: "Reviews",
+  alpha: "A–Z",
+};
+const catSortFns: Record<CatSortKey, (a: Poi, b: Poi) => number> = {
+  rating: (a, b) => (b.rating ?? -1) - (a.rating ?? -1),
+  walk: (a, b) => (a.walkMinutes ?? Infinity) - (b.walkMinutes ?? Infinity),
+  reviews: (a, b) => (b.reviewCount ?? 0) - (a.reviewCount ?? 0),
+  alpha: (a, b) => a.name.localeCompare(b.name),
+};
+
 function CategoryList({ groups }: { groups: CategoryStationGroup[] }) {
+  const [sortKey, setSortKey] = useState<CatSortKey>("rating");
+  const [topOnly, setTopOnly] = useState(false);
+
+  // Sort each station's POIs and (optionally) keep only top picks, dropping
+  // any station that ends up empty. Grouping-by-station stays intact.
+  const shown = useMemo(
+    () =>
+      groups
+        .map((g) => ({
+          ...g,
+          pois: [...g.pois]
+            .filter((p) => !topOnly || p.topPickEligible === true)
+            .sort(catSortFns[sortKey]),
+        }))
+        .filter((g) => g.pois.length > 0),
+    [groups, sortKey, topOnly],
+  );
+
   if (groups.length === 0) {
     return <p className="text-sm text-muted-foreground">No places in this category yet.</p>;
   }
 
   return (
     <div className="flex flex-col gap-3">
-      {groups.map((group) => (
+      <div className="flex flex-wrap items-center gap-1" role="group" aria-label="Sort and filter">
+        {(Object.keys(catSortLabels) as CatSortKey[]).map((key) => (
+          <Button
+            key={key}
+            type="button"
+            variant="ghost"
+            size="sm"
+            aria-pressed={sortKey === key}
+            onClick={() => setSortKey(key)}
+            className={cn(sortKey === key && "bg-secondary text-foreground")}
+          >
+            {catSortLabels[key]}
+          </Button>
+        ))}
+        <Button
+          type="button"
+          variant="ghost"
+          size="sm"
+          aria-pressed={topOnly}
+          onClick={() => setTopOnly((v) => !v)}
+          className={cn("ml-auto", topOnly && "bg-secondary text-foreground")}
+        >
+          Top picks
+        </Button>
+      </div>
+      {shown.length === 0 ? (
+        <p className="text-sm text-muted-foreground">No top picks in this category yet.</p>
+      ) : (
+        shown.map((group) => (
         // Native <details>/<summary>: collapsible, keyboard-operable, and
         // expanded by default with zero extra state. The station name is a
         // nested Link with stopPropagation, so clicking it drills into the
@@ -574,7 +634,8 @@ function CategoryList({ groups }: { groups: CategoryStationGroup[] }) {
             ))}
           </div>
         </details>
-      ))}
+        ))
+      )}
     </div>
   );
 }

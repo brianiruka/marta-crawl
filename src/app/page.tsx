@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { stations, type Station } from "@/data/stations";
 import { resolveCrawlOrder, useCrawlMemberKeys, useStationOrderOverride } from "@/lib/crawlBuilder";
 import { usePoiEntries } from "@/lib/poiLists";
+import { useCoarsePointer } from "@/lib/useCoarsePointer";
 import { MartaMap } from "@/components/MartaMap";
 import { PageTransition } from "@/components/PageTransition";
 import { PanelTrigger } from "@/components/PanelTrigger";
@@ -13,6 +14,11 @@ import { StationIndex } from "@/components/StationIndex";
 export default function Home() {
   const router = useRouter();
   const pathname = usePathname();
+  // The map's fisheye/hover wayfinding is mouse-only, so coarse-pointer
+  // devices need the searchable list regardless of width. Fine pointers
+  // keep it below lg only (the map is the hero on desktop). Without this,
+  // a landscape tablet >=lg gets neither affordance.
+  const isCoarse = useCoarsePointer();
   const selectedStationId = pathname.startsWith("/stations/")
     ? decodeURIComponent(pathname.split("/")[2] ?? "")
     : null;
@@ -57,7 +63,7 @@ export default function Home() {
             station where the map's hover/precise-tap fails — touch and
             smaller screens. On desktop the map (with focusable markers +
             fisheye) is the hero, so the list is hidden there. */}
-        <StationIndex className="lg:hidden" />
+        <StationIndex className={isCoarse ? undefined : "lg:hidden"} />
         <MartaMap
           selectedStationId={selectedStationId}
           crawlStations={crawlStations}

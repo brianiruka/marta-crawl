@@ -6,6 +6,7 @@ import { stations, type Station } from "@/data/stations";
 import { poisByStation, type Poi } from "@/data/pois";
 import { generatedPoisByStation } from "@/data/pois.generated";
 import { categoryOrder } from "@/data/poiCategories";
+import { lineOrder } from "@/data/lineOrder";
 
 export async function getStations(): Promise<Station[]> {
   return stations;
@@ -35,6 +36,42 @@ export async function getPoiCounts(): Promise<Record<string, number>> {
     counts[station.id] = (await getPoisForStation(station.id)).length;
   }
   return counts;
+}
+
+export type NearbyStation = { id: string; name: string; stops: number };
+
+/** Nearest stations, on any line the given station serves, that actually
+ * have POIs — so an empty station page can point somewhere instead of
+ * dead-ending. Walks outward in lineOrder from the station's position on
+ * each of its lines, keeps the smallest stop-distance per station, and
+ * returns the closest few. */
+export async function getNearbyStationsWithPois(
+  slug: string,
+  limit = 3,
+): Promise<NearbyStation[]> {
+  const station = stations.find((s) => s.id === slug);
+  if (!station) return [];
+  const counts = await getPoiCounts();
+  const byId = new Map(stations.map((s) => [s.id, s]));
+
+  // Smallest stop-distance found for each candidate station id.
+  const best = new Map<string, number>();
+  for (const line of station.lines) {
+    const sequence = lineOrder[line];
+    const here = sequence.indexOf(slug);
+    if (here === -1) continue;
+    for (let i = 0; i < sequence.length; i++) {
+      const id = sequence[i];
+      if (id === slug || (counts[id] ?? 0) === 0) continue;
+      const stops = Math.abs(i - here);
+      if (!best.has(id) || stops < best.get(id)!) best.set(id, stops);
+    }
+  }
+
+  return [...best.entries()]
+    .map(([id, stops]) => ({ id, name: byId.get(id)?.name ?? id, stops }))
+    .sort((a, b) => a.stops - b.stops || a.name.localeCompare(b.name))
+    .slice(0, limit);
 }
 
 export type CategoryStationGroup = {

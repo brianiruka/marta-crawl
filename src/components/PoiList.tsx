@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { Star } from "lucide-react";
 import { motion } from "motion/react";
 import type { Poi } from "@/data/pois";
+import type { NearbyStation } from "@/lib/data";
 import { categoryMeta, categoryOrder } from "@/data/poiCategories";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,6 +17,9 @@ type PoiListProps = {
   pois: Poi[];
   station: StationRef;
   emptyMessage?: string;
+  /** When this station has no POIs, nearby stations that do — rendered as
+   * links so the page isn't a dead end. */
+  nearbyStations?: NearbyStation[];
 };
 
 const listVariants = {
@@ -40,9 +45,16 @@ function PoiCard({
   station: StationRef;
   isTopPick: boolean;
 }) {
-  // Website first (the card is an unfurl-style link preview of the place's
-  // own site); Maps becomes the secondary link when both exist.
-  const primaryHref = poi.websiteUrl ?? poi.mapsUrl;
+  // The name links to the place's own website when it has one. When it
+  // doesn't, the name stays plain text and the "Maps" chip below is the
+  // explicit link out — rather than silently making the name a Maps link
+  // with no label saying so.
+  const primaryHref = poi.websiteUrl;
+  const hasMeta =
+    poi.rating !== undefined ||
+    poi.walkMinutes !== undefined ||
+    poi.distanceMiles !== undefined ||
+    poi.mapsUrl !== undefined;
   return (
     <Card
       className={cn(
@@ -88,9 +100,7 @@ function PoiCard({
           </p>
         )}
         <p className="text-sm text-muted-foreground">{poi.description}</p>
-        {(poi.rating !== undefined ||
-          poi.walkMinutes !== undefined ||
-          (poi.websiteUrl && poi.mapsUrl)) && (
+        {hasMeta && (
         <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground/70">
           {poi.rating !== undefined && (
             <span className="flex items-center gap-1">
@@ -105,9 +115,19 @@ function PoiCard({
               <span>{poi.walkMinutes} min walk</span>
             </>
           )}
-          {poi.websiteUrl && poi.mapsUrl && (
+          {poi.distanceMiles !== undefined && (
             <>
-              <span aria-hidden="true">·</span>
+              {(poi.rating !== undefined || poi.walkMinutes !== undefined) && (
+                <span aria-hidden="true">·</span>
+              )}
+              <span>{poi.distanceMiles.toFixed(1)} mi</span>
+            </>
+          )}
+          {poi.mapsUrl && (
+            <>
+              {(poi.rating !== undefined ||
+                poi.walkMinutes !== undefined ||
+                poi.distanceMiles !== undefined) && <span aria-hidden="true">·</span>}
               <a
                 href={poi.mapsUrl}
                 target="_blank"
@@ -144,9 +164,34 @@ export function PoiList({
   pois,
   station,
   emptyMessage = "No POIs added for this station yet.",
+  nearbyStations = [],
 }: PoiListProps) {
   if (pois.length === 0) {
-    return <p className="text-sm text-muted-foreground">{emptyMessage}</p>;
+    return (
+      <div className="flex flex-col gap-3">
+        <p className="text-sm text-muted-foreground">{emptyMessage}</p>
+        {nearbyStations.length > 0 && (
+          <div className="flex flex-col gap-2">
+            <p className="text-sm text-muted-foreground">Nearby stops with places to crawl:</p>
+            <ul className="flex flex-col gap-1.5">
+              {nearbyStations.map((s) => (
+                <li key={s.id}>
+                  <Link
+                    href={`/stations/${s.id}`}
+                    className="inline-flex items-baseline gap-2 font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    {s.name}
+                    <span className="text-xs font-normal text-muted-foreground">
+                      {s.stops} stop{s.stops === 1 ? "" : "s"} away
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    );
   }
 
   const sections = categoryOrder
